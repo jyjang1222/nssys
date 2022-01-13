@@ -13,7 +13,8 @@ table {width: 100%;border-collapse: collapse;}
 .content>ul li:before {content:'';display: inline-block;width: 4px;height: 4px;margin-right: 6px;border-radius: 50%;background-color: #CCC;vertical-align: middle;}
 
 .log_table {position: relative;margin-bottom: 30px;}
-.log_table th, .log_table td {padding: 20px 0;text-align: center;}
+.log_table th {padding: 20px 0;}
+.log_table td {padding: 16px 0;text-align: center;}
 .log_table th {border-top: 2px solid #000;border-bottom: 1px solid #000;}
 .log_table td {border-bottom: 1px solid #dfdfdf;font-weight: 400;}
 .log_table .btns {position: absolute;right: 0;top: 50px;}
@@ -22,6 +23,9 @@ table {width: 100%;border-collapse: collapse;}
 .log_table .no_data td {padding: 50px 0;}
 .log_table .no_data img {width: 50px;margin-bottom: 20px;}
 
+.change_btn, .delete_btn {display: inline-block;width: 50px;line-height: 30px;font-size: 15px;}
+.log_table .change_btn {margin-right: 6px;background-color: #888;color: #fff;font-weight: 400;}
+.log_table .delete_btn {background-color: #888;color: #fff;}
 
 .content_wrap .pager {display: flex;justify-content: center;}
 .pager a, .pager span {display: flex;box-sizing:border-box;width: 34px;height: 34px;border: 1px solid #000;}

@@ -20,4 +20,11 @@ $(function() {
     $('.modal_wrap:nth-child(2) td').removeClass('txt_red');
     $(this).addClass('txt_red');
   }) //결제수단 선택
+
+  $('.method_set_btn').click(function() {
+    var chargeMethod = $('.charge_method').text();
+    var set = confirm('자주쓰는 결제수단을 [' + chargeMethod + ']으로 설정하시겠습니까?');
+
+    if(set) alert('자주쓰는 결제수단이 [' + chargeMethod + ']으로 설정되었습니다.');
+  }); //자주쓰는 결제수단 등록
 }); //ready

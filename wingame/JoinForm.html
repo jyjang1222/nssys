@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WINGAME</title>
+  <link rel="stylesheet" href="css/master.css">
+  <link rel="stylesheet" href="css/join.css">
+  <link rel="stylesheet" href="css/JoinForm.css">
+  <link rel="stylesheet" href="//fonts.googleapis.com/earlyaccess/nanumgothic.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/JoinForm.js"></script>
+</head>
+<body>
+  <!-- Main Content -->
+  <main id="main">
+    <div class="wrapper">  
+      <div class="join_wrap">
+        <h1><a href="index.html"><span class="blind">윈게임 로고</span></a></h1>
+        <div class="join">
+          <p><span>회원가입 정보</span>를 입력하세요.</p>
+          <div class="join_step">
+            <span class="step_bar"></span>
+            <ol>
+              <li><span></span>약관동의</li>
+              <li><span></span>본인인증</li>
+              <li class="on"><span></span>정보입력</li>
+              <li><span></span>가입완료</li>
+            </ol>
+          </div>
+          <form action="" method="post">
+            <!-- 각각 조건에 맞지 않을때 에러메시지(error_msg) 출력 -->
+            <div class="form_inner">
+              <div class="id_area">
+                <!-- 가입버튼 클릭후 아이디 미입력시 '아이디를 입력해주세요.' 알림 -->
+                <input type="text" placeholder="아이디(4~12자리의 영문 또는 숫자 조합)">
+                <!-- <span class="error_msg">이미 사용중인 아이디 입니다.</span> -->
+              </div>
+              <div class="pw_area">
+                <!-- 가입버튼 클릭후 비번 미입력시 '아이디를 입력해주세요.' 알림 -->
+                <input type="password" placeholder="비밀번호(8~15자 영문, 숫자, 특수문자 조합 필수)">
+                <!-- <span class="error_msg">비밀번호는 영문+숫자+특수문자 조합의 8~15자리로 설정해주세요.</span> -->
+              </div>
+              <div class="pwChk_area">
+                <input type="password" placeholder="비밀번호 확인">
+                <!-- <span class="error_msg">비밀번호는 비밀번호와 비밀번호 확인이 일치하지 않습니다.</span> -->
+              </div>
+              <div class="nickname_area">
+                <!-- 가입버튼 클릭후 닉네임 미입력시 '아이디를 입력해주세요.' 알림 -->
+                <input type="text" placeholder="대표닉네임(2~8자 한글, 4~16자 영문)">
+                <!-- 
+                  같은 닉네임이 있는경우 '이미 사용중인 닉네임 입니다.'로 에러 메시지변경
+                 -->
+                <!-- <span class="error_msg">한글기준 2자~8자, 영문기준 4자~16자로 입력해주세요.</span> -->
+              </div>
+              <div class="sms_area">
+                <!-- placeholder부분 휴대폰번호가 본인인증 정보를 통해 자동입력됨 -->
+                <input type="text" placeholder="01000000000" readonly>
+                <div class="check_box">
+                  <input type="checkbox" id="chkSmsAgree">
+                  <label for="chkSmsAgree">게임이벤트 소식 SMS 수신동의</label>
+                </div>
+              </div>
+              <div class="email_area">
+                <div class="email">
+                  <input type="text" placeholder="이메일(도용 피해 방지를 위한 메일인증을 받기)"><a href="#a" class="email_btn">인증</a>
+                </div>
+                <div class="check_box">
+                  <input type="checkbox" id="chkMailAgree">
+                  <label for="chkMailAgree">게임이벤트 소식 E-mail 수신동의</label>
+                </div>
+              </div>
+              <button type="submit" class="join_btn">가입완료</button>
+            </div>
+          </form>
+        </div>
+        <span>(주)앤스시스템 Corp.</span>
+      </div>  
+    </div>
+  </main>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WINGAME</title>
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="//fonts.googleapis.com/earlyaccess/nanumgothic.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/includeHTML.js"></script>
+    <script src="js/login.js"></script>
+  </head>
+  <body>
+    <!-- header -->
+    <div data-include="header.html"></div> 
+    <!-- //header_End -->
+    <main id="main">
+      <div class="wrapper">
+         <!-- 아이디와 비밀번호 잘못 입력시 밑에 문구가 사라짐 -->
+        <p><img src="images/user_icon.svg" alt="유저아이콘"><span class="txt_black">로그인</span>후 이용하실 수 있습니다.</p>
+        <!-- 아이디와 비밀번호 잘못 입력시 출력될 문구 -->
+        <!-- <p><img src="/images/warning_red.svg" alt="경고아이콘"><span class="txt_red">아이디</span> <span class="txt_black">또는</span> <span class="txt_red">비밀번호</span><span class="txt_black">를 잘못 입력하셨습니다.</span></p> -->
+        <div class="bg_white">
+          <div class="container">
+            <div class="content_wrap">
+              <div class="content">
+                <form action="" method="post">
+                  <div class="content_inner">
+                    <div class="input_area">
+                      <input type="text" placeholder="아이디를 입력해 주세요.">
+                      <!-- 아이디 미입력시 출력될 문구 -->
+                      <!-- <span class="error_msg">아이디를 입력해 주세요.</span> -->
+                    </div>
+                    <div class="input_area">
+                      <input type="password" placeholder="비밀번호를 입력해 주세요.">
+                      <!-- 비밀번호 미입력시 출력될 문구 -->
+                      <!-- <span class="error_msg">비밀번호를 입력해 주세요.</span> -->
+                    </div>
+                    <div class="btns">
+                      <button type="submit">로그인</button>
+                    </div>
+                    <ul>
+                      <li><a href="#" class="find_id">아이디 찾기</a></li>
+                      <li><a href="#" class="find_pw">비밀번호 찾기</a></li>
+                      <li><a href="provide.html">회원가입</a></li>
+                    </ul>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- footer -->
+    <div data-include="footer.html"></div> 
+    <!-- footer end -->
+    <script>includeHTML();</script>
+  </body>
+  </html>

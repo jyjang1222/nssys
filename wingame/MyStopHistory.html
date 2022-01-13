@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WINGAME</title>
+  <link rel="stylesheet" href="css/master.css">
+  <link rel="stylesheet" href="css/MyStopHistory.css">
+  <link rel="stylesheet" href="//fonts.googleapis.com/earlyaccess/nanumgothic.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/includeHTML.js"></script>
+  <script src="js/MyStopHistory.js"></script>
+</head>
+<body>
+  <!-- header -->
+  <div data-include="header.html"></div> 
+  <!-- //header_End -->
+  <main id="main">
+    <!-- Subpage navi -->
+    <div data-include="MyInfoGnb.html"></div>
+    <!-- //Subpage navi End -->
+    <div class="wrapper">
+      <div class="container">
+        <div class="content_wrap">
+          <h2>이용제한 내역</h2>
+          <p>이용제한 내역은 최근 6개월간을 확인 할 수 있습니다.</p>
+          <div class="content">
+            <table>
+              <colgroup>
+                <col>
+                <col>
+                <col>
+                <col>
+              </colgroup>
+              <thead>
+                <tr>
+                  <th>처리일시</th>
+                  <th>이용제한 종류</th>
+                  <th>사유</th>
+                  <th>해제일</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- 내역이 업을경우 .no_data만 나오도록 -->
+                <!-- <tr class="no_data">
+                  <td colspan="4">
+                    <div>
+                      <img src="images/warning_triangle_icon.svg" alt="경고 아이콘">
+                      <p>이용제한 내역이 없습니다.</p>
+                    </div>
+                  </td>
+                </tr> -->
+                <tr>
+                  <td>2021-12-22 13:00:00</td>
+                  <td>이용제한</td>
+                  <td>핵프로그램 사용</td>
+                  <td>2121-12-22 13:00:00</td>
+                </tr>
+                <tr>
+                  <td>2021-12-22 13:00:00</td>
+                  <td>이용제한</td>
+                  <td>핵프로그램 사용</td>
+                  <td>2121-12-22 13:00:00</td>
+                </tr>
+                <tr>
+                  <td>2021-12-22 13:00:00</td>
+                  <td>이용제한</td>
+                  <td>핵프로그램 사용</td>
+                  <td>2121-12-22 13:00:00</td>
+                </tr>
+              </tbody>
+            </table>
+            <!-- 내역이 있을경우 페이저 나타남 -->
+            <div class="pager">
+              <a href="#a" class="endPrev"></a>
+              <a href="#a" class="Prev"></a>
+              <span class="on">1</span>
+              <span>2</span>
+              <span>3</span>
+              <a href="#a" class="Next"></a>
+              <a href="#a" class="endNext"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- footer -->
+  <div data-include="footer.html"></div>
+  <!-- //footer end -->
+  <script>includeHTML();</script>
+</body>
+</html>

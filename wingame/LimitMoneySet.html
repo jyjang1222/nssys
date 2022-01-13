@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WINGAME</title>
+  <link rel="stylesheet" href="css/master.css">
+  <link rel="stylesheet" href="css/LimitMoneySet.css">
+  <link rel="stylesheet" href="//fonts.googleapis.com/earlyaccess/nanumgothic.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/includeHTML.js"></script>
+  <script src="js/LimitMoneySet.js"></script>
+</head>
+<body>
+  <!-- header -->
+  <div data-include="header.html"></div> 
+  <!-- //header_End -->
+  <main id="main">
+    <!-- Subpage navi -->
+    <div data-include="MyInfoGnb.html"></div>
+    <!-- //Subpage navi End -->
+    <div class="wrapper">
+      <div class="container">
+        <div class="content_wrap">
+          <h2>손실한도 설정</h2>
+          <div class="content">
+            <ul>
+              <li>고스톱/포커 게임군의 각 게임별로 설정된 손실머니를 초과하면 6시간 동안 게임이용이 제한됩니다.</li>
+              <li>손실머니는 매일 00시에 초기화 되며, 설정 손실한도는 익일00시에 반영됩니다.</li>
+              <li>손실한도 설정은 당사 모든 고스톱/포커류 게임에 적용됩니다.</li>
+              <li>손실한도 설정은 본인인증 후 이용 가능합니다.</li>
+            </ul>
+            <div class="limitSet_btn_area">
+              <!-- 본인인증 후에 'blind_bg' 사라지고 변경하기 버튼 나옴 -->
+              <a href="#a" class="limitSet_btn">손실한도 설정하기</a>
+              <p>변경횟수( <span class="txt_red">0</span> /2)회/월</p>
+            </div>
+            <div class="limitSet_area">
+              <div class="limit_state_wrap">
+                <div class="limit_state">
+                  <p>현재 손실한도</p><p><span class="current_limit txt_red">100,000</span> 원</p>
+                </div>
+                <div class="limit_state">
+                  <p>설정 손실한도</p><p><span class="set_limit txt_red">100,000</span> 원</p>
+                </div>
+              </div>
+              <div class="progress_wrap">
+                <div class="progress_bar">
+                  <span class="guage"></span>
+                </div>
+                <div class="pointer">
+                  <p class="on"><span>10만원</span></p>
+                  <p><span>20만원</span></p>
+                  <p><span>30만원</span></p>
+                  <p><span>40만원</span></p>
+                  <p><span>50만원</span></p>
+                </div>
+              </div>
+              <!-- 본인인증을 한후에 'blind_bg' 사라지고 '변경하기' 버튼이 나옴 -->
+              <div class="blind_bg"></div>
+              <!-- <button class="limit_change_btn">변경하기</button> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- footer -->
+  <div data-include="footer.html"></div>
+  <!-- //footer end -->
+  <script>includeHTML();</script>
+</body>
+</html>

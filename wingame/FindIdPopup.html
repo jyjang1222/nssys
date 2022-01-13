@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WINGAME</title>
+  <link rel="stylesheet" href="css/master.css">
+  <link rel="stylesheet" href="css/FindIdPopup.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/nanumgothic.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+  <script src="js/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <!-- Main Content -->
+  <main id="main">
+    <div class="wrapper">
+      <div class="id_list">
+        <strong>회원님의 정보로 가입된 아이디를 확인하세요.</strong>
+        <p>비밀번호를 잊으신 경우 <span class="txt_red">비밀번호 변경</span>을 통해 바꾸실 수 있습니다.</p>
+        <table>
+          <colgroup>
+            <col style="width:auto">
+            <col style="width:auto">
+            <col style="width:auto">
+            <col style="width:auto">
+          </colgroup>
+          <thead>
+            <tr>
+              <th>아이디</th>
+              <th>상태</th>
+              <th>가입일</th>
+              <th>비밀번호 변경</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>wingame1</td>
+              <td>정상</td>
+              <td>2020-12-02 14:55</td>
+              <td><a href="ChangePwPop.html" onclick="javascript:window.resizeTo(600, 480)">변경</a></td>
+            </tr>
+            <tr>
+              <td>wingame2</td>
+              <td>정상</td>
+              <td>2020-12-02 14:55</td>
+              <td><a href="ChangePwPop.html" onclick="javascript:window.resizeTo(600, 480)">변경</a></td>
+            </tr>
+            <tr>
+              <td>wingame3</td>
+              <td>정상</td>
+              <td>2020-12-02 14:55</td>
+              <td><a href="ChangePwPop.html" onclick="javascript:window.resizeTo(600, 480)">변경</a></td>
+            </tr>
+          </tbody>
+        </table>
+        <!-- 버튼들을 누르면 창이꺼지고 로그인 페이지로 이동 -->
+        <div class="btns">
+          <a href="login.html" target="_blank">로그인</a>
+          <a href="#a" onclick="javascript:window.close()">취소</a>
+        </div>
+      </div>
+    </div>  
+  </main>
+</body>
+</html>

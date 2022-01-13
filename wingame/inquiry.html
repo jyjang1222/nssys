@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WINGAME</title>
+  <link rel="stylesheet" href="css/master.css">
+  <link rel="stylesheet" href="css/inquiry.css">
+  <link rel="stylesheet" href="//fonts.googleapis.com/earlyaccess/nanumgothic.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/includeHTML.js"></script>
+  <script src="js/inquiry.js"></script>
+</head>
+<body>
+  <!-- header -->
+  <div data-include="header.html"></div> 
+  <!-- //header_End -->
+  <!-- Main Content -->
+  <main id="main">
+    <!-- Subpage navi -->
+    <div data-include="CustomerGnb.html"></div>
+    <!-- //Subpage navi End -->
+    <div class="wrapper">
+      <div class="container">
+        <form action="" method="post">
+          <!-- 로그인전에 나올 타이틀 문구 -->
+          <!-- <h2>1:1문의하기 (비회원)</h2> -->
+          <!-- //로그인전 -->
+          <!-- 로그인후에 나올 타이틀 문구 -->
+          <h2 class="logged_tit">1:1 문의</h2>
+          <p><span><b class="user_name"></b> 님,</span><br>게임 이용및 서비스에 대해 문의 하시면 친절하게 답변해 드리겠습니다.</p>
+          <!-- //로그인후 -->
+          <div class="form_inner">
+            <div class="content_wrap">
+              <h3>문의내용<span>&#8251; 필수 입력 항목입니다.</span></h3>
+              <div class="content">
+                <div class="content_inner">
+                  <div class="select_area">
+                    <a href="#a" class="select_box">
+                      <span class="select_tit">게임 선택</span><span class="selected_opt">게임을 선택하세요</span><span class="select_ico"></span>
+                    </a>
+                    <ul class="opt_list">
+                      <li><a href="#a">게임을 선택하세요</a></li>
+                      <li><a href="#a">로우바둑이</a></li>
+                      <li><a href="#a">7포커</a></li>
+                      <li><a href="#a">하이로우</a></li>
+                      <li><a href="#a">훌라</a></li>
+                      <li><a href="#a">섯다</a></li>
+                      <li><a href="#a">대박맞고</a></li>
+                      <li><a href="#a">플러스맞고</a></li>
+                      <li><a href="#a">고스톱</a></li>
+                      <li><a href="#a">타짜</a></li>
+                      <li><a href="#a">기타</a></li>
+                    </ul>
+                  </div>
+                  <div class="select_area">
+                    <a href="#a" class="select_box">
+                      <span class="select_tit">문의 유형</span><span class="selected_opt">문의 유형을 선택하세요</span><span class="select_ico"></span>
+                    </a>
+                    <ul class="opt_list">
+                      <li><a href="#a">문의 유형을 선택하세요</a></li>
+                      <li><a href="#a">개인정보</a></li>
+                      <li><a href="#a">고객의견</a></li>
+                      <li><a href="#a">캐쉬</a></li>
+                      <li><a href="#a">로그인</a></li>
+                      <li><a href="#a">보안서비스</a></li>
+                      <li><a href="#a">신고</a></li>
+                      <li><a href="#a">이벤트</a></li>
+                      <li><a href="#a">컨텐츠</a></li>
+                      <li><a href="#a">회원제</a></li>
+                      <li><a href="#a">기타</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="content_inner">
+                  <div class="input_area">
+                    <label class="input_tit" for="inquiry_tit">문의 선택</label><input type="text" id="inquiry_tit" placeholder="문의 제목을 선택하세요" required>
+                  </div>
+                  <div class="input_area">
+                    <label class="input_tit">문의 내용</label><textarea>문의 내용과 아이디 계정 정보를 적어 문의를 주시면 더 빠른 처리가 가능합니다.
+                      - 아이디 :
+                      - 게임닉네임 :
+                      - 명의자 성함 :
+                      - 문의 내용 : </textarea>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="content_wrap">
+              <h3>개인정보 수집/이용 동의<span>&#8251; 필수 입력 항목입니다.</span></h3>
+              <div class="content">
+                <div class="content_inner">
+                  <div class="input_area">
+                    <label class="input_tit" for="user_email">이메일</label><input  type="text" id="user_email" placeholder="이메일(아이디)를 입력하세요." required>
+                  </div>
+                  <span>@</span>
+                  <div class="input_area">
+                    <input type="text" placeholder="이메일(도메인)을 입력하세요." required>
+                  </div>
+                  <div class="select_area">
+                    <a href="#a" class="select_box">
+                      <span class="selected_opt">직접 입력</span><span class="select_ico"></span>
+                    </a>
+                    <ul class="opt_list">
+                      <li><a href="#a">직접 입력</a></li>
+                      <li><a href="#a">chollian.net</a></li>
+                      <li><a href="#a">dreamwiz.com</a></li>
+                      <li><a href="#a">empal.com</a></li>
+                      <li><a href="#a">freechal.com</a></li>
+                      <li><a href="#a">gmail.com</a></li>
+                      <li><a href="#a">hanafos.com</a></li>
+                      <li><a href="#a">hanmail.net</a></li>
+                      <li><a href="#a">hotmail.com</a></li>
+                      <li><a href="#a">kebi.com</a></li>
+                      <li><a href="#a">korea.com</a></li>
+                      <li><a href="#a">lycos.co.kr</a></li>
+                      <li><a href="#a">nate.com</a></li>
+                      <li><a href="#a">naver.com</a></li>
+                      <li><a href="#a">netsgo.com</a></li>
+                      <li><a href="#a">paran.com</a></li>
+                      <li><a href="#a">yahoo.co.kr</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="content_inner">
+                  <div class="check_box">
+                    <input type="checkbox" id="chkInfoAgree">
+                    <label for="chkInfoAgree">개인정보 수집/이용동의</label>
+                  </div>
+                  <div class="info_agree_cont">
+                    <p>개인 정보 수집 및 이용동의</p>
+                    <p>(주)앤스시스템에서는 고객상담을 목적으로 ‘ID, 회원번호, 이메일, 휴대폰번호 및 본문내용에 작성하여 주신 개인정보’를 수집하며,<br>수집한 개인정보는 전자상거래 등에서의 소비자보호에 관한 법률에 의거하여 3년간 보관 후 파기합니다.<br>고객님께서는 개인정보보호법에 따라 개인정보 수집동의를 거부할 권리가 있으며, 거부 시에는 고객상담이 어렵습니다.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="content_wrap">
+              <h3>추가 정보 동의<span>&#8251; 필수 입력 항목입니다.</span></h3>
+              <!-- 로그인전에는 sms수신동의 체크와 입력창만 나오도록 -->
+              <!-- <div class="content">
+                <div class="content_inner">
+                  <div class="check_box">
+                    <input type="checkbox" id="chkSmsAgree">
+                    <label for="chkSmsAgree">SMS 수신 동의</label>
+                  </div>
+                  <div class="input_area">
+                    <input type="tel" placeholder="핸드폰 번호를 입력하세요.">
+                  </div>
+                </div>
+              </div> -->
+              <!-- //로그인전 -->
+              <!-- 로그인후에 이메일 수정 팝업버튼, 폰인증하기 팝업버튼 추가 -->
+              <div class="content">
+                <div class="content_inner">
+                  <div class="check_box">
+                    <input type="checkbox" id="chkEmailAgree">
+                    <label for="chkEmailAgree">이메일 답변 동의</label>
+                    <input type="checkbox" id="chkSmsAgree">
+                    <label for="chkSmsAgree">SMS 수신 동의</label>
+                  </div>
+                  <div class="addInfo_box email_change">
+                    <div class="mr10 input_area">
+                      <input type="text" readonly>
+                    </div>
+                    <a href="#a" class="emailPop_btn">이메일 수정</a>
+                  </div>
+                  <div class="addInfo_box phone_certifi">
+                    <!-- 기존에 인증된 폰번호가 나오도록 -->
+                    <div class="mr10 input_area">
+                      <input type="text" placeholder="010-****-0000" readonly>
+                    </div>
+                    <a href="#a" class="phonePop_btn">폰 인증하기</a>
+                  </div>
+                </div>
+              </div>
+              <!-- //로그인후 -->
+            </div>
+            <div class="content_wrap">
+              <h3>첨부파일<span>&#8251; 필수 입력 항목입니다.</span></h3>
+              <div class="content">
+                <div class="content_inner">
+                  <div class="file_upload">
+                    <div class="addFile_area">
+                      <label class="input_tit" for="input_file">첨부파일</label>
+                      <input type="file" id="input_file">
+                      <input class="upload_name" value="" placeholder="10M 이하 파일 3개까지 첨부 가능합니다." readonly>
+                    </div>
+                    <div class="addFile_btns">
+                      <label for="input_file">파일찾기</label><a href="#a">파일추가</a>
+                    </div>
+                  </div>
+                  <div class="file_remove">
+                    <div class="fileList_area">
+                      <span>&nbsp;</span>
+                    </div>
+                    <a href="#a">파일삭제</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form_btns">
+            <button type="submit">확인</button><button type="reset">취소</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+  <!-- footer -->
+  <div data-include="footer.html"></div>
+  <!-- //footer end -->
+  <script>includeHTML();</script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WINGAME</title>
+  <link rel="stylesheet" href="css/LimitSet.css">
+  <link rel="stylesheet" href="css/master.css">
+  <link rel="stylesheet" href="//fonts.googleapis.com/earlyaccess/nanumgothic.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/includeHTML.js"></script>
+</head>
+<body>
+  <!-- header -->
+  <div data-include="header.html"></div> 
+  <!-- //header_End -->
+  <main id="main">
+    <!-- Subpage navi -->
+    <div data-include="CustomerGnb.html"></div>
+    <!-- //Subpage navi End -->
+    <div class="limitSet_wrap">
+      <div class="container">
+        <div class="content_wrap">
+          <h2>손실한도 및 이용시간 설정</h2>
+          <p>손실한도와 이용시간을 설정할 수 있습니다.</p>
+          <div class="content">
+            <div class="cont_tit">
+              <strong>손실한도 자가설정이란?</strong>
+              <p>손실한도는 10만원 ~ 50만원 내에서 10만원 단위로 설정 가능하며, 설정한 손실한도는 익일 00시에 반영됩니다.</p>
+            </div>
+            <div class="cont_info">
+              <b>꼭! 알아두세요.</b>
+              <ul>
+                <li>게임에서 손실할 수 있는 게임머니 한도를 이용자 스스로 설정할 수 있으며, 설정하신 손실한도는 매일 00시에 초기화 됩니다.</li>
+                <li>손실한도 초과 시, 동일 명의의 모든 ID에 대해 6시간 동안 웹보드게임 이용이 제한됩니다.</li>
+                <li>손실한도는 로그인 후 <span>[내정보 > 정보관리 > 손실한도]</span>에서 설정하실 수 있습니다.</li>
+                <li>손실한도 변경은 본인인증 후 월 2회 가능하며, 손실한도 변경 시 동일 명의의 모든 ID에 동일하게 적용됩니다.</li>
+              </ul>
+              <a href="LimitMoneySet.html">손실 한도 설정하기</a>
+            </div>
+          </div>
+          <div class="content">
+            <div class="cont_tit">
+              <strong>이용시간 자가설정이란?</strong>
+              <p>게임 이용제한기간을 이용자 스스로 설정할 수 있으며, 설정한 기간 동안 게임 이용이 불가능합니다.</p>
+            </div>
+            <div class="cont_info">
+              <b>꼭! 알아두세요.</b>
+              <ul>
+                <li>이용제한기간은 1/3/6/12개월 중 설정 가능하며, 이용제한기간 동안은 해제가 불가능합니다.</li>
+                <li>이용제한기간은 윈게임 고객센터를 통해 설정하실 수 있으며, 본인 확인 후 진행됩니다.</li>
+                <li>이용제한기간 설정 전! 게임 몰입도 테스트 이용을 권장해드립니다.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- footer -->
+  <div data-include="footer.html"></div>
+  <!-- //footer end -->
+  <script>includeHTML();</script>
+</body>
+</html>

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=1280">
+    <title>WINGAME</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="//fonts.googleapis.com/earlyaccess/nanumgothic.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/includeHTML.js"></script>
+    <script src="js/index.js"></script>
+  </head>
+  <body>
+    <!-- header -->
+	  <div data-include="header.html"></div> 
+	  <!-- header_End -->
+
+    <!-- Swiper -->
+    <div class="swiper mySwiper ">
+        <div class="swiper-wrapper">
+        <!-- <div class="swiper-slide"><img src="images/slideImg1.png" alt="슬라이드이미지"></div> -->
+        <div class="swiper-slide"><img src="images/slideImg2.png" alt="슬라이드이미지"></div>
+        <div class="swiper-slide"><img src="images/slideImg3.png" alt="슬라이드이미지"></div>
+        <div class="swiper-slide"><img src="images/slideImg4.png" alt="슬라이드이미지"></div>
+        <!-- <div class="swiper-slide"><img src="images/slideImg5.png" alt="슬라이드이미지"></div> -->
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+    <!-- main Contents -->
+    <div id="pcgamelist-container" class="pcgamelist-container contentWrap min-width-1280 mt75">
+        <div>
+            <h3 class="fl fontTitle">PC게임</h3>
+            <ul class="pagameList-tabmenu listStyleNone">
+              <li data-category="all" class="active">전체</li>
+              <li data-category="lowBadugi">로우바둑이</li>
+              <li data-category="holdem">홀덤</li>
+              <li data-category="baccarat">바카라</li>
+            </ul>
+        </div>
+        <ul class="pcgameList listStyleNone">
+          <li class="lowBadugi">                        
+              <a href="#">
+                <div class="overflow-frame">
+                  <img src="images/pcgamelist-badugi.png" alt="로우바둑이">
+                </div>
+                <h4>로우바둑이</h4>
+                <p>전략 베팅으로 승부하라</p>
+              </a>
+              <div class="boxList">
+                <h4>2022년 2월 1일</h4>
+                <p>GRAND OPEN 예정</p>
+              </div>
+          </li>
+          <li class="holdem">
+            <a href="https://www.waplpoker.kr/">
+              <div class="overflow-frame">
+                <img src="images/pcgamelist-wpl.png" alt="WAPL">
+              </div>
+              <h4>WAPL</h4>
+              <p>대한민국 홀덤의 새로운 기준</p>
+            </a>
+          </li>
+          <li>
+            <div class="loginContainer2">
+              <!-- 로그인 전 로그인폼 -->
+              <!-- <ul class="listStyleNone">
+                <li class=""><input type="text" placeholder="아이디" /></li>
+                <li class=""><input type="password" placeholder="비밀번호" /></li>
+                <li class=""><button onclick="location.href='login.html'">로그인</button></li>
+                <li class="fl">
+                  <a href="#a" class="find_id_btn">아이디</a>
+                  <span>/</span>
+                  <a href="#a" class="find_pw_btn">비밀번호 찾기</a>
+                </li>
+                <li class="fontbold700 fr"><a href="provide.html" class="txt_orange">회원가입</a></li>
+              </ul> -->
+              <!-- 로그인 전 -->
+              <!-- 로그인 후 마이페이지폼 -->
+              <div class="user_info">
+                <div class="user_id">
+                  <p class="fl"><span></span>님,</p>
+                  <p class="fr">
+                    <a href="ReceiveMsg.html" class="message_btn"></a>
+                    <a href="#a" class="logout_btn">로그아웃</a>
+                  </p>
+                </div>
+                <div class="my_info_wrap">
+                  <div class="my_cash">
+                    <div class="my_cash_fl">
+                      <p>내캐쉬</p>
+                      <p><span>0</span> 원</p>
+                    </div>
+                    <a href="#a" class="cash_charge_btn">충전</a>
+                  </div>
+                  <div class="my_info">
+                    <p>내정보</p>
+                    <a href="MyInfoChangeIdChk.html" class="myInfo_view_btn">보기</a>
+                  </div>
+                </div>
+                <p class="secondPw_txt">안전한 게임환경을 위해 <a href="SecondPw.html" class="secondPw_set">2차 비밀번호</a> 권장</p>
+              </div>
+              <!-- 로그인 후 -->
+            </div>
+          </li>
+          <li class="baccarat">
+            <a href="#">
+              <div class="overflow-frame">
+                <img src="images/pcgamelist-baccarat.png" alt="바카라">
+              </div>
+              <h4>바카라</h4>
+              <p>카지노의 꽃, 게임의 왕</p>
+            </a>
+            <div class="boxList">
+              <h4>2022년 2월 1일</h4>
+              <p>GRAND OPEN 예정</p>
+            </div>
+          </li>
+          <li class="lowBadugi">
+            <a href="#">
+              <div class="overflow-frame">
+                <img src="images/pcgamelist-blackjack.png" alt="블랙잭">
+              </div>
+              <h4>블랙잭</h4>
+              <p>짜릿한 심리전의 묘미</p>
+            </a>
+            <div class="boxList">
+              <h4>2022년 2월 1일</h4>
+              <p>GRAND OPEN 예정</p>
+            </div>
+          </li>
+          <li class="lowBadugi">
+            <a href="#">
+              <div class="overflow-frame">
+                <img src="images/pcgamelist-slot.png" alt="슬롯">
+              </div>
+              <h4>슬롯</h4>
+              <p>오프라인의 감성 그대로</p>
+            </a>
+            <div class="boxList">
+              <h4>2022년 2월 1일</h4>
+              <p>GRAND OPEN 예정</p>
+            </div>
+          </li>
+        </ul>
+        
+    </div>
+    <!-- main Contents end -->
+    <!-- 모바일게임 시작 -->
+    <div class="pcgamelist-container contentWrap min-width-1280 mt75">
+      <div class="game_mobile_slide">
+        <div class="head">
+            <h3 class="fl fontTitle">모바일게임 </h3>
+        </div>
+        <ul class="mobilegamelist">
+            <li class="domestic">
+                <a href="#">
+                    <img class="mobile-icon" src="images/wingamepoker-icon.png" alt="윈게임 포커">
+                    <div class="game-des">
+                        <h4>윈게임 포커</h4>
+                        <p>모바일 포커의 정점</p>
+                        <img src="images/android-mark.png" alt="안드로이드">
+                        <img src="images/apple-mark.png" alt="IOS">
+                            <img src="images/onestore-mark.png" alt="원스토어">
+                    </div>
+                </a>
+            </li>
+            <li class="domestic">
+                <a href="#">
+                    <img class="mobile-icon" src="images/slot-icon.png" alt="슬롯">
+                    <div class="game-des">
+                        <h4>슬롯</h4>
+                        <p>Jackpot Machine</p>
+                        <img src="images/android-mark.png" alt="안드로이드">
+                        <img src="images/apple-mark.png" alt="IOS">
+                            <img src="images/onestore-mark.png" alt="원스토어">
+                    </div>
+                </a>
+            </li>
+            <li class="domestic">
+                <a href="https://www.waplpoker.kr/mobile/home.io">
+                    <img class="mobile-icon" src="images/wapl-icon.png" alt="WPL">
+                    <div class="game-des">
+                        <h4>WAPL</h4>
+                        <p>홀덤의 새로운 기준</p>
+                        <img src="images/android-mark.png" alt="안드로이드">
+                        <img src="images/apple-mark.png" alt="IOS">
+                    </div>
+                </a>
+            </li>
+            <li class="domestic holder">
+            </li>
+            <li class="placeholder" style="display:none"></li>
+        </ul>
+      </div>
+    </div>
+    
+    <!-- 모바일게임 종료 -->
+
+    <!-- 공지사항 -->
+    <div class="loginWrap min-width-1280">
+      <div class="loginContainer notice-rolling-container">
+        <ul class="listStyleNone color666">
+          <li class="width10 fontbold700  notice-title"><i class="fa fa-volume-up" aria-hidden="true"></i>공지사항</li>
+          <li class="width60">
+            [공지]윈게임 홈페이지 개발 작업중
+          </li>
+          <li class="btn"><i class="fa fa-angle-right" aria-hidden="true"></i></li>
+          <li class="btn"><i class="fa fa-angle-left" aria-hidden="true"></i></li>
+          <li class="btn" onclick="location.href='#'" style="cursor: pointer;"><i class="fa fa-bars" aria-hidden="true"></i></li>
+        </ul>
+      </div>
+    </div>
+    <!-- 공지사항 end -->
+    <!-- footer -->
+    <div data-include="footer.html"></div>
+    <!-- footer end -->
+
+    <script>includeHTML();</script>
+  </body>
+</html>

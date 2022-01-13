@@ -1,0 +1,41 @@
+.txt_red {color: #FF522A;}
+
+/* LNB */
+#lnb .lnb_subMenu .current_menu {color: #FFC600;}
+#lnb .lnb_subMenu .current_page {text-decoration: underline;}
+
+/* Main */
+.content_wrap {padding-top: 60px;padding-bottom: 120px;}
+.content_wrap .content {margin-bottom: 34px;}
+.content_wrap>h2 {margin-bottom: 30px;font-size: 32px;text-align: center;}
+
+.content ul {margin-bottom: 40px;padding: 30px 0 30px 60px;border-top: 2px solid #000;border-bottom: 2px solid #000;}
+.content li {line-height: 28px;font-weight: 400;color: #666;}
+.content li:before {content:'';display: inline-block;width: 4px;height: 4px;margin-right: 6px;border-radius:50%;background-color: #dfdfdf;vertical-align: 4px;}
+.content .limitSet_btn_area {display: flex;justify-content:center;position: relative;}
+.content .limitSet_btn_area .limitSet_btn {display: block;width: 270px;line-height: 60px;background-color: #FFC600;font-size: 20px;text-align: center;}
+.content .limitSet_btn_area p {position: absolute;right: 0;bottom: 0;font-weight: 400;}
+
+/* 한도 설정 현황 */
+.content .limitSet_area {position: relative;margin-top: 60px;}
+.content .limitSet_area .blind_bg {display: block;position: absolute;left: -20px;right: -20px;top:0;bottom: -40px;background-color: rgba(255,255,255,0.7);}
+.content .limit_state_wrap {display: flex;justify-content:space-between;margin-bottom: 50px;}
+.content .limit_state_wrap > div {width: 430px;border-top: 2px solid #000;border-bottom: 1px solid #000;}
+.content .limit_state_wrap p {display: inline-block;line-height: 80px;text-align: center;font-size: 23px;}
+.content .limit_state_wrap p:first-child {width: 230px;background-color: #efefef;}
+.content .limit_state_wrap p:nth-child(2) {width: 200px;}
+.content .limit_state_wrap .txt_red {font-size: 32px;font-weight: 400;vertical-align: -3px;}
+
+/* 한도설정 프로그레스바 */
+.progress_wrap {position: relative;margin-bottom: 120px;padding: 0 14px;}
+.progress_bar {height: 16px;background-color: #efefef;}
+.progress_bar .guage {display: block;width: 0px;height: 100%;background-color: gold;transition: width 0.4s;}
+.pointer p {padding-top: 42px;position: absolute;top: -6px;transform:translateX(-50%);background-image: url(../images/check_circle_icon.svg);background-repeat: no-repeat;background-position: center top;background-size: 28px 28px;white-space: nowrap;font-size: 18px;font-weight: 600;cursor: pointer;}
+.pointer p.on {background-image: url(../images/checked_circle_icon.svg);}
+.pointer p:nth-child(1) {left: calc(0);}
+.pointer p:nth-child(2) {left: calc(25% + 6px);}
+.pointer p:nth-child(3) {left: calc(50%);}
+.pointer p:nth-child(4) {left: calc(75% - 6px);}
+.pointer p:nth-child(5) {left: calc(100% - 14px);}
+
+.limit_change_btn {display: block;width: 200px;line-height: 60px;margin: 0 auto;background-color: #ffc600;font-size: 20px;}

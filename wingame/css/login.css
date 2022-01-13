@@ -1,0 +1,28 @@
+.txt_black {color: #000;}
+.txt_red {color: #ff522a;}
+input::placeholder {font-size: 16px;font-weight: 600;}
+.content .input_area input:focus {border: 2px solid #ffc600;}
+.content .error_msg:before {content:'';display: inline-block;width: 20px;height: 20px;background-image: url(../images/warning_red.svg);background-size: 20px auto;vertical-align: -5px;}
+
+#lnb .lnb_subMenu .current_menu {color: #FFC600;}
+#lnb .lnb_subMenu .current_page {text-decoration: underline;}
+
+.wrapper {padding: 148px 0 240px;background-color: #f7f7f7;}
+.wrapper>p {margin-bottom: 60px;text-align: center;font-size: 32px;color: #888;}
+.wrapper>p>img {width: 44px;margin-right: 6px;vertical-align: -12px;}
+.wrapper .bg_white {background-color: #fff;}
+.content_wrap>h2 {margin-bottom: 20px;font-size: 28px;text-align: center;}
+.content_wrap>p {margin-bottom: 30px;text-align: center;color: #333;}
+
+.content .content_inner {width: 520px;margin: 0 auto;padding-top: 40px;}
+.content input {box-sizing:border-box;width: 520px;height: 50px;margin-bottom: 10px;padding-left: 20px;border: 1px solid #BBB;font-size: 20px;}
+/* 비밀번호 조건에 부합시 span display: block */
+.content span {display: block;margin-bottom: 18px;font-size: 14px;font-weight: 400;color: #FF522A;}
+.content span:before {content:'';display: inline-block;width: 18px;height: 18px;margin-right: 6px;background-image: url(../images/warning.svg);background-repeat: no-repeat;background-position: center;background-size: 20px auto;vertical-align: -4px;}
+.content .btns {display: flex;justify-content: space-between;margin-top: 30px;}
+.btns a, .btns button {display: flex;width: 100%;height: 60px;justify-content: center;align-items: center;font-size: 18px;}
+.content .btns button {background-color: #ffc600;}
+.content .btns a {background-color: #dcdcdc;}
+
+.content ul {display: flex;justify-content: center;padding: 30px 0 40px;}
+.content li {margin-right: 40px;}

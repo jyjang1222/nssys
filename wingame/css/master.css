@@ -1,0 +1,7 @@
+/* master.css */
+
+/* @import url(customer.css); */
+@import url(common.css);
+@import url(style.css);
+
+@import url(subpage_navi.css);

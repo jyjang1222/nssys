@@ -1,0 +1,1279 @@
+@charset "utf-8";
+i.chk-i20.key-chk {
+    width: 12px;
+    height: 12px;
+    background: url("../img/common/12x12_off.png") no-repeat center/contain;
+}
+.chk-basic:checked~i.key-chk {
+    background: url("../img/common/12x12_on.png") no-repeat center/contain;
+}
+.header-input input {
+    width: 150px;
+    height: 28px;
+    border: 1px solid #e1e1e1;
+    padding-left: 8px;
+    color: #555;
+    font-size: 13px;
+}
+.header-rightbox ul.find-idpw li {
+    padding: 0 10px;
+}
+.header-rightbox ul.find-idpw li:first-child {
+    padding-left: 0;
+}
+.header-login {
+    width: auto;
+    height: 26px;
+    background-color: #fa0;
+    border: 1px solid #ff9c00;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 400;
+    margin-top: -5px;
+    padding: 4px 12px 0;
+}
+.header-login.sele {
+    background-color: #dadada;
+    color: #666;
+    border: none;
+    line-height: 24px;
+    font-size: 14px;
+    padding: 0 10px;
+}
+.login-user a {
+    display: inline-block;
+}
+.login-user a:first-child {
+    line-height: 24px;
+}
+.login-line {
+    margin: 10px 0;
+    border-bottom: 1px solid #e1e1e1;
+}
+.myUser-info span {
+    font-size: 13px;
+    line-height: 25px;
+}
+.footer-layout-container {
+    background-color: #f7f7f7;
+}
+.main-container {
+    width: 100%;
+    letter-spacing: -.4px;
+    padding-bottom: 132px;
+    background-color: #f7f7f7;
+}
+.main-rolling-wrap {
+    min-width: 1280px;
+    margin: 0 auto;
+}
+.main-rolling-wrap .swiper-container {
+    height: 560px;
+}
+.main-rolling-wrap .swiper-slide {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -moz-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+.main-rolling-wrap .swiper-slide div {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+.main-bottom-wrap {
+    width: 1280px;
+    margin: 0 auto;
+}
+h3.main-games-tit {
+    color: #363636;
+    font-size: 25px;
+    letter-spacing: -1px;
+    line-height: 29px;
+}
+h3.main-games-tit span {
+    color: #fa0;
+}
+.condition {
+    position: relative;
+    border: 1px solid #ebebeb;
+    background-color: #fff;
+    margin-top: 20px;
+    padding: 20px;
+    -webkit-box-shadow: 0 5px 18px -6px #ededed;
+    box-shadow: 0 5px 18px -6px #ededed;
+}
+.condition img {
+    width: 100%;
+    height: auto;
+}
+.condition01 {
+    width: 830px;
+    height: 350px;
+}
+.condition01 ul li {
+    width: 150px;
+    height: 150px;
+    float: left;
+    margin-left: 9px;
+    overflow: hidden;
+    position: relative;
+}
+.condition01 ul li.big {
+    width: 310px;
+    height: 310px;
+    margin-left: 0;
+}
+.condition01 ul li img {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+}
+.condition01 ul li:hover img {
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    transform: scale(1.05);
+}
+.condition01 ul li.soon img {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    transform: scale(1);
+}
+.condition01 ul li > div {
+    background: url("../img/main/bn_bg.png") repeat-x;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    line-height: 35px;
+    font-size: 14px;
+    color: #fcfcfc;
+    text-align: center;
+}
+.condition01 ul li.big > div {
+    line-height: 45px;
+}
+.condition02 {
+    width: 350px;
+    height: 350px;
+}
+.condition02 ul li {
+    width: 150px;
+    height: 150px;
+    float: left;
+    margin-left: 8px;
+    overflow: hidden;
+    position: relative;
+}
+.condition02 ul li img {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+}
+.condition02 ul li:hover img {
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    transform: scale(1.05);
+}
+.condition02 ul li.soon img {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    transform: scale(1);
+}
+.condition02 ul li > div {
+    background: url("../img/main/bn_bg.png") repeat-x;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    line-height: 35px;
+    font-size: 14px;
+    color: #fcfcfc;
+    text-align: center;
+}
+.featured-tit,
+.mobile-tit {
+    display: inline-block;
+    width: 510px;
+    float: left;
+}
+.condition03 {
+    width: 510px;
+    height: 190px;
+}
+.condition03 ul li {
+    width: 150px;
+    height: 150px;
+    float: left;
+    margin-left: 9px;
+    overflow: hidden;
+    position: relative;
+}
+.condition03 ul li:first-child {
+    margin-left: 0;
+}
+.condition03 ul li img {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+}
+.condition03 ul li:hover img {
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    transform: scale(1.05);
+}
+.condition03 ul li.soon img {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    transform: scale(1);
+}
+.condition03 ul li > div {
+    background: url("../img/main/bn_bg.png") repeat-x;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    line-height: 35px;
+    font-size: 14px;
+    color: #fcfcfc;
+    text-align: center;
+}
+.condition04 {
+    width: 670px;
+    height: 190px;
+}
+.condition04 ul li {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    float: left;
+    margin-left: 9px;
+    background-color: #ea9d00;
+    overflow: hidden;
+    position: relative;
+}
+.condition04 ul li:first-child {
+    margin-left: 0;
+}
+.condition04 ul li .txt-android {
+    position: absolute;
+    width: 120px;
+    height: 40px;
+    line-height: 36px;
+    text-align: center;
+    top: 55px;
+    left: 15px;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    opacity: 0;
+}
+.condition04 ul li img {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+}
+.condition04 ul li:hover img {
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    transform: scale(1.05);
+}
+.condition04 ul li.soon img {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    transform: scale(1);
+}
+.condition04 ul li > div {
+    background: url("../img/main/bn_bg.png") repeat-x;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    line-height: 35px;
+    font-size: 14px;
+    color: #fcfcfc;
+    text-align: center;
+}
+.condition04 ul li > div.icon:after {
+    content: "";
+    background: url("../img/main/icon_and.png") center no-repeat;
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 8px;
+    right: 9px;
+}
+.condition05 {
+    width: 100%;
+    height: 50px;
+    padding: 0;
+}
+.condition05 span:first-child {
+    display: inline-block;
+    width: 80px;
+    height: 100%;
+    color: #464646;
+    font-size: 15px;
+    padding: 18px 0 0 15px;
+}
+.condition05 span.ttt {
+    display: inline-block;
+    color: #959595;
+    height: 100%;
+    font-size: 12px;
+    vertical-align: middle;
+}
+.condition05 img {
+    width: 195px;
+    height: 48px;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+.event-tit h3.main-games-tit {
+    display: inline-block;
+}
+.condition06 ul li {
+    margin-left: 15px;
+    float: left;
+    border: 1px solid #e5e5e5;
+}
+.condition06 ul li:first-child {
+    margin-left: 0;
+}
+.condition06 ul li .img {
+    position: relative;
+    width: 388px;
+    height: 189px;
+    background-color: #ea9d00;
+}
+.condition06 ul li .img .txt-main-more {
+    position: absolute;
+    width: 140px;
+    height: 40px;
+    line-height: 36px;
+    text-align: center;
+    top: 75px;
+    left: 125px;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    opacity: 0;
+}
+.condition06 ul li .img:hover img {
+    opacity: 0.05;
+}
+.condition06 ul li .img:hover .txt-main-more {
+    opacity: 1;
+}
+.condition06 ul li .info {
+    background: #fff;
+    padding: 10px;
+}
+.condition06 ul li .info strong {
+    display: block;
+    font-size: 12px;
+    color: #434343;
+    margin-bottom: 7px;
+}
+.condition06 ul li .info p {
+    display: block;
+    font-size: 12px;
+    color: #707070;
+    font-weight: 200;
+    margin-bottom: 7px;
+}
+.condition06 ul li .info span {
+    display: block;
+    font-size: 12px;
+    color: #959595;
+    font-weight: 200;
+    background: url("../img/main/icon_tit.png") left center no-repeat;
+    padding-left: 11px;
+}
+.scale img {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+}
+.scale:hover img {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.condition .main-bookmark {
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 400;
+    z-index: 1;
+}
+.condition .main-bookmark.bg-red {
+    background-color: #f9a818;
+}
+.condition .main-bookmark.bg-blue {
+    background-color: #402513;
+}
+.main-more {
+    font-size: 15px;
+    color: #666;
+    font-weight: 400;
+}
+.main-more a {
+    display: block;
+    background: url("../img/main/icon_more.png") no-repeat;
+    width: 29px;
+    height: 29px;
+    text-indent: -9999px;
+}
+i.icon-plus {
+    width: 12px;
+    height: 12px;
+    background: url("../img/main/icon_plus.png") no-repeat;
+    background-size: 100%;
+}
+.main-newmark {
+    top: -4px;
+    left: -5px;
+    width: 60px;
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+    background-color: #fa0;
+    font-size: 14px;
+    font-weight: 600;
+}
+.main-rolling-wrap .swiper-container-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+    text-align: center;
+    bottom: 0;
+}
+.main-rolling-wrap .swiper-pagination-bullet {
+    width: 16px;
+    height: 16px;
+    background-color: #d1d1d1;
+    opacity: 1;
+}
+.main-rolling-wrap .swiper-pagination-bullet-active {
+    width: 50px;
+    height: 16px;
+    border-radius: 16px;
+    background-color: #ffc600;
+}
+.securityconnect span {
+    display: inline-block;
+    width: 40px;
+    padding-left: 5px;
+    color: #ff522a;
+}
+input[type=checkbox]+label > i.chk-i {
+    width: 18px;
+    height: 18px;
+    background-color: #d1d1d1;
+    border: 1px solid #d1d1d1;
+    border-radius: 50%;
+}
+input[type=checkbox]:checked+label > i.chk-i {
+    background-color: #ffc600;
+}
+.recommend-container h3 {
+    font-size: 34px;
+}
+.recommend-container > div {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.recommend-list {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 955px;
+    height: 300px;
+}
+.recommend-list li {
+    position: relative;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    transition: 0.2s;
+}
+.recommend-list li:hover {
+    -webkit-box-shadow: 0 0 16px 0 rgba(0,0,0,.16);
+    box-shadow: 0 0 16px 0 rgba(0,0,0,.16);
+}
+.recommend-list li span {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    display: block;
+    width: 225px;
+    height: 100px;
+    padding-top: 54px;
+    padding-left: 22px;
+    background: url("../img/main/bg_pcgamelist.png") repeat-x;
+}
+.recommend-list li img {
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: -webkit-transform 0.3s;
+    -moz-transition: transform 0.3s,-moz-transform 0.3s;
+    transition: transform 0.3s;
+    transition: transform 0.3s,-webkit-transform 0.3s,-moz-transform 0.3s;
+}
+.recommend-list li img.hover {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    transform: scale(1.2);
+}
+.recommend-list li.hot-mark::after {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    content: "HOT";
+    width: 50px;
+    height: 20px;
+    background-color: #fa674f;
+    color: #fff;
+    font-size: 10px;
+    font-weight: 400;
+}
+.recommend-list li.new-mark::after {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    content: "NEW";
+    width: 50px;
+    height: 20px;
+    background-color: #fd7e02;
+    color: #fff;
+    font-size: 10px;
+    font-weight: 400;
+}
+.recommend-list li {
+    width: 225px;
+}
+.recommend-list li img {
+    width: 100%;
+}
+.game_mobile_slide .head {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 28px;
+}
+.event-container .head {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 16px;
+}
+.event-container h3,
+.game_mobile_slide h3 {
+    font-size: 34px;
+}
+.event-container .btn-mobile-more,
+.game_mobile_slide .btn-mobile-more {
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin-left: auto;
+    border: 1px solid #dfdfdf;
+    background: #fff url("../img/main/icon_more.png") no-repeat 50% 50%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    color: transparent;
+    text-indent: -9999px;
+}
+.login-container {
+    width: 325px;
+    height: 300px;
+    background-color: #fff;
+}
+.login-container .login-form {
+    padding: 33px 20px 0;
+}
+.login-container .login-form ul {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.login-container .login-form li:first-child {
+    padding-left: 8px;
+    padding-right: 16px;
+}
+.login-container .login-form li .chk-i {
+    width: 18px;
+    height: 18px;
+    margin-left: 8px;
+}
+.login-container .login-form input[type=password],
+.login-container .login-form input[type=text] {
+    display: block;
+    width: 100%;
+    height: 42px;
+    border: 1px solid #dfdfdf;
+    padding-left: 16px;
+}
+.login-container .login-form input[type=text] {
+    margin-top: 18px;
+    margin-bottom: -1px;
+}
+.login-container .login-form input[type=submit] {
+    width: 100%;
+    height: 60px;
+    display: block;
+    background-color: #ffc600;
+    font-size: 18px;
+    margin: 15px 0 27px;
+}
+.login-container .login-form input[type=submit]:focus,
+.login-container .login-form input[type=submit]:hover {
+    background-color: #cc9e00;
+}
+.login-container .login-form a {
+    display: inline;
+    font-weight: 400;
+}
+.login-container .login-form .signup-link {
+    font-weight: 700;
+    color: #faa819;
+    padding-left: 52px;
+}
+.login-container .login-info {
+    padding: 0 20px;
+}
+.login-container .login-info .login-userId {
+    position: relative;
+    height: 69px;
+    padding: 23px 0 7px 7px;
+    border-bottom: 1px solid #dfdfdf;
+}
+.login-container .login-info .login-userId p {
+    color: #888;
+    line-height: 36px;
+}
+.login-container .login-info .login-userId .txt_message {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    margin-top: 2px;
+    background: url("../img/main/ico_message_off.png") no-repeat 0 0;
+}
+.login-container .login-info .login-userId .txt_message.on {
+    background-image: url("../img/main/ico_message_on.png");
+}
+.login-container .login-info .login-userId .btn_login {
+    display: block;
+    width: 69px;
+    height: 36px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 13px;
+    font-weight: 400;
+    border: 1px solid #b9b9b9;
+    background-color: #f7f7f7;
+    -webkit-box-shadow: inset 1px 1px 0 0 #fff,inset -1px -1px 0 0 #fff,0 1px 0 0 #d1d1d1;
+    box-shadow: inset 1px 1px 0 0 #fff,inset -1px -1px 0 0 #fff,0 1px 0 0 #d1d1d1;
+}
+.login-container .login-info .login-userId span {
+    color: #1a1a1a;
+}
+.login-container .login-info .mycashinfo {
+    height: 70px;
+    background-color: #ececec;
+    margin-top: 20px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.login-container .login-info .mycashinfo p:first-child {
+    padding: 13px 0 0 26px;
+}
+.login-container .login-info .mycashinfo p:last-child {
+    padding: 13px 0 0 26px;
+}
+.login-container .login-info .mycashinfo p:last-child .cash-text {
+    color: #ff562f;
+}
+.login-container .login-info .mycashinfo a {
+    height: 70px;
+    background-color: #ffc600;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 70px;
+    -moz-box-flex: 0;
+    -ms-flex: 0 0 70px;
+    flex: 0 0 70px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.login-container .login-info .myinfo {
+    height: 70px;
+    background-color: #ececec;
+    margin-top: 10px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.login-container .login-info .myinfo p:first-child {
+    padding: 28px 0 0 25px;
+}
+.login-container .login-info .myinfo a {
+    height: 70px;
+    background-color: #dcdcdc;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 70px;
+    -moz-box-flex: 0;
+    -ms-flex: 0 0 70px;
+    flex: 0 0 70px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.login-container .login-info .mycashinfo .info-text,
+.login-container .login-info .myinfo .info-text {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 0 0;
+    -moz-box-flex: 1;
+    -ms-flex: 1 0 0;
+    flex: 1 0 0;
+    font-size: 16px;
+    font-weight: 400;
+    color: #888;
+}
+.pcgamelist-container {
+    margin-top: 75px;
+}
+.pcgamelist-container h3 {
+    font-size: 34px;
+}
+.pcgamelist-container .pcgamelist-tabmenu {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+    -moz-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    font-size: 18px;
+    font-weight: 400;
+    color: #888;
+    height: 34px;
+    padding-left: 24px;
+    margin-bottom: 28px;
+}
+.pcgamelist-container .pcgamelist-tabmenu li {
+    width: auto;
+    padding: 0 15px;
+    text-align: center;
+    cursor: pointer;
+    border-right: 1px solid #888;
+}
+.pcgamelist-container .pcgamelist-tabmenu li.on {
+    font-weight: 700;
+    color: #1a1a1a;
+    cursor: default;
+}
+.pcgamelist-container .pcgamelist-tabmenu li:last-child {
+    border-right: none;
+}
+.pcgamelist-container .pcgamelist {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+.pcgamelist-container .pcgamelist li {
+    position: relative;
+    width: 305px;
+    height: 260px;
+    background-image: url("../img/main/pcgamelist-bg.png");
+    margin-bottom: 50px;
+    overflow: hidden;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    transition: 0.2s;
+}
+.pcgamelist-container .pcgamelist li:not(.placeholder):hover {
+    -webkit-box-shadow: 0 0 16px 0 rgba(0,0,0,.16);
+    box-shadow: 0 0 16px 0 rgba(0,0,0,.16);
+}
+.pcgamelist-container .pcgamelist li .overflow-frame {
+    overflow: hidden;
+}
+.pcgamelist-container .pcgamelist li img {
+    width: 100%;
+}
+.pcgamelist-container .pcgamelist li img {
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: -webkit-transform 0.3s;
+    -moz-transition: transform 0.3s,-moz-transform 0.3s;
+    transition: transform 0.3s;
+    transition: transform 0.3s,-webkit-transform 0.3s,-moz-transform 0.3s;
+}
+.pcgamelist-container .pcgamelist img.hover {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    transform: scale(1.2);
+}
+.pcgamelist-container .pcgamelist li h4 {
+    position: relative;
+    padding: 22px 0 11px 25px;
+    font-size: 20px;
+    font-weight: 400;
+}
+.pcgamelist-container .pcgamelist li h4.hot-mark::after {
+    position: absolute;
+    right: 0;
+    top: 22px;
+    display: block;
+    content: "HOT";
+    width: 50px;
+    height: 20px;
+    background-color: #fa674f;
+    color: #fff;
+    font-size: 10px;
+    font-weight: 400;
+    text-align: center;
+}
+.pcgamelist-container .pcgamelist li h4.event-mark::after {
+    position: absolute;
+    right: 0;
+    top: 22px;
+    display: block;
+    content: "EVENT";
+    width: 50px;
+    height: 20px;
+    background-color: #a75ce6;
+    color: #fff;
+    font-size: 10px;
+    font-weight: 400;
+    text-align: center;
+}
+.pcgamelist-container .pcgamelist li p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #888;
+    padding-left: 25px;
+}
+.notice-rolling-container {
+    position: relative;
+    background-color: #fff;
+    border: 1px solid #ededed;
+}
+.notice-rolling-container .notice-title {
+    position: absolute;
+    top: 19px;
+    width: 148px;
+    height: 40px;
+    border-right: 1px solid #ededed;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 500;
+}
+.notice-rolling-container .notice-title i {
+    display: inline;
+    position: relative;
+    left: -6px;
+    top: -1px;
+    color: #888;
+}
+.notice-rolling-container .notice-rolling-wrap {
+    padding-left: 148px;
+    margin-right: 213px;
+}
+.notice-rolling-container .notice-rolling-wrap .swiper-container {
+    height: 78px;
+}
+.notice-rolling-container .btn {
+    position: absolute;
+    left: auto;
+    bottom: auto;
+    right: auto;
+    top: 0;
+    width: 71px;
+    height: 78px;
+    border-left: 1px solid #ededed;
+    margin: 0;
+    outline: 0;
+    background-image: none;
+}
+.notice-rolling-container .btn i {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 20px;
+    color: #888;
+}
+.notice-rolling-container .btn i.fa-angle-left,
+.notice-rolling-container .btn i.fa-angle-right {
+    font-size: 30px;
+}
+.notice-rolling-container .swiper-button-next {
+    right: 0;
+}
+.notice-rolling-container .swiper-button-prev {
+    right: 71px;
+}
+.notice-rolling-container .notice-button-menu {
+    right: 142px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.notice-rolling-container .notice-button-menu {
+    cursor: pointer;
+}
+.notice-rolling-container .notice-button-menu a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.notice-rolling-container .swiper-slide div {
+    height: 100%;
+    margin-left: 29px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 400;
+    color: #888;
+}
+.game_mobile_slide {
+    margin-top: 75px;
+}
+.game_mobile_slide .mobilegamelist-tabmenu {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+    -moz-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    font-size: 18px;
+    font-weight: 400;
+    color: #888;
+    height: 34px;
+    padding-left: 24px;
+}
+.game_mobile_slide .mobilegamelist-tabmenu li {
+    width: 64px;
+    text-align: center;
+    cursor: pointer;
+}
+.game_mobile_slide .mobilegamelist-tabmenu li.on {
+    font-weight: 700;
+    color: #1a1a1a;
+    cursor: default;
+}
+.game_mobile_slide .mobilegamelist-tabmenu li:nth-child(2) {
+    border-left: 1px solid #888;
+    border-right: 1px solid #888;
+}
+.game_mobile_slide .mobilegamelist {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+.game_mobile_slide .mobilegamelist li {
+    position: relative;
+    width: 305px;
+    height: 150px;
+    margin-bottom: 50px;
+    background-color: #fff;
+    border: 1px solid #ededed;
+}
+.game_mobile_slide .mobilegamelist li > a {
+    overflow: hidden;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+}
+.game_mobile_slide .mobilegamelist li.placeholder {
+    display: inherit;
+    background-image: url("../img/main/pcgamelist-bg.png");
+    background-position: center;
+}
+.game_mobile_slide .mobilegamelist li img.mobile-icon {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 auto;
+    -moz-box-flex: 0;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    padding: 20px 16px 18px 20px;
+}
+.game_mobile_slide .mobilegamelist li div.game-des {
+    padding-top: 24px;
+    font-size: 18px;
+    font-weight: 500;
+}
+.game_mobile_slide .mobilegamelist li div.game-des p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #888;
+    padding: 12px 0 27px;
+}
+.event-container {
+    margin-top: 25px;
+}
+.event-container h3 {
+    position: relative;
+    font-size: 34px;
+    margin-bottom: 30px;
+}
+.event-container h3 a {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    border: 1px solid #dfdfdf;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    transform: translateY(-50%);
+    text-align: center;
+    color: #888;
+}
+.event-container ul {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+.input_radio+label i {
+    display: inline-block;
+    background: url("../img/common/radio_off.png") no-repeat 0 0;
+    background-size: 100%;
+}
+.input_radio:checked+label i {
+    background-image: url("../img/common/radio_on.png");
+}
+.radio_18.input_radio+label i {
+    width: 18px;
+    height: 18px;
+}

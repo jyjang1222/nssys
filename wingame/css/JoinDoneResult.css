@@ -1,0 +1,11 @@
+.txt_red {color: #ff522a;}
+
+.result_txt {margin-bottom: 30px;padding: 26px 0 40px;border: 1px solid #dfdfdf;text-align: center;}
+.result_txt .txt_red {line-height: 50px;font-size: 24px;font-weight: 400;}
+.join_banner {margin-bottom: 30px;}
+.join_banner img {width: 100%;}
+.join_banner p {background-color: #f7f7f7;line-height: 60px;text-align: center;}
+.game_list {height: 110px;}
+.game_list ul {display: flex;justify-content:space-between;align-content:space-between;flex-wrap:wrap;height: 100%;}
+.game_list ul li a {display: block;width: 250px;line-height: 50px;background-color: #ffc600;text-align: center;}
+.game_list ul li:nth-child(2n) a {background-color: #402613;color: #fff;}

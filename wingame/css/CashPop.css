@@ -1,0 +1,5 @@
+ol {list-style:none;margin-bottom: 14px;padding-left: 14px;counter-reset: my_counter 0;}
+ol>li:before {counter-increment: my_counter 1;}
+.policy_depth1>li:before {content:counter(my_counter)'. ';}
+.policy_depth2>li:before {content:'(' counter(my_counter) ')';}
+.policy_depth3>li:before {content:counter(my_counter, lower-alpha) '. ';}

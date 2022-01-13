@@ -1,0 +1,16 @@
+.error_msg {margin-left: 14px;line-height: 28px;font-weight: 400;font-size: 15px;color: #ff522a;}
+.error_msg:before {content:'';display: inline-block;width: 20px;height: 20px;margin-right: 6px;background-image: url(../images/warning_red.svg);background-size: 20px auto;vertical-align: -5px;}
+
+.form_inner>div[class*='_area'] {margin-bottom: 14px;}
+.form_inner>div[class*='_area'] > input {box-sizing:border-box;padding-left: 14px;line-height: 50px;border: 1px solid #ededed;}
+.form_inner>div:not(.email_area) > input {width: 100%;}
+.form_inner .email input {box-sizing:border-box;width: 400px;padding-left: 14px;line-height: 50px;border: 1px solid #ededed;}
+.form_inner .sms_area input::placeholder {color: #000;}
+.sms_area input, .email_area input {margin-bottom: 10px;}
+.sms_area label, .email_area label {line-height: 28px;font-size: 15px;color: #888;}
+.email_area .email {display: flex;justify-content: space-between;}
+.email_area .email_btn {display: block;width: 100px;background-color: #5f6066;height: 50px;line-height: 50px;text-align: center;color:#fff;}
+.check_box input {width: 24px;height: 24px;background-image: url(../images/checkbox_off.svg);background-repeat: no-repeat;vertical-align: -18px;}
+.check_box input[checked="checked"] {background-image: url(../images/checkbox_on.svg);}
+
+.join_btn {display: block;width: 100%;background-color: #ffc600;line-height: 50px;text-align: center;}

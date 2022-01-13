@@ -1,0 +1,205 @@
+/* style.css */
+
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@import url(http://cdn.jsdelivr.net/font-nanum/1.0/nanumbarungothic/nanumbarungothic.css);
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+html, body {position: relative;width:100%;height: 100%;font-family: 'Open Sans', 'Nanum Gothic', 'Nanum', sans-serif;}
+body {background: #f3f3f3;font-size: 14px;color: #000;margin: 0;padding: 0;}
+a, button, input, textarea {border: none;background: 0 0;-webkit-appearance: none;-webkit-border-radius: 0;outline: 0;vertical-align: top;padding: 0;margin: 0;font-size: inherit;font-weight: inherit;font-family: inherit;color: inherit;text-decoration: none;}
+.min-width-1280{min-width: 1280px;}
+.listStyleNone{list-style: none;margin: 0;padding: 0;}
+.ml40{margin-left: 40px!important;}
+.mt75{margin-top: 75px!important;}
+.width4{width: 4%;}.width60{width: 60%;}
+.width10{width: 10%;}.width20{width: 20%;}.width30{width: 30%;}.width40{width: 40%;}
+.colorY{color: #c98000;}
+.color666{color: #666;}
+.fontbold700{font-weight: 700!important;}
+.fl{float: left!important;}
+.fr{float: right!important;}
+.fontTitle{font-size: 2.4rem;}
+a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, s, samp, section, select, small, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video{
+    margin: 0;padding: 0;border: 0;font-weight:600;vertical-align: middle;line-height: 1em;list-style:none;}
+
+.pl30{padding-left: 30px!important;}
+.pr30{padding-right: 30px!important;}
+button {cursor: pointer;}
+.txt_orange {color: #faa819;}
+
+
+
+/* header */
+header{width: 100%;background: #fff;}
+.topGnbWrap{width: 1280px;height: 65px; margin: 0 auto;overflow: hidden;}
+h1.logo{width: 640px;float: left;margin: 0;margin-top: 19px;}
+.logo > a{display: block;width: 164px;height: 26px;}
+.logo > a > img{height: 26px;vertical-align: top;}
+.topGnb {width: 640px;margin-top: 15px;}
+.topGnb ul {overflow: hidden;display: flex;align-items: center;justify-content: flex-end;}
+.topGnb li{float: left;font-weight: 600;font-size: 22px;}
+.topGnb li img{margin: -3px 10px 0 0;}
+.topGnb li a {display: block;line-height: 35px;}
+.btnLogin{background-color: #ffc600;width: 92px;padding: 4px 0;border: none; border-radius: 20px;font-size: 20px;text-align: center;font-weight: 600;}
+.btnLogOut {background-color: #ececec;width: 92px;padding: 4px 0;border: none; border-radius: 20px;font-size: 20px;text-align: center;font-weight: 600;letter-spacing: -0.1em;}
+
+
+/* swiper-slide */
+.swiper {width: 100%;height: 560px;}
+.swiper-slide {text-align: center;font-size: 18px;background: #fff;/* Center slide text vertically */display: flex;justify-content: center;align-items: center;}
+.swiper-slide img {display: block;width: 100%;height: 500px;object-fit: cover;}
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{
+    bottom: 0px!important;left: 0!important;width: 100%!important;
+}
+.swiper-pagination-bullet{width: 16px!important;height: 16px!important;}
+.swiper-pagination-bullet-active{width: 50px!important;border-radius: 8px!important;}
+.swiper-wrapper{height: auto!important;}
+:root {--swiper-theme-color: #ffc107!important;}
+/* swiper-slide end */
+
+/* login */
+.loginWrap{width: 1280px;height: 80px;margin: 0 auto 60px;overflow: hidden;}
+.loginContainer{position: relative;background: #fff;border: 1px solid #ededed;height: 80px;padding:0 2rem;overflow: hidden;}
+.loginContainer ul{overflow: hidden;}
+.loginContainer li{float: left; font-size: 1.05rem;font-weight: 600;line-height: 80px;}
+.loginContainer li input{border: 1px solid #ccc;padding: 1rem;width: 350px;margin-top: 13px;box-sizing: border-box;}
+.loginContainer li button{margin-top: 13px;height: 54px;width: 100%;background: #ffc107;}
+h3.fontTitle{display: inline-block;margin: 0;padding: 0;}
+
+/* login box로 수정 */
+.loginContainer2{background: #fff;padding: 2rem 1rem;}
+.loginContainer2 li input{border: 1px solid #ccc;padding: 1rem;width: 100%;margin-top: 13px;box-sizing: border-box;}
+.loginContainer2 li button{margin-top: 2rem;margin-bottom: 2rem;height: 54px;width: 100%;background: #ffc107;font-size: 1.2rem;cursor:pointer}
+    
+/* 로그인 후 */
+.loginContainer2 .user_info{display: block;box-sizing:border-box;padding: 10px 0;background: #FFF;}
+.loginContainer2 .user_info .user_id{padding-bottom: 10px;border-bottom: 1px solid #dedede;}
+.loginContainer2 .user_info .user_id p{line-height: 40px;}
+.loginContainer2 .user_info .user_id .fl{float: left;}
+.loginContainer2 .user_info .user_id .fr{display: inline-block;float: right;}
+.loginContainer2 .user_info .user_id:after {content:'';display: block;clear: both;}
+.loginContainer2 .user_info .user_id .message_btn {display: block;box-sizing:border-box;float: left;background-image: url('../images/message_btn.png');background-size: auto 40px;background-repeat: no-repeat;background-position: center;width: 50px;height: 40px;vertical-align: top;}
+.loginContainer2 .user_info .user_id .logout_btn {display: inline-block;box-sizing:border-box;border: 1px solid #ccc;width: 80px;margin-left: 10px;line-height: 38px;text-align: center;font-size: 14px;vertical-align: top;}
+.loginContainer2 .my_cash, .loginContainer2 .my_info{height: 70px;background: #eee;}
+
+.loginContainer2 .my_info_wrap{padding: 20px 0;}
+.loginContainer2 .my_cash {margin-bottom: 10px;}
+.loginContainer2 .my_cash:after, .loginContainer2 .my_info:after {content:'';display: block;clear: both;}
+.loginContainer2 .my_cash_fl{display: flex;flex-direction:column;float: left;margin-bottom: 10px;}
+.loginContainer2 .my_cash p {line-height: 35px;}
+.loginContainer2 .my_cash span{color: red;}
+.loginContainer2 .my_info p{display: inline-block;line-height: 70px;}
+
+.loginContainer2 .my_info_wrap a{display: block;float: right;width: 70px;background: #ffc107;line-height: 70px;text-align: center;}
+.loginContainer2 .my_info_wrap .my_info a {background: #ccc;}
+.loginContainer2 p.secondPw_txt {line-height: 28px;font-size: 8px;letter-spacing: -0.05em;}
+.loginContainer2 p.secondPw_txt a.secondPw_set {text-decoration: underline;color: #000;cursor: pointer;}
+.loginContainer2 p.secondPw_txt:before {content:'';display: inline-block;width: 22px;height: 22px;margin-right: 4px;background-image: url(../images/warning_black.svg);background-size: 22px auto;vertical-align: -5px;}
+
+
+.contentWrap{width: 1280px;height: auto; margin: 0 auto;overflow: hidden;}
+.pagameList-tabmenu{display: flex;align-items: flex-end;font-size: 1.3rem;font-weight: 500;color: #888;height: 40px;padding-left: 24px;margin-bottom: 28px;}
+.pagameList-tabmenu li{width: auto;padding: 0 15px;text-align: center;cursor: pointer;border-right: 1px solid #888;}
+.pagameList-tabmenu li.active{font-weight: 700;color: #1a1a1a;cursor: pointer;}
+.contentWrap .pcgameList{width:100%;display: flex;flex-wrap: wrap;justify-content: space-between;}
+.contentWrap .pcgameList > li{position: relative;width: 414px;height: 353px;margin-bottom: 50px;overflow: hidden;-webkit-transition: .2s;-moz-transition: .2s;transition: .2s;background-image: url(../images/pcgamelist-bg2.png);}
+.contentWrap .pcgameList > li:hover{-webkit-box-shadow:0 0 16px 0 rgb(0 0 0/16%);box-shadow:0 0 16px 0 rgb(0 0 0/16%);}
+.contentWrap .pcgameList > li .overflow-frame{overflow: hidden;}
+.overflow-frame img{height: 263px;overflow: hidden;transition:transform .3s;}
+.overflow-frame img:hover{-webkit-transform: scale(1.2);-moz-transform: scale(1.2);transform: scale(1.2);height: 263px;overflow: hidden;}
+.contentWrap .pcgameList li h4{position: relative;padding: 22px 0 11px 25px;font-size: 20px;font-weight: bold;z-index: 999;}
+.contentWrap .pcgameList li p{font-size: 16px;font-weight: 600;color: #888;padding-left: 25px;}
+
+
+.loginContainer li i{margin-top: -1px;margin-right: 10px;}
+.noticeTitle{border-right: 1px solid #ededed;}
+
+.notice-rolling-container{position: relative;background-color: #fff;border: 1px solid #ededed;padding: 0 0 0 2rem;}
+.notice-rolling-container .notice-title{margin-top: 20px;margin-right: 20px;height: 40px;border-right: 1px solid #ededed;display: flex;justify-content: center;align-items: center;font-size: 18px;font-weight: 500;}
+.notice-rolling-container .notice-title i {margin-top: 3px;}
+.notice-rolling-container .btn{width: 80px;height: 80px;border-left: 1px solid #ededed;margin: 0;outline: 0;background-image: none;text-align: center;float: right;}
+.notice-rolling-container .btn:hover{background: #ccc;}
+.notice-rolling-container .btn i{text-align: center; font-size: 20px;color: #888;}
+.notice-rolling-container .btn i.fa-bars, .notice-rolling-container .btn i.fa-angle-left, .notice-rolling-container .btn i.fa-angle-right{font-size: 30px;line-height: 80px;margin-right: 0;}
+
+
+footer{width: 100%;height: 210px;background: #f3f3f3;min-width: 1280px;font-size: 14px;}
+.footer .FNB-wrapper{border-top: 1px solid #dcdcdc;border-bottom: 1px solid #dcdcdc;}
+.footer .FNB{width: 1280px;height: 62px;margin: 0 auto;display: flex;}
+.footer .FNB > a img{height: 26px;margin-top: 19px;}
+.footer .footer-menu {margin-left: 65px;display: flex;justify-content: center;align-items: center;}
+.footer .footer-menu a{margin-right: 30px;color: #888;}
+.footer .address-wrapper{position: relative;width: 1280px;margin: 0 auto;}
+.footer address{padding: 24px 0 0 185px;color: #888;}
+.footer address p, .footer address p span{font-weight: 400;font-size: 12px;font-style: normal;line-height: 23px;}
+/* go top */
+.footer .go-top{width: 40px;height: 40px;display: flex;justify-content: center;align-items: center;border: 1px solid #dfdfdf;background-color: #f7f7f7;}
+.footer .go-top.go-top-fixed{position: fixed;right: 20px;bottom: 20px;}
+
+/* The Modal (background) */
+.modalWrap{width: 1280px;margin: 0 auto;}
+#myModal {z-index: 999;}
+.modal {
+    display: none; /* Hidden by default */
+    position: absolute; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    /*background-color: rgb(0,0,0);  Fallback color */
+    /*background-color: rgba(0,0,0,0.4);  Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    display: flex;justify-content:space-around;
+    position: absolute;
+    left: 50%;
+    background-color: #fefefe;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 600px;
+    height: 322px;
+    margin-top: -40px;
+    margin-left: -350px;
+  }
+  .modalTilte{font-size: 24px;margin: 30px auto;text-align: center;}
+  .modalSub1 ul {display: flex;flex-wrap:wrap;justify-content:space-between;width: 380px;}
+  .modalSub1 ul li {margin-bottom: 12px;}
+  .modalSub1 li a {display: block;width: 180px;background-color: #402613;line-height: 50px;font-weight: 400;color: #fff;text-align: center;font-size: 18px;}
+  .modalSub1 li a:hover {background-color: #ffc600;color: #000;font-weight: 700;}
+  .modalSub2 ul li {margin-bottom: 12px;}
+  .modalSub2 ul li a {font-size: 18px;}
+  .modalSub2 ul li a:hover {text-decoration: underline;}
+  .modalSub2 img {margin-right: 10px;}
+  
+
+  /* The Close Button */
+  .close {position: absolute;top: 20px;right: 20px;width: 28px;height: 28px;background-image: url(../images/modal_close_btn.svg);color: #aaaaaa;font-size: 28px;font-weight: bold;}
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
+  .boxList{background: #24202090;position: absolute;top: 0;left: 0;width: 100%;height: 100%;text-align: center; z-index: 9;color: #fff;}
+  .contentWrap .pcgameList li > .boxList > h4{font-size: 3rem; padding: 6rem 0 1rem 0;font-weight: 500;}
+  .contentWrap .pcgameList li > .boxList > p{font-size: 2.3rem;color: #fff;padding: 0;font-weight: 100;}
+
+  
+  
+  .game_mobile_slide{margin-top: 0px;}
+  .game_mobile_slide .head{display: flex;align-items: center;margin-bottom: 28px;}
+  .game_mobile_slide .mobilegamelist{display: flex;flex-wrap: wrap;justify-content: space-between}
+  .game_mobile_slide .mobilegamelist li{position: relative;width: 305px;height: 150px;margin-bottom: 50px;background-color: #fff;border: 1px solid #ededed;list-style: none;}
+  .game_mobile_slide .mobilegamelist li>a{overflow: hidden;display: flex;width: 100%;}
+  .game_mobile_slide .mobilegamelist li img.mobile-icon{flex: 0 0 auto;padding: 20px 16px 18px 20px;}
+  .game_mobile_slide .mobilegamelist li div.game-des{padding-top: 24px;font-size: 18px;font-weight: 500;}
+  .game_mobile_slide .mobilegamelist li div.game-des p{font-size: 16px;font-weight: 400;color: #888;padding: 12px 0 27px;}
+  .game_mobile_slide .mobilegamelist li.holder{background: transparent;}

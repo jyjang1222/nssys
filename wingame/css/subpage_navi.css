@@ -1,0 +1,18 @@
+.subpage_navi {position: relative;height: 50px;background: #402613;}
+.subpage_navi #gnb {display: flex;align-items:center;width: 1280px;margin: 0 auto;}
+.subpage_navi #gnb > a {display: block;width: 200px;padding-top: 2px;font-size: 26px;font-weight: 600;text-align: center;color: #ffc600;}
+
+.subpage_navi .gnb_subMenu>li:first-child .depth2 {transform: translateX(-40px);}
+
+.subpage_navi .gnb_subMenu>li {float: left;width: 180px;text-align: center;}
+.subpage_navi .gnb_subMenu>li>a {display: block;font-size: 16px;line-height: 50px;color: #FFF;}
+.subpage_navi .gnb_subMenu>li>a:hover {color: #ffc600;}
+
+.subpage_navi .subpage_bg {display: none;position: absolute;top: 50px;left: 0;right: 0;height: 240px;background: #FFF;box-shadow:0 10px 10px rgba(0,0,0,0.05);z-index: 2;}
+.subpage_navi.myInfo .subpage_bg {height: 320px;}
+.subpage_navi .depth2 {display: none;position: absolute;top: 50px;width: 200px;padding: 20px 0 20px 50px;text-align: left;z-index: 3;}
+.subpage_navi .depth2 li a {display: block;width: 200px;line-height: 40px;font-size: 15px;}
+.gnb_subMenu .depth2 a:hover {text-decoration: underline;} 
+
+.subpage_navi:hover .subpage_bg {display: block;}
+.subpage_navi:hover .depth2 {display: block;}

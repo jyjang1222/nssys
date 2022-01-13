@@ -1,0 +1,31 @@
+body {overflow: hidden;}
+#main {width: 800px;/*border: 1px solid #ccc;*/}
+.container {width: 700px;margin: 0 auto;}
+.hide {display: none;}
+h1, p, strong, i {text-align: center;font-style: normal;}
+strong {font-size: 28px;font-weight: 600;}
+p.pop_tit {margin-bottom: 40px;}
+p {margin-bottom: 10px;letter-spacing: -0.1em;}
+p:nth-of-type(2) {margin-bottom: 30px;color: #5555ff;}
+.sub_tit {margin-bottom: 30px;}
+
+form {margin-bottom: 80px;}
+.pw_wrap {padding: 40px 0;}
+.pw_wrap input {padding-left: 20px;line-height: 46px;font-weight: 600;font-size: 18px;}
+.input_area {display: flex;margin-bottom: 10px;}
+.input_area button {width: 100px;height: 48px;background-color: #888;font-size: 18px;color: #FFF;}
+div[class$="_area"] {height: 46px;border: 1px solid #BBB;}
+.phone_area {display: flex;flex-grow:1;}
+.phone_area input[type=phone] {flex-grow:1;font-size: 16px;}
+.input_area i {display: inline-block;line-height: 46px;}
+.input_area input {font-size: 16px;flex-grow:1;}
+.input_area label {display: inline-block;;padding-left: 20px;font-weight: 600;font-size: 18px;line-height: 46px;}
+.error_msg {margin-left: 14px;line-height: 28px;font-size: 15px;font-weight: 600;color: #ff522a;}
+.error_msg:before {content:'';display: inline-block;width: 20px;height: 20px;margin-right: 4px;background-image: url(../images/warning_red.svg);background-size: contain;vertical-align: -5px;}
+
+
+
+.btns {display: flex;justify-content:center;}
+.btns button, .btns a {display: inline-block;width: 240px;line-height: 60px;font-size: 20px;font-weight: 600;}
+.btns button {margin-right: 15px;background: #FFBA00;}
+.btns a {background: #ddd;text-align: center;}

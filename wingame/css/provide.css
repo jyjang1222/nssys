@@ -1,0 +1,41 @@
+.txt_red {color: #ff522a;}
+table {width: 100%;border-collapse: collapse;}
+
+/* provide */
+.check_all {padding: 14px 0;border-top: 1px solid #ededed;border-bottom: 1px solid #ededed;}
+.join input {width: 24px;height: 24px;margin-right: 4px;background-image: url(../images/checkbox_off.svg);}
+.join label {line-height: 24px;}
+.join .input_area {padding: 14px 0 20px;}
+.join .input_area .check_box:first-child {margin-bottom: 6px;}
+.join .agree_btn {display: block;line-height: 60px;margin-bottom: 30px;background-color: #ffc600;text-align: center;font-size: 18px;}
+.join input[checked="checked"] {background-image: url(../images/checkbox_on.svg);}
+
+.policy strong {display: inline-block;margin-bottom: 4px;font-weight: 400;vertical-align: baseline;}
+.policy_wrap .policy_inner {padding-top: 30px;}
+.policy_wrap .policy_inner:first-child {border-top: 1px solid #ededed;}
+.policy {overflow: auto;box-sizing:border-box;height: 140px;padding: 16px;border: 1px solid #ddd;}
+.policy li, .policy p {margin-bottom: 4px;font-weight: 400;font-size: 15px;line-height: 20px;}
+.policy_inner h2 {margin-left: 10px;margin-bottom: 10px;font-size: 18px;}
+.policy_wrap .policy_inner:nth-child(2) .policy {margin-bottom: 10px;}
+.policy_wrap .policy_inner:nth-child(2) .policy:last-child {margin-bottom: 0;}
+
+.policy ol {counter-reset: my_counter 0;}
+.policy ol>li:before {counter-increment: my_counter 1;}
+.policy .policy_depth1>li:before {content:'제' counter(my_counter) '조';}
+.policy .policy_depth2>li:before {content:counter(my_counter) '. ';}
+.policy .policy_depth3>li:before {content:counter(my_counter) ') ';}
+
+.policy_depth1>li {margin-top: 10px;}
+.policy_depth1>li:first-child {margin-top: 0;}
+.policy_depth2, .policy_depth3 {margin-left: 14px;}
+
+.policy ul {margin-left: 14px;}
+
+/* id_list */
+.id_list {padding-top: 40px;}
+.id_list p {line-height: 24px;text-align: center;font-size: 18px;color: #888;}
+.id_list table {margin: 40px 0 70px;}
+.id_list th {padding: 20px 0;border-top: 2px solid #000;border-bottom: 1px solid #000;}
+.id_list td {padding: 10px 0;text-align: center;border-bottom: 1px solid #dfdfdf;font-size: 15px;font-weight: 400;}
+.id_list td a {display: inline-block;background-color: #5f6066;width: 100px;line-height: 40px;text-align: center;font-size: 18px;color: #FFF;}
+.id_list>a {display: block;background-color: #ffc600;line-height: 60px;text-align: center;font-size: 18px;}

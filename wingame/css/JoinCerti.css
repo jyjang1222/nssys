@@ -1,0 +1,12 @@
+body {overflow: hidden;}
+.join {margin: 0;border: none;}
+.certi {display: flex;align-items: center;margin-bottom: 30px;padding: 24px;border: 1px solid #dfdfdf;cursor: pointer;}
+.certi.on {border: 1px solid #ffc600;}
+.phone_certi img {width: 80px;margin: 0 20px;}
+.phone_certi strong {line-height: 36px;font-size: 18px;}
+.phone_certi p {line-height: 24px;color: #888;}
+.phone_certi .txt {margin-right: 90px;}
+.phone_certi .txt a {color: #000;text-decoration: underline;}
+.certi .check_box input {width: 36px;height: 36px;background-image: url(../images/checkbox_off.svg);background-repeat: no-repeat;}
+.certi.on .check_box input {background-image: url(../images/checkbox_on.svg);}
+.certi_btn {display: block;background-color: #ffc600;line-height: 60px;text-align: center;font-size: 18px;}

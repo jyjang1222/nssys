@@ -13,12 +13,14 @@ textarea {width: 100%;height: 220px;resize: none;}
 .table_head {margin-bottom: 30px;}
 .table_head th, .table_head td {border-top: 2px solid #000;border-bottom: 1px solid #000;}
 .table_head th {padding: 20px 0;}
+.table_head td {white-space: nowrap;}
 
 .table_body .txt_area {height: 220px;}
 .table_body button {display: inline-block;width: 22px;height: 22px;background-image: url(../images/download_btn.svg);background-repeat: no-repeat;background-size: contain;vertical-align: -2px;}
 .table_body li {line-height: 34px;}
 .table_body tr:first-child th, .table_body tr:first-child td {border-top: 2px solid #000;}
 .table_body tr:last-child th, .table_body tr:last-child td {border-bottom: 1px solid #000;}
+.table_body input {width: 100%;}
 
 .table_foot {margin-bottom: 30px;}
 .table_foot figcaption {margin: 20px 0 10px;font-size: 20px;}

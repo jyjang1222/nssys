@@ -18,9 +18,9 @@
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
   <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
   <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script>
-  <script>
+  <!-- <script>
     AOS.init();
-  </script>
+  </script> -->
   <script type="text/javascript" src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="https://kit.fontawesome.com/caa8964094.js" crossorigin="anonymous"></script>
 </head>
@@ -41,13 +41,13 @@
           <a href="/#about" class="w3-bar-item w3-button">서비스특징</a>
           <a href="/#use" class="w3-bar-item w3-button">이용방법</a>
           <a href="/#download" class="w3-bar-item w3-button">다운로드</a>
-          <button href="#language" class="w3-bar-item w3-button dropbtn">한국어 <i class="fa fa-angle-down"></i>
+          <div class="dropdown_wrap">
+            <button class="w3-bar-item w3-button dropbtn">한국어 <i class="fa fa-angle-down"></i></button>
             <div class="dropdown-content">
-              <a href="/#">영어</a>
-              <a href="/#">중국어</a>
+              <a href="#">영어</a>
+              <a href="#">중국어</a>
             </div>
-          </button>
-
+          </div>
         </div>
         <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
@@ -70,13 +70,14 @@
     <a href="/#about" onclick="w3_close()" class="w3-bar-item w3-button w3-xlarge">서비스특징</a>
     <a href="/#use" onclick="w3_close()" class="w3-bar-item w3-button w3-xlarge">이용방법</a>
     <a href="/#download" onclick="w3_close()" class="w3-bar-item w3-button w3-xlarge">다운로드</a>
-    <a href="https://wingsoft.co.kr/" onclick="w3_close()" class="w3-bar-item w3-button w3-xlarge">회사소개</a>
-    <button href="#" class="w3-bar-item w3-button w3-black w3-xlarge dropbtn" id="language">한국어
+    <!-- <a href="https://wingsoft.co.kr/" onclick="w3_close()" class="w3-bar-item w3-button w3-xlarge">회사소개</a> -->
+    <div class="dropdown_wrap">
+      <button class="w3-bar-item w3-button w3-black w3-xlarge dropbtn" id="language">한국어</button>
       <div class="dropdown-content">
-        <a href="/#" onclick="w3_close()">영어</a>
-        <a href="/#" onclick="w3_close()">중국어</a>
+        <a href="#" onclick="w3_close()">영어</a>
+        <a href="#" onclick="w3_close()">중국어</a>
       </div>
-    </button>
+    </div>
   </nav>
 
   <!-- Header with full-height image -->
@@ -98,7 +99,7 @@
               class="btnstlye01 w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Mobile</a>
           </p> -->
           <p><a href="https://pay-da.co.kr/download/payda_setup.msi"
-              class="btnstlye01 bgColor03 w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">기업용 Windows</a>
+              class="btnstlye01 bgColor03 subpage w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">기업용 Windows</a>
           </p>
         </div>
       </div>
@@ -333,6 +334,14 @@
     function terms() {
       window.open("terms.html", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=0,left=0,width=800,height=600");
     }
+    
+    $(function() {
+      $('.dropdown_wrap').hover(function() {
+        $(this).find('.dropdown-content').show();
+      }, function() {
+        $(this).find('.dropdown-content').hide();
+      });
+    }); //언어선택버튼
   </script>
 
 

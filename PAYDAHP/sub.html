@@ -32,20 +32,19 @@
   <div class="w3-top" id="myNavbar" style="z-index: 99;">
     <div class="w3-bar w3-black-a w3-card">
       <div class="main_nav">
-        <a href="#home" class="w3-bar-item w3-button w3-wide"><img id="MainLogo"
+        <a href="/" class="w3-bar-item w3-button w3-wide"><img id="MainLogo"
            src="images/payda-h.png" alt="logo-2" height="30" /></a>
         <!-- Right-sided navbar links -->
         <div class="w3-right w3-hide-small dropdown">
           <a href="#home" class="w3-bar-item w3-button"><img class="logoTop" src="images/payda-h.png"
               alt="payda" height="25" /></a>
-          <a href="#about" class="w3-bar-item w3-button">서비스특징</a>
-          <a href="#use" class="w3-bar-item w3-button">이용방법</a>
-          <a href="#download" class="w3-bar-item w3-button">다운로드</a>
-          <a href="https://wingsoft.co.kr/" class="w3-bar-item w3-button">회사소개</a>
+          <a href="/#about" class="w3-bar-item w3-button">서비스특징</a>
+          <a href="/#use" class="w3-bar-item w3-button">이용방법</a>
+          <a href="/#download" class="w3-bar-item w3-button">다운로드</a>
           <button href="#language" class="w3-bar-item w3-button dropbtn">한국어 <i class="fa fa-angle-down"></i>
             <div class="dropdown-content">
-              <a href="#">영어</a>
-              <a href="#">중국어</a>
+              <a href="/#">영어</a>
+              <a href="/#">중국어</a>
             </div>
           </button>
 
@@ -66,16 +65,16 @@
     style="display:none;z-index: 100;" id="mySidebar">
     <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-xlarge w3-padding-16"><span
         class="material-icons closeM">close</span></a>
-    <a href="#home" onclick="w3_close()" class="w3-bar-item w3-button w3-xlarge"><img class="SidebarlogoTop" src="images/payda-h.png"
+    <a href="/#home" onclick="w3_close()" class="w3-bar-item w3-button w3-xlarge"><img class="SidebarlogoTop" src="images/payda-h.png"
         alt="payda" height="30" /></a>
-    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-xlarge">서비스특징</a>
-    <a href="#use" onclick="w3_close()" class="w3-bar-item w3-button w3-xlarge">이용방법</a>
-    <a href="#download" onclick="w3_close()" class="w3-bar-item w3-button w3-xlarge">다운로드</a>
+    <a href="/#about" onclick="w3_close()" class="w3-bar-item w3-button w3-xlarge">서비스특징</a>
+    <a href="/#use" onclick="w3_close()" class="w3-bar-item w3-button w3-xlarge">이용방법</a>
+    <a href="/#download" onclick="w3_close()" class="w3-bar-item w3-button w3-xlarge">다운로드</a>
     <a href="https://wingsoft.co.kr/" onclick="w3_close()" class="w3-bar-item w3-button w3-xlarge">회사소개</a>
     <button href="#" class="w3-bar-item w3-button w3-black w3-xlarge dropbtn" id="language">한국어
       <div class="dropdown-content">
-        <a href="#" onclick="w3_close()">영어</a>
-        <a href="#" onclick="w3_close()">중국어</a>
+        <a href="/#" onclick="w3_close()">영어</a>
+        <a href="/#" onclick="w3_close()">중국어</a>
       </div>
     </button>
   </nav>
@@ -98,8 +97,8 @@
           <!-- <p><a href="#"
               class="btnstlye01 w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Mobile</a>
           </p> -->
-          <p><a href="#"
-              class="btnstlye01 bgColor03 w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Windows</a>
+          <p><a href="https://pay-da.co.kr/download/payda_setup.msi"
+              class="btnstlye01 bgColor03 w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">기업용 Windows</a>
           </p>
         </div>
       </div>
@@ -149,7 +148,7 @@
           $(".w3-black-a").css("background", "rgba(0,0,0,0.3)");
           $(".w3-black-a").css("color", "#fff");
           $(".dropdown").css("color", "#fff");
-          $(".dropdown img").attr('src', 'images/payda-h.png');          
+          $(".dropdown img").attr('src', 'images/payda-h.png');
           $('#MainLogo').attr('src', 'images/payda-h.png');
           $('#MainLogo').hover(function () {
             $(this).attr('src', 'images/payda-h.png');
@@ -168,7 +167,7 @@
     });
 
 
-    
+
     /*     var sourceSwap = function () {
             var $this = $(this);
             var newSource = $this.data('alt-src');

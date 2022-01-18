@@ -1,13 +1,10 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html>
 
 <head>
   <title>PAYDA</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="간편결제의 기준이 되는 페이다 홈페이지">
-  <meta name="keywords" content="PAYDA, 페이다, 탈 중앙 형 시스템, 자산관리, 간편결제, 독립적 플랫폼">
-  <meta name="robots" content="index, follow">
   <link rel="stylesheet" href="css/master.css">
   <link rel="stylesheet" href="dist/css/swiper.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -17,14 +14,14 @@
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap">
   <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
-  <script src="dist/js/swiper.min.js"></script>
-  <script src="js/jquery-3.4.1.min.js"></script>
-  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script>
-  <!-- <script>
+  <script type="text/javascript" src="dist/js/swiper.min.js"></script>
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script>
+  <script>
     AOS.init();
-  </script> -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </script>
+  <script type="text/javascript" src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="https://kit.fontawesome.com/caa8964094.js" crossorigin="anonymous"></script>
 </head>
 
@@ -44,13 +41,13 @@
           <a href="#about" class="w3-bar-item w3-button">서비스특징</a>
           <a href="#use" class="w3-bar-item w3-button">이용방법</a>
           <a href="#download" class="w3-bar-item w3-button">다운로드</a>
-          <div class="dropdown_wrap">
-            <button class="w3-bar-item w3-button dropbtn">한국어 <i class="fa fa-angle-down"></i></button>
+          <button href="#language" class="w3-bar-item w3-button dropbtn">한국어 <i class="fa fa-angle-down"></i>
             <div class="dropdown-content">
               <a href="#">영어</a>
               <a href="#">중국어</a>
             </div>
-          </div>
+          </button>
+
         </div>
         <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
@@ -73,20 +70,19 @@
     <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-xlarge">서비스특징</a>
     <a href="#use" onclick="w3_close()" class="w3-bar-item w3-button w3-xlarge">이용방법</a>
     <a href="#download" onclick="w3_close()" class="w3-bar-item w3-button w3-xlarge">다운로드</a>
-    <div class="dropdown_wrap">
-      <button class="w3-bar-item w3-button w3-black w3-xlarge dropbtn" id="language">한국어</button>
+    <button href="#" class="w3-bar-item w3-button w3-black w3-xlarge dropbtn" id="language">한국어
       <div class="dropdown-content">
         <a href="#" onclick="w3_close()">영어</a>
         <a href="#" onclick="w3_close()">중국어</a>
       </div>
-    </div>
+    </button>
   </nav>
 
   <!-- Header with full-height image -->
   <header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
     <div class="wrap positionR">
       <div class="w3-display-left w3-text-white mainTextPadd">
-        <span class="w3-jumbo w3-hide-small anima abc" data-aos="fade-right" data-aos-offset="300"
+        <span class="w3-jumbo w3-hide-small anima" data-aos="fade-right" data-aos-offset="300"
           data-aos-easing="ease-in-sine">간편결제의 기준이 되는</span>
         <p class="anima" data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500"
           data-aos-duration="500"><img src="images/payda-h.png" alt="logo" class="logoType w3-hide-small"></p>
@@ -143,7 +139,7 @@
     <div class="wrap w3-text-white">
       <h1 class="w3-center anima aos-init aos-animate" data-aos="fade-up" data-aos-duration="1500">탈 중앙 시스템
         자산관리</h1>
-      <h3 class="w3-center anima aos-init aos-animate" data-aos="fade-up" data-aos-duration="1500"><img
+      <h3 class="w3-center anima aos-init aos-animate" data-aos="fade-up" data-aos-duration="1500" id="about"><img
           src="images/payda-h.png" alt="NS.pay" height="40" />
       </h3>
       <div class="w3-row-padding w3-center" style="margin-top:64px">
@@ -443,26 +439,26 @@
           <p class="w3-xlarge">payda는 탈 중앙화 시스템으로 개인의 자산을 개인이 보관하는 장점이 있는 만큼 주의 해야 할 사항이 있습니다 주의 사항을 모두 숙지 후 서비스를 이용
             해주시기 바랍니다</p>
           <ul class="width80">
-            
-            <li class="w3-large"><span class="icon01 material-icons">warning</span>payda 서비스를 제공하는 중앙(회사) 서버에는 사용자의 아이디 비번이 저장되지 않습니다. 따라서 <mark>사용자가 비번을 잊어버린 경우 비밀번호정보
+            <span class="icon01 material-icons">warning</span>
+            <li class="w3-large">payda 서비스를 제공하는 중앙(회사) 서버에는 사용자의 아이디 비번이 저장되지 않습니다. 따라서 <mark>사용자가 비번을 잊어버린 경우 비밀번호정보
                 복구(찾기)가 절대 불가능</mark> 합니다.</li>
-            
-            <li class="w3-large"><span class="icon01 material-icons">warning</span>payda <mark>디바이스(기기)이동, 복사, 보관은 백업을 통해서만 가능</mark>하며 비밀번호만 있다고 해서 다른 디바이스(기기)로 이동, 복사,
+            <span class="icon01 material-icons">warning</span>
+            <li class="w3-large">payda <mark>디바이스(기기)이동, 복사, 보관은 백업을 통해서만 가능</mark>하며 비밀번호만 있다고 해서 다른 디바이스(기기)로 이동, 복사,
               보관이 되지 않습니다.</li>
-            
-            <li class="w3-large"><span class="icon01 material-icons">warning</span>payda 간편 계좌 정보 (비번, 백업)의 분실, 삭제 및 유출 등 <mark>사용자의 부주의로</mark> 인하여 간편 계좌 지갑에 접근이 불가능한
+            <span class="icon01 material-icons">warning</span>
+            <li class="w3-large"> payda 간편 계좌 정보 (비번, 백업)의 분실, 삭제 및 유출 등 <mark>사용자의 부주의로</mark> 인하여 간편 계좌 지갑에 접근이 불가능한
               경우 및 사용자 <mark>개인 자산의 피해는 완전히 사용자의 책임입니다.</mark></li>
-            
-            <li class="w3-large"><span class="icon01 material-icons">warning</span>payda 즐겨 찾기 목록 또한 중앙(회사) 에 별도로 저장하지 않으며 프로그램을 삭제하거나 새로 설치 시 다시 등록해야 합니다. <mark>백업은 수시로
+            <span class="icon01 material-icons">warning</span>
+            <li class="w3-large">payda 즐겨 찾기 목록 또한 중앙(회사) 에 별도로 저장하지 않으며 프로그램을 삭제하거나 새로 설치 시 다시 등록해야 합니다. <mark>백업은 수시로
                 받아야 하며 백업 파일 비밀번호를 잊어버린 경우 지갑 복원이 불가능합니다.</mark></li>
-            
-            <li class="w3-large"><span class="icon01 material-icons">warning</span>백업 파일은 <mark>최신 파일</mark>만 가지고 있어야 합니다.</li>
-            
-            <li class="w3-large"><span class="icon01 material-icons">warning</span>백업파일이 여러 개일 경우 <mark>최신 파일이 아닌 다른 백업파일로 복구가 한 경우 최신파일로 다시 복구가 불가능</mark> 하여 최신 파일에 대한
+            <span class="icon01 material-icons">warning</span>
+            <li class="w3-large"> 백업 파일은 <mark>최신 파일</mark>만 가지고 있어야 합니다.</li>
+            <span class="icon01 material-icons">warning</span>
+            <li class="w3-large"> 백업파일이 여러 개일 경우 <mark>최신 파일이 아닌 다른 백업파일로 복구가 한 경우 최신파일로 다시 복구가 불가능</mark> 하여 최신 파일에 대한
               자산의 피해가 발생 될 수 있으며 또한 다른 디바이스(기기)에서 복구한 뒤 로그인 을 하여 사용자 자산에 여러 문제가 발생할 수 있으니 <mark>최신 파일 1개만 가지고 있어야
                 합니다.</mark></li>
-            
-            <li class="w3-large"><span class="icon01 material-icons">warning</span>백업한 파일로 한번 복원한 경우 같은 파일로는 복원이 되지 않습니다. <mark>복원 후 새로 백업을 진행해야 이후 다시 복원이 가능합니다.</mark>
+            <span class="icon01 material-icons">warning</span>
+            <li class="w3-large"> 백업한 파일로 한번 복원한 경우 같은 파일로는 복원이 되지 않습니다. <mark>복원 후 새로 백업을 진행해야 이후 다시 복원이 가능합니다.</mark>
             </li>
           </ul>
         </div>
@@ -473,7 +469,7 @@
 
   <!-- download Section -->
   <div class="w3-container w3-center padd128-16" id="download">
-    <div class="wrap">
+    <div class="wrap" id="about">
       <h1 class="anima aos-init aos-animate" data-aos="fade-up" data-aos-duration="1500">다운로드</h1>
       <h3 class="anima aos-init aos-animate" data-aos="fade-up" data-aos-duration="1500">간편결제의 기준 <img
           src="images/payda-h-b.png" alt="logo" height="34" /></h3>
@@ -493,7 +489,7 @@
             <b>*</b> 모든 지갑을 사용하시려면 구글(goole OPT)가 필요 합니다.<br>
             <b>*</b> 데이터 복구는 반드시 백업파일(비번) 과 아이디 비번이 있어야 가능합니다.</li>
           <li class="w3-padding-16">
-            <button onclick="openMobile()" class="w3-button w3-black btnstlye02" type="button" ><i class="fas fa-mobile-alt"></i>Mobile</button>
+            <a href="javascript:openMobile()" class="w3-button w3-black btnstlye02" type="button" ><i class="fas fa-mobile-alt"></i>Mobile</a>
             <!-- <button class="w3-button w3-black btnstlye02" type="button" onclick="location.href='https://pay-da.co.kr/download/payda_setup.msi';"><i class="fab fa-windows"></i>Windows</button> -->
             <button class="w3-button w3-black btnstlye02" type="button" onclick="openWindow()"><i class="fab fa-windows"></i>Windows</button>
           </li>
@@ -600,6 +596,7 @@
         };
       });
     });
+
 
 
     /*     var sourceSwap = function () {
@@ -775,15 +772,9 @@
       window.open("https://m.pay-da.co.kr", "_blank");
     }
 
-    
-    $(function() {
-      $('.dropdown_wrap').hover(function() {
-        $(this).find('.dropdown-content').show();
-      }, function() {
-        $(this).find('.dropdown-content').hide();
-      });
-    }); //언어선택버튼
   </script>
+
+
 </body>
 
 </html>

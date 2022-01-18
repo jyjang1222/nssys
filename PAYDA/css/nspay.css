@@ -1,0 +1,452 @@
+/* nspay.css */
+
+/**** 메인 *****/
+.display-none {display: none;}
+body{width: 720px;height: 1250px;margin: 0 auto; padding:0; font-size: 2rem;}
+.logoimg{width: 200px;}
+ul,li,p,h2,span{margin: 0; padding:0;color: aliceblue;}
+.w3-card{box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
+.container{display: block;margin: 0; padding:0;position: fixed;width: 720px;background: #272727;z-index: 50;}
+.top{padding:10px;overflow: hidden;}
+.top > li:first-child{font-size: 2.2rem;}
+.icon i{font-size: 1.6em;}
+.myview{display: block;padding: 2rem;margin-top: 200px;overflow: hidden;border-radius:20px;}
+.box-gradient{background: black; background-color: #444;background-image: linear-gradient(140deg, #444, #252525);}
+.fon_col01{color: #E7B978;}
+.ita {/* font-style: italic */ text-align: center;}
+.logot img{ height: 40px;}
+.myview > p{font-size: 2rem;}
+.myview > h2{font-size: 5.5rem;font-weight: 400; text-align: center; width: 100%;}
+.myview h2 span{font-size: 2.2rem;/* margin-top: 60px */}
+.btn-set{float: left;width: 100%;margin-top: 60px;}
+.btn-set > button{width: 22%;font-size: 1.6rem;padding: 0.5em; border-radius: 50px;margin-right: 2.5%;font-weight: bold;}
+.btn-set > button:last-child{margin-right: 0;}
+.title-font{font-size: 3.2rem;margin-bottom: 10px;}
+.coin-wrap{background: #383838;padding:1.2rem 2rem;border-radius: 20px; margin-bottom: 20px}
+.coin-wrap > button > ul{height: 90px;}
+.coin-wrap > button > ul > li{float: left;text-align: left;}
+.coin-wrap > button > ul > li:first-child{margin-top:10px;margin-right: 20px;}
+.coin-wrap > button > ul > li:last-child{font-size: 2rem;margin-top:30px;}
+.coin-wrap > button > ul > li > p{font-size: 2rem;}
+.accordion {width: 100%;background: #383838;border: none;}
+/* .rote:active, .rote::after{transform: rotate(180deg);} */
+.active{border: none;}
+.panel {padding:  0px 18px;max-height: 0;overflow: hidden;transition: max-height 0.2s ease-out;margin-top: 10px;border: 1px solid #383838;}
+.panel > button{width: 30.2%;font-size: 1.6rem;padding: 0.5em; border-radius: 50px;margin-right: 3%;font-weight: bold;margin-top: 10px;margin-bottom: 10px;}
+.panel > button:last-child{margin-right: 0;}
+/* index-거래내역 리스트 추가 */
+.mt-set { margin-top: 420px;}
+
+/* 코인추가버튼 */
+.iconimg{width: 70px;}
+.icon-coinAdd-wrap{width: 720px;margin: 0 auto;position: fixed;bottom:30px;text-align: right;}
+.icon-coinAdd{width: 100px;height: 100px;border-radius: 50%;border:none;background: #E7B978;margin-right: 20px;}
+
+.icon-coinAdd > p{text-align: center;line-height: 104px;color: #000;font-size: 3rem;transform: rotate(225deg);}
+
+.padd-v{padding: 1.2rem 0.7rem;}
+.padd-h{padding: 0 2rem;}
+.marg-top{margin-top: 1rem;}
+
+/**** 코인추가 *****/
+.ma-topsub{padding: 1em;padding-top: 120px;}
+.ma-top{padding: 1em;padding-top: 150px;}
+
+.top-wrap {
+    font-size: 2rem;
+    padding-top: 10px;
+    height: 100px;
+    line-height: 100px;
+  }
+  .back {
+    position: absolute;
+    font-size: 2.5rem;
+    top: 45px;
+    left: 30px;
+  }
+  .toptt {
+    font-size: 2.8rem;
+    text-align: center;
+  }
+.coinAddwrap{background: #383838;padding:2rem;border-radius: 20px; margin-bottom: 20px;width: 48%;}
+.coinAddList{width: 100%;background: #383838;border: none;}
+.coinAddList > ul > li > img,.coinAddList > ul > li > p{display: inline-block;font-size: 1.6rem;}
+.coinAddList > ul > li{padding: 5px 0;}
+.coinAddList > ul > li > button{width: 22%;font-size: 1.6rem;padding: 0.5em; border-radius: 50px;margin-right: 3%;font-weight: bold;}
+
+/* 팝업 */
+.light-grey{color: #000!important;background-color: #f1f1f1!important;padding: 10px;}
+
+/* The Modal (background) */
+.modal {display: none;position: fixed;z-index: 1;padding-top: 200px;left: 0;top: 0;width: 100%;height: 100%;overflow: auto;background-color: rgba(0, 0, 0, 0.5);}
+
+/* Modal Content */
+.modal-content {position: relative;background-color: #fefefe;margin: auto;padding: 0;border: 1px solid #888;max-width: 500px;box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+-webkit-animation-name: animatetop;-webkit-animation-duration: 0.4s;animation-name: animatetop;animation-duration: 0.4s        }
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}        
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+/* Progress Bar */
+.w3-round-xlarge{border-radius: 2rem;height: 2rem;}
+
+/* The Close Button */
+.p_close {color: #777;float: right;font-size: 3rem;font-weight: bold;}        
+.p_close:hover, .p_close:focus {color: #000;text-decoration: none;cursor: pointer;}        
+.modal-header {padding: 2px 16px;background-color: #fff;color: black;height: 3rem;font-size: 2rem;}        
+.modal-body {padding:2rem;}        
+.modal-body p{color: #000;text-align: center;padding: 1rem;}
+.modal-footer {padding: 1rem 1.5rem;background-color: #ddd;color: black;}
+
+/**** 코인 보내기 *****/
+.fixed-con{position: fixed;width: 720px;}
+table.tableWrap{width: 100%;color: aliceblue;font-size: 2rem;border: none;margin-bottom: 10px;}
+
+table.tableWrap th{width: 23%;text-align: left;font-weight: 100;}
+table.tableWrap td.none{width:2%;}
+table.tableWrap td{width: 75%;text-align: right;}
+table.tableWrap td:nth-of-type(3){font-weight: lighter;}
+table.tableWrap td.fon_col02{font-size: 1.6rem;border-top: 1px solid #BDB1A1;text-align: left;}
+.fon_col02{color: #BDB1A1;}
+select.selstyle{background: none;border: none;color: #fff;font-weight: lighter;}
+select.selstyle > option{color: #000;}
+table.tableWrap input[type=text],table.tableWrap input[type=number]{background: none;border: none;color: #BDB1A1;width: 100%;font-size: 1.6rem;}
+table.tableWrap input::placeholder{color: #BDB1A1;opacity: 1;}
+td.fon_col02 > button{width: 100%;margin-top: 10px;padding: 12px 0;}
+.ma-top02{overflow: hidden;width: 720px;padding: 0 2rem;}
+.coin-wrap-black{background: rgb(0,0,0,0.4);padding: 1.2rem 2rem;border-radius: 20px;margin-bottom: 20px;}
+.coin-wrap-black > p{color: #debb84;font-size: 1.35rem;font-weight: 200;text-align: left;}
+.tab{margin-bottom: 10px;}
+.tab > button.tablinks{background: none;border: none;font-size: 2rem;color: #aaa;}
+.tab > button.active{color: aliceblue; border-bottom:2px solid aliceblue;}
+.coin-wrap-white{background: #ffffff1e;padding: 1.2rem 2rem;border-radius: 20px;margin-bottom: 20px;height: 450px;overflow: hidden;}
+.coinListwrap{background:none;border-radius: 20px; margin-bottom: 20px;overflow: scroll;height: 350px;}
+.coinListwrap > button{width: 100%;background: none;border: none;border-bottom: 1px solid #BDB1A1;padding: 15px 0;}
+.coinListwrap > button > ul{height: 90px;}
+.coinListwrap > button > ul > li{float: left;text-align: left;}
+.coinListwrap > button > ul > li:first-child{margin-top: 10px;padding-right: 20px;}
+.coinListwrap > button > ul > li:first-child > p{font-size: 1.15rem;}
+.coinListwrap > button > ul > li:last-child{margin-top: 21px;font-size: 1.8rem;}
+.coinListwrap > button > ul > li > p{font-size: 1.7rem;}
+.bottom-btn{padding: 2rem;width: 720px;top:1050px;}
+.bottom-btn > button{font-size: 2rem;width: 100%;padding: 1.2rem 0;border-radius: 10px;}
+#addList > button > ul > li:first-child{margin-top: 0;padding-right: 0;}
+#addList > button > ul > li:first-child > p.coinAddress{font-size: 1.7rem;}
+#addList > button > ul > li:first-child > h3{font-size: 2rem;margin: 0;}
+
+.add-plus{color: aliceblue;float: right;margin-top: -4rem;}
+.plus-set {margin-top: 0;}
+/**** 코인 거래내역 *****/
+.gold-tt > select.selstyle{color: #debb84;}
+.veiwWrap{position: fixed;top: 120px;width: 720px;padding: 0 2rem;}
+.veiwWrap2 {padding: 0 2rem;}
+.veiwBox{color: aliceblue; border-radius: 20px;}
+.setbar{margin-top: 20px;}
+.coinhistory-list-wrap{position: fixed;width: 720px;height: 750px;top: 420px;padding: 0 2rem;}
+.coinhistory-list{overflow: hidden;background-color: rgba(299, 299, 299, 0.1);border-radius: 20px;padding: 20px;}
+.resetHei{top:1140px}
+/* .board_list th.fixed, .board_list td.fixed {
+  position: relative;
+  left: 0;
+  z-index: 20;
+}
+.board_list > table{color: aliceblue;}
+.board_list > table > tr > th, .board_list > table > tr > td{width: 50px;} */
+.scroll-wrap > table > tr > td{width: 300px;}
+.scroll-wrap table {
+  border-collapse: separate;
+  border-spacing: 0;
+  border-top: 1px solid grey;
+  overflow-y: scroll;
+  border-left: 0;
+  border-right: 0;
+}
+
+.scroll-wrap td, .scroll-wrap th {
+  margin: 0;
+  border: 1px solid grey;
+  white-space: nowrap;
+  border-top-width: 0px;
+}
+.scroll-wrap td:last-child, .scroll-wrap th:last-child {
+  border-right: none;
+}
+
+.scroll-wrap div {
+  /* width: 620px; */
+  overflow-x: scroll;
+  /* margin-left: 7em; */
+  overflow-y: scroll;
+  padding: 0;
+}
+
+.scroll-wrap .headcol1 {
+  position: sticky;
+  /* width: 5em; */
+  left: 0rem;
+  top: auto;
+  border-top-width: 1px;
+  border-left: 0;
+  /*only relevant for first row*/
+  margin-top: -1px;
+  /*compensate for top border*/
+}
+.scroll-wrap .headcol2 {
+  position: sticky;
+  width: 150px; 
+  left: 103px;
+  top: auto;
+  border-top-width: 1px;
+  border-right: 1px solid #E7B978;
+  /*only relevant for first row*/
+  margin-top: -1px;
+  /*compensate for top border*/
+}
+.scroll-wrap > div > table > tr:first-child{border-bottom: 1px solid #E7B978;}
+.scroll-wrap .headcol:before {
+  content: 'Row ';
+}
+
+.scroll-wrap .long {
+  background: none;
+   /*letter-spacing: 1em; */
+}
+.headcol1,.headcol2,.long{padding: 0.6rem;color: aliceblue;font-weight: 100;font-size: 1.6rem;text-align: center;}
+.headcol1,.headcol2{background: #3e3e3e;}
+.headcol1{font-size: 1.2rem;}
+.headcol2{font-size: 1.6rem;}
+.borderLine{border-bottom: 1px solid #E7B978;}
+
+/* 확인 창 */
+/* Modal Content */
+.modal-content02 {position: relative;background-color: #fefefe;margin: auto;padding: 0;border: 1px solid #888;max-width: 500px;box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+-webkit-animation-name: animatetop;-webkit-animation-duration: 0.4s;animation-name: animatetop;animation-duration: 0.4s;padding-bottom: 2.5rem;}
+/* The Close Button */
+.p_close {color: #777;float: right;font-size: 3rem;font-weight: bold;}        
+.p_close:hover, .p_close:focus {color: #000;text-decoration: none;cursor: pointer;}        
+.modal-header02 {padding: 2px 16px;background-color: #ddd;color: black;height: 5rem;font-size: 2rem;}        
+.modal-header02 h2{color: #000;text-align: center;font-size: 3rem;}
+.modal-body02 {padding:2rem;padding-bottom: 0;}        
+.modal-body02 p{color: #000;text-align: left;padding: 0;}
+.modal-footer {padding: 1rem 1.5rem;background-color: #ddd;color: black;}
+.btnStyle02{background: none;color: aliceblue;border: 2px solid #E7B978;border-radius: 0.5rem;font-size: 1.2rem;padding: 0.2rem 0.5rem;}
+
+
+/* 이용약관 */
+body.bg{background-color: none!important;background: #272727;}
+.termsOfService-wrap{padding-top: 90px;color: aliceblue;}
+.termsOfService{font-size: 1.5rem;padding: 2rem;font-weight: 200;}
+.borLine{border-bottom: 1px solid #E7B978;}
+.text-contents{font-size: 1.3rem;font-weight: 200;}
+.padd-t{padding-top: 1.5rem;}
+.toptitle-left{font-size: 2rem;padding-left: 20px;}
+
+/* 충전 시 금액이 작아서 실패 */
+.text-padd{padding: 1.5rem 0 2rem;font-size: 2rem;}
+.fontS05{font-size: 1.5rem;font-weight: 200;}
+h3.inlineB{display: inline-block;margin: 0;}
+.textpadd02{display: unset;padding-left: 1rem;}
+.textpadd03{display: inline-block;padding-left: 2.5rem;}
+
+/* 은행계좌 등록 */
+.accountWrap > select.bankCheck{width: 100%;height: 100%;border: none;border-top: 1px solid #fff;/* border-bottom: 1px solid #fff; */box-sizing: border-box;}
+.openbankBoxWrap{border: 1px solid#E7B978;padding: 1rem;}
+.openbankBoxWrap li{width: 49%;font-size: 1.12rem;display: inline-block;line-height: 2.2;}
+
+
+/* 계좌 생성/복원 안내 */
+.textBox > h4{text-align: center;color: aliceblue;font-size: 2.5rem;padding-bottom: 6rem;padding-top: 4rem;}
+.spanText{text-align: center;color: aliceblue;font-size: 1.7rem;margin-top: 0;padding-bottom: 1rem;display: block;}
+.spanText02{text-align: center;color: aliceblue;font-size: 1.7rem;margin-top: 4rem;padding-bottom: 1rem;display: block;}
+.spanText03{text-align: left;color: aliceblue; padding-top: 10px; font-size: 1.7rem;margin-top: 0;padding-bottom: 1rem;display: block;}
+.spanText04{text-align: left;color: #E7B978;font-size: 1.5rem;margin-top: 0;padding-bottom: 0.5rem;display: block;}
+.textBott{text-align: right;padding-top: 6rem;padding-bottom: 4rem;}
+.padd-h > a{margin-top: 150px;}
+.textBox{display: block;padding: 2rem;margin-top: 10rem;overflow: hidden;border-radius:20px;}
+.textBox2{display: block;padding: 2rem;margin-top: 4rem;overflow: hidden;border-radius:20px;}
+.account-wrap{width: 720px; padding: 8rem 2rem 0;}
+.paddingtop-set {margin-top: 20px; margin-left: 10px; font-size: 1.5rem;}
+.accountWrap{width: 100%;margin: 0 auto;;border: 1px solid aliceblue;height: 70px;line-height: 70px;position: relative;}
+.bttset {font-size: 1.5rem;height: 50px;}
+#account{text-align: left;position: absolute;top: 0;left: 0;height: 68px;border: none;font-size: 2rem;outline: none;background-color: transparent;color: aliceblue;}
+button.accountCheck{background: none;border: none;color:aliceblue; cursor: pointer; font-size: 1.5rem;padding-right: 10px;}
+.box02{border-radius: 1rem;padding: 2rem;margin-top: 1rem;}
+.box02 > table{color: aliceblue;    padding-bottom: 1rem;}
+.box02 > table h3{color:#E7B978;text-align:center;color:#E7B978;font-size: 2rem; padding-bottom: 1.5rem;}
+th.v-top{vertical-align:text-top ;}
+tr.v-padd{padding: 1rem 0;}
+.spanText05{padding-left: 1rem;font-size: 1.6rem;}
+.inputCheck{color: aliceblue;font-size: 1.5rem;padding: 1rem 0;padding-left: 0.5rem;}
+#dis-block{display: block;}
+.btn-botton-wrap{width:720px;padding: 0 2rem;}
+.btn-botton{width: 100%;text-align: center;background-color: #E8CC9E;background-image: linear-gradient(to right, #E8CC9E , #DAB479);border-radius: 1rem;color: #000;line-height: 1;padding: 1rem 2rem;}
+
+/* startQr */
+.marTop{margin-top: 10rem;}
+
+/* login */
+.loginWrap{margin-top:30px;}
+.loginWrap > input{border: 1px solid aliceblue;padding: 1rem;background: transparent;width: 100%;}
+.textCenter{text-align: center;}
+.btnwidth{width: 50%;}
+.btnStyle02{text-align: center;border: 0;margin-top: 30px;font-weight: 200;}
+.margintopset{margin-top: 0; font-size: 1.5rem;}
+
+@media (min-width: 320px) and  (max-width:720px){
+  /* 메인 */
+  body{width: 100%;font-size:1rem;}
+  .logoimg{width: 85px;}
+  .container{width: 100%;}
+  .w3-container{padding: 0 1rem;}
+  .top{padding: 0;padding-bottom: 1rem;}
+  .top:last-child{padding-bottom: 0;}
+  .top > li:first-child{font-size: 1.2rem;}
+  .padd-v{padding:1rem 0;}  
+  .padd-h{padding: 0 1rem;}
+  .icon i{font-size: 1.3rem;}
+  .myview{margin-top: 102px;padding: 1rem;border-radius: 1rem;}
+  .myview > p{font-size: 1.2rem;}
+  .logot img{ height: 25px;}
+  .myview > h2{font-size: 2.5rem;}
+  .myview h2 span {font-size: 1.2rem;}
+  .myview > span{font-size: 1.5rem;display: inline-block;margin-top: 16px;}
+  .veiwWrap2 {padding: 0 1rem;}
+  .btn-set{margin-top: 50px;}
+  .btn-set > button{font-size: 1rem;padding: 0.7rem 0.5em;}
+  .title-font{font-size: 1.2rem}
+  .iconimg{width: 30px;}.iconimg2{width: 40px;}
+  .coin-wrap{border-radius: 1rem;padding: 0.5rem;}
+  .coin-wrap > button > ul{height: 44px;}
+  .coin-wrap > button > ul > li:last-child {margin-top: 12px;font-size: 1.2rem;}
+  .coin-wrap > button > ul > li > p{font-size: 1rem;}
+  .panel{margin-top: 0;}
+  .panel > button{font-size: 0.9rem;margin-top: 0;padding: 0.7rem 0.5em;}
+  /* 코인추가버튼 */
+  .icon-coinAdd-wrap{width: 100%;}
+  .icon-coinAdd{width: 55px;height: 55px;}
+  .icon-coinAdd > p{line-height: 50px;font-size: 2rem;}
+
+  /* 코인추가 */
+  .top-wrap{font-size: 1rem;}
+  .toptt{font-size: 1rem;}
+  .modal{padding: 0 3rem;padding-top: 100px;}
+  .w3-round-xlarge{height: 1rem;}
+  .p_close{font-size: 2rem;}
+  .modal-body{padding: 1rem;}
+  .modal-body p{padding: 0.5rem;padding-top: 0;}
+
+  /* 코인 보내기 */
+  .fixed-con{width: 100%;}
+  .ma-topsub{padding-top: 75px;}
+  table.tableWrap{font-size: 1rem;}
+  table.tableWrap input[type=text], table.tableWrap input[type=number]{font-size: 1rem;}
+  table.tableWrap td.fon_col02{font-size: 1rem;}
+  .coin-wrap-black{padding: 1rem;}
+  .coin-wrap-black > p{font-size: 0.9rem;}
+  .ma-top02{top:430px}
+  .coin-wrap-white{padding: 1rem;height: 300px;}
+  .coinListwrap{height: 250px;}
+  .tab > button.tablinks{font-size: 1.2rem;}
+  .coinListwrap > button > ul{height: 44px;}
+  .coinListwrap > button > ul > li > p{font-size: 1rem;}
+  .coinListwrap > button > ul > li:first-child{margin-top: 5px;padding-right: 0.8rem;}
+  .coinListwrap > button > ul > li:first-child > p{font-size: 0.8rem;}
+  .coinListwrap > button > ul > li:last-child{font-size: 1rem;margin-top: 10px;}
+  #addList > button > ul > li:first-child > h3{font-size: 1rem;}
+  #addList > button > ul > li:first-child > p.coinAddress{font-size: 1rem;}
+
+  .bottom-btn{width: 100%;padding: 1rem;top:720px}
+  .bottom-btn > button{font-size: 1rem;}
+
+  #lately > button > ul > li:nth-of-type(1){width: 20%;}
+  #lately > button > ul > li:nth-of-type(2){width: 73%;overflow: scroll;}
+  #lately > button > ul > li:nth-of-type(3){width: 4%;}
+
+  .add-plus{font-size: 1.5rem;}
+
+  /* 코인 거래내역 */
+  .coinhistory-list-wrap{width: 100%;padding:  0 1rem;top:290px;height: 450px;}
+  .scroll-wrap{height: 300px;}
+  .headcol1{font-size: 0.8rem;}
+  .scroll-wrap .headcol2{left: 75px;}
+  .scroll-wrap .headcol2,.scroll-wrap .long{font-size: 1rem;}
+  .coinhistory-list{padding:1rem;}
+  .btnStyle02{font-size: 1rem;}
+
+  .modal-header02{height: 3rem;line-height: 3rem;}
+  .modal-header02 h2,.p_close{font-size: 1.2rem;}
+  .modal-body02{padding: 1rem;padding-bottom: 0;}
+  .modal-content02{padding-bottom: 1.5rem;}
+
+  /* 이용약관, 개인정보 처리방침, 라이선스 */
+  .termsOfService-wrap{padding-top: 70px;}
+  .toptitle-left{font-size: 1.1rem;padding-left: 0;}
+  .termsOfService{font-size: 0.9rem;padding: 1rem;padding-top: 0;}
+  .text-contents{font-size: 0.8rem;}
+  .padd-t{padding-top: 1.2rem;}
+
+  /* 충전 시 금액이 작아서 실패 */
+  .text-padd{padding: 0.7rem 0 1rem;font-size: 1rem;}
+  .fontS05{font-size: 1rem;}
+  h3.inlineB{font-size: 1.1rem;}
+  .textpadd02{padding-left: 0.4rem;}
+  .textpadd03{padding-left: 1.5rem;}
+  .notice-snt{padding: 10px 0;}
+  .notice-snt p{font-size: 0.9rem;}
+
+  /* 계좌 생성/복원 안내 */
+  .textBox{margin-top: 4rem;padding: 1rem;}
+  .textBox2{margin-top: 2rem;padding: 1rem;}
+  .textBox > h4{font-size: 1.5rem;padding-bottom: 2rem;padding-top: 1rem;}
+  .spanText,.spanText02{font-size: 1rem;}
+  .textBott{padding-bottom: 2rem;padding-top: 2rem;font-size: 1rem;}
+
+  /* NSpay 계좌생성 */
+  .account-wrap{width: 100%;padding: 5rem 1rem 1rem;}
+  .spanText03{font-size: 1rem;}
+  .accountWrap{margin-top: 0;height: 60px;line-height: 60px;}
+  #account{font-size: 1rem;height: 60px;line-height: 60px;width: 77%;}
+  button.accountCheck{width: 22%;height: 60px;line-height: 60px;padding-right: 0;font-size: 1.1rem;}
+  .spanText04{font-size: 1rem;padding-bottom: 0.2rem;}
+  .box02{padding: 1rem;}
+  .box02 > table h3{font-size: 1.5rem;padding-bottom: 0.5rem;}
+  .spanText05{font-size: 0.9rem;padding-left: 0.5rem;}
+  .password-cnt-check{font-size: 1rem;}
+  .password-cnt-check input[type="checkbox"]{width: 30px;}
+
+  .btn-botton-wrap{width:100%;padding: 0 1rem;}
+  .btn-botton{border-radius: 0.5rem;}
+
+  /* startQr */
+  .marTop{margin-top: 3rem;}
+
+  .paddingleft-set {padding-left: 23px;}
+
+
+  /* 은행계좌등록 */
+  .openbankBoxWrap li{width: 100%;}
+
+  /* 입금자 정보 */
+  .infoDeposit table{color: #fff;width: 100%;overflow: hidden;}
+  .infoDeposit table th{padding:10px 0 ;text-align: left;font-weight: 400;}
+  .infoDeposit table td{text-align: right;}
+  .infoDeposit h2{text-align: center;}
+  .infoDeposit h2 img{height: 70px;width: auto;padding-top: 1rem;}
+
+  .infoTextWrap{color: #fff;}
+  .infoTextWrap h3{font-size: 1.2rem;}
+  .infoTextWrap p{word-break: keep-all;letter-spacing: 1px;}
+  .infoTextWrap p span{color: yellow;}
+  .infoTextWrap h2{word-break: keep-all;text-align: center;font-size: 1.5rem;line-height: 2;padding: 1rem 0.5rem;}
+
+
+
+
+
+}

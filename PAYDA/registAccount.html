@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>PAYDA</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/caa8964094.js" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+</head>
+
+<body class="w3-light-grey">
+    <div class="container">
+        <header class="w3-container w3-animate-top w3-animate-opacity w3-bar w3-text-white">
+            <div class="top-wrap">
+                <div><a href="index.html"><i class="fas fa-arrow-left back"></i></a></div>
+                <div class="toptt">등록 계좌</div>
+            </div>
+        </header>
+    </div>
+    <div>
+        <!-- 등록 계좌가 있을 때 -->
+        <div class="menu-wrap" style="display: block;">
+            <div class="menu">
+                <ul class="m">                    
+                    <li>신한은행</li>
+                    <li>******************1102</li>
+                </ul><br>
+                <button style="float: right; margin-top: 2rem;">삭제</button>
+            </div>
+
+        </div>
+
+        <!-- 등록 계좌가 없을 때 -->
+        <div class="menu-wrap" style="display: none;">
+            <div class="menu">
+                <br>
+                <ul class="m" style="text-align: center;">
+                    <li><i class="fas fa-plus"></i></li>
+                </ul><br>
+                <button id="myBtn" style="float: right; margin-top: 2rem;">등록</button>
+            </div>
+
+        </div>
+
+<!-- 확인 창 -->
+<div id="myModal" class="modal">
+
+    <!-- content -->
+    <div class="modal-content02">
+        <div class="modal-header02">
+            <span class="p_close">&times;</span>
+            <h2>은행 등록안내</h2>
+        </div>
+        <div class="modal-body02">
+            <p style="text-align: center;">은행을 등록 하시겠습니까?</p>
+        </div>
+        <div class="modal-body02">
+            <p style="text-align: center;border: 1px solid red;padding: 0.5rem;word-break: keep-all;">* 반드시 본인명(휴대폰 명의자) 은행 계좌를 등록 해야 하며 그렇지 않을 경우 등록이 거절 됩니다</p>
+        </div>
+        <div class="modal-body02">
+            <button style="width: 48%;">취소</button>
+            <button style="width: 48%;">확인</button>
+        </div>
+    </div>
+
+</div>
+
+
+
+<script>
+    // 팝업
+    var modal = document.getElementById("myModal");
+    var btn = document.getElementById("myBtn"); // 창열기       
+    var span = document.getElementsByClassName("p_close")[0]; // 닫기
+
+    btn.onclick = function () {
+        modal.style.display = "block";
+    } // When the user clicks the button, open the modal 
+
+    span.onclick = function () {
+        modal.style.display = "none";
+    } // When the user clicks on <span> (x), close the modal
+
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    } // When the user clicks anywhere outside of the modal, close it
+</script>
+</body>
+</html>

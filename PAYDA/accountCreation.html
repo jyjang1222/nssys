@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>PAYDA</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/caa8964094.js" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+</head>
+
+<body class="w3-light-grey">
+    <div class="container ">
+        <header class="w3-container w3-animate-top w3-animate-opacity w3-bar w3-text-white">
+            <div class="top-wrap">
+                <div><a href="login.html"><i class="fas fa-times close"></i></a></div>
+                <div class="toptt-left">PAYDA 계좌 생성</div>
+            </div>
+        </header>
+    </div>
+    <div class="account-wrap">
+        <p class="spanText03 paddingtop-set"> PAYDA 계좌 생성</p>
+        <div class="accountWrap">
+            <input type="text" id="account" placeholder="" />
+            <button class="accountCheck w3-right">중복체크</button>
+        </div>
+        <p class="spanText03 paddingtop-set"> 비밀번호</p>
+        <div class="accountWrap">
+            <input type="text" id="account" placeholder="" />
+        </div>
+        <p class="spanText03 paddingtop-set"> 비밀번호 확인</p>
+        <div class="accountWrap">
+            <input type="text" id="account" placeholder="" />
+        </div><br>
+        <p class="spanText04">&bull;  은행계좌번호 입력금지</p>
+        <p class="spanText04">&bull;  신규로 생성하고 싶은 PAYDA 계좌 번호를 입력해 주세요</p>
+        <div class="box02 box-gradient w3-card">
+            <table>
+                <tr><th colspan="2"><h3>PAYDA계좌 이용 동의</h3></th></tr>
+                <tr>
+                    <th class="v-top">1.</th>
+                    <td class="spanText05">PAYDA계좌는 PAYDA 입출금시 사용 됩니다.</td>
+                </tr>                
+                <tr>
+                    <th class="v-top">2.</th>
+                    <td class="spanText05">사용자가 기억하기 쉬운 영문 숫자로 최소 3자 최대 12자까지 사용하여 생성 할 수 있습니다.</td>
+                </tr>
+                <tr>
+                    <th class="v-top">3.</th>
+                    <td class="spanText05">PAYDA 앱(핸드폰)분실, 삭제 및 유출 등 개인 부주의로 인하여 PAYDA 앱 접근이 불가능한 경우, 그로 인한 사용자 개인 자신의 피해는 완전히 사용자의 책임입니다.</td>
+                </tr>
+                <tr>
+                    <th class="v-top">4.</th>
+                    <td class="spanText05">PAYDA 계좌 생성 후 사고로 인한 분실 및 삭제를 미연에 방지하기 위해 즉시 백업 하실 것을 권장하며, 설정 메뉴의계좌 백업/복원 메뉴에서 백업 및 복원을 하실 수 있습니다.</td>
+                </tr>
+                <tr>
+                    <th class="v-top">5.</th>
+                    <td class="spanText05">PAYDA 계좌는 네트워크 인증 암호화를 기반으로 운영됩니다..</td>
+                </tr>
+            </table>
+        </div>
+        <div class="inputCheck password-cnt-check">
+            <input type="checkbox">&#8194;&#8194;&#8194;&#8194; PAYDA 계좌 이용 동의 사항을 읽었으며 동의 합니다.
+        </div>
+        
+    </div>
+    <!-- 계좌번호가 입력되면 아래 버튼이 보입니다. -->
+    <div id="dis-block" class="btn-botton-wrap">
+        <div class="btn-botton">
+            <a href="startQr.html">다음</a>
+        </div>
+    </div>
+
+
+    
+
+
+<footer>
+</footer>
+<script>
+//각각의 상황에 맞게 alert으로 처리 부탁합니다.
+// <!-- NSpay계좌번호 입력이 안된 경우 -->
+    function myFunction() {
+      alert("NSpay 계좌번호를 입력해주세요.");
+    }
+
+// <!-- NSpay계좌 이용동의 체크 -->
+function myFunction() {
+      alert("NSpay 계좌 이용동의 사항을 읽고 동의하신 후 진행하실 수 있습니다.");
+    }
+</script>
+
+</body>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>PAYDA</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/caa8964094.js" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+</head>
+
+<body class="w3-light-grey">
+    <div class="container clearfix">
+        <header class="w3-container w3-animate-top w3-animate-opacity w3-bar w3-text-white">
+            <div class="top-wrap">
+                <div><a href="#"><i class="fas fa-arrow-left back"></i></a></div>
+                <div class="toptt">입금자 정보</div>
+            </div>
+        </header>
+    </div>
+    <div class="access-cnt m-paddingtop" style="padding-top:6rem">
+        <div class="password-nt-box infoDeposit">
+            <table>
+                <tr>
+                    <th>입금자 ID</th>
+                    <td>NSSYS</td>
+                </tr>
+                <tr>
+                    <th>예금주</th>
+                    <td>(주)앤스시스템</td>
+                </tr>
+                <tr>
+                    <th>충전신청금액</th>
+                    <td>30,000원</td>
+                </tr>
+                <tr>
+                    <th>입금유효시간</th>
+                    <td>19:59초 남음</td>
+                </tr>
+            </table>
+            <h2><img src="img/logotype.png" alt="logo"></h2>
+        </div>
+        <div class="password-nt-box">
+            <div class="infoTextWrap">
+                <h3>계좌입금 이용안내</h3>
+                <div class="infoText">
+                    <p>1. 계좌입금(수동)시 금융사고 예방을 위해 계좌입금 후 페이다 충전 시간은 약 20분 정도 지연 충전 될 수있습니다. 계좌입금(수동)시 유효기간 경과 후 입금대기건은 <span>'자동취소'</span>되며 다시 충전신청해 주시기 바랍니다. </p>
+                    <p>2. 반드시 충전금액과 동일하게 입금하셔야 합니다.</p>
+                    <p>3. 본인계좌 미사용시 ㈜앤스시스템에서 제공되는 페이다 전자지갑 서비스 이용이 불가하며 모든 입출금 기능을 사용 하실 수 없습니다.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br />
+    <div id="dis-block" class="btn-botton-wrap">
+        <div class="btn-botton">
+            <a href="#">확인</a>
+        </div>
+    </div>
+
+
+    
+
+
+<footer>
+</footer>
+<script>
+//각각의 상황에 맞게 alert으로 처리 부탁합니다.
+// <!-- 정상 계좌인경우 -->
+    function myFunction() {
+      alert("계좌정보가 확인 되었습니다.");
+    }
+
+// <!-- (계좌 번호가 유효하지 않은경우) -->
+function myFunction() {
+      alert("계좌정보가 유효하지 않습니다. 입력한 정보를 확인해 주세요.");
+    }
+
+// <!-- 정상 계좌인경우 -> 확인 -->
+function myFunction() {
+      alert("출금 이체동의를 위해 고객님의 휴대폰으로 ARS 인증 전화를 드립니다. ARS 음성 안내에 따라 인증을 진행해주세요.");
+    }
+
+// <!-- 정상 계좌인경우 -> 확인 -> 취소 -->
+function myFunction() {
+      alert("취소 하셨습니다.");
+    }
+</script>
+
+</body>

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>PAYDA</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+</head>
+
+<body class="w3-light-grey">
+    <div class="container">
+        <header class="w3-container w3-animate-top w3-animate-opacity w3-bar w3-text-white">
+            <div class="top-wrap">
+                <div><a href="index.html"><i class="fas fa-arrow-left back"></i></a></div>
+                <div class="toptt">COIN 보내기</div>
+            </div>
+        </header>
+    </div>
+    <!-- 코인 보내기 입력 -->
+    <div class="ma-topsub">
+        <table class="tableWrap">
+            <tr>
+                <th rowspan="3">보낼 COIN</th>
+                <td class="none"></td>
+                <td>
+                    <select class="selstyle">
+                        <option>BTC&nbsp;</option>
+                        <option>ETHEREUM&nbsp;</option>
+                        <option>XRP&nbsp;</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="none"></td>
+                <td class="fon_col02">출금가능: 200,000,000,000 BTC</td>
+            </tr>
+        </table>
+        <table class="tableWrap">
+            <tr>
+                <th rowspan="2">보낼 수량</th>
+                <td class="none"></td>
+                <td><input type="number" placeholder="보낼 수량을 입력하세요">
+                </td>
+            </tr>
+            <tr>
+                <td class="none"></td>
+                <td class="fon_col02"></td>
+            </tr>
+        </table>
+        <table class="tableWrap">
+            <tr>
+                <th rowspan="3">받는이</th>
+                <td class="none"></td>
+                <td><input type="text" placeholder="받을 주소를 입력하세요">
+            </tr>
+            <tr>
+                <td class="none"></td>
+                <td class="fon_col02"><button class="w3-btn w3-button btnStyle01">QR코드 스캔</button></td>
+            </tr>
+        </table>
+        <table class="tableWrap">
+            <tr>
+                <th rowspan="2">수수료</th>
+                <td class="none"></td>
+                <td>0.05 BTC</td>
+            </tr>
+            <tr>
+                <td class="none"></td>
+                <td class="fon_col02"></td>
+            </tr>
+        </table>
+        <table class="tableWrap">
+            <tr>
+                <td class="coin-wrap-black">
+                    <p>잘못된 주소로 입금 시 복구 할 수 없습니다.</p>
+                    <p>사용자 부주의로 인한 개인 자산의 피해는 온전히 사용자의 책임입니다.</p>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <!-- 탭 -->
+    <div class="w3-container ma-top02">
+        <div class="coin-wrap-white w3-card">
+            <div class="tab">
+                <button class="tablinks active" onclick="openCity(event, 'lately')">최근내역</button>
+                <button class="tablinks" onclick="openCity(event, 'addList')">주소목록
+
+                </button>
+                <div class="add-plus plus-set"><a href="coin-fav.html">+</a></div>
+            </div>
+            <!-- 최근내역 -->
+            <div id="lately" onscroll="" class="coinListwrap tabcontent tabcontent_wrap">
+                <button>
+                    <ul>
+                        <li>
+                            <p>2021.04.16</p>
+                            <p>23:00:00</p>
+                        </li>
+                        <li>
+                            <p>AASDFDFASDFSDFADFDFSsafasfass</p>
+                            <p>200,000,000,000 BTC</p>
+                        </li>
+                        <li rowspan="2" class="w3-right rote"><i class="arrow fa fa-chevron-down"></i></li>
+                    </ul>
+                </button>
+                <button>
+                    <ul>
+                        <li>
+                            <p>2021.04.16</p>
+                            <p>23:00:00</p>
+                        </li>
+                        <li>
+                            <p>AASDFDFASDFSDFADFSsafasfas</p>
+                            <p>200,000,000,000 BTC</p>
+                        </li>
+                        <li rowspan="2" class="w3-right rote">&#8744;</li>
+                    </ul>
+                </button>
+                <button>
+                    <ul>
+                        <li>
+                            <p>2021.04.16</p>
+                            <p>23:00:00</p>
+                        </li>
+                        <li>
+                            <p>AASDFDFASDFSDFADFSsafasfas</p>
+                            <p>200,000,000,000 BTC</p>
+                        </li>
+                        <li rowspan="2" class="w3-right rote">&#8744;</li>
+                    </ul>
+                </button>
+                <button>
+                    <ul>
+                        <li>
+                            <p>2021.04.16</p>
+                            <p>23:00:00</p>
+                        </li>
+                        <li>
+                            <p>AASDFDFASDFSDFADFSsafasfas</p>
+                            <p>200,000,000,000 BTC</p>
+                        </li>
+                        <li rowspan="2" class="w3-right rote">&#8744;</li>
+                    </ul>
+                </button>
+
+            </div>
+            <!-- 주소목록 -->
+
+            <div id="addList" class="coinListwrap tabcontent tabcontent_wrap" style="display: none;">
+                <button>
+                    <ul>
+                        <li>
+                            <h3>홍길동</h3>
+                            <p class="coinAddress">AASDFDFASDFSDFADFSsafasfas</p>
+                        </li>
+                        <li rowspan="2" class="w3-right rote">&#8744;</li>
+                    </ul>
+                </button>
+                <button>
+                    <ul>
+                        <li>
+                            <h3>홍길동</h3>
+                            <p class="coinAddress">AASDFDFASDFSDFADFSsafasfas</p>
+                        </li>
+                        <li rowspan="2" class="w3-right rote">&#8744;</li>
+                    </ul>
+                </button>
+                <button>
+                    <ul>
+                        <li>
+                            <h3>홍길동</h3>
+                            <p class="coinAddress">AASDFDFASDFSDFADFSsafasfas</p>
+                        </li>
+                        <li rowspan="2" class="w3-right rote">&#8744;</li>
+                    </ul>
+                </button>
+                <button>
+                    <ul>
+                        <li>
+                            <h3>홍길동</h3>
+                            <p class="coinAddress">AASDFDFASDFSDFADFSsafasfas</p>
+                        </li>
+                        <li rowspan="2" class="w3-right rote">&#8744;</li>
+                    </ul>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="bottom-btn">
+        <button class="w3-btn w3-button btnStyle01 " button type="button"
+            onclick="location.href='coin_remit_checking_1.html'">다음</button>
+    </div>
+
+
+    <footer>
+    </footer>
+
+    <script>
+        function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+</body>

@@ -45,7 +45,7 @@
 .search_total p {line-height: 60px;}
 
 .search_board li {border-bottom: 1px solid #dedede;}
-.search_board li.no_data {display: none;padding: 50px 0;text-align: center;}
+.search_board li.no_data {padding: 50px 0;text-align: center;}
 .search_board li.no_data img {width: 50px;margin-bottom: 20px;}
 .search_board li.no_data span {display: block;text-align: center;}
 .search_board li p {display: none;padding: 30px 50px;border-top: 1px solid #dedede;background-color: #f8f8f8;line-height: 18px;font-size: 14px;cursor:pointer;color: #777;}

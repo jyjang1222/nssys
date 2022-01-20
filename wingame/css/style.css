@@ -1,7 +1,7 @@
 /* style.css */
 
-@import url(https://fonts.googleapis.com/earlyaccess/nanumgothic.css);
-@import url(https://cdn.jsdelivr.net/font-nanum/1.0/nanumbarungothic/nanumbarungothic.css);
+@import url('https://fonts.googleapis.com/earlyaccess/nanumgothic.css');
+@import url('https://cdn.jsdelivr.net/font-nanum/1.0/nanumbarungothic/nanumbarungothic.css');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
 
 html, body {position: relative;width:100%;height: 100%;font-family: 'Open Sans', 'Nanum Gothic', 'Nanum', sans-serif;}

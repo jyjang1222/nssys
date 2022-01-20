@@ -48,6 +48,28 @@ $(function() {
     openCashChargePop();
   });
 
+  $('.select_area li').click(function() {
+    // var checked = $(this).prop('checked');
+
+    $('input[name=date]').prop('checked', false);
+    $(this).parents('.select_area').siblings('input[name=date]').prop('checked', true);
+    // var a = $(this).parents('.select_area').siblings('input[name=date]').prop('checked');
+    // var b = $('input#month').prop('checked');
+    // var c = $('input#today').prop('checked');
+    // var d = $('input#weekend').prop('checked');
+    // console.log('날짜선택 체크:'+a);
+    // console.log('1개월 선택:'+b)
+    // console.log('오늘 선택:'+c)
+    // console.log('1주일 선택:'+d)
+  });
+
+  // $('input[name=date]').change(function() {
+  //   var checked = $(this).prop('checked');
+  //   // console.log(checked);
+  //   var a = $('input#selectDate').prop('checked');
+  //   console.log(a);
+  // });
+
   function openCashChargePop() {
     var myWindow = window.open("CashChargePopup.html", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=200,left=700,width=500,height=640")
   }

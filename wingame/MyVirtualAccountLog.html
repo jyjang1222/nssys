@@ -53,19 +53,19 @@
                     <th>조회기간</th>
                     <td>
                       <div>
-                        <input type="checkbox" id="today" checked="checked">
+                        <input type="radio" name="date" id="today" checked="checked">
                         <label for="today">오늘</label>
                       </div>
                       <div>
-                        <input type="checkbox" id="weekend">
+                        <input type="radio" name="date" id="weekend">
                         <label for="weekend">1주일</label>
                       </div>
                       <div>
-                        <input type="checkbox" id="month">
+                        <input type="radio" name="date" id="month">
                         <label for="month">1개월</label>
                       </div>
                       <div>
-                        <input type="checkbox">
+                        <input type="radio" name="date" id="selectDate">
                         <div class="select_area">
                           <a href="#a"><span class="selected">2022년</span><span class="select_icon"></span></a>
                           <ul>
@@ -101,15 +101,15 @@
                     <th>조회내용</th>
                     <td>
                       <div>
-                        <input type="checkbox" checked="checked" id="chkAll">
+                        <input type="radio" name="log" checked="checked" id="logAll">
                         <label for="chkAll">전체</label>
                       </div>
                       <div>
-                        <input type="checkbox" id="chargeLog">
+                        <input type="radio" name="log" id="chargeLog">
                         <label for="chargeLog">충전내역 만</label>
                       </div>
                       <div>
-                        <input type="checkbox" id="useLog">
+                        <input type="radio" name="log" id="useLog">
                         <label for="useLog">사용내역 만</label>
                       </div>
                     </td>

@@ -75,14 +75,26 @@ $(function() {
 
   $('select#priceSelect').change(function() {
     $(this).parents('.charge_price').children('input[type=radio]').prop('checked', true);
+    $('input#insertPrice').val(''); //직접입력 값 초기화
     // console.log($('input#rdPriceSelect').prop('checked'));
     console.log($('select#priceSelect option:selected').val());
+
+    var price = $('select#priceSelect option:selected').val();
+
+    $('.selected_price').text(price);
   }); //충전금액 셀렉트박스
 
   $('input#insertPrice').focus(function() {
+    $('select#priceSelect option').prop('selected', false); //충전금액 셀렉트박스 초기화
     $(this).parents('.charge_price').children('input[type=radio]').prop('checked', true);
     // console.log($('input#rdPriceSelect').prop('checked'));
   }); //충전금액 직접입력
+
+  $('input#insertPrice').change(function() {
+    var price = $('input#insertPrice').val();
+
+    $('.selected_price').text(price);
+  });
 
   $('.modal_wrap:nth-child(2) td').click(function() {
     $('.modal_wrap:nth-child(2) td').removeClass('txt_red');

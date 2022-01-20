@@ -40,25 +40,27 @@ $(function() {
     $(".upload_name").val(fileName);
   }); //파일업로드
 
-  $('.check_box input').click(function() {
-    var chk = $(this).attr('checked') == 'checked';
+  $('input[type=checkbox]').change(function() {
+    var checked = $(this).prop('checked'); //checked 문자열 참조(true, false)
+    // console.log(checked);
+    $(this).prop('checked', checked); //체크박스에 boolean값 넣음
     var idx = $(this).parents('.content_wrap').index();
 
-    $(this).attr('checked', 'checked');
-
-    if(chk) {$(this).removeAttr('checked')}
+    $(this).attr('checked', 'checked'); //커스텀input 스타일 적용
+    if(!checked) {$(this).removeAttr('checked')}
     if(idx == 1) {$('.info_agree_cont').toggle();}
   }); //개인정보 수집동의
 
+
   $('.emailPop_btn').click(function() {
-    var emailAgreeChk = $('#chkEmailAgree').attr('checked') == 'checked';
+    var emailAgreeChk = $('#chkEmailAgree').prop('checked');
 
     if(emailAgreeChk) { openEmailPop(); }
     else { alert('이메일 답변 동의를 먼저 선택하세요.') }
   }); //이메일수정
 
   $('.phonePop_btn').click(function() {
-    var smsAgreeChk = $('#chkSmsAgree').attr('checked') == 'checked';
+    var smsAgreeChk = $('#chkSmsAgree').prop('checked');
 
     if(smsAgreeChk) { openPhonePop(); }
     else { alert('SMS 수신 동의를 먼저 선택하세요.') }

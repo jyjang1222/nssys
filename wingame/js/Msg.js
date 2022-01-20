@@ -14,26 +14,30 @@ $(function() {
     
   }) //페이저 클릭
 
-  $('.check_all').click(function() {
-    var chk = $(this).attr('checked') == 'checked';
+  $('#checkAll').change(function() {
+    var checked = $(this).prop('checked'); //checked 문자열 참조(true, false)
+    // console.log(checked)
+    $('input[name=msg]').prop('checked', checked); //name값이 policy인 input boolean값에 따라 체크 변경
+    // console.log($('input#privacyChk').prop('checked'));
 
-    $(this).attr('checked', 'checked');
-    $('table input').attr('checked', 'checekd');
-
-    if(chk) {
+    $(this).attr('checked', 'checked'); //커스텀input 스타일 적용
+    $('input[name=msg]').attr('checked', 'checked');
+    if(!checked) {
       $(this).removeAttr('checked');
-      $('table input').removeAttr('checked', 'checekd');
-    }
-  }); //모두체크 체크버튼 클릭
+      $('input[name=msg]').removeAttr('checked');
+    } //커스텀input 스타일 적용
+  }); //전체 메세지 체크박스 클릭
 
-  
-  $('table tbody input').click(function() {
-    var chk = $(this).attr('checked') == 'checked';
+  $('input[name=msg]').change(function() {
+    var checked = $(this).prop('checked'); // checked 문자열 참조(true, false)
+    // console.log(checked);
+    $(this).prop('checked', checked);
 
-    $(this).attr('checked', 'checked');
-
-    if(chk) { $(this).removeAttr('checked'); }
-  }); //메세지 체크박스 버튼 클릭
+    $(this).attr('checked', 'checked'); //커스텀input 스타일 적용
+    if(!checked) {$(this).removeAttr('checked')} //chkOn true면 chkOff 상태로
+    // var a = $('#checkMsg2').prop('checked');
+    // console.log(a);
+  }); //단일 메세지 체크박스 클릭
 
   
   $('.write_msg_btn').click(function() { openSendMsgPopup() });

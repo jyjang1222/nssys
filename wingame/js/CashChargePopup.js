@@ -29,9 +29,6 @@ $(function() {
   }); //팝업 호버
 
   $('.pay_radio input[type="radio"]').click(function() {
-    $('.pay_radio input[type="radio"]').removeAttr('checked');
-    $(this).attr('checked', 'checked');
-
     var txt = $(this).next('label').text();
 
     $('.selected_pay').text(txt);
@@ -41,31 +38,19 @@ $(function() {
     } 
     else {$('.pay_info').hide();}
     
-  }); //라디오 박스 선택시 체크 추가
+  }); //충전수단 선택시
 
-  $('.charge_price input[type="radio"]').click(function() {
-    $('.charge_price input[type="radio"]').removeAttr('checked');
-    $(this).attr('checked', 'checked');
-  }); //라디오 박스 선택시 체크 초기화
-
-  $('.charge_price select').click(function() {
-    $('.charge_price input[type="radio"]').removeAttr('checked');
-    $(this).parent().prev().attr('checked', 'checked')
-  }); //셀렉트 박스 선택시 체크 초기화
-
-  $('.insert_price input').focus(function() {
-    $('.charge_price input[type="radio"]').removeAttr('checked');
-    $(this).parent().prev().attr('checked', 'checked')
-  }); //금액 직접입력 선택시 체크박스 포커스
-
-  $('.form_inner select[class*=charge_method]').change(function() {
-    $('.pay_radio input[type="radio"]').removeAttr('checked');
-  }); //셀렉트 박스 선택시 체크 초기화
+  $('input[name=chargeMethod]').change(function() {
+    $('select#giftCard option').prop('selected', false);
+    $('select#otherPay option').prop('selected', false);
+  });
 
   $('.gift_card').change(function() {
     var txt= $('.gift_card option:selected').text();
     var idx = $('.gift_card option:selected').index();
-    console.log(idx)
+    
+    $('input[name=chargeMethod]').prop('checked',false); //충전수단 라디오버튼체크 초기화
+    $('select#otherPay option').prop('selected', false); //기타결제 방법 옵션 초기화
 
     if(idx != 0) {
       $('.selected_pay').text(txt);
@@ -78,12 +63,26 @@ $(function() {
     var txt= $('.other_pay option:selected').text();
     var idx = $('.other_pay option:selected').index();
     
+    $('input[name=chargeMethod]').prop('checked',false); //충전수단 라디오버튼체크 초기화
+    $('select#giftCard option').prop('selected', false); //상품권 선택 옵션 초기화
+
     if(idx != 0) {
       $('.selected_pay').text(txt);
     }
 
     $('.pay_info').hide();
   }); //기타결제 옵션 선택
+
+  $('select#priceSelect').change(function() {
+    $(this).parents('.charge_price').children('input[type=radio]').prop('checked', true);
+    // console.log($('input#rdPriceSelect').prop('checked'));
+    console.log($('select#priceSelect option:selected').val());
+  }); //충전금액 셀렉트박스
+
+  $('input#insertPrice').focus(function() {
+    $(this).parents('.charge_price').children('input[type=radio]').prop('checked', true);
+    // console.log($('input#rdPriceSelect').prop('checked'));
+  }); //충전금액 직접입력
 
   $('.modal_wrap:nth-child(2) td').click(function() {
     $('.modal_wrap:nth-child(2) td').removeClass('txt_red');

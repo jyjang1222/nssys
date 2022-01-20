@@ -1,13 +1,15 @@
 $(function() {
-  $('.certi').click(function() {
-    $(this).toggleClass('on');
+  $('input[name=certi]').change(function() {
+    $('.content label').removeClass('on');
+    $(this).parents('label').addClass('on'); //커스텀input 스타일 적용
 
-    var chk = $(this).find('input').attr('checked') == 'checked'; //chkOff : false chkOn: true
-    // console.log(chk)
-    $(this).find('input').attr('checked','checked'); //chkOn상태로
+    $(this).parents('.certi').siblings('label').children('input[name=certi]').prop('checked', false); //선택한 수단외의 다른수단 checkbox false
+    $(this).prop('checked', checked); //선택한 수단 
 
-    if(chk) {$(this).find('input').removeAttr('checked')} //chkOn true면 chkOff 상태로
-  });
+    var checked = $('#phoneCerti').prop('checked'); //checked 문자열 참조(true, false)
+    // console.log(checked);
+    if(!checked) {$(this).parents('label').removeClass('on');}
+  }); //인증수단 선택
 
   $('.certi_btn').click(function() {
     var certi = ['phone'];
@@ -18,5 +20,5 @@ $(function() {
         break;
       default:alert('인증수단을 선택하세요.');
     }
-  })
+  }); //선택한 인증모듈 오픈
 }); //ready

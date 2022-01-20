@@ -1,22 +1,39 @@
 $(function() {
-  $('.input_area_wrap .input_area').click(function() {
-    $(this).parent().find('input').removeAttr('checked');
-    $(this).children('input').attr('checked', 'checked');
-  });
+  $('input[name=age]').change(function() {
+    var checked = $(this).prop('checked'); //checked 문자열 참조(true, false)
+    $(this).prop('checked', checked);
+    // console.log($("input#showAge").prop("checked"));
 
-  $('.check_area input').click(function() {
-    var chk = $(this).attr('checked') == 'checked'; //chkOff : false chkOn: true
-    // console.log(chk)
-    $(this).attr('checked','checked'); //chkOn상태로
+    
+    $('input[name=age]').removeAttr('checked');
+    if(checked) {$(this).attr('checked', 'checked');} //커스텀input 스타일 적용
+  }); //나이 라디오박스 체크
 
-    if(chk) {$(this).removeAttr('checked')} //chkOn true면 chkOff 상태로
-  });
+  $('input[name=gender]').change(function() {
+    var checked = $(this).prop('checked'); //checked 문자열 참조(true, false)
+    $(this).prop('checked', checked);
+    // console.log($("input#showGender").prop("checked"));
+
+    
+    $('input[name=gender]').removeAttr('checked');
+    if(checked) {$(this).attr('checked', 'checked');} //커스텀input 스타일 적용
+  }); //나이 라디오박스 체크
+
+
+  $('input[type=checkbox]').change(function() {
+    var checked = $(this).prop('checked'); //checked 문자열 참조(true, false);
+    console.log(checked)
+    $(this).prop('checked', checked); //boolean값에따라 input 체크상태 변경
+
+    $(this).attr('checked','checked'); //커스텀input 스타일 적용
+    if(!checked) {$(this).removeAttr('checked')} 
+  }); //수신동의 체크박스
 
   $('.certi_btn').click(function() {
     openPopCerti();
   });
   $('.phone_certi_btn').click(function() {
-    var smsAgreeChk = $('#chkSmsAgree').attr('checked') == 'checked';
+    var smsAgreeChk = $('#chkSmsAgree').prop('checked');
 
     if(smsAgreeChk) { 
       openPopCerti();
@@ -27,7 +44,7 @@ $(function() {
   });
 
   $('.email_certi_btn').click(function() {
-    var mailAgreeChk = $('#chkMailAgree').attr('checked') == 'checked';
+    var mailAgreeChk = $('#chkMailAgree').prop('checked');
 
     if(mailAgreeChk) { 
       openEmailPop();

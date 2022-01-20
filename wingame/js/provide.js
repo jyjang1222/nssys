@@ -1,28 +1,32 @@
 $(function() {
-  $('.check_all input').click(function() {
-    var chk = $(this).attr('checked') == 'checked'; //chkOff : false chkOn: true
-    // console.log(chk)
-    $(this).attr('checked','checked'); //chkOn상태로
-    $('.input_area input').attr('checked', 'checked'); //다른 input 모두 chkOn상태로
+  $('#chkAll').change(function() {
+    var checked = $(this).prop('checked'); //checked 문자열 참조(true, false)
+    // console.log(checked)
+    $('input[name=policy]').prop('checked', checked); //name값이 policy인 input boolean값에 따라 체크 변경
+    // console.log($('input#privacyChk').prop('checked'));
 
-    //chkOn true면 실행
-    if(chk) {
+    $(this).attr('checked', 'checked'); //커스텀input 스타일 적용
+    $('input[name=policy]').attr('checked', 'checked');
+    if(!checked) {
       $(this).removeAttr('checked');
       $('.input_area input').removeAttr('checked');
-    } //모든input chkOn이면 chkOff상태로
+    } //커스텀input 스타일 적용
+    // var a = $('#privacyChk').prop('checked');
+    // console.log(a);
   });
 
-  $('.check_box input').click(function() {
-    var chk = $(this).attr('checked') == 'checked'; //chkOff : false chkOn: true
-    // console.log(chk)
-    $(this).attr('checked','checked'); //chkOn상태로
+  $('input[name=policy]').change(function() {
+    var checked = $(this).prop('checked'); // checked 문자열 참조(true, false)
+    // console.log(checked);
+    $(this).prop('checked', checked);
 
-    if(chk) {$(this).removeAttr('checked')} //chkOn true면 chkOff 상태로
+    $(this).attr('checked', 'checked'); //커스텀input 스타일 적용
+    if(!checked) {$(this).removeAttr('checked')} //chkOn true면 chkOff 상태로
   });
 
   $('.agree_btn').click(function() {
-    var chk1 = $('.input_area .check_box:first-child input').attr('checked') == 'checked';
-    var chk2 = $('.input_area .check_box:nth-child(2) input').attr('checked') == 'checked';
+    var chk1 = $('input#policyChk').prop('checked');
+    var chk2 = $('input#privacyChk').prop('checked');
 
     if(chk1 && chk2) {
       openPopCerti()

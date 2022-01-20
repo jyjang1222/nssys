@@ -19,12 +19,13 @@ $(function() {
   format:'Y.m.d'
   }); //달력
 
-  $('.content:nth-child(3) table input').click(function() {
-    var chk = $(this).attr('checked') == 'checked'; //chkOff : false chkOn: true
-    // console.log(chk)
-    $(this).attr('checked','checked'); //chkOn상태로
+  $('input[type=checkbox]').change(function() {
+    var checked = $(this).prop('checked'); //checked 문자열 참조(true, false)
+    console.log(checked);
+    $(this).prop('checked', checked); //chkOn상태로
 
-    if(chk) {$(this).removeAttr('checked')} //chkOn true면 chkOff 상태로
+    $(this).attr('checked', 'checked'); //커스텀input 스타일 적용
+    if(!checked) {$(this).removeAttr('checked')} //커스텀input 스타일 적용
   });
 
   $('.btns button').click(function() {

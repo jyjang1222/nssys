@@ -1,14 +1,14 @@
 $(function() {
-  $('.check_box input').click(function() {
-    var chk = $(this).attr('checked') == 'checked'; //chkOff : false chkOn: true
-    // console.log(chk)
-    $(this).attr('checked','checked'); //chkOn상태로
-
-    if(chk) {$(this).removeAttr('checked')} //chkOn true면 chkOff 상태로
+  $('.check_box input').change(function() {
+    var checked = $(this).prop('checked'); // checked 문자열 참조(true, false)
+    // console.log(checked);
+    
+    $(this).attr('checked','checked'); //커스텀input 스타일 적용
+    if(!checked) {$(this).removeAttr('checked')} //chkOn true면 chkOff 상태로
   });
 
   $('.email_btn').click(function() {
-    var mailAgreeChk = $('#chkMailAgree').attr('checked') == 'checked';
+    var mailAgreeChk = $('#chkMailAgree').prop('checked');
 
     if(mailAgreeChk) { 
       openEmailPop();

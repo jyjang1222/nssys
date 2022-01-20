@@ -44,7 +44,7 @@ table {width: 100%;border-collapse: collapse;}
 .content:nth-child(3) h3 {text-align: center;}
 .content:nth-child(3) p {margin-bottom: 20px;font-size: 20px;text-align: center;}
 .user_check {width: 520px;margin: 0 auto 100px;}
-.content:nth-child(3) p:before {content:'';display: inline-block;width: 24px;height: 24px;margin-right: 6px;background-image: url(../images/warning.svg);background-size: 24px auto;background-position: center;vertical-align: -6px}
+.content:nth-child(3) p:before {content:'';display: inline-block;width: 24px;height: 24px;margin-right: 6px;background-image: url(../images/warning_red.svg);background-size: 24px auto;background-position: center;vertical-align: -6px}
 .input_area {margin-bottom: 10px;border: 1px solid #AAA;}
 .input_area label, .input_area input {line-height: 46px;}
 .input_area label {display: inline-block;width: 80px;margin-left: 20px;vertical-align: top;}

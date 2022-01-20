@@ -6,10 +6,10 @@ body * {font-size: 15px;}
 span {font-size: inherit;}
 table {width: 100%;border-collapse: collapse;}
 input[type="checkbox"] {appearance: auto;}
-input[type="radio"] {appearance: none;position: relative;width: 13px;height: 13px;border: 1px solid #888;border-radius:50%;background-color: #fff;vertical-align: middle;}
-input[type="radio"]:checked {appearance: none;}
-input[checked="checked"] {border-color: #3aa6de;}
-input[checked="checked"]:after {content:'';display:block;position: absolute;left: 2px;top: 2px;width: 7px;height: 7px;border-radius:50%;background-color: #3aa6de;}
+input[type="radio"] {appearance: auto;}
+.pay_radio input[type="radio"] {vertical-align: -3px;}
+.charge_price input[type="radio"] {vertical-align: -2px;}
+input[type="radio"]:checked {appearance: auto;}
 input[type="text"] {width: 87px;border: 1px solid #AAA;background:#fff;font-size: 14px;}
 input::placeholder {font-size: 12px;}
 .cash_btn {display: inline-block;padding: 0 8px;line-height: 18px;border: 1px solid #dfdfdf;background-color: #fcfcfc;font-size: 12px;font-weight: 400;}

@@ -1815,8 +1815,8 @@ label.ee:before{top: 55px;font-size: 2rem;}
 .pop_wrap.maintenence .pop_content {padding: 60px 0;}
 .pop_wrap.maintenence .pop_content p {text-align: center;color: #fff;font-size: 1rem;}
 .pop_wrap.maintenence .pop_inner {position: absolute;left: 50%;top: 50%;transform:translate(-50%,-50%);box-sizing:border-box;width: 70%;max-width:400px;padding: 1rem 1rem 40px;border-radius:1rem;background-color:#444;}
-.pop_bottom {background-color: #fff;text-align: center;}
+.pop_bottom {background-color: #000;text-align: center;}
 
 .pop_wrap button {font-size: 1rem;}
 .notice_close_btn {position: absolute;right: 1rem;top: 1rem;width: 30px;height: 30px;background-image: url(../img/notice_close_btn.svg);background-size: 24px auto;background-repeat: no-repeat;background-position: right top;z-index: 999;}
-.notice_hide_btn {line-height: 2rem;color: #000;white-space: nowrap;}
+.notice_hide_btn {line-height: 2rem;color: #fff;white-space: nowrap;}

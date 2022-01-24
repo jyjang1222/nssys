@@ -1491,6 +1491,7 @@ left: 30px;
   /* 팝업창 */
   .pop_content {overflow: auto;height: 400px;}
   .content_tit {margin-bottom: 1rem;}
+  .pop_content .sub_txt {margin-bottom: 0 !important;}
 }
 
 /* coin_remit_checking */
@@ -1791,7 +1792,7 @@ label.ee:before{top: 55px;font-size: 2rem;}
 .pop_content strong {font-size: 24px;color: #debb84;}
 .pop_content .content_inner .sub_tit {display: inline-block;margin-bottom: 8px;box-shadow:inset 0 -4px 0 #debb84;text-align: left;font-size: 16px;}
 /* .pop_content .content_inner:nth-of-type(1) {padding: 10px;border: 2px solid #debb84;} */
-.pop_content .content_inner {margin-bottom: .4rem;}
+.pop_content .content_inner {margin-bottom: 1rem;}
 .pop_content .content_inner:nth-of-type(1) li {position: relative;padding-left:8px;font-size: 14px;}
 .pop_content .content_inner:nth-of-type(1) li:before {content:'';display: inline-block;position: absolute;left: 0;top: 9px;width: 4px;height: 4px;margin-right: 4px;border-radius:50%;background-color: #debb84;vertical-align: 3px;}
 .pop_content table {width: 100%;margin-bottom: 8px;}
@@ -1800,7 +1801,9 @@ label.ee:before{top: 55px;font-size: 2rem;}
 .pop_content table td {background-color: #fff;color: #000;}
 .pop_content .col_table th, .pop_content .col_table td {border-right: 1px solid #EEE;}
 .pop_content .col_table th:last-child, .pop_content .col_table td:last-child {border-right: none;}
+.pop_content .sub_txt {padding-left: 1rem;margin-bottom: -1rem;}
 .pop_content .sub_txt:before {content:'';display: inline-block;width: 5px;height: 5px;margin-right: 4px;background-color: #debb84;vertical-align: 4px;}
+.pop_bottom_txt {padding-left: 1rem;}
 
 .pop_wrap button {font-size: 1rem;}
 .notice_close_btn {position: absolute;right: 1rem;top: 1rem;width: 30px;height: 30px;background-image: url(../img/notice_close_btn.svg);background-size: 24px auto;background-repeat: no-repeat;background-position: right top;z-index: 999;}

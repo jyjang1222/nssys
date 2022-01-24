@@ -1801,9 +1801,8 @@ label.ee:before{top: 55px;font-size: 2rem;}
 .pop_content table td {background-color: #fff;color: #000;}
 .pop_content .col_table th, .pop_content .col_table td {border-right: 1px solid #EEE;}
 .pop_content .col_table th:last-child, .pop_content .col_table td:last-child {border-right: none;}
-.pop_content .sub_txt {padding-left: 1rem;margin-bottom: -1rem;}
+.pop_content .sub_txt {margin-bottom: -1rem;}
 .pop_content .sub_txt:before {content:'';display: inline-block;width: 5px;height: 5px;margin-right: 4px;background-color: #debb84;vertical-align: 4px;}
-.pop_bottom_txt {padding-left: 1rem;}
 
 .pop_wrap button {font-size: 1rem;}
 .notice_close_btn {position: absolute;right: 1rem;top: 1rem;width: 30px;height: 30px;background-image: url(../img/notice_close_btn.svg);background-size: 24px auto;background-repeat: no-repeat;background-position: right top;z-index: 999;}

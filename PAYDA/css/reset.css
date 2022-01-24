@@ -1492,6 +1492,7 @@ left: 30px;
   .pop_content {overflow: auto;height: 400px;}
   .content_tit {margin-bottom: 1rem;}
   .pop_content .sub_txt {margin-bottom: 0 !important;}
+  .pop_wrap.maintenence .pop_content {height: auto;}
 }
 
 /* coin_remit_checking */
@@ -1779,10 +1780,12 @@ label.ee:before{top: 55px;font-size: 2rem;}
 
 /* NoticePop */
 .hide {display: none;}
+.password-cc ul {padding-top: 0;}
 .pop_wrap {position: fixed;left: 0;right: 0;top: 0;bottom: 0;background-color: rgba(0,0,0,0.5);z-index: 999;}
 .pop_wrap p {font-size: 1rem;}
 .pop_wrap .pop_content .content_tit {text-align: center;margin-bottom: 1rem;}
-.pop_inner {position: absolute;left: 50%;top: 50%;transform:translate(-50%,-50%);box-sizing:border-box;width: 90%;max-width:600px;padding: 1rem 1rem 40px;border-radius:1rem;background-color:#444;}
+.pop_wrap .pop {margin-bottom: 1rem;}
+.pop_inner {position: absolute;left: 50%;top: 50%;transform:translate(-50%,-50%);box-sizing:border-box;width: 90%;max-width:600px;padding: 1rem;border-radius:1rem;background-color:#444;}
 .pop_tit {border-bottom: 1px solid #debb84;}
 .pop_tit p {font-size: 1rem;}
 .pop_tit p:before {content:'';display: inline-block;width: 85px;height: 25px;background-image: url(../img/logotype.png);background-size: contain;background-repeat: no-repeat;}
@@ -1792,10 +1795,9 @@ label.ee:before{top: 55px;font-size: 2rem;}
 .pop_content strong {font-size: 24px;color: #debb84;}
 .pop_content .content_inner .sub_tit {margin-bottom: 8px;text-align: left;font-size: 16px;}
 .pop_content .content_inner {margin-bottom: 1rem;}
-.pop_content .content_inner:nth-of-type(1) .sub_tit {}
-.pop_content .content_inner:nth-of-type(1) {padding: 10px;border: 2px solid #debb84;}
-.pop_content .content_inner:nth-of-type(1) li {position: relative;padding-left:8px;font-size: 14px;}
-.pop_content .content_inner:nth-of-type(1) li:before {content:'';display: inline-block;position: absolute;left: 0;top: 9px;width: 4px;height: 4px;margin-right: 4px;border-radius:50%;background-color: #debb84;vertical-align: 3px;}
+.pop_content .content_inner:nth-of-type(1) {padding: 10px;border: 2px solid #ff0000;}
+.pop_content .content_inner:nth-of-type(1) li {position: relative;padding-left:8px;font-size: 1rem;}
+.pop_content .content_inner:nth-of-type(1) li:before {content:'';display: inline-block;position: absolute;left: 0;top: 9px;width: 4px;height: 4px;margin-right: 4px;border-radius:50%;background-color: #ff0000;vertical-align: 3px;}
 .pop_content table {width: 100%;margin-bottom: 8px;}
 .pop_content table th, .pop_content table td {padding: 4px 0;font-size: 14px;font-weight: 400;color: #FFF;}
 .pop_content table th {background-color: #c7aa7c;}
@@ -1804,7 +1806,17 @@ label.ee:before{top: 55px;font-size: 2rem;}
 .pop_content .row_table td {padding-left: 4px;}
 .pop_content .col_table th:last-child, .pop_content .col_table td:last-child {border-right: none;}
 .pop_content .sub_txt:before {content:'';display: inline-block;width: 5px;height: 5px;margin-right: 4px;background-color: #debb84;vertical-align: 4px;}
+.pop_content .alert {background-color: #fff;}
+.pop_content .alert p, .pop_content .alert li {color: #ff0000;}
+.pop_content .content_inner .sub_tit {font-size: 1.2rem;}
+
+/* 긴급점검 공지 */
+.pop_wrap.maintenence .txt-strong {margin-bottom: 1rem;}
+.pop_wrap.maintenence .pop_content {padding: 60px 0;}
+.pop_wrap.maintenence .pop_content p {text-align: center;color: #fff;font-size: 1rem;}
+.pop_wrap.maintenence .pop_inner {position: absolute;left: 50%;top: 50%;transform:translate(-50%,-50%);box-sizing:border-box;width: 70%;max-width:400px;padding: 1rem 1rem 40px;border-radius:1rem;background-color:#444;}
+.pop_bottom {background-color: #fff;text-align: center;}
 
 .pop_wrap button {font-size: 1rem;}
 .notice_close_btn {position: absolute;right: 1rem;top: 1rem;width: 30px;height: 30px;background-image: url(../img/notice_close_btn.svg);background-size: 24px auto;background-repeat: no-repeat;background-position: right top;z-index: 999;}
-.notice_hide_btn {position: absolute;left: 50%;transform:translateX(-50%);bottom: 1rem;color: #debb84;white-space: nowrap;}
+.notice_hide_btn {line-height: 2rem;color: #000;white-space: nowrap;}

@@ -1308,27 +1308,27 @@ left: 30px;
   .cc a{width:29.5%;left: 1rem;font-size: 1.2rem;height: 40px;line-height: 40px; border-radius: 5px; bottom: 15px;}
   .ap a{width: 60%;font-size: 1.2rem; height: 40px;line-height: 40px; border-radius: 5px; bottom: 15px; right: 1rem;}
   .mt-set {margin-top: 235px;}
-/* 코인 거래내역 */
-.veiwWrap{width: 100%;top: 70px;padding:0 1rem;padding-top: 0;}
-.veiwBox{padding:1rem;border-radius: 1rem;}
-.gold-tt{font-size: 1.2rem;padding-top: 0;}
-.balance-wrap{width: 100%;padding: 0.8rem 0 1.5rem; text-align: center;}
-.balance{font-size: 2.5rem;text-align: center;}
-.ns{font-size: 1rem;padding-top:1.6rem;padding-left: 0.5rem;display: inline-block;}
-.setbar{margin-top: 1rem;}
-.drop-box{padding-left: 0;}
-.drop-box select{font-size: 1rem;height: 40px;border-radius: .5rem}
-.datepick{margin-left: 0;height: 40px;border-radius: .5rem}
-.datepick input{font-size: 0.7rem;width: 42%;height: 40px;}
-.wave{height: 40px;line-height: 40px;}
-.scroll-wrap{height: 400px;}
-.position-re {
-  position: relative;
-  padding-top: 80px;
-}
-.terms > h3, .terms > h4 {
-  font-size: 1rem;
-}
+  /* 코인 거래내역 */
+  .veiwWrap{width: 100%;top: 70px;padding:0 1rem;padding-top: 0;}
+  .veiwBox{padding:1rem;border-radius: 1rem;}
+  .gold-tt{font-size: 1.2rem;padding-top: 0;}
+  .balance-wrap{width: 100%;padding: 0.8rem 0 1.5rem; text-align: center;}
+  .balance{font-size: 2.5rem;text-align: center;}
+  .ns{font-size: 1rem;padding-top:1.6rem;padding-left: 0.5rem;display: inline-block;}
+  .setbar{margin-top: 1rem;}
+  .drop-box{padding-left: 0;}
+  .drop-box select{font-size: 1rem;height: 40px;border-radius: .5rem}
+  .datepick{margin-left: 0;height: 40px;border-radius: .5rem}
+  .datepick input{font-size: 0.7rem;width: 42%;height: 40px;}
+  .wave{height: 40px;line-height: 40px;}
+  .scroll-wrap{height: 400px;}
+  .position-re {
+    position: relative;
+    padding-top: 80px;
+  }
+  .terms > h3, .terms > h4 {
+    font-size: 1rem;
+  }
 
   /* remit */
   .tab-contents {
@@ -1342,10 +1342,10 @@ left: 30px;
   }
   .tcon-1, .tcon-2, .tcon-3 {
     padding-top: 45px;
-}
-.tab {
-  margin-bottom: 0;
-}
+  }
+  .tab {
+    margin-bottom: 0;
+  }
   .line-1 {
     height: 50px;
     line-height: 50px;
@@ -1374,7 +1374,7 @@ left: 30px;
   .line-2 input {
     height: 50px;
     line-height: 50px;
-font-size: 1rem;
+    font-size: 1rem;
   }
   .line-3 {
     margin-top: 15px;
@@ -1432,61 +1432,65 @@ font-size: 1rem;
   .checking-wrap span {
     font-size: 1.7rem;
   }
-.wrap-wrap {
-  padding: 1rem;
-}
-.line {
-  bottom: 120px;
-  width: 91%;
-  left: 1rem;
-}
+  .wrap-wrap {
+    padding: 1rem;
+  }
+  .line {
+    bottom: 120px;
+    width: 91%;
+    left: 1rem;
+  }
 
-.checking-money {
-  padding-top: 20px;
-  font-size: 1.5rem;
-}
+  .checking-money {
+    padding-top: 20px;
+    font-size: 1.5rem;
+  }
 
-.a1 {
-  bottom: 90px;
-  left: 20px;
-}
-.a2 {
-  bottom: 90px;
-  right: 20px;
-}
-.a3 {
-  bottom: 70px;
-  left: 20px;
-}
-.a4 {
-  bottom: 70px;
-  right: 20px;
-}
-.warning {
-  font-size: 0.8rem;
-  width: 91%;
-  bottom: 60px;
-}
-.lz a {
-  left: 0;
-}
-.rz a {
-  right: 0;
-  width: 65%;
-}
-.circle {
-  font-size: 3rem;
-}
-.password-cnt-check {
-  font-size: 0.9rem;
-}
-.password-cnt-check input[type="checkbox"] {
-  height: 20px; width: 20px; 
-  -ms-transform: scale(1); /* IE */
-  -moz-transform: scale(1); /* FF */
-  -webkit-transform: scale(1); /* Safari and Chrome */
-  -o-transform: scale(1); /* Opera */
-  padding: 5px;}
+  .a1 {
+    bottom: 90px;
+    left: 20px;
+  }
+  .a2 {
+    bottom: 90px;
+    right: 20px;
+  }
+  .a3 {
+    bottom: 70px;
+    left: 20px;
+  }
+  .a4 {
+    bottom: 70px;
+    right: 20px;
+  }
+  .warning {
+    font-size: 0.8rem;
+    width: 91%;
+    bottom: 60px;
+  }
+  .lz a {
+    left: 0;
+  }
+  .rz a {
+    right: 0;
+    width: 65%;
+  }
+  .circle {
+    font-size: 3rem;
+  }
+  .password-cnt-check {
+    font-size: 0.9rem;
+  }
+  .password-cnt-check input[type="checkbox"] {
+    height: 20px; width: 20px; 
+    -ms-transform: scale(1); /* IE */
+    -moz-transform: scale(1); /* FF */
+    -webkit-transform: scale(1); /* Safari and Chrome */
+    -o-transform: scale(1); /* Opera */
+    padding: 5px;
+  }
+  /* 팝업창 */
+  .pop_content {overflow: auto;height: 400px;}
+  .content_tit {margin-bottom: 1rem;}
 }
 
 /* coin_remit_checking */
@@ -1787,7 +1791,7 @@ label.ee:before{top: 55px;font-size: 2rem;}
 .pop_content strong {font-size: 24px;color: #debb84;}
 .pop_content .content_inner .sub_tit {display: inline-block;margin-bottom: 8px;box-shadow:inset 0 -4px 0 #debb84;text-align: left;font-size: 16px;}
 /* .pop_content .content_inner:nth-of-type(1) {padding: 10px;border: 2px solid #debb84;} */
-.pop_content .content_inner {margin-bottom: 1rem;}
+.pop_content .content_inner {margin-bottom: .4rem;}
 .pop_content .content_inner:nth-of-type(1) li {position: relative;padding-left:8px;font-size: 14px;}
 .pop_content .content_inner:nth-of-type(1) li:before {content:'';display: inline-block;position: absolute;left: 0;top: 9px;width: 4px;height: 4px;margin-right: 4px;border-radius:50%;background-color: #debb84;vertical-align: 3px;}
 .pop_content table {width: 100%;margin-bottom: 8px;}
@@ -1796,7 +1800,7 @@ label.ee:before{top: 55px;font-size: 2rem;}
 .pop_content table td {background-color: #fff;color: #000;}
 .pop_content .col_table th, .pop_content .col_table td {border-right: 1px solid #EEE;}
 .pop_content .col_table th:last-child, .pop_content .col_table td:last-child {border-right: none;}
-.pop_content .sub_txt:before {content:'';display: inline-block;width: 5px;height: 5px;margin-right: 4px;background-color: #debb84;vertical-align: 3px;}
+.pop_content .sub_txt:before {content:'';display: inline-block;width: 5px;height: 5px;margin-right: 4px;background-color: #debb84;vertical-align: 4px;}
 
 .pop_wrap button {font-size: 1rem;}
 .notice_close_btn {position: absolute;right: 1rem;top: 1rem;width: 30px;height: 30px;background-image: url(../img/notice_close_btn.svg);background-size: 24px auto;background-repeat: no-repeat;background-position: right top;z-index: 999;}

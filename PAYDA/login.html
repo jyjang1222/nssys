@@ -41,9 +41,9 @@
                     <p><strong>공지사항</strong></p>
                 </div>
                 <div class="pop_content">
-                    <p class="content_tit"><strong>" 입 출금 관련 주의 사항 "</strong></p>
+                    <p class="content_tit"><strong>" 입 출금 관련 주의 필독사항 "</strong></p>
                     <div class="content_inner alert">
-                        <p class="sub_tit">&#8251;입금관련 필독사항 - 페이다 충전시 주의!</p>
+                        <p class="sub_tit">&#8251;페이다 충전시 주의사항&#8251;</p>
                         <ul style="padding-top:0;">
                             <li>충전 시 본인 입금 계좌는 등록된 계좌 이외에 동일회원 다른 계좌로 입금 시 충전 처리가 되지 않습니다 이용에 참고 하시기 바랍니다.</li>
                             <li>충전 시 충전 신청을 하지 않고 이전 충전 신청 시 받은 계좌로 입금을 하면 충전이 처리 되지 않으며 해당 신청 건은 업무시간 기준(주말제외) 내부 검수 절차를 거쳐 24시간 이후 처리결과를 통보해 드립니다.</li>
@@ -126,4 +126,9 @@
         </div>
     </div> -->
     <!-- //긴급점검 -->
+    <script>
+        $('.pop_inner button').click(function() {
+            $(this).parents('.pop_wrap').hide();
+        });
+    </script>
 </body>

@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AACA,OAAO,CAAC,gBAAI;AACZ,OAAO,CAAC,iBAAI;AACZ,OAAO,CAAC,eAAI",
-    "sources": [
-        "../scss/master.scss"
-    ],
-    "names": [],
-    "file": "master.css"
-}

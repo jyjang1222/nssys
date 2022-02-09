@@ -70,7 +70,7 @@
 
 .home_wrap .notice_wrap .notice a::after { content: ''; display: inline-block; position: absolute; top: 50%; right: -.5rem; -webkit-transform: translateY(-50%); transform: translateY(-50%); width: 1.8rem; height: 1.8rem; background: url("../img/chevron_right.svg") center/0.8rem auto no-repeat; }
 
-.home_wrap .trade_log_wrap { overflow: auto; -webkit-box-shadow: 0 6px 6px 0px inset rgba(0, 0, 0, 0.1); box-shadow: 0 6px 6px 0px inset rgba(0, 0, 0, 0.1); }
+.home_wrap .trade_log_wrap { overflow: auto; height: 36.3rem; -webkit-box-shadow: 0 6px 6px 0px inset rgba(0, 0, 0, 0.1); box-shadow: 0 6px 6px 0px inset rgba(0, 0, 0, 0.1); }
 
 .home_wrap .trade_log_wrap li a { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; height: 6.6rem; padding: 1rem 2rem; border-bottom: 1px solid #d0d0d0; }
 
@@ -86,7 +86,7 @@
 
 .home_wrap .trade_log_wrap li:last-child a { border-bottom: none; }
 
-.home_wrap #fnb { position: absolute; left: 0; right: 0; bottom: 0; -webkit-box-shadow: 0 -6px 6px 0px rgba(0, 0, 0, 0.1); box-shadow: 0 -6px 6px 0px rgba(0, 0, 0, 0.1); }
+.home_wrap #fnb { position: fixed; left: 0; right: 0; bottom: 0; -webkit-box-shadow: 0 -6px 6px 0px rgba(0, 0, 0, 0.1); box-shadow: 0 -6px 6px 0px rgba(0, 0, 0, 0.1); background-color: #fff; }
 
 .home_wrap #fnb ul { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
 
@@ -108,9 +108,10 @@
 
 @media (min-width: 600px) { html { font-size: 13px; } }
 
-@media (min-width: 900px) { html { font-size: 16px; } }
+@media (min-width: 900px) { html { font-size: 14px; } }
 
 @media (min-width: 1200px) { html { font-size: 14px; }
   body { background-color: #555; }
-  #wrapper { max-width: 768px; margin: 0 auto; background-color: #fff; } }
+  #wrapper { max-width: 768px; margin: 0 auto; background-color: #fff; }
+  .home_wrap #fnb { position: absolute; } }
 /*# sourceMappingURL=main.css.map */

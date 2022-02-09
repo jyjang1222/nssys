@@ -10,7 +10,23 @@ input[type=text], input[type=password] { padding-left: 1rem; border: 1px solid #
 
 input[type=text]:focus, input[type=password]:focus { border: 1px solid #2C6CDD; }
 
+input[type=checkbox] { width: 2rem; height: 2rem; border: 1px solid #d0d0d0; }
+
+input[type=checkbox]:hover { border: 1px solid #AAA; }
+
+input[type=checkbox]:checked { border: 1px solid #2C6CDD; background: url("../img/input_checkbox.svg") center/1.2rem auto #2C6CDD no-repeat; }
+
 #wrapper { position: relative; min-height: 100vh; }
 
 .container { width: 100%; padding: 0 2rem; }
+
+.min-h-100vh { min-height: 100vh; }
+
+#header { position: relative; }
+
+#header h2 { font-size: 1.8rem; font-weight: 700; }
+
+#header .header_inner { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; height: 5rem; }
+
+#header .btn_back { width: 3rem; height: 3.6rem; background: url("../img/btn_back.svg") left center/1.6rem auto no-repeat; }
 /*# sourceMappingURL=common.css.map */

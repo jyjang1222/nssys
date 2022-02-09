@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PAYDA</title>
+  <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+  <link rel="stylesheet" href="css/master.css">
+</head>
+<body>
+  <div id="wrapper">
+    <div class="join_wrap">
+      <header id="header">
+        <div class="container">
+          <div class="header_inner">
+            <a href="login.html" class="btn_back"><span class="ir">뒤로가기</span></a>
+            <h2 class="psa-c">계좌 생성</h2>
+          </div>
+        </div>
+      </header>
+      <main id="main" class="flx aic">
+        <div class="container">
+          <form action="" method="post">
+            <div class="join_form">
+              <div class="id_area">
+                <label for="id">간편계좌 생성</label>
+                <input type="text" id="id" placeholder="계좌이름을 입력해주세요." class="w100" autocomplete="off">
+              </div>
+              <div class="pw_area">
+                <label for="pw">비밀번호</label>
+                <input type="password" id="pw" placeholder="비밀번호를 입력해주세요." class="w100">
+              </div>
+              <div class="pw_check_area">
+                <label for="pwCheck">비밀번호 확인</label>
+                <input type="password" id="pwCheck" placeholder="비밀번호를 한번 더 입력해주세요." class="w100">
+              </div>
+            </div>
+            <ul class="agree_list">
+              <li>
+                <div class="flx jc-sb aic">
+                  <div class="flx aic">
+                    <input type="checkbox" id="useAgree">
+                    <label for="useAgree">페이다 계좌 이용 동의</label>
+                  </div>
+                  <a href="#a">내용보기</a>
+                </div>
+              </li>
+              <li>
+                <div class="flx jc-sb aic">
+                  <div class="flx aic">
+                    <input type="checkbox" id="inquiryAgree">
+                    <label for="inquiryAgree">페이다 이용 약관 동의</label>
+                  </div>
+                  <a href="#a">내용보기</a>
+                </div>
+              </li>
+              <li>
+                <div class="flx jc-sb aic">
+                  <div class="flx aic">
+                    <input type="checkbox" id="privacyAgree">
+                    <label for="privacyAgree">개인정보 처리방침 동의</label>
+                  </div>
+                  <a href="#a">내용보기</a>
+                </div>
+              </li>
+            </ul>
+            <button type="submit" class="w100">계좌생성</button>
+          </form>
+        </div><!-- //container -->
+      </main>
+    </div><!-- //join_wrap -->
+  </div><!-- //#wrapper -->
+</body>
+</html>

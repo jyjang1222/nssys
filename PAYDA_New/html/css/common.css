@@ -22,11 +22,19 @@ input[type=checkbox]:checked { border: 1px solid #2C6CDD; background: url("../im
 
 .min-h-100vh { min-height: 100vh; }
 
-#header { position: relative; }
+#header { position: relative; background-color: #fff; }
 
 #header h2 { font-size: 1.8rem; font-weight: 700; }
 
 #header .header_inner { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; height: 5rem; }
 
 #header .btn_back { width: 3rem; height: 3.6rem; background: url("../img/btn_back.svg") left center/1.6rem auto no-repeat; }
+
+.header { position: fixed; left: 0; right: 0; top: 0; background-color: #fff; z-index: 999; }
+
+.header h2 { font-size: 1.8rem; font-weight: 700; }
+
+.header .header_inner { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; height: 5rem; }
+
+.header .btn_back { width: 3rem; height: 3.6rem; background: url("../img/btn_back.svg") left center/1.6rem auto no-repeat; }
 /*# sourceMappingURL=common.css.map */

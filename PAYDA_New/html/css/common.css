@@ -1,14 +1,19 @@
+/* Font */
 @import url("https://fonts.googleapis.com/css2?family=Gothic+A1:wght@300;400;500;700&family=Noto+Sans+KR:wght@300;400;500;700&family=Open+Sans:wght@300;400;500;600;700&display=swap");
 @import url("https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css");
 html { font-size: 10px; }
 
 body { font-family: 'Open Sans', 'nanumsquare', sans-serif; font-size: 1.4rem; }
 
-input, button { border-radius: 4px; -webkit-box-sizing: border-box; box-sizing: border-box; }
+input, button { border-radius: .4rem; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
-input[type=text], input[type=password] { padding-left: 1rem; border: 1px solid #d0d0d0; line-height: 4.4rem; }
+.input_box1 { padding-left: 1rem; border: 1px solid #d0d0d0; line-height: 4.4rem; }
 
-input[type=text]:focus, input[type=password]:focus { border: 1px solid #2C6CDD; }
+.input_box1:focus { border: 1px solid #2C6CDD; }
+
+.input_box2 { padding-left: .2rem; border-radius: 0; border-bottom: 1px solid #d0d0d0; line-height: 4rem; }
+
+.input_box2:focus { border-bottom: 1px solid #2C6CDD; }
 
 input[type=checkbox] { width: 2rem; height: 2rem; border: 1px solid #d0d0d0; }
 
@@ -22,6 +27,10 @@ input[type=checkbox]:checked { border: 1px solid #2C6CDD; background: url("../im
 
 .min-h-100vh { min-height: 100vh; }
 
+.txt_color_primary { color: #2C6CDD; }
+
+.txt_color_red { color: #FF4444; }
+
 #header { position: relative; background-color: #fff; }
 
 #header h2 { font-size: 1.8rem; font-weight: 700; }
@@ -30,11 +39,31 @@ input[type=checkbox]:checked { border: 1px solid #2C6CDD; background: url("../im
 
 #header .btn_back { width: 3rem; height: 3.6rem; background: url("../img/btn_back.svg") left center/1.6rem auto no-repeat; }
 
-.header { position: fixed; left: 0; right: 0; top: 0; background-color: #fff; z-index: 999; }
+.header { position: fixed; left: 0; right: 0; top: 0; background-color: #fff; z-index: 99; }
 
 .header h2 { font-size: 1.8rem; font-weight: 700; }
 
 .header .header_inner { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; height: 5rem; }
 
 .header .btn_back { width: 3rem; height: 3.6rem; background: url("../img/btn_back.svg") left center/1.6rem auto no-repeat; }
+
+#fnb { position: fixed; left: 0; right: 0; bottom: 0; -webkit-box-shadow: 0 -6px 6px 0px rgba(0, 0, 0, 0.1); box-shadow: 0 -6px 6px 0px rgba(0, 0, 0, 0.1); background-color: #fff; }
+
+#fnb ul { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+
+#fnb ul li { width: 20%; }
+
+#fnb ul li a { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; height: 6rem; }
+
+#fnb ul li a::before { content: ''; display: block; width: 2.6rem; height: 2.6rem; margin-bottom: .3rem; background: center/contain no-repeat; }
+
+#fnb ul li:nth-child(1) a::before { background-image: url("../img/ico_fnb_home.svg"); }
+
+#fnb ul li:nth-child(2) a::before { background-image: url("../img/ico_fnb_charge.svg"); }
+
+#fnb ul li:nth-child(3) a::before { background-image: url("../img/ico_fnb_send.svg"); }
+
+#fnb ul li:nth-child(4) a::before { background-image: url("../img/ico_fnb_qr.svg"); }
+
+#fnb ul li:nth-child(5) a::before { background-image: url("../img/ico_fnb_report.svg"); }
 /*# sourceMappingURL=common.css.map */

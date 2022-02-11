@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PAYDA</title>
+  <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+  <link rel="stylesheet" href="css/master.css">
+</head>
+<body>
+  <div id="wrapper">
+    <header class="header">
+      <div class="container">
+        <div class="header_inner">
+          <a href="index.html" class="btn_back"><span class="ir">뒤로가기</span></a>
+          <h2 class="psa-xy-c">충전</h2>
+        </div>
+      </div>
+    </header>
+    <div class="charge_wrap flx aic">
+      <div class="container">
+        <form action="" method="post">
+          <p><b>충전금액을 입력하세요</b></p>
+          <p>아래 <span class="txt_color_primary">'충전하기'</span> 버튼을 눌러 신청을 해주세요.</p>
+          <div class="input_money_area">
+            <input type="text" class="input_box2 w100" autocomplete="off" maxlength="9" placeholder="충전금액">
+            <!-- <span class="txt_color_red">최소 1만원 이상 충전 가능</span> -->
+          </div>
+          <ul>
+            <li>- 이용실적에 따라 이용한도가 상향됩니다.</li>
+          </ul>      
+          <a href="#" class="btn_charge">충전하기</a>
+        </form>
+      </div>
+    </div><!-- //charge_wrap -->
+    <nav id="fnb">
+      <ul>
+        <li><a href="index.html">홈</a></li>
+        <li><a href="charge.html">충전</a></li>
+        <li><a href="#">송금</a></li>
+        <li><a href="#">받기</a></li>
+        <li><a href="#">내역</a></li>
+      </ul>
+    </nav>
+    <div id="modal_charge">
+      <div class="modal">
+        <div class="container">
+          <p><b>원화 출금 및 취소안내</b></p>
+          <ol>
+            <li>충전 결제 후 즉시 또는 1시간 이내에 충전금액의 계좌출금 기능은 전자금융범죄 피해 예방을 위하여 제한될 수 있습니다.</li>
+            <li>계좌출금 제한시, 충전취소 기능을 이용하여 최대 건별 충전금액 만큼 보유하고 계신 PAYDA 한도내에 본인계좌로의 환급기능을 사용하실 수 있습니다.</li>
+          </ol>
+          <p>&#8251; 금융 위원회의 관리감독하에 실시하고 있는 [전자금융범죄 피해 예방 제도]에 따라 출금/취소 등에 안전 거래 준칙을 적용하고 있습니다.</p>
+          <div class="btns">
+            <a href="#">취소</a>
+            <button type="button">동의</button>
+          </div>
+        </div>
+      </div>
+    </div><!-- //#modal_wrap -->
+  </div><!-- //#wrapper -->
+</body>
+</html>

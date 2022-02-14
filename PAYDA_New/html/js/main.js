@@ -14,5 +14,8 @@ $(function() {
     $('.send_money_wrap .tab_content:nth-child(' + idx + ')').show();
   }); //송금 탭메뉴
 
-  $('.date_select label').click(function() {})
+  $('.history_wrap .history_type li').click(function() {
+    $(this).siblings().removeClass('on');
+    $(this).addClass('on');
+  }); //내역 거래유형탭 선택
 }) //ready

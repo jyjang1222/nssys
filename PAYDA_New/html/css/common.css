@@ -7,13 +7,21 @@ body { font-family: 'Open Sans', 'nanumsquare', sans-serif; font-size: 1.4rem; }
 
 input, button { border-radius: .4rem; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
-.input_box1 { padding-left: 1rem; border: 1px solid #d0d0d0; line-height: 4.4rem; }
+input::-webkit-input-placeholder { color: #d0d0d0; }
 
-.input_box1:focus { border: 1px solid #2C6CDD; }
+input:-ms-input-placeholder { color: #d0d0d0; }
 
-.input_box2 { padding-left: .2rem; border-radius: 0; border-bottom: 1px solid #d0d0d0; line-height: 4rem; }
+input::-ms-input-placeholder { color: #d0d0d0; }
 
-.input_box2:focus { border-bottom: 1px solid #2C6CDD; }
+input::placeholder { color: #d0d0d0; }
+
+.input_box { line-height: 4.4rem; padding-left: 1rem; border: 1px solid #d0d0d0; }
+
+.input_box:focus { border: 1px solid #2C6CDD; }
+
+.input_bar { line-height: 3.4rem; padding-left: .2rem; border-radius: 0; border-bottom: 1px solid #d0d0d0; }
+
+.input_bar:focus { border-bottom: 1px solid #2C6CDD; }
 
 input[type=checkbox] { width: 2rem; height: 2rem; border: 1px solid #d0d0d0; }
 
@@ -66,4 +74,6 @@ input[type=checkbox]:checked { border: 1px solid #2C6CDD; background: url("../im
 #fnb ul li:nth-child(4) a::before { background-image: url("../img/ico_fnb_qr.svg"); }
 
 #fnb ul li:nth-child(5) a::before { background-image: url("../img/ico_fnb_report.svg"); }
+
+.xdsoft_datetimepicker { left: 50% !important; -webkit-transform: translateX(-50%) !important; transform: translateX(-50%) !important; }
 /*# sourceMappingURL=common.css.map */

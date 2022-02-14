@@ -5,7 +5,7 @@
 
 .login_wrap label { display: block; margin-bottom: 0.6rem; }
 
-.login_wrap button[type=submit] { line-height: 4.4rem; text-align: center; background-color: #2C6CDD; color: #fff; margin-bottom: 1.3rem; }
+.login_wrap button[type=submit] { line-height: 4.4rem; text-align: center; border-radius: 4px; background-color: #2C6CDD; color: #fff; margin-bottom: 1.3rem; }
 
 .login_wrap button[type=button] { border: 1px solid #d0d0d0; line-height: 4.4rem; text-align: center; margin-bottom: 2.2rem; }
 
@@ -105,7 +105,7 @@
 
 .join_wrap #main .agree_list a { color: #2C6CDD; text-decoration: underline; }
 
-.join_wrap #main button[type=submit] { line-height: 4.4rem; text-align: center; background-color: #2C6CDD; color: #fff; }
+.join_wrap #main button[type=submit] { line-height: 4.4rem; text-align: center; border-radius: 4px; background-color: #2C6CDD; color: #fff; }
 
 /* Joinform End */
 /* Menu */
@@ -181,7 +181,7 @@
 
 .pw_change_wrap .pw_change .pw_change_form label { margin-bottom: .6rem; font-size: 1.6rem; font-weight: 700; }
 
-.pw_change_wrap .pw_change .pw_change_form .btn_pw_change { margin-top: 5rem; line-height: 4.4rem; text-align: center; background-color: #2C6CDD; color: #fff; }
+.pw_change_wrap .pw_change .pw_change_form .btn_pw_change { margin-top: 5rem; line-height: 4.4rem; text-align: center; border-radius: 4px; background-color: #2C6CDD; color: #fff; }
 
 /* PwChange End */
 /* Charge */
@@ -195,11 +195,11 @@
 
 .charge_wrap ul { margin-bottom: 4.2rem; }
 
-.charge_wrap .btn_charge { border-radius: 4px; line-height: 4.4rem; text-align: center; background-color: #2C6CDD; color: #fff; }
+.charge_wrap .btn_charge { line-height: 4.4rem; text-align: center; border-radius: 4px; background-color: #2C6CDD; color: #fff; }
 
 .charge_wrap .input_money_area { position: relative; margin-bottom: 4.2rem; }
 
-.charge_wrap .input_money_area input { border-bottom-width: .2rem; font-size: 2rem; }
+.charge_wrap .input_money_area input { border-bottom-width: .2rem; line-height: 4.4rem; font-size: 2rem; }
 
 .charge_wrap .input_money_area input:focus { border-bottom-width: .2rem; }
 
@@ -215,19 +215,127 @@
 
 .charge_wrap .input_money_area span::before { content: ''; display: inline-block; width: 2rem; height: 2rem; background: url("../img/ico_alert.svg") center/1.6rem auto no-repeat; vertical-align: middle; }
 
-#modal_charge { display: none; position: fixed; z-index: 999; }
+#modal_charge { display: block; position: fixed; z-index: 999; }
 
 #modal_charge::before { content: ''; display: block; position: fixed; top: 0; bottom: 0; left: 0; right: 0; background: rgba(0, 0, 0, 0.4); }
 
-#modal_charge .modal { position: fixed; right: 0; left: 0; bottom: 0; height: 35.2rem; border-radius: 2rem 2rem 0 0; background: #FFF; }
+#modal_charge .modal { position: fixed; right: 0; left: 0; bottom: 0; height: 31rem; border-radius: 2rem 2rem 0 0; background: #FFF; }
 
-#modal_charge b { font-size: 1.8rem; }
+#modal_charge .modal .inner { padding: 2rem 2rem 2rem; }
 
-#modal_charge ol { counter-reset: num; }
+#modal_charge .modal .inner b { font-size: 1.8rem; }
 
-#modal_charge ol li::before { counter-increment: num; content: counter(num) ". "; }
+#modal_charge .modal .inner ol { padding: 2rem 0; counter-reset: num; }
+
+#modal_charge .modal .inner ol li { margin-bottom: 2rem; line-height: 1.6rem; }
+
+#modal_charge .modal .inner ol li::before { counter-increment: num; content: counter(num) ". "; }
+
+#modal_charge .modal .inner ol li:last-child { margin-bottom: 0; }
+
+#modal_charge .modal .inner ol + p { margin-bottom: 2rem; line-height: 1.6rem; font-size: 1.2rem; color: #AAA; }
+
+#modal_charge .modal .inner .btns { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; line-height: 4.4rem; }
+
+#modal_charge .modal .inner .btns a, #modal_charge .modal .inner .btns button { width: 45%; text-align: center; }
+
+#modal_charge .modal .inner .btns a { line-height: 4.4rem; text-align: center; border-radius: 4px; background-color: #AAA; color: #fff; }
+
+#modal_charge .modal .inner .btns button { line-height: 4.4rem; text-align: center; border-radius: 4px; background-color: #2C6CDD; color: #fff; }
 
 /* Charge End*/
+/* SendMoney */
+.send_money_wrap { min-height: 100vh; padding-top: 6rem; padding-bottom: 6rem; }
+
+.send_money_wrap .tab_menu { border-bottom: 1px solid #d0d0d0; }
+
+.send_money_wrap .tab_menu ul { display: -webkit-box; display: -ms-flexbox; display: flex; padding: 0 2rem; }
+
+.send_money_wrap .tab_menu li { width: 33.33333333%; }
+
+.send_money_wrap .tab_menu li a { position: relative; line-height: 4rem; text-align: center; font-weight: 700; }
+
+.send_money_wrap .tab_menu li.on a { color: #2C6CDD; }
+
+.send_money_wrap .tab_menu li.on a span { position: absolute; left: 0; right: 0; bottom: -1px; height: 2px; background-color: #2C6CDD; }
+
+.send_money_wrap .tab_contents_wrap { height: calc(100vh - 16rem - 1px); }
+
+.send_money_wrap .tab_contents_wrap .tab_content { width: 100%; }
+
+.send_money_wrap .tab_contents_wrap .tab_content:first-child ~ .tab_content { display: none; }
+
+.send_money_wrap .tab_contents_wrap .tab_content label { margin-bottom: .2rem; font-weight: 700; }
+
+.send_money_wrap .tab_contents_wrap .tab_content .input_area { margin-bottom: 1rem; }
+
+.send_money_wrap .tab_contents_wrap .tab_content .input_area:last-of-type { margin-bottom: 5rem; }
+
+.send_money_wrap .tab_contents_wrap .tab_content .btn_send { line-height: 4.4rem; text-align: center; border-radius: 4px; background-color: #2C6CDD; color: #fff; }
+
+/* SendMoney End */
+/* ReceiveQrcode */
+.qrcode_wrap { min-height: 100vh; padding-top: 5rem; padding-bottom: 6rem; }
+
+.qrcode_wrap .qrcode { margin-bottom: 6rem; }
+
+.qrcode_wrap .qrcode img { width: 20rem; margin-bottom: 1rem; }
+
+.qrcode_wrap .qrcode p { word-break: break-all; }
+
+.qrcode_wrap .btns { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+
+.qrcode_wrap .btns button { width: 44%; }
+
+.qrcode_wrap .btns .btn_copy { border: 1px solid #d0d0d0; line-height: 4.4rem; text-align: center; font-weight: 700; }
+
+.qrcode_wrap .btns .btn_share { line-height: 4.4rem; text-align: center; border-radius: 4px; background-color: #2C6CDD; color: #fff; }
+
+/* ReceiveQrcode End */
+/* History */
+.history_wrap { min-height: 100vh; padding-top: 6rem; padding-bottom: 6rem; }
+
+.history_wrap .head { position: relative; height: 12rem; }
+
+.history_wrap .history_type ul { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; gap: 1rem; }
+
+.history_wrap .history_type li a { width: auto; padding: 0 1rem; border-radius: 4px; background-color: #d0d0d0; line-height: 2.7rem; color: #fff; }
+
+.history_wrap .date_select { position: absolute; bottom: 1.6rem; left: 50%; -webkit-transform: translateX(-50%); transform: translateX(-50%); width: 100%; }
+
+.history_wrap .date_select::before { content: ''; display: inline-block; width: 2rem; height: 2rem; margin-right: .6rem; background: url("../img/ico_calander.svg") center/100% auto no-repeat; }
+
+.history_wrap .date_select label { margin-right: 1rem; font-weight: 700; }
+
+.history_wrap .date_select input { width: 7.2rem; }
+
+.history_wrap .date_select input::-webkit-input-placeholder { text-align: center; }
+
+.history_wrap .date_select input:-ms-input-placeholder { text-align: center; }
+
+.history_wrap .date_select input::-ms-input-placeholder { text-align: center; }
+
+.history_wrap .date_select input::placeholder { text-align: center; }
+
+.history_wrap .date_select span { margin: 0 .4rem; }
+
+.history_wrap .trade_log_wrap { overflow: auto; position: absolute; left: 0; right: 0; top: 18rem; bottom: 6rem; -webkit-box-shadow: 0 6px 6px 0px inset rgba(0, 0, 0, 0.1); box-shadow: 0 6px 6px 0px inset rgba(0, 0, 0, 0.1); }
+
+.history_wrap .trade_log_wrap li a { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; height: 6.6rem; padding: 1rem 2rem; border-bottom: 1px solid #d0d0d0; }
+
+.history_wrap .trade_log_wrap li a .log_top, .history_wrap .trade_log_wrap li a .log_btm { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+
+.history_wrap .trade_log_wrap li a .log_top .trade_state { color: #2C6CDD; }
+
+.history_wrap .trade_log_wrap li a .log_btm { font-size: 1.6rem; font-weight: 700; }
+
+.history_wrap .trade_log_wrap li a .log_btm .trade_money.send { color: #FF4444; }
+
+.history_wrap .trade_log_wrap li a .log_btm .trade_money.charge { color: #4642FF; }
+
+.history_wrap .trade_log_wrap li:last-child a { border-bottom: none; }
+
+/* History End */
 /* Responsive */
 @media (min-width: 600px) { html { font-size: 14px; } }
 
@@ -237,7 +345,9 @@
   body { background-color: #555; }
   #wrapper { max-width: 768px; margin: 0 auto; background-color: #fff; }
   .header { width: 768px; left: auto; right: auto; }
-  .home_wrap #fnb { position: absolute; } }
+  .home_wrap #fnb { position: absolute; }
+  #modal_charge .modal { left: 50%; -webkit-transform: translateX(-50%); transform: translateX(-50%); width: 768px; }
+  #fnb { left: 50%; -webkit-transform: translateX(-50%); transform: translateX(-50%); width: 768px; } }
 
 /* Responsive End */
 /*# sourceMappingURL=main.css.map */

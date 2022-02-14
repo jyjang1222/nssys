@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PAYDA</title>
+  <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+  <link rel="stylesheet" href="css/master.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="dist/js/includeHTML.js"></script>
+</head>
+<body>
+  <div id="wrapper">
+    <header class="header">
+      <div class="container">
+        <div class="header_inner">
+          <a href="index.html" class="btn_back"><span class="ir">뒤로가기</span></a>
+          <h2 class="psa-xy-c">송금</h2>
+        </div>
+      </div>
+    </header>
+    <div class="send_money_wrap">
+      <div class="tab_menu">
+        <ul>
+          <li class="on"><a href="#">간편계좌<span></span></a></li>
+          <li><a href="#">출금계좌<span></span></a></li>
+          <li><a href="#">최근송금<span></span></a></li>
+        </ul>
+      </div>
+      <div class="tab_contents_wrap flx aic">
+        <div class="tab_content">
+          <div class="container">
+            <form action="" method="post">
+              <div class="input_area flx col">
+                <label for="price">송금액</label>
+                <input type="text" id="price" class="input_bar" placeholder="송금액을 입력해주세요." autocomplete="off">
+              </div>
+              <div class="input_area flx col">
+                <label for="easyAccount">간편계좌</label>
+                <input type="text" id="easyAccount" class="input_bar" placeholder="받을분 간편계좌를 입력해주세요." autocomplete="off">
+              </div>
+              <a href="#" class="btn_send">다음</a>
+            </form>
+          </div>
+        </div>
+        <div class="tab_content">
+          <div class="container">2</div>
+        </div>
+        <div class="tab_content">
+          <div class="container">3</div>
+        </div>
+      </div>
+    </div><!-- //send_money_wrap -->
+    <!-- FNB -->
+    <div data-include="fnb.html"></div>
+    <!-- FNB End -->
+  </div><!-- //#wrapper -->
+  <script>includeHTML();</script>
+</body>
+</html>

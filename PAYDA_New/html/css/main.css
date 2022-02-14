@@ -307,9 +307,9 @@
 
 .history_wrap .date_select::before { content: ''; display: inline-block; width: 2rem; height: 2rem; margin-right: .6rem; background: url("../img/ico_calander.svg") center/100% auto no-repeat; }
 
-.history_wrap .date_select label { margin-right: 1rem; font-weight: 700; }
+.history_wrap .date_select label { margin-right: 1rem; line-height: 2rem; font-weight: 700; }
 
-.history_wrap .date_select input { width: 7.2rem; }
+.history_wrap .date_select input { width: 7.2rem; line-height: 2rem; }
 
 .history_wrap .date_select input::-webkit-input-placeholder { text-align: center; }
 

@@ -301,6 +301,8 @@
 
 .history_wrap .history_type li a { width: auto; padding: 0 1rem; border-radius: 4px; background-color: #d0d0d0; line-height: 2.7rem; color: #fff; }
 
+.history_wrap .history_type li.on a { background-color: #2C6CDD; }
+
 .history_wrap .date_select { position: absolute; bottom: 1.6rem; left: 50%; -webkit-transform: translateX(-50%); transform: translateX(-50%); width: 100%; }
 
 .history_wrap .date_select::before { content: ''; display: inline-block; width: 2rem; height: 2rem; margin-right: .6rem; background: url("../img/ico_calander.svg") center/100% auto no-repeat; }

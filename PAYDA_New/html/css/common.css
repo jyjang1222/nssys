@@ -59,21 +59,21 @@ input[type=checkbox]:checked { border: 1px solid #2C6CDD; background: url("../im
 
 #fnb ul { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
 
-#fnb ul li { width: 20%; }
+#fnb li { width: 20%; }
 
-#fnb ul li a { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; height: 6rem; }
+#fnb li a { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; height: 6rem; }
 
-#fnb ul li a::before { content: ''; display: block; width: 2.6rem; height: 2.6rem; margin-bottom: .3rem; background: center/contain no-repeat; }
+#fnb li a::before { content: ''; display: block; width: 2.6rem; height: 2.6rem; margin-bottom: .3rem; background: center/contain no-repeat; }
 
-#fnb ul li:nth-child(1) a::before { background-image: url("../img/ico_fnb_home.svg"); }
+#fnb li:nth-child(1) a::before { background-image: url("../img/ico_fnb_home.svg"); }
 
-#fnb ul li:nth-child(2) a::before { background-image: url("../img/ico_fnb_charge.svg"); }
+#fnb li:nth-child(2) a::before { background-image: url("../img/ico_fnb_charge.svg"); }
 
-#fnb ul li:nth-child(3) a::before { background-image: url("../img/ico_fnb_send.svg"); }
+#fnb li:nth-child(3) a::before { background-image: url("../img/ico_fnb_send.svg"); }
 
-#fnb ul li:nth-child(4) a::before { background-image: url("../img/ico_fnb_qr.svg"); }
+#fnb li:nth-child(4) a::before { background-image: url("../img/ico_fnb_qr.svg"); }
 
-#fnb ul li:nth-child(5) a::before { background-image: url("../img/ico_fnb_report.svg"); }
+#fnb li:nth-child(5) a::before { background-image: url("../img/ico_fnb_report.svg"); }
 
 .xdsoft_datetimepicker { left: 50% !important; -webkit-transform: translateX(-50%) !important; transform: translateX(-50%) !important; }
 /*# sourceMappingURL=common.css.map */

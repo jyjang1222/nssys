@@ -3,7 +3,7 @@ $(function() {
     $('#modal_charge').hide();
   }); //충전 모달
 
-  $('.send_money_wrap .tab_menu li').click(function() {
+  $('.send_tab_menu li').click(function() {
     var idx = $(this).index() + 1;
     console.log(idx);
 
@@ -19,15 +19,15 @@ $(function() {
     $(this).addClass('on');
   }); //내역 거래유형탭 선택
 
-  $('.join_wrap .btn_modal_close').click(function() {
-    $('#modal_join').hide();
-    $('#modal_join .modal_wrap').hide();
+  $('.btn_modal_close').click(function() {
+    $('#modal').hide();
+    $('#modal .modal_wrap').hide();
   }); //계좌생성 약관동의 모달창 닫기
 
-  $('.join_wrap .agree_list a').click(function() {
+  $('.agree_list a').click(function() {
     var idx = $(this).parents('li').index() + 1;
     // console.log(idx);
-    $('#modal_join').show();
-    $('#modal_join .modal_wrap:nth-child(' + idx + ')').show();
+    $('#modal').show();
+    $('#modal .modal_wrap:nth-child(' + idx + ')').show();
   })
 }) //ready

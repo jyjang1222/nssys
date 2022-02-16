@@ -431,7 +431,7 @@
   .home_wrap #fnb { position: absolute; }
   #modal_charge { position: absolute; }
   #fnb { left: 50%; -webkit-transform: translateX(-50%); transform: translateX(-50%); width: 768px; }
-  .join_wrap #modal_join { position: absolute; } }
+  #modal { position: absolute; } }
 
 /* Responsive End */
 /*# sourceMappingURL=main.css.map */

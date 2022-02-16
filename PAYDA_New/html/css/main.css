@@ -1,5 +1,6 @@
-@charset "UTF-8";
 /* Login */
+.login_wrap { min-height: 100vh; }
+
 .login_wrap label, .login_wrap button { font-weight: 700; font-size: 1.6rem; }
 
 .login_wrap input, .login_wrap button { width: 100%; }
@@ -102,51 +103,7 @@
 
 .join_wrap .agree_list input[type=checkbox] { margin-right: .6rem; }
 
-.join_wrap .agree_list a { color: #2C6CDD; text-decoration: underline; }
-
 .join_wrap button[type=submit] { line-height: 4.4rem; text-align: center; border-radius: 4px; background-color: #2C6CDD; color: #fff; }
-
-#modal_join { display: none; position: fixed; left: 0; right: 0; top: 0; bottom: 0; background: rgba(0, 0, 0, 0.4); z-index: 99; }
-
-#modal_join .modal_wrap { display: none; position: relative; border-radius: .4rem; background: #FFF; left: 50%; top: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); width: 90%; }
-
-#modal_join .modal_head { position: relative; padding: 0 1rem; line-height: 3.4rem; border-radius: .4rem .4rem 0 0; background-color: #2C6CDD; color: #FFF; }
-
-#modal_join .modal_head .btn_modal_close { position: absolute; width: 2.4rem; height: 2.4rem; top: 50%; right: 1rem; -webkit-transform: translateY(-50%); transform: translateY(-50%); background: url("../img/btn_modal_close.svg") center/1.2rem auto no-repeat; }
-
-#modal_join .modal_body { padding: 1.2rem 1rem; }
-
-#modal_join .modal_content { overflow: auto; max-height: 60vh; }
-
-#modal_join .modal_content ol { counter-reset: num 0; }
-
-#modal_join .modal_content ol > li::before { counter-increment: num 1; }
-
-#modal_join .use .policy_depth1 > li { margin-bottom: 1rem; }
-
-#modal_join .use .policy_depth1 > li::before { content: counter(num) ". "; }
-
-#modal_join .policy .policy_depth1 p { line-height: 1.4rem; font-size: 1.2rem; }
-
-#modal_join .policy .policy_depth1 > li { margin: 1rem 0; }
-
-#modal_join .policy .policy_depth1 > li::before { content: "제 " counter(num) "조 "; line-height: 2rem; font-weight: 700; }
-
-#modal_join .policy .policy_depth2 > li { margin: .2rem 0; font-size: 1.2rem; }
-
-#modal_join .policy .policy_depth2 > li::before { content: counter(num) ". "; }
-
-#modal_join .policy .policy_depth3 { padding-left: 1rem; line-height: 1.4rem; font-size: 1rem; }
-
-#modal_join .policy .policy_depth3 > li { font-size: 1.2rem; }
-
-#modal_join .policy .policy_depth3 > li::before { content: counter(num) ") "; }
-
-#modal_join .policy .policy_depth4 { padding-left: 1rem; line-height: 1.4rem; font-size: 1rem; }
-
-#modal_join .policy .policy_depth4 > li { font-size: 1.2rem; }
-
-#modal_join .policy .policy_depth4 > li::before { content: counter(num, lower-alpha) ". "; }
 
 /* Joinform End */
 /* Menu */
@@ -284,21 +241,19 @@
 
 /* Charge End*/
 /* SendMoney */
-.send_money_wrap { min-height: 100vh; padding-top: 6rem; padding-bottom: 6rem; }
+.send_tab_menu { margin-top: 1rem; border-bottom: 1px solid #d0d0d0; }
 
-.send_money_wrap .tab_menu { border-bottom: 1px solid #d0d0d0; }
+.send_tab_menu ul { display: -webkit-box; display: -ms-flexbox; display: flex; padding: 0 2rem; }
 
-.send_money_wrap .tab_menu ul { display: -webkit-box; display: -ms-flexbox; display: flex; padding: 0 2rem; }
+.send_tab_menu li { width: 33.33333333%; }
 
-.send_money_wrap .tab_menu li { width: 33.33333333%; }
+.send_tab_menu li a { position: relative; line-height: 4rem; text-align: center; font-weight: 700; }
 
-.send_money_wrap .tab_menu li a { position: relative; line-height: 4rem; text-align: center; font-weight: 700; }
+.send_tab_menu li.on a { color: #2C6CDD; }
 
-.send_money_wrap .tab_menu li.on a { color: #2C6CDD; }
+.send_tab_menu li.on a span { position: absolute; left: 0; right: 0; bottom: -1px; height: 2px; background-color: #2C6CDD; }
 
-.send_money_wrap .tab_menu li.on a span { position: absolute; left: 0; right: 0; bottom: -1px; height: 2px; background-color: #2C6CDD; }
-
-.send_money_wrap .tab_contents_wrap { height: calc(100vh - 16rem - 1px); }
+.send_money_wrap { min-height: 100vh; padding-top: 10rem; padding-bottom: 6rem; }
 
 .send_money_wrap .tab_content { width: 100%; }
 
@@ -306,9 +261,41 @@
 
 .send_money_wrap .tab_content label { margin-bottom: .2rem; font-weight: 700; }
 
-.send_money_wrap .input_area { margin-bottom: 1rem; }
+.send_money_wrap .input_area { position: relative; margin-bottom: 1rem; }
 
 .send_money_wrap .input_area:last-of-type { margin-bottom: 5rem; }
+
+.send_money_wrap .input_area select { margin-left: 1rem; }
+
+.send_money_wrap .account { position: relative; margin: 2rem 0 3rem; }
+
+.send_money_wrap .account p { margin-bottom: 1rem; }
+
+.send_money_wrap .account a { position: absolute; top: 0; right: 0; font-size: 1.3rem; }
+
+.send_money_wrap .account table { width: 100%; }
+
+.send_money_wrap .account tr:first-child td { border-top: 2px solid #2C6CDD; }
+
+.send_money_wrap .account tr:last-child td { border-bottom: 1px solid #AAA; }
+
+.send_money_wrap .account td { width: 33.33333%; padding: 1rem 0; text-align: center; border-bottom: 1px solid #d0d0d0; }
+
+.send_money_wrap .trade_log_wrap { overflow: auto; position: absolute; left: 0; right: 0; top: 10rem; bottom: 6rem; -webkit-box-shadow: 0 6px 6px 0px inset rgba(0, 0, 0, 0.1); box-shadow: 0 6px 6px 0px inset rgba(0, 0, 0, 0.1); }
+
+.send_money_wrap .trade_log_wrap li a { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; height: 6.6rem; padding: 1rem 2rem; border-bottom: 1px solid #d0d0d0; }
+
+.send_money_wrap .trade_log_wrap li:last-child a { border-bottom: none; }
+
+.send_money_wrap .trade_log_wrap .log_top, .send_money_wrap .trade_log_wrap .log_btm { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+
+.send_money_wrap .trade_log_wrap .log_btm { font-size: 1.6rem; font-weight: 700; }
+
+.send_money_wrap .trade_log_wrap .trade_money.send { color: #FF4444; }
+
+.send_money_wrap .trade_log_wrap .trade_money.charge { color: #4642FF; }
+
+.send_money_wrap .trade_log_wrap .trade_state { color: #2C6CDD; }
 
 .send_money_wrap .btn_send { line-height: 4.4rem; text-align: center; border-radius: 4px; background-color: #2C6CDD; color: #fff; }
 
@@ -377,13 +364,68 @@
 .history_wrap .trade_log_wrap .trade_state { color: #2C6CDD; }
 
 /* History End */
+/* AddBank */
+.add_bank_wrap { min-height: 100vh; padding-top: 5rem; padding-bottom: 0; }
+
+.add_bank_wrap p b { font-size: 2rem; }
+
+.add_bank_wrap p:first-child { margin-bottom: 1.4rem; }
+
+.add_bank_wrap p:nth-child(2) { margin-bottom: 4rem; }
+
+.add_bank_wrap .input_area { margin-bottom: 2rem; }
+
+.add_bank_wrap .input_area input { border-bottom-width: .2rem; line-height: 4.4rem; font-size: 2rem; }
+
+.add_bank_wrap .input_area input:focus { border-bottom-width: .2rem; }
+
+.add_bank_wrap .input_area input::-webkit-input-placeholder { font-size: 1.8rem; }
+
+.add_bank_wrap .input_area input:-ms-input-placeholder { font-size: 1.8rem; }
+
+.add_bank_wrap .input_area input::-ms-input-placeholder { font-size: 1.8rem; }
+
+.add_bank_wrap .input_area input::placeholder { font-size: 1.8rem; }
+
+.add_bank_wrap .input_area label { margin-right: 2rem; }
+
+.add_bank_wrap .input_area label b { font-size: 1.6rem; }
+
+.add_bank_wrap .input_area select { font-size: 1.6rem; }
+
+.add_bank_wrap .btn_check_bank { margin-top: 6rem; line-height: 4.4rem; text-align: center; border-radius: 4px; background-color: #2C6CDD; color: #fff; }
+
+/* AddBank End */
+/* MyBankList */
+.bank_list_wrap { min-height: 100vh; padding-top: 5rem; padding-bottom: 0; }
+
+.bank_list_wrap .bank_list p { margin-bottom: 1rem; }
+
+.bank_list_wrap .bank_list table { width: 100%; }
+
+.bank_list_wrap .bank_list tr:first-child td { border-top: 2px solid #2C6CDD; }
+
+.bank_list_wrap .bank_list tr:last-child td { border-bottom: 1px solid #AAA; }
+
+.bank_list_wrap .bank_list td { width: 33.33333%; padding: 1rem 0; text-align: center; border-bottom: 1px solid #d0d0d0; }
+
+.bank_list_wrap .bank_list table { margin-bottom: 6rem; }
+
+.bank_list_wrap .bank_list + p { margin-bottom: 1.4rem; }
+
+.bank_list_wrap .btn_add_bank { line-height: 4.4rem; text-align: center; border-radius: 4px; background-color: #2C6CDD; color: #fff; }
+
+.bank_list_wrap .agree_list { margin-bottom: 5rem; }
+
+.bank_list_wrap .agree_list li { margin-bottom: .8rem; }
+
+.bank_list_wrap .agree_list input[type=checkbox] { margin-right: .6rem; }
+
+/* MyBankList End*/
 /* Responsive */
-@media (min-width: 600px) { html { font-size: 14px; } }
+@media (min-width: 768px) { html { font-size: 14px; } }
 
-@media (min-width: 900px) { html { font-size: 16px; } }
-
-@media (min-width: 1200px) { html { font-size: 14px; }
-  body { background-color: #333; }
+@media (min-width: 1024px) { body { background-color: #333; }
   #wrapper { max-width: 768px; margin: 0 auto; background-color: #fff; }
   .header { width: 768px; left: auto; right: auto; }
   .home_wrap #fnb { position: absolute; }

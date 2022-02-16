@@ -107,7 +107,7 @@
 
 /* Joinform End */
 /* Menu */
-.menu_wrap header .btn_logout { display: block; position: absolute; right: 2rem; width: 3rem; height: 3.6rem; background: url("../img/btn_logout.svg") right center/1.9rem auto no-repeat; }
+.menu_wrap header .btn_logout { display: block; position: absolute; right: 0; width: 3rem; height: 3.6rem; background: url("../img/btn_logout.svg") right center/1.9rem auto no-repeat; }
 
 .menu_wrap nav { padding-top: 10rem; min-height: 100vh; }
 

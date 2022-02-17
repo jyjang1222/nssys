@@ -28,20 +28,21 @@
           <p>아래 <span class="txt_primary">'충전하기'</span> 버튼을 눌러 신청을 해주세요.</p>
           <div class="input_money_area">
             <input type="text" class="input_bar w100" autocomplete="off" maxlength="9" placeholder="충전금액">
+            <!-- 최소금액 불만족시 나올 문구 -->
             <!-- <span class="txt_red">최소 1만원 이상 충전 가능</span> -->
           </div>
           <ul>
             <li>- 이용실적에 따라 이용한도가 상향됩니다.</li>
           </ul>      
-          <a href="#" class="btn_charge">충전하기</a>
+          <a href="ChargeCheck.html" class="btn_charge">충전하기</a>
         </form>
       </div>
     </div><!-- //charge_wrap -->
     <!-- FNB -->
     <div data-include="fnb.html"></div>
     <!-- FNB End -->
-    <div id="modal_charge">
-      <div class="modal">
+    <div id="modalBottom">
+      <div class="modal charge">
         <div class="inner">
           <p><b>원화 출금 및 취소안내</b></p>
           <ol>

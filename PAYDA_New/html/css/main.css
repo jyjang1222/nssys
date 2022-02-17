@@ -213,31 +213,25 @@
 
 .charge_wrap .input_money_area span::before { content: ''; display: inline-block; width: 2rem; height: 2rem; background: url("../img/ico_alert.svg") center/1.6rem auto no-repeat; vertical-align: middle; }
 
-#modal_charge { position: fixed; left: 0; right: 0; top: 0; bottom: 0; background: rgba(0, 0, 0, 0.4); z-index: 999; }
+#modalBottom .charge .inner p:first-child { font-size: 1.8rem; }
 
-#modal_charge .modal { position: relative; top: 100%; border-radius: 2rem 2rem 0 0; background: #FFF; -webkit-transform: translateY(-100%); transform: translateY(-100%); }
+#modalBottom .charge ol { padding: 2rem 0; counter-reset: num; }
 
-#modal_charge .inner { padding: 2rem 2rem 2rem; }
+#modalBottom .charge ol + p { margin-bottom: 2rem; line-height: 1.6rem; font-size: 1.2rem; color: #AAA; }
 
-#modal_charge .inner p:first-child { font-size: 1.8rem; }
+#modalBottom .charge li { margin-bottom: 2rem; line-height: 1.6rem; }
 
-#modal_charge ol { padding: 2rem 0; counter-reset: num; }
+#modalBottom .charge li::before { counter-increment: num; content: counter(num) ". "; }
 
-#modal_charge ol + p { margin-bottom: 2rem; line-height: 1.6rem; font-size: 1.2rem; color: #AAA; }
+#modalBottom .charge li:last-child { margin-bottom: 0; }
 
-#modal_charge li { margin-bottom: 2rem; line-height: 1.6rem; }
+#modalBottom .charge .btns { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; line-height: 4.4rem; }
 
-#modal_charge li::before { counter-increment: num; content: counter(num) ". "; }
+#modalBottom .charge .btns a, #modalBottom .charge .btns button { width: 45%; text-align: center; }
 
-#modal_charge li:last-child { margin-bottom: 0; }
+#modalBottom .charge .btns a { line-height: 4.4rem; text-align: center; border-radius: 4px; background-color: #AAA; color: #fff; }
 
-#modal_charge .btns { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; line-height: 4.4rem; }
-
-#modal_charge .btns a, #modal_charge .btns button { width: 45%; text-align: center; }
-
-#modal_charge .btns a { line-height: 4.4rem; text-align: center; border-radius: 4px; background-color: #AAA; color: #fff; }
-
-#modal_charge .btns button { line-height: 4.4rem; text-align: center; border-radius: 4px; background-color: #2C6CDD; color: #fff; }
+#modalBottom .charge .btns button { line-height: 4.4rem; text-align: center; border-radius: 4px; background-color: #2C6CDD; color: #fff; }
 
 /* Charge End*/
 /* SendMoney */
@@ -422,6 +416,58 @@
 .bank_list_wrap .agree_list input[type=checkbox] { margin-right: .6rem; }
 
 /* MyBankList End*/
+/* SimpleAddr */
+.simple_addr_wrap { min-height: 100vh; padding-top: 5rem; padding-bottom: 0; }
+
+.simple_addr_wrap label { font-weight: 700; }
+
+.simple_addr_wrap .input_area { margin-bottom: 1rem; }
+
+.simple_addr_wrap .simple_addr_info { margin: 2rem 0 4rem; }
+
+.simple_addr_wrap .simple_addr_info p { margin-bottom: .6rem; line-height: 1.6rem; }
+
+.simple_addr_wrap .btn_addr_set { width: 100%; line-height: 4.4rem; text-align: center; border-radius: 4px; background-color: #2C6CDD; color: #fff; }
+
+/* SimpleAddr End */
+/* ChargeCheck*/
+.charge_check_wrap { min-height: 100vh; padding-top: 5rem; padding-bottom: 0; }
+
+.charge_check_wrap .inner { margin-bottom: 10rem; text-align: center; }
+
+.charge_check_wrap .inner img { width: 6rem; }
+
+.charge_check_wrap .inner p:first-of-type { margin-bottom: 2rem; font-size: 2rem; }
+
+.charge_check_wrap .inner p:nth-of-type(2) { font-size: 1.8rem; }
+
+.charge_check_wrap .info { margin-bottom: 4rem; border-top: 1px solid #2C6CDD; }
+
+.charge_check_wrap .info p { line-height: 2rem; }
+
+.charge_check_wrap a { line-height: 4.4rem; text-align: center; border-radius: 4px; background-color: #2C6CDD; color: #fff; }
+
+/* ChargeCheck End */
+/* ChargeDone */
+.charge_done_wrap { min-height: 100vh; padding-top: 5rem; padding-bottom: 0; }
+
+.charge_done_wrap img { width: 6rem; margin-bottom: 1rem; }
+
+.charge_done_wrap .inner { margin-bottom: 8rem; }
+
+.charge_done_wrap .inner p:first-of-type { margin-bottom: 2rem; font-size: 2rem; }
+
+.charge_done_wrap .inner p:nth-of-type(2) { font-size: 1.8rem; }
+
+.charge_done_wrap .inner + p { margin-bottom: 3rem; }
+
+.charge_done_wrap .btns a { width: 45%; }
+
+.charge_done_wrap .btns a:first-child { line-height: 4.4rem; text-align: center; border-radius: 4px; background-color: #AAA; color: #fff; }
+
+.charge_done_wrap .btns a:last-child { line-height: 4.4rem; text-align: center; border-radius: 4px; background-color: #2C6CDD; color: #fff; }
+
+/* ChargeDone End */
 /* Responsive */
 @media (min-width: 768px) { html { font-size: 14px; } }
 
@@ -429,9 +475,9 @@
   #wrapper { max-width: 768px; margin: 0 auto; background-color: #fff; }
   .header { width: 768px; left: auto; right: auto; }
   .home_wrap #fnb { position: absolute; }
-  #modal_charge { position: absolute; }
+  #modalBottom { position: absolute; }
   #fnb { left: 50%; -webkit-transform: translateX(-50%); transform: translateX(-50%); width: 768px; }
-  #modal { position: absolute; } }
+  #modalPop { position: absolute; } }
 
 /* Responsive End */
 /*# sourceMappingURL=main.css.map */

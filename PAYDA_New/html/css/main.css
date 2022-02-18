@@ -90,6 +90,34 @@
 
 .home_wrap .trade_log_wrap .trade_state { color: #2C6CDD; }
 
+.home_wrap .coin_wrap { overflow: auto; position: absolute; left: 0; right: 0; top: 25.3rem; bottom: 6rem; padding: 2rem 0; -webkit-box-shadow: 0 6px 6px 0px inset rgba(0, 0, 0, 0.1); box-shadow: 0 6px 6px 0px inset rgba(0, 0, 0, 0.1); }
+
+.home_wrap .coin_wrap img { width: 3rem; height: 3rem; margin-right: 1rem; }
+
+.home_wrap .coin_wrap .coin { width: 100%; height: 6rem; padding-left: 1.4rem; }
+
+.home_wrap .coin_wrap .inner { height: 3.2rem; }
+
+.home_wrap .coin_wrap .inner span:first-child { margin-bottom: .4rem; font-weight: 700; }
+
+.home_wrap .coin_wrap .chevron { display: block; width: 1.2rem; height: 1.2rem; margin-right: .5rem; background: url("../img/chevron_blk.svg") center/0.6rem auto no-repeat; }
+
+.home_wrap .coin_wrap .chevron.on { -webkit-transform: rotate(180deg); transform: rotate(180deg); }
+
+.home_wrap .coin_wrap .coin_list > li { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; height: 6rem; margin-bottom: 1rem; border-radius: 4px; -webkit-box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.1); box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.1); cursor: pointer; }
+
+.home_wrap .coin_wrap .coin_list > li:last-child { margin-bottom: 0; }
+
+.home_wrap .coin_wrap .coin_link img { display: block; width: 2rem; }
+
+.home_wrap .coin_wrap .coin_link a { overflow: hidden; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; width: 0; height: 6rem; border-right: 1px solid #FFF; background-color: #2C6CDD; -webkit-transition: width .1s; transition: width .1s; color: #FFF; }
+
+.home_wrap .coin_wrap .coin_link li a::before { content: ''; display: block; width: 2rem; height: 2rem; margin-bottom: .6rem; background: url(../img/ico_send_coin.svg) center/100% auto no-repeat; }
+
+.home_wrap .coin_wrap .coin_link li:last-child a { border-right: none; border-radius: 0 4px 4px 0; }
+
+.home_wrap .coin_wrap .coin_link.on a { width: 5rem; }
+
 /* Home End */
 /* JoinForm */
 .join_wrap #main { min-height: 100vh; padding-top: 5rem; padding-bottom: 0; }

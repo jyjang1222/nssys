@@ -1,4 +1,24 @@
 $(function() {
+  $('.coin_wrap .coin').click(function() {
+    var w = $(window).width();
+    console.log(w);
+
+    //다른 코인메뉴 off
+    $(this).parent().siblings().find('.coin_link').removeClass('on');
+    $(this).parent().siblings().find('.chevron').removeClass('on');
+
+    //모바일 에서는 메뉴오픈시 코인이미지가 사라짐
+    if(w < 768) {
+      $(this).parent().siblings().find('img').show();
+      $(this).children('img').toggle();
+    } else {
+      $(this).parent().siblings().find('img').show();
+    }
+    
+    $(this).parent().find('.coin_link').toggleClass('on');
+    $(this).parent().find('.chevron').toggleClass('on');
+  }); //코인메뉴 열기
+
   $('#modalBottom .btn_agree').click(function() {
     $('#modalBottom').hide();
   }); //충전 모달
@@ -29,5 +49,5 @@ $(function() {
     // console.log(idx);
     $('#modalPop').show();
     $('#modalPop .modal_wrap:nth-child(' + idx + ')').show();
-  })
+  }) //약관 모달
 }) //ready

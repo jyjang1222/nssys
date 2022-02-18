@@ -1,7 +1,6 @@
 $(function() {
   $('.coin_wrap .coin').click(function() {
     var w = $(window).width();
-    console.log(w);
 
     //다른 코인메뉴 off
     $(this).parent().siblings().find('.coin_link').removeClass('on');

@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PAYDA</title>
+  <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+  <link rel="stylesheet" href="css/master.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="js/includeHTML.js"></script>
+  <script src="js/main.js"></script>
+</head>
+<body>
+  <div id="wrapper">
+    <div class="home_wrap">
+      <header id="header">
+        <div class="container">
+          <div class="header_inner">
+            <h1><span class="ir">PAYDA</span></h1>
+            <a href="menu.html" class="btn_gnb ir">대메뉴 버튼</a>
+          </div>
+        </div>
+      </header>
+      <main id="main">
+        <div class="top_contents">
+          <div class="account_wrap">
+            <div class="container">
+              <div class="account">
+                <div class="account_inner">
+                  <p class="account_name">내 계좌 : payda</p>
+                  <p class="current_pay">
+                    <strong>10,000</strong>
+                    <b>pay</b>(원)
+                  </p>
+                </div>
+                <ul>
+                  <li><a href="charge.html">충전</a></li>
+                  <li><a href="SendMoney.html">송금</a></li>
+                  <li><a href="receiveQrcode.html">받기</a></li>
+                  <li><a href="history.html">내역</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="notice_area">
+            <div class="container">
+              <p class="notice"><a href="notice.html"><mark>필독! ATM기기 및 오픈뱅킹을 통한 입금 금지!</mark></a></p>
+            </div>
+          </div>
+        </div>
+        <!-- 거래내역 -->
+        <div class="trade_log_wrap" style="display: none;">
+          <ul>
+            <li>
+              <a href="#">
+                <div class="log_top">
+                  <span class="trade_state">PAYDA 송금</span>
+                  <span class="trade_time">04-16 10:15</span>
+                </div>
+                <div class="log_btm">
+                  <span class="trade_name">김민수</span>
+                  <span class="trade_money send">-10,000</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="log_top">
+                  <span class="trade_state">PAYDA 충전</span>
+                  <span class="trade_time">04-16 10:15</span>
+                </div>
+                <div class="log_btm">
+                  <span class="trade_name">내통장 결제</span>
+                  <span class="trade_money charge">+10,000</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="log_top">
+                  <span class="trade_state">PAYDA 입금</span>
+                  <span class="trade_time">04-16 10:15</span>
+                </div>
+                <div class="log_btm">
+                  <span class="trade_name">김민수</span>
+                  <span class="trade_money charge">+10,000</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="log_top">
+                  <span class="trade_state">계좌송금(수수료 1,000원)</span>
+                  <span class="trade_time">04-16 10:15</span>
+                </div>
+                <div class="log_btm">
+                  <span class="trade_name">김민수</span>
+                  <span class="trade_money send">-10,000</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="log_top">
+                  <span class="trade_state">PAYDA 충전 입금대기</span>
+                  <span class="trade_time">04-16 10:15</span>
+                </div>
+                <div class="log_btm">
+                  <span class="trade_name">계좌입금</span>
+                  <span class="trade_money send">+10,000</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="log_top">
+                  <span class="trade_state">PAYDA 충전</span>
+                  <span class="trade_time">04-16 10:15</span>
+                </div>
+                <div class="log_btm">
+                  <span class="trade_name">내통장 결제</span>
+                  <span class="trade_money charge">+10,000</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="log_top">
+                  <span class="trade_state">PAYDA 충전</span>
+                  <span class="trade_time">04-16 10:15</span>
+                </div>
+                <div class="log_btm">
+                  <span class="trade_name">내통장 결제</span>
+                  <span class="trade_money charge">+10,000</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="log_top">
+                  <span class="trade_state">PAYDA 충전</span>
+                  <span class="trade_time">04-16 10:15</span>
+                </div>
+                <div class="log_btm">
+                  <span class="trade_name">내통장 결제</span>
+                  <span class="trade_money charge">+10,000</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="log_top">
+                  <span class="trade_state">PAYDA 충전</span>
+                  <span class="trade_time">04-16 10:15</span>
+                </div>
+                <div class="log_btm">
+                  <span class="trade_name">내통장 결제</span>
+                  <span class="trade_money charge">+10,000</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="log_top">
+                  <span class="trade_state">PAYDA 충전</span>
+                  <span class="trade_time">04-16 10:15</span>
+                </div>
+                <div class="log_btm">
+                  <span class="trade_name">내통장 결제</span>
+                  <span class="trade_money charge">+10,000</span>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- //거래내역 -->
+        <!-- 코인지갑 -->
+        <div class="coin_wrap">
+          <div class="container">
+            <ul class="coin_list">
+              <li>
+                <div class="coin flx aic">
+                  <img src="img/bitcoin.png" alt="비트코인">
+                  <div class="inner flx col">
+                    <span>BITCOIN</span>
+                    <span>200,000,000,000 BTC</span>
+                  </div>
+                </div>
+                <div class="flx aic">
+                  <span class="chevron"></span>
+                  <ul class="coin_link flx">
+                    <li><a href="#">보내기</a></li>
+                    <li><a href="#">받기</a></li>
+                    <li><a href="#">내역</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <div class="coin flx aic">
+                  <img src="img/bitcoin.png" alt="비트코인">
+                  <div class="inner flx col">
+                    <span>BITCOIN</span>
+                    <span>200,000,000,000 BTC</span>
+                  </div>
+                </div>
+                <div class="flx aic">
+                  <span class="chevron"></span>
+                  <ul class="coin_link flx">
+                    <li><a href="#">보내기</a></li>
+                    <li><a href="#">받기</a></li>
+                    <li><a href="#">내역</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <div class="coin flx aic">
+                  <img src="img/bitcoin.png" alt="비트코인">
+                  <div class="inner flx col">
+                    <span>BITCOIN</span>
+                    <span>200,000,000,000 BTC</span>
+                  </div>
+                </div>
+                <div class="flx aic">
+                  <span class="chevron"></span>
+                  <ul class="coin_link flx">
+                    <li><a href="#">보내기</a></li>
+                    <li><a href="#">받기</a></li>
+                    <li><a href="#">내역</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <div class="coin flx aic">
+                  <img src="img/bitcoin.png" alt="비트코인">
+                  <div class="inner flx col">
+                    <span>BITCOIN</span>
+                    <span>200,000,000,000 BTC</span>
+                  </div>
+                </div>
+                <div class="flx aic">
+                  <span class="chevron"></span>
+                  <ul class="coin_link flx">
+                    <li><a href="#">보내기</a></li>
+                    <li><a href="#">받기</a></li>
+                    <li><a href="#">내역</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <div class="coin flx aic">
+                  <img src="img/bitcoin.png" alt="비트코인">
+                  <div class="inner flx col">
+                    <span>BITCOIN</span>
+                    <span>200,000,000,000 BTC</span>
+                  </div>
+                </div>
+                <div class="flx aic">
+                  <span class="chevron"></span>
+                  <ul class="coin_link flx">
+                    <li><a href="#">보내기</a></li>
+                    <li><a href="#">받기</a></li>
+                    <li><a href="#">내역</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <div class="coin flx aic">
+                  <img src="img/bitcoin.png" alt="비트코인">
+                  <div class="inner flx col">
+                    <span>BITCOIN</span>
+                    <span>200,000,000,000 BTC</span>
+                  </div>
+                </div>
+                <div class="flx aic">
+                  <span class="chevron"></span>
+                  <ul class="coin_link flx">
+                    <li><a href="#">보내기</a></li>
+                    <li><a href="#">받기</a></li>
+                    <li><a href="#">내역</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- //코인지갑 -->
+      </main>
+      <!-- FNB -->
+      <div data-include="fnb.html"></div>
+      <!-- FNB End -->
+    </div><!-- //home_wrap -->
+  </div><!-- //#wrapper -->
+  <script>includeHTML();</script>
+</body>
+</html>

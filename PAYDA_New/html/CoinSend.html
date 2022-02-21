@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PAYDA</title>
+  <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+  <link rel="stylesheet" href="css/master.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="js/main.js"></script>
+</head>
+<body>
+  <div id="wrapper">
+    <div class="coin_send_wrap flx aic">
+      <header class="header">
+        <div class="container">
+          <div class="header_inner">
+            <a href="IndexCoin.html" class="btn_back"><span class="ir">뒤로가기</span></a>
+            <h2 class="psa ps-xy-c">보내기</h2>
+          </div>
+        </div>
+      </header>
+      <div class="container">
+        <div class="coin_send">
+          <form action="" method="post">
+            <div class="input_area flx col">
+              <div class="select_coin_area">
+                <label for="coin">보낼 코인</label>
+                <select name="" required="" id="MyCoin">
+                  <option value="">BITCOIN</option>
+                  <option value="">ETHEREUM</option>
+                  <option value="">BITCOIN</option>
+                </select>
+              </div>
+              <div class="selected_coin flx">
+                <img src="img/bitcoin.png" alt="BITCOIN">
+                <div class="flx col jc-sb">
+                  <p><b>BITCOIN</b></p>
+                  <p>200,000,000,000 BTC</p>
+                </div>
+              </div>
+            </div>
+            <div class="input_area">
+              <div class="input_area flx col">
+                <label for="quantity">보낼 수량</label>
+                <input type="text" id="quantity" class="input_bar" placeholder="보낼 수량을 입력해주세요." autocomplete="off">
+              </div>
+            </div>
+            <div class="input_area">
+              <div class="input_area flx col">
+                <label for="UserAddr">받는이</label>
+                <input type="text" id="UserAddr" class="input_bar" placeholder="받을 주소를 입력해주세요." autocomplete="off">
+              </div>
+            </div>
+            <div class="txt_wrap">
+              <p class="txt_red">&#8251; 잘못된 주소로 입금 시 복구할 수 없습니다</p>
+              <p class="txt_red">&#8251; 사용자 부주의로 인한 개인 자산의 피해는 완전한 사용자 책임입니다</p>
+            </div>
+            <div class="tab_wrap">
+              <div class="tab_menu psr">
+                <ul class="flx">
+                  <li class="on"><a href="#">최근 내역</a></li>
+                  <li><a href="#">주소 목록</a></li>
+                </ul>
+                <a href="#" class="psa right0 top0">&plus;주소등록</a>
+              </div>
+              <div class="tab_content">
+                <div class="table_wrap border_style">
+                  <table>
+                    <!-- 등록된 계좌가 없는경우 -->
+                    <!-- <tr>
+                      <td colspan="3" class="tac">등록된 계좌가 없습니다.</td>
+                    </tr> -->
+                    <!-- //등록된 계좌가 없는경우 -->
+                    <tr>
+                      <td>
+                        <p>2022.01.16</p>
+                        <p>23:23:22</p>
+                      </td>
+                      <td>
+                        <p>AASJHFU84384KJDJKDBHJKHDFUISG</p>
+                        <p>10.00000000 btc</p>
+                      </td>
+                      <td class="psr w10"><span class="psa ps-xy-c">선택</span></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p>2022.01.16</p>
+                        <p>23:23:22</p>
+                      </td>
+                      <td>
+                        <p>AASJHFU84384KJDJKDBHJKHDFUISG</p>
+                        <p>10.00000000 btc</p>
+                      </td>
+                      <td class="psr w10"><span class="psa ps-xy-c">선택</span></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p>2022.01.16</p>
+                        <p>23:23:22</p>
+                      </td>
+                      <td>
+                        <p>AASJHFU84384KJDJKDBHJKHDFUISG</p>
+                        <p>10.00000000 btc</p>
+                      </td>
+                      <td class="psr w10"><span class="psa ps-xy-c">선택</span></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p>2022.01.16</p>
+                        <p>23:23:22</p>
+                      </td>
+                      <td>
+                        <p>AASJHFU84384KJDJKDBHJKHDFUISG</p>
+                        <p>10.00000000 btc</p>
+                      </td>
+                      <td class="psr w10"><span class="psa ps-xy-c">선택</span></td>
+                    </tr>
+                  </table>
+                </div>
+                <div class="table_wrap border_style">
+                  <table>
+                    <!-- 등록된 계좌가 없는경우 -->
+                    <!-- <tr>
+                      <td colspan="2" class="tac">등록된 계좌가 없습니다.</td>
+                    </tr> -->
+                    <!-- //등록된 계좌가 없는경우 -->
+                    <tr>
+                      <td>
+                        <p><b>김민수</b></p>
+                        <p>AASJHFU84384KJDJKDBHJKHDFUISG</p>
+                      </td>
+                      <td class="psr w10"><span class="psa ps-xy-c">선택</span></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p><b>김민수</b></p>
+                        <p>AASJHFU84384KJDJKDBHJKHDFUISG</p>
+                      </td>
+                      <td class="psr w10"><span class="psa ps-xy-c">선택</span></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p><b>김민수</b></p>
+                        <p>AASJHFU84384KJDJKDBHJKHDFUISG</p>
+                      </td>
+                      <td class="psr w10"><span class="psa ps-xy-c">선택</span></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p><b>김민수</b></p>
+                        <p>AASJHFU84384KJDJKDBHJKHDFUISG</p>
+                      </td>
+                      <td class="psr w10"><span class="psa ps-xy-c">선택</span></td>
+                    </tr>
+                  </table>
+                </div>
+              </div><!-- //tab_content -->
+            </div><!-- //tab_wrap -->
+            <a href="CoinSendChk.html" class="btn_next">다음</a>
+          </form>
+        </div><!-- //coin_send -->
+      </div>
+    </div><!-- //coin_send_wrap -->
+  </div><!-- //#wrapper -->
+</body>
+</html>

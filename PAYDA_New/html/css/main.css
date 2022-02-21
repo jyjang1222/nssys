@@ -110,13 +110,17 @@
 
 .home_wrap .coin_wrap .coin_link img { display: block; width: 2rem; }
 
-.home_wrap .coin_wrap .coin_link a { overflow: hidden; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; width: 0; height: 6rem; border-right: 1px solid #FFF; background-color: #2C6CDD; -webkit-transition: width .1s; transition: width .1s; color: #FFF; }
+.home_wrap .coin_wrap .coin_link a { overflow: hidden; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; width: 0; height: 6rem; background-color: #2C6CDD; -webkit-transition: width .1s; transition: width .1s; color: #FFF; }
 
-.home_wrap .coin_wrap .coin_link li a::before { content: ''; display: block; width: 2rem; height: 2rem; margin-bottom: .6rem; background: url(../img/ico_send_coin.svg) center/100% auto no-repeat; }
+.home_wrap .coin_wrap .coin_link li a::before { content: ''; display: block; width: 2rem; height: 2rem; margin-bottom: .6rem; background: url(../img/ico_coin_send.svg) center/contain no-repeat; }
 
-.home_wrap .coin_wrap .coin_link li:last-child a { border-right: none; border-radius: 0 4px 4px 0; }
+.home_wrap .coin_wrap .coin_link li:nth-child(2) a::before { background-image: url(../img/ico_coin_qr.svg); }
 
-.home_wrap .coin_wrap .coin_link.on a { width: 5rem; }
+.home_wrap .coin_wrap .coin_link li:nth-child(3) a { border-right: none; border-radius: 0 4px 4px 0; }
+
+.home_wrap .coin_wrap .coin_link li:nth-child(3) a::before { background-image: url(../img/ico_coin_history.svg); }
+
+.home_wrap .coin_wrap .coin_link.on a { width: 5rem; border-right: 1px solid #FFF; }
 
 /* Home End */
 /* JoinForm */
@@ -298,11 +302,11 @@
 
 .send_money_wrap .account table { width: 100%; }
 
-.send_money_wrap .account tr:first-child td { border-top: 2px solid #2C6CDD; }
-
-.send_money_wrap .account tr:last-child td { border-bottom: 1px solid #AAA; }
+.send_money_wrap .account tr:last-child td { border-bottom: none; }
 
 .send_money_wrap .account td { width: 33.33333%; padding: 1rem 0; text-align: center; border-bottom: 1px solid #d0d0d0; }
+
+.send_money_wrap .account .table_wrap { overflow: auto; max-height: 9rem; }
 
 .send_money_wrap .trade_log_wrap { overflow: auto; position: absolute; left: 0; right: 0; top: 10rem; bottom: 6rem; -webkit-box-shadow: 0 6px 6px 0px inset rgba(0, 0, 0, 0.1); box-shadow: 0 6px 6px 0px inset rgba(0, 0, 0, 0.1); }
 
@@ -426,9 +430,7 @@
 
 .bank_list_wrap .bank_list table { width: 100%; }
 
-.bank_list_wrap .bank_list tr:first-child td { border-top: 2px solid #2C6CDD; }
-
-.bank_list_wrap .bank_list tr:last-child td { border-bottom: 1px solid #AAA; }
+.bank_list_wrap .bank_list tr:last-child td { border-bottom: none; }
 
 .bank_list_wrap .bank_list td { width: 33.33333%; padding: 1rem 0; text-align: center; border-bottom: 1px solid #d0d0d0; }
 
@@ -474,9 +476,11 @@
 
 .chk_wrap .inner p:nth-of-type(2) small, .done_wrap .inner p:nth-of-type(2) small { font-size: 1.6rem; }
 
-.chk_wrap .send_chk p, .done_wrap .send_chk p { line-height: 2rem; }
+.chk_wrap .send_chk, .done_wrap .send_chk { margin-bottom: .2rem; }
 
-.chk_wrap .send_chk p:first-child, .done_wrap .send_chk p:first-child { margin-bottom: 1rem; }
+.chk_wrap .send_chk .alert_msg, .done_wrap .send_chk .alert_msg { margin-bottom: 1rem; }
+
+.chk_wrap .send_chk p, .done_wrap .send_chk p { line-height: 2rem; }
 
 .chk_wrap .info, .done_wrap .info { border-top: 2px solid #2C6CDD; }
 
@@ -491,6 +495,56 @@
 .chk_wrap .btns a:last-child, .done_wrap .btns a:last-child { line-height: 4.4rem; text-align: center; border-radius: 4px; background-color: #2C6CDD; color: #fff; }
 
 /* 충전확인&완료, 송금확인&완료 끝 */
+/* CoinSend */
+.coin_send_wrap { min-height: 100vh; padding-top: 5rem; padding-bottom: 0; }
+
+.coin_send_wrap .coin_send select { margin-left: 1rem; }
+
+.coin_send_wrap .coin_send label { font-weight: 700; }
+
+.coin_send_wrap .input_area { margin-bottom: 1rem; }
+
+.coin_send_wrap .select_coin_area { margin-bottom: 1rem; }
+
+.coin_send_wrap .selected_coin img { width: 3rem; margin-right: 1rem; }
+
+.coin_send_wrap .txt_wrap { margin-bottom: 1rem; }
+
+.coin_send_wrap .tab_wrap { margin-bottom: 2rem; }
+
+.coin_send_wrap .tab_menu li:first-child { margin-right: 1rem; }
+
+.coin_send_wrap .tab_menu li.on a { color: #000; }
+
+.coin_send_wrap .tab_menu li a { margin-bottom: 1rem; font-weight: 700; color: #AAA; }
+
+.coin_send_wrap .table_wrap { overflow: auto; max-height: 13.3rem; }
+
+.coin_send_wrap .table_wrap:nth-child(n+2) { display: none; }
+
+.coin_send_wrap .table_wrap table { width: 100%; }
+
+.coin_send_wrap .table_wrap tr:last-child td { border-bottom: none; }
+
+.coin_send_wrap .table_wrap td { width: auto; padding: 1rem 0; text-align: left; border-bottom: 1px solid #d0d0d0; }
+
+.coin_send_wrap .table_wrap p:first-child { margin-bottom: .4rem; }
+
+.coin_send_wrap .btn_next { line-height: 4.4rem; text-align: center; border-radius: 4px; background-color: #2C6CDD; color: #fff; }
+
+/* CoinSend End */
+/* CoinAdd */
+.coin_list_tit { padding: 2rem 0 1rem; }
+
+.coin_add_wrap { min-height: 100vh; padding-top: 10rem; padding-bottom: 0; }
+
+.coin_add_wrap .coin_list { overflow: auto; height: calc(100vh - 10rem); }
+
+.coin_add_wrap .coin_list a { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; height: 4rem; border-bottom: 1px solid #d0d0d0; }
+
+.coin_add_wrap .coin_list a img { width: 3rem; margin-right: .6rem; }
+
+/* CoinAdd End */
 /* Responsive */
 @media (min-width: 768px) { html { font-size: 14px; } }
 

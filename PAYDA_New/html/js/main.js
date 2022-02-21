@@ -24,7 +24,6 @@ $(function() {
 
   $('.send_tab_menu li').click(function() {
     var idx = $(this).index() + 1;
-    console.log(idx);
 
     $(this).siblings().removeClass('on')
     $(this).addClass('on');
@@ -49,4 +48,14 @@ $(function() {
     $('#modalPop').show();
     $('#modalPop .modal_wrap:nth-child(' + idx + ')').show();
   }) //약관 모달
+
+  $('.coin_send_wrap .tab_menu li').click(function() {
+    var idx = $(this).index() + 1;
+
+    $(this).siblings().removeClass('on');
+    $(this).addClass('on');
+
+    $('.coin_send_wrap .table_wrap:nth-child(' + idx + ')').siblings().hide();
+    $('.coin_send_wrap .table_wrap:nth-child(' + idx + ')').show();
+  });
 }) //ready

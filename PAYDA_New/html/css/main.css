@@ -122,6 +122,8 @@
 
 .home_wrap .coin_wrap .coin_link.on a { width: 5rem; border-right: 1px solid #FFF; }
 
+.home_wrap .btn_add_coin { position: fixed; width: 4rem; height: 4rem; border: 1px solid #2C6CDD; border-radius: 50%; background: url("../img/plus.svg") center/1.2rem auto no-repeat #FFF; right: 2rem; bottom: 8rem; z-index: 999; }
+
 /* Home End */
 /* JoinForm */
 .join_wrap #main { min-height: 100vh; padding-top: 5rem; padding-bottom: 0; }

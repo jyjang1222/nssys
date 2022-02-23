@@ -18,9 +18,19 @@ $(function() {
     $(this).parent().find('.chevron').toggleClass('on');
   }); //코인메뉴 열기
 
-  $('#modalBottom .btn_agree').click(function() {
+  $('#modalBottom .modal_close').click(function() {
     $('#modalBottom').hide();
-  }); //충전 모달
+    $('#modalBottom .history').css({'top':'150%'});
+    $('#modalBottom .history').hide();
+  }); //화면아래위치한 모달 닫기
+
+  $('.history_wrap .trade_log_wrap li').click(function() {
+    var idx = $(this).index() + 1;
+
+    $('#modalBottom').show();
+    $('#modalBottom .history:nth-child(' + idx + ')').show();
+    $('#modalBottom .history').stop().animate({top:'100%'});
+  }); //내역 상세보기 모달창 오픈
 
   $('.send_tab_menu li').click(function() {
     var idx = $(this).index() + 1;
@@ -57,5 +67,10 @@ $(function() {
 
     $('.coin_send_wrap .table_wrap:nth-child(' + idx + ')').siblings().hide();
     $('.coin_send_wrap .table_wrap:nth-child(' + idx + ')').show();
+  }); //코인보내기 탭메뉴
+
+  $('.coin_list li').click(function() {
+    $('#modalPop').show();
+    $('#modalPop .modal_wrap').show();
   });
 }) //ready

@@ -12,66 +12,63 @@
 </head>
 <body>
   <div id="wrapper">
-    <div class="join_wrap">
-      <header class="header">
-        <div class="container">
-          <div class="header_inner">
-            <a href="login.html" class="btn_back"><span class="ir">뒤로가기</span></a>
-            <h2 class="psa ps-xy-c">계좌 생성</h2>
-          </div>
+    <header class="header">
+      <div class="container">
+        <div class="header_inner">
+          <a href="login.html" class="btn_back"><span class="ir">뒤로가기</span></a>
+          <h2 class="psa ps-xy-c">회원가입</h2>
         </div>
-      </header>
-      <main id="main" class="flx aic">
-        <div class="container">
-          <form action="" method="post">
-            <div class="join_form">
-              <div class="id_area">
-                <label for="id">간편계좌 생성</label>
-                <input type="text" id="id" class="input_box w100" placeholder="계좌이름을 입력해주세요." autocomplete="off">
-              </div>
-              <div class="pw_area">
-                <label for="pw">비밀번호</label>
-                <input type="password" id="pw" class="input_box w100" placeholder="비밀번호를 입력해주세요.">
-              </div>
-              <div class="pw_check_area">
-                <label for="pwCheck">비밀번호 확인</label>
-                <input type="password" id="pwCheck" class="input_box w100" placeholder="비밀번호를 한번 더 입력해주세요.">
-              </div>
+      </div>
+    </header>
+    <div class="join_wrap content_align flx aic">
+      <div class="container">
+        <form action="" method="post">
+          <div class="join_form">
+            <div class="id_area">
+              <label for="id">간편계좌 생성</label>
+              <input type="text" id="id" class="input_box w100" placeholder="계좌이름을 입력해주세요." autocomplete="off">
             </div>
-            <ul class="agree_list">
-              <li>
-                <div class="flx jc-sb aic">
-                  <div class="flx aic">
-                    <input type="checkbox" id="useAgree">
-                    <label for="useAgree">페이다 계좌 이용 동의</label>
-                  </div>
-                  <a href="#a" class="txt_link">내용보기</a>
+            <div class="pw_area">
+              <label for="pw">비밀번호</label>
+              <input type="password" id="pw" class="input_box w100" placeholder="비밀번호를 입력해주세요.">
+            </div>
+            <div class="pw_check_area">
+              <label for="pwCheck">비밀번호 확인</label>
+              <input type="password" id="pwCheck" class="input_box w100" placeholder="비밀번호를 한번 더 입력해주세요.">
+            </div>
+          </div>
+          <ul class="agree_list">
+            <li>
+              <div class="flx jc-sb aic">
+                <div class="flx aic">
+                  <input type="checkbox" id="useAgree">
+                  <label for="useAgree">페이다 계좌 이용 동의</label>
                 </div>
-              </li>
-              <li>
-                <div class="flx jc-sb aic">
-                  <div class="flx aic">
-                    <input type="checkbox" id="inquiryAgree">
-                    <label for="inquiryAgree">페이다 이용 약관 동의</label>
-                  </div>
-                  <a href="#a" class="txt_link">내용보기</a>
+                <a href="#a" class="txt_link">내용보기</a>
+              </div>
+            </li>
+            <li>
+              <div class="flx jc-sb aic">
+                <div class="flx aic">
+                  <input type="checkbox" id="inquiryAgree">
+                  <label for="inquiryAgree">페이다 이용 약관 동의</label>
                 </div>
-              </li>
-              <li>
-                <div class="flx jc-sb aic">
-                  <div class="flx aic">
-                    <input type="checkbox" id="privacyAgree">
-                    <label for="privacyAgree">개인정보 처리방침 동의</label>
-                  </div>
-                  <a href="#a" class="txt_link">내용보기</a>
+                <a href="#a" class="txt_link">내용보기</a>
+              </div>
+            </li>
+            <li>
+              <div class="flx jc-sb aic">
+                <div class="flx aic">
+                  <input type="checkbox" id="privacyAgree">
+                  <label for="privacyAgree">개인정보 처리방침 동의</label>
                 </div>
-              </li>
-            </ul>
-            <button type="submit" class="w100">계좌생성</button>
-          </form>
-        </div><!-- //container -->
-      </main>
-      
+                <a href="#a" class="txt_link">내용보기</a>
+              </div>
+            </li>
+          </ul>
+          <button type="submit" class="btn_primary w100">계좌생성</button>
+        </form>
+      </div><!-- //container -->
     </div><!-- //join_wrap -->
     <!-- 모달창 -->
     <div id="modalPop">

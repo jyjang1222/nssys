@@ -12,26 +12,29 @@
 </head>
 <body>
   <div id="wrapper">
-    <div class="coin_send_wrap flx aic">
-      <header class="header">
-        <div class="container">
-          <div class="header_inner">
-            <a href="IndexCoin.html" class="btn_back"><span class="ir">뒤로가기</span></a>
-            <h2 class="psa ps-xy-c">보내기</h2>
-          </div>
+    <header class="header">
+      <div class="container">
+        <div class="header_inner">
+          <a href="IndexCoin.html" class="btn_back"><span class="ir">뒤로가기</span></a>
+          <h2 class="psa ps-xy-c">보내기</h2>
         </div>
-      </header>
+      </div>
+    </header>
+    <div class="coin_send_wrap content_align flx aic">
       <div class="container">
         <div class="coin_send">
           <form action="" method="post">
             <div class="input_area flx col">
-              <div class="select_coin_area">
+              <div class="select_area">
                 <label for="coin">보낼 코인</label>
-                <select name="" required="" id="MyCoin">
-                  <option value="">BITCOIN</option>
-                  <option value="">ETHEREUM</option>
-                  <option value="">BITCOIN</option>
-                </select>
+                <div class="select_box">
+                  <select id="coin">
+                    <option selected>보낼 코인</option>
+                    <option>BITCOIN</option>
+                    <option>ETHEREUM</option>
+                    <option>BITCOIN</option>
+                  </select>
+                </div>
               </div>
               <div class="selected_coin flx">
                 <img src="img/bitcoin.png" alt="BITCOIN">
@@ -158,7 +161,7 @@
                 </div>
               </div><!-- //tab_content -->
             </div><!-- //tab_wrap -->
-            <a href="CoinSendChk.html" class="btn_next">다음</a>
+            <a href="CoinSendChk.html" class="btn_primary">다음</a>
           </form>
         </div><!-- //coin_send -->
       </div>

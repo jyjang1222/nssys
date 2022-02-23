@@ -1,10 +1,10 @@
 @charset "UTF-8";
 /* Font */
-@import url("https://fonts.googleapis.com/css2?family=Gothic+A1:wght@300;400;500;700&family=Noto+Sans+KR:wght@300;400;500;700&family=Open+Sans:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
 @import url("https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css");
 html { font-size: 10px; }
 
-body { font-family: 'Open Sans', 'nanumsquare', sans-serif; font-size: 1.4rem; }
+body { overflow-y: hidden; font-family: 'Open Sans', 'nanumsquare', sans-serif; font-size: 1.4rem; }
 
 input, button { border-radius: .4rem; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
@@ -38,6 +38,22 @@ input[type=checkbox]:hover { border: 1px solid #AAA; }
 
 input[type=checkbox]:checked { border: 1px solid #2C6CDD; background: url("../img/input_checkbox.svg") center/1.2rem auto #2C6CDD no-repeat; }
 
+/* Select */
+select { padding: 0 2rem 0 .4rem; }
+
+select:focus .select_box { background-image: url("../img/chevron_select_top.svg"); }
+
+.select_box { display: inline-block; border-bottom: 2px solid #2C6CDD; background: url("../img/chevron_select_bottom.svg") right 0.4rem center/1rem auto no-repeat; }
+
+.select_area label { margin-right: 1rem; }
+
+/* Button */
+.btn_primary { line-height: 4.4rem; text-align: center; border-radius: 4px; background-color: #2C6CDD; color: #fff; }
+
+.btn_secondary { border: 1px solid #d0d0d0; line-height: 4.4rem; text-align: center; }
+
+.btn_cancel { line-height: 4.4rem; text-align: center; border-radius: 4px; background-color: #AAA; color: #fff; }
+
 /* border */
 .border_style { border-top: 2px solid #2C6CDD; border-bottom: 1px solid #AAA; }
 
@@ -46,6 +62,52 @@ input[type=checkbox]:checked { border: 1px solid #2C6CDD; background: url("../im
 
 .container { width: 100%; padding: 0 2rem; }
 
+.content_align { min-height: 100vh; padding-top: 5rem; padding-bottom: 0; }
+
+/* 메인홈 헤더 */
+#header { position: relative; background-color: #fff; }
+
+#header h2 { font-size: 1.8rem; font-weight: 700; }
+
+#header .header_inner { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; height: 5rem; }
+
+#header .btn_back { width: 3rem; height: 3.6rem; background: url("../img/btn_back.svg") left center/1.6rem auto no-repeat; }
+
+/* 메인홈 헤더 끝 */
+/* 서브페이지 헤더 */
+.header { position: fixed; left: 0; right: 0; top: 0; background-color: #fff; z-index: 99; }
+
+.header h2 { font-size: 1.8rem; font-weight: 700; }
+
+.header .header_inner { display: -webkit-box; display: -ms-flexbox; display: flex; position: relative; -webkit-box-align: center; -ms-flex-align: center; align-items: center; height: 5rem; }
+
+.header .btn_back { width: 3rem; height: 3.6rem; background: url("../img/btn_back.svg") left center/1.6rem auto no-repeat; }
+
+.header .btn_logout { display: block; position: absolute; right: 0; width: 3rem; height: 3.6rem; background: url("../img/btn_logout.svg") right center/1.9rem auto no-repeat; }
+
+/* 서브페이지 헤더 끝 */
+/* 푸터퀵메뉴 */
+#fnb { position: fixed; left: 0; right: 0; bottom: 0; -webkit-box-shadow: 0 -6px 6px 0px rgba(0, 0, 0, 0.1); box-shadow: 0 -6px 6px 0px rgba(0, 0, 0, 0.1); background-color: #fff; }
+
+#fnb ul { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+
+#fnb li { width: 20%; }
+
+#fnb li a { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; height: 6rem; }
+
+#fnb li a::before { content: ''; display: block; width: 2.6rem; height: 2.6rem; margin-bottom: .3rem; background: center/contain no-repeat; }
+
+#fnb li:nth-child(1) a::before { background-image: url("../img/ico_fnb_home.svg"); }
+
+#fnb li:nth-child(2) a::before { background-image: url("../img/ico_fnb_charge.svg"); }
+
+#fnb li:nth-child(3) a::before { background-image: url("../img/ico_fnb_send.svg"); }
+
+#fnb li:nth-child(4) a::before { background-image: url("../img/ico_fnb_qr.svg"); }
+
+#fnb li:nth-child(5) a::before { background-image: url("../img/ico_fnb_report.svg"); }
+
+/* 푸터퀵메뉴 끝 */
 /* 팝업형태 모달 */
 #modalPop { display: none; position: fixed; left: 0; right: 0; top: 0; bottom: 0; background: rgba(0, 0, 0, 0.4); z-index: 99; }
 
@@ -117,7 +179,7 @@ input[type=checkbox]:checked { border: 1px solid #2C6CDD; background: url("../im
 
 #modalPop .auto_send li { padding-left: 1rem; line-height: 4rem; color: #2C6CDD; text-decoration: underline; }
 
-/* //팝업형태 모달 */
+/* 팝업형태 모달 끝 */
 /* 화면아래위치한 모달 */
 #modalBottom { position: fixed; left: 0; right: 0; top: 0; bottom: 0; background: rgba(0, 0, 0, 0.4); z-index: 999; }
 
@@ -125,47 +187,33 @@ input[type=checkbox]:checked { border: 1px solid #2C6CDD; background: url("../im
 
 #modalBottom .inner { padding: 2rem 2rem 2rem; }
 
-/* //화면아래위치한 모달 */
-/* 메인홈 헤더 */
-#header { position: relative; background-color: #fff; }
+/* 화면아래위치한 모달 끝 */
+/* 인풋이 하나만 있는 페이지스타일(charge, addbank, findpw) */
+.one_input_page p b { font-size: 2rem; }
 
-#header h2 { font-size: 1.8rem; font-weight: 700; }
+.one_input_page p:first-child { margin-bottom: 1.4rem; }
 
-#header .header_inner { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; height: 5rem; }
+.one_input_page p:nth-child(2) { margin-bottom: 4rem; }
 
-#header .btn_back { width: 3rem; height: 3.6rem; background: url("../img/btn_back.svg") left center/1.6rem auto no-repeat; }
+.one_input_page .input_area input { border-bottom-width: .2rem; line-height: 4.4rem; font-size: 2rem; }
 
-/* //메인홈 헤더 */
-/* 서브페이지 헤더 */
-.header { position: fixed; left: 0; right: 0; top: 0; background-color: #fff; z-index: 99; }
+.one_input_page .input_area input:focus { border-bottom-width: .2rem; }
 
-.header h2 { font-size: 1.8rem; font-weight: 700; }
+.one_input_page .input_area input::-webkit-input-placeholder { font-size: 1.8rem; }
 
-.header .header_inner { display: -webkit-box; display: -ms-flexbox; display: flex; position: relative; -webkit-box-align: center; -ms-flex-align: center; align-items: center; height: 5rem; }
+.one_input_page .input_area input:-ms-input-placeholder { font-size: 1.8rem; }
 
-.header .btn_back { width: 3rem; height: 3.6rem; background: url("../img/btn_back.svg") left center/1.6rem auto no-repeat; }
+.one_input_page .input_area input::-ms-input-placeholder { font-size: 1.8rem; }
 
-/* //서브페이지 헤더 */
-/* 푸터퀵메뉴 */
-#fnb { position: fixed; left: 0; right: 0; bottom: 0; -webkit-box-shadow: 0 -6px 6px 0px rgba(0, 0, 0, 0.1); box-shadow: 0 -6px 6px 0px rgba(0, 0, 0, 0.1); background-color: #fff; }
+.one_input_page .input_area input::placeholder { font-size: 1.8rem; }
 
-#fnb ul { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+.one_input_page .input_area span { position: absolute; left: 0; right: 0; bottom: -3rem; }
 
-#fnb li { width: 20%; }
+.one_input_page .input_area span::before { content: ''; display: inline-block; width: 2rem; height: 2rem; background: url("../img/ico_alert.svg") center/1.6rem auto no-repeat; vertical-align: middle; }
 
-#fnb li a { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; height: 6rem; }
+.one_input_page .input_area label { font-size: 1.6rem; }
 
-#fnb li a::before { content: ''; display: block; width: 2.6rem; height: 2.6rem; margin-bottom: .3rem; background: center/contain no-repeat; }
-
-#fnb li:nth-child(1) a::before { background-image: url("../img/ico_fnb_home.svg"); }
-
-#fnb li:nth-child(2) a::before { background-image: url("../img/ico_fnb_charge.svg"); }
-
-#fnb li:nth-child(3) a::before { background-image: url("../img/ico_fnb_send.svg"); }
-
-#fnb li:nth-child(4) a::before { background-image: url("../img/ico_fnb_qr.svg"); }
-
-#fnb li:nth-child(5) a::before { background-image: url("../img/ico_fnb_report.svg"); }
+.one_input_page .input_area select { font-size: 1.6rem; }
 
 .xdsoft_datetimepicker { left: 50% !important; -webkit-transform: translateX(-50%) !important; transform: translateX(-50%) !important; }
 /*# sourceMappingURL=common.css.map */

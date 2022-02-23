@@ -117,7 +117,7 @@ select { padding: 0 2rem 0 .4rem; }
 
 #modalPop .modal_body { padding: 1.2rem 1rem; }
 
-#modalPop .modal_content { overflow: auto; max-height: 60vh; }
+#modalPop .modal_content { overflow: auto; max-height: 70vh; }
 
 #modalPop .modal_content ol { counter-reset: num 0; }
 

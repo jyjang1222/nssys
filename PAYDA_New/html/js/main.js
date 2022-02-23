@@ -29,7 +29,7 @@ $(function() {
 
     $('#modalBottom').show();
     $('#modalBottom .history:nth-child(' + idx + ')').show();
-    $('#modalBottom .history').stop().animate({top:'100%'});
+    $('#modalBottom .history').stop().animate({top:'100%'}, 300);
   }); //내역 상세보기 모달창 오픈
 
   $('.send_tab_menu li').click(function() {

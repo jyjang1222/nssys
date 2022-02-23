@@ -48,7 +48,7 @@ select { padding: 0 2rem 0 .4rem; }
 /* Button */
 .btn_primary { line-height: 4.4rem; text-align: center; border-radius: 4px; background-color: #2C6CDD; color: #fff; }
 
-.btn_secondary { border: 1px solid #d0d0d0; line-height: 4.4rem; text-align: center; }
+.btn_secondary { border: 1px solid #d0d0d0; border-radius: 4px; line-height: 4.4rem; text-align: center; }
 
 .btn_cancel { line-height: 4.4rem; text-align: center; border-radius: 4px; background-color: #AAA; color: #fff; }
 

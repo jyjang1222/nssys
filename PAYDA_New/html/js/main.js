@@ -20,17 +20,17 @@ $(function() {
 
   $('#modalBottom .modal_close').click(function() {
     $('#modalBottom').hide();
-    $('#modalBottom .history').css({'top':'150%'});
+    $('#modalBottom .history').css({'transform':'translateY(100%)'});
     $('#modalBottom .history').hide();
   }); //화면아래위치한 모달 닫기
 
-  $('.history_wrap .trade_log_wrap li').click(function() {
-    var idx = $(this).index() + 1;
-
-    $('#modalBottom').show();
-    $('#modalBottom .history:nth-child(' + idx + ')').show();
-    $('#modalBottom .history').stop().animate({top:'100%'}, 300);
-  }); //내역 상세보기 모달창 오픈
+  // $('.trade_log_wrap li').click(function() {
+  //   var idx = $(this).index() + 1;
+  //   // console.log(idx);
+  //   $('#modalBottom').show();
+  //   $('#modalBottom .history:nth-child(' + idx + ')').show();
+  //   $('#modalBottom .history').stop().animate({transform:'translateY(-100%)'}, 300);
+  // }); //내역 상세보기 모달창 오픈
 
   $('.send_tab_menu li').click(function() {
     var idx = $(this).index() + 1;
@@ -73,4 +73,4 @@ $(function() {
     $('#modalPop').show();
     $('#modalPop .modal_wrap').show();
   });
-}) //ready
+}); //ready

@@ -1,5 +1,5 @@
 var script_arr = [
-  "js/modal.js",
+  "js/modal.js", "js/FnbStyle.js"
   // 추가할 js파일 여기에 작성,
   // ex) js/aa.js
 ];

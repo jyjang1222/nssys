@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PAYDA</title>
+  <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+  <link rel="stylesheet" href="css/master.css">
+  <link rel="stylesheet" href="css/jquery.datetimepicker.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/egjs-jquery-transform/2.0.0/transform.min.js" integrity="sha512-vOc3jz0QulHRiyMXfp676lHxeSuzUhfuw//VUX12odAmlUbnKiXH4GQxBRqwKhF3Mkswqr5ILY9MtEM4ZwcS2A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="js/jquery.datetimepicker.full.min.js"></script>
+  <script src="js/DateTimePicker.js"></script>
+  <script src="js/includeHTML.js"></script>
+  <script src="js/main.js"></script>
+</head>
+<body>
+  <div id="wrapper">
+    <header class="header">
+      <div class="container">
+        <div class="header_inner">
+          <a href="SimplePay.html" class="btn_back"><span class="ir">뒤로가기</span></a>
+          <h2 class="psa ps-xy-c">내역</h2>
+        </div>
+      </div>
+    </header>
+    <div class="history_wrap">
+      <div class="container">
+        <div class="head">
+          <div class="history_type">
+            <ul>
+              <li><a href="#">계좌송금</a></li>
+              <li><a href="#">PAYDA 입금</a></li>
+              <li><a href="#">PAYDA 송금</a></li>
+              <li><a href="#">PAYDA 충전</a></li>
+            </ul>
+          </div>
+          <div class="date_select flx jcc aic">
+            <label for="datetimepicker1">날짜선택</label>
+            <input type="text" id="datetimepicker1" placeholder="조회날짜" readonly>
+            <span>~</span>
+            <input type="text" id="datetimepicker2" placeholder="조회날짜" readonly>
+          </div>
+        </div>
+      </div>
+      <!-- 거래내역 -->
+      <div data-include="SimplePayLog.html"></div>
+      <!-- //거래내역 -->
+    </div><!-- //history_wrap -->
+    <!-- FNB -->
+    <div data-include="fnb.html"></div>
+    <!-- FNB End -->
+    <!-- 내역 상세 모달창 -->
+    <div data-include="SimplePayLogDetail.html"></div>
+    <!-- //내역 상세 모달창 -->
+  </div><!-- //#wrapper -->
+  <script>includeHTML();</script>
+</body>
+</html>

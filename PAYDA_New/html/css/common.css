@@ -4,7 +4,7 @@
 @import url("https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css");
 html { font-size: 10px; }
 
-body { overflow-y: hidden; font-family: 'Open Sans', 'nanumsquare', sans-serif; font-size: 1.4rem; }
+body { overflow-y: auto; font-family: 'Open Sans', 'nanumsquare', sans-serif; font-size: 1.4rem; }
 
 input, button { border-radius: .4rem; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
@@ -17,11 +17,13 @@ input::-ms-input-placeholder { color: #d0d0d0; }
 input::placeholder { color: #d0d0d0; }
 
 /* Color */
-.txt_primary { color: #2C6CDD; }
+.txt_primary { color: #2C6CDD !important; }
 
-.txt_red { color: #FF4444; }
+.txt_red { color: #FF4444 !important; }
 
-.txt_link { color: #2C6CDD; text-decoration: underline; }
+.txt_blue { color: #4642FF !important; }
+
+.txt_link { color: #2C6CDD !important; text-decoration: underline; }
 
 /* Input */
 .input_box { line-height: 4.4rem; padding-left: 1rem; border: 1px solid #d0d0d0; }
@@ -55,12 +57,31 @@ select { padding: 0 2rem 0 .4rem; }
 /* border */
 .border_style { border-top: 2px solid #2C6CDD; border-bottom: 1px solid #AAA; }
 
+/* Table */
+.table-style1 table { width: 100%; }
+
+.table-style1 tr:last-child td { border-bottom: none; }
+
+.table-style1 td { width: auto; padding: 1rem 0; text-align: center; border-bottom: 1px solid #d0d0d0; }
+
+.table-style2 table { width: auto; }
+
+.table-style2 th, .table-style2 td { border-right: 1px solid #FFF; padding: 1rem 0; line-height: 1.6rem; text-align: center; }
+
+.table-style2 th:last-of-type, .table-style2 td:last-of-type { border-right: none; }
+
+.table-style2 td { vertical-align: middle; }
+
+.table-style2 thead th { background-color: #2C6CDD; color: #FFF; }
+
+.table-style2 tbody tr:nth-of-type(2n+1) th, .table-style2 tbody tr:nth-of-type(2n+1) td { background-color: #efefef; }
+
 /* Layout */
 #wrapper { position: relative; min-height: 100vh; }
 
 .container { width: 100%; padding: 0 2rem; }
 
-.content_align { min-height: 100vh; padding-top: 5rem; padding-bottom: 0; }
+.container-y { min-height: 100vh; padding-top: 5rem; padding-bottom: 0; }
 
 /* 메인홈 헤더 */
 #header { position: relative; background-color: #fff; }
@@ -209,21 +230,23 @@ select { padding: 0 2rem 0 .4rem; }
 
 #modalBottom .charge .btns a { width: 45%; }
 
-#modalBottom .history { display: none; }
+#modalBottom .simple_pay { display: none; }
 
-#modalBottom .history p { margin-bottom: 4rem; font-size: 1.8rem; font-weight: 700; }
+#modalBottom .simple_pay p { margin-bottom: 4rem; font-size: 1.8rem; font-weight: 700; }
 
-#modalBottom .history ul:nth-of-type(1) { border-bottom: 2px solid #2C6CDD; }
+#modalBottom .simple_pay ul:nth-of-type(1) { border-bottom: 2px solid #d0d0d0; }
 
-#modalBottom .history ul:nth-of-type(1) li { margin-bottom: 1rem; }
+#modalBottom .simple_pay ul:nth-of-type(1) li { margin-bottom: 1rem; }
 
-#modalBottom .history ul:nth-of-type(2) li { margin-top: 1rem; }
+#modalBottom .simple_pay ul:nth-of-type(2) li { margin-top: 1rem; }
 
-#modalBottom .history li { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+#modalBottom .simple_pay ul:last-of-type { margin-bottom: 1rem; }
 
-#modalBottom .history li span:first-child { font-weight: 700; }
+#modalBottom .simple_pay li { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
 
-#modalBottom .history .modal_close { position: absolute; right: 1.4rem; top: 1.4rem; width: 2.6rem; height: 2.6rem; background: url("../img/btn_modal_close_blk.svg") right 0.6rem top 0.6rem/1.4rem auto no-repeat; }
+#modalBottom .simple_pay li span:first-child { font-weight: 700; }
+
+#modalBottom .simple_pay .modal_close { position: absolute; right: 1.4rem; top: 1.4rem; width: 2.6rem; height: 2.6rem; background: url("../img/btn_modal_close_blk.svg") right 0.6rem top 0.6rem/1.4rem auto no-repeat; }
 
 /* 화면아래위치한 모달 끝 */
 /* 인풋이 하나만 있는 페이지스타일(charge, addbank, findpw) */
@@ -252,6 +275,19 @@ select { padding: 0 2rem 0 .4rem; }
 .one_input_page .input_area label { font-size: 1.6rem; }
 
 .one_input_page .input_area select { font-size: 1.6rem; }
+
+/* 내역리스트 스타일 */
+.simple_pay_log { overflow: auto; position: absolute; -webkit-box-shadow: 0 6px 6px 0px inset rgba(0, 0, 0, 0.1); box-shadow: 0 6px 6px 0px inset rgba(0, 0, 0, 0.1); }
+
+.simple_pay_log li a { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; height: 6.6rem; padding: 1rem 2rem; border-bottom: 1px solid #d0d0d0; }
+
+.simple_pay_log li:last-child a { border-bottom: none; }
+
+.simple_pay_log .log_top, .simple_pay_log .log_btm { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+
+.simple_pay_log .log_btm { font-size: 1.6rem; font-weight: 700; }
+
+.simple_pay_log .trade_state { color: #2C6CDD; }
 
 .xdsoft_datetimepicker { left: 50% !important; -webkit-transform: translateX(-50%) !important; transform: translateX(-50%) !important; }
 /*# sourceMappingURL=common.css.map */

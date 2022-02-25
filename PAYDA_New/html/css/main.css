@@ -68,21 +68,7 @@
 
 .home_wrap .notice mark { background-color: #FEFFB5; }
 
-.home_wrap .trade_log_wrap { overflow: auto; position: absolute; left: 0; right: 0; top: 25.3rem; bottom: 6rem; -webkit-box-shadow: 0 6px 6px 0px inset rgba(0, 0, 0, 0.1); box-shadow: 0 6px 6px 0px inset rgba(0, 0, 0, 0.1); }
-
-.home_wrap .trade_log_wrap li a { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; height: 6.6rem; padding: 1rem 2rem; border-bottom: 1px solid #d0d0d0; }
-
-.home_wrap .trade_log_wrap li:last-child a { border-bottom: none; }
-
-.home_wrap .trade_log_wrap .log_top, .home_wrap .trade_log_wrap .log_btm { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
-
-.home_wrap .trade_log_wrap .log_btm { font-size: 1.6rem; font-weight: 700; }
-
-.home_wrap .trade_log_wrap .trade_money.send { color: #FF4444; }
-
-.home_wrap .trade_log_wrap .trade_money.charge { color: #4642FF; }
-
-.home_wrap .trade_log_wrap .trade_state { color: #2C6CDD; }
+.home_wrap .simple_pay_log { left: 0; right: 0; top: 25.3rem; bottom: 6rem; }
 
 .home_wrap .coin_wrap { overflow: auto; position: absolute; left: 0; right: 0; top: 25.3rem; bottom: 6rem; padding: 2rem 0; -webkit-box-shadow: 0 6px 6px 0px inset rgba(0, 0, 0, 0.1); box-shadow: 0 6px 6px 0px inset rgba(0, 0, 0, 0.1); }
 
@@ -220,7 +206,7 @@
 
 .send_tab_menu li.on a span { position: absolute; left: 0; right: 0; bottom: -1px; height: 2px; background-color: #2C6CDD; }
 
-.send_money_wrap { min-height: 100vh; padding-top: 10rem; padding-bottom: 6rem; }
+.send_money_wrap { min-height: 100vh; padding-top: 14rem; padding-bottom: 10rem; }
 
 .send_money_wrap .tab_content { width: 100%; }
 
@@ -246,21 +232,7 @@
 
 .send_money_wrap .account .table_wrap { overflow: auto; max-height: 9rem; }
 
-.send_money_wrap .trade_log_wrap { overflow: auto; position: absolute; left: 0; right: 0; top: 10rem; bottom: 6rem; -webkit-box-shadow: 0 6px 6px 0px inset rgba(0, 0, 0, 0.1); box-shadow: 0 6px 6px 0px inset rgba(0, 0, 0, 0.1); }
-
-.send_money_wrap .trade_log_wrap li a { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; height: 6.6rem; padding: 1rem 2rem; border-bottom: 1px solid #d0d0d0; }
-
-.send_money_wrap .trade_log_wrap li:last-child a { border-bottom: none; }
-
-.send_money_wrap .trade_log_wrap .log_top, .send_money_wrap .trade_log_wrap .log_btm { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
-
-.send_money_wrap .trade_log_wrap .log_btm { font-size: 1.6rem; font-weight: 700; }
-
-.send_money_wrap .trade_log_wrap .trade_money.send { color: #FF4444; }
-
-.send_money_wrap .trade_log_wrap .trade_money.charge { color: #4642FF; }
-
-.send_money_wrap .trade_log_wrap .trade_state { color: #2C6CDD; }
+.send_money_wrap .simple_pay_log { left: 0; right: 0; top: 10rem; bottom: 6rem; }
 
 /* SendMoney End */
 /* ReceiveQrcode */
@@ -308,21 +280,7 @@
 
 .history_wrap .date_select span { margin: 0 .4rem; }
 
-.history_wrap .trade_log_wrap { overflow: auto; position: absolute; left: 0; right: 0; top: 18rem; bottom: 6rem; -webkit-box-shadow: 0 6px 6px 0px inset rgba(0, 0, 0, 0.1); box-shadow: 0 6px 6px 0px inset rgba(0, 0, 0, 0.1); }
-
-.history_wrap .trade_log_wrap li a { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; height: 6.6rem; padding: 1rem 2rem; border-bottom: 1px solid #d0d0d0; }
-
-.history_wrap .trade_log_wrap li:last-child a { border-bottom: none; }
-
-.history_wrap .trade_log_wrap .log_top, .history_wrap .trade_log_wrap .log_btm { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
-
-.history_wrap .trade_log_wrap .log_btm { font-size: 1.6rem; font-weight: 700; }
-
-.history_wrap .trade_log_wrap .trade_money.send { color: #FF4444; }
-
-.history_wrap .trade_log_wrap .trade_money.charge { color: #4642FF; }
-
-.history_wrap .trade_log_wrap .trade_state { color: #2C6CDD; }
+.history_wrap .simple_pay_log { left: 0; right: 0; top: 18rem; bottom: 6rem; }
 
 /* History End */
 /* AddBank */
@@ -448,33 +406,21 @@
 
 /* CoinAdd End */
 /* CoinHistory */
-.trade_log_table { overflow: auto; position: absolute; left: 0; right: 0; top: 18rem; bottom: 0; }
+.coin_trade_log { overflow: auto; position: absolute; left: 0; right: 0; top: 18rem; bottom: 0; }
 
-.trade_log_table table { width: 160%; }
+.coin_trade_log table { width: 160%; }
 
-.trade_log_table th, .trade_log_table td { padding: 1rem 0; line-height: 1.6rem; }
+.coin_trade_log th, .coin_trade_log td { border-right: 1px solid #FFF; padding: 1rem 0; line-height: 1.6rem; text-align: center; }
 
-.trade_log_table tr:first-of-type { position: -webkit-sticky; position: sticky; top: 0; z-index: 99; }
+.coin_trade_log th:last-of-type, .coin_trade_log td:last-of-type { border-right: none; }
 
-.trade_log_table tr:first-of-type th { background-color: #2C6CDD; color: #FFF; }
+.coin_trade_log td { vertical-align: middle; }
 
-.trade_log_table tr:first-of-type th:nth-child(n+3) { border-right: 1px solid #FFF; }
+.coin_trade_log thead th { background-color: #2C6CDD; color: #FFF; }
 
-.trade_log_table tr:first-of-type th:last-of-type { border-right: none; }
+.coin_trade_log tbody tr:nth-of-type(2n+1) th, .coin_trade_log tbody tr:nth-of-type(2n+1) td { background-color: #efefef; }
 
-.trade_log_table tr:nth-of-type(n+2) th span { border-right: 1px solid #FFF; }
-
-.trade_log_table tr:nth-of-type(2n+3) th, .trade_log_table tr:nth-of-type(2n+3) td { background-color: #efefef; }
-
-.trade_log_table td { border-right: 1px solid #FFF; text-align: center; }
-
-.trade_log_table td:last-child { border-right: none; }
-
-.trade_log_table th:nth-child(1) { position: -webkit-sticky; position: sticky; left: 0; background: #FFF; }
-
-.trade_log_table th:nth-child(2) { position: -webkit-sticky; position: sticky; left: 10rem; background: #FFF; }
-
-.trade_log_table th span { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; position: absolute; left: 0px; right: 0px; top: 0px; bottom: 0px; border-right: 1px solid #FFF; }
+.coin_trade_log thead tr { position: -webkit-sticky; position: sticky; top: 0; }
 
 /* CoinHistory End*/
 /* FindPw */
@@ -489,16 +435,20 @@
 .pw_change_done p:nth-of-type(2), .join_done p:nth-of-type(2) { color: #AAA; }
 
 /* PwChangeDone, JoinDone End */
+/* UserGrade */
+/* UserGrade End */
 /* Responsive */
-@media (min-width: 768px) { html { font-size: 14px; } }
+@media (min-width: 768px) { html { font-size: 14px; }
+  .coin_trade_log table { width: 100%; } }
 
 @media (min-width: 1024px) { body { background-color: #333; }
   #wrapper { max-width: 768px; margin: 0 auto; background-color: #fff; }
   .header { width: 768px; left: auto; right: auto; }
-  .home_wrap #fnb, .home_wrap .btn_add_coin { position: absolute; }
   #modalBottom { position: absolute; }
   #fnb { left: 50%; -webkit-transform: translateX(-50%); transform: translateX(-50%); width: 768px; }
-  #modalPop { position: absolute; } }
+  #modalPop { position: absolute; }
+  .home_wrap #fnb, .home_wrap .btn_add_coin { position: absolute; }
+  .coin_trade_log table { width: 100%; } }
 
 /* Responsive End */
 /*# sourceMappingURL=main.css.map */

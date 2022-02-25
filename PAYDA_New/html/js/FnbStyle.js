@@ -1,12 +1,13 @@
-var url = $(location).attr('pathname'); //url가져옴
-var res = url.slice(6, -5); //html문서이름 으로 자르기
-// console.log(res);
+var url = $(location).attr('href'); //url가져옴
+console.log(url);
 
-switch(res) {
-  case "index":
+switch(true) {
+  case url.includes("index"):
     $('#fnb li:nth-child(1)').addClass('on');
     break;
-  case "CoinWallet":
+  case url.includes("CoinWallet"):
     $('#fnb li:nth-child(2)').addClass('on');
     break;
+  default:
+    console.log('default');
 };

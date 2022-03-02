@@ -8,6 +8,7 @@
   <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
   <link rel="stylesheet" href="css/master.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="js/main.js"></script>
 </head>
 <body>
   <div id="wrapper">
@@ -20,63 +21,124 @@
       </div>
     </header>
     <main class="grade_wrap container-y">
-      <div class="tab_menu">
-        <ul>
-          <li><a href="#a">Personal</a></li>
+      <div class="grade_tab tab-style2">
+        <ul class="container">
+          <li class="on"><a href="#a">Personal</a></li>
           <li><a href="#a">Family</a></li>
           <li><a href="#a">VIP</a></li>
           <li><a href="#a">Royal</a></li>
         </ul>
       </div>
       <div class="container">
-        <div class="box">
-          <p>기준</p>
-          <ul>
-            <li>송금금액 : 이상</li>
-            <li>충전금액 : 이상</li>
-          </ul>
+        <div class="tab_cont">
+          <div class="box">
+            <p>[기준]</p>
+            <ul class="list-style">
+              <li>송금금액 : <span>1이상</span></li>
+              <li>충전금액 : <span>이상</span></li>
+            </ul>
+          </div>
+          <div class="box">
+            <p>[혜택]</p>
+            <ul class="list-style">
+              <li><span>충전 금액 최대</span><span>1회:</span><span>1일:</span></li>
+              <li><span>회원에게 송금 최대</span><span>1회:</span><span>1일:</span></li>
+              <li><span>은행으로 출금 최대</span><span>1회:</span><span>1일:</span></li>
+              <li><span>은행으로 출금 시 수수료:</span><span>원</span></li>
+            </ul>
+          </div>
         </div>
-        <div class="box">
-          <p>혜택</p>
-          <ul>
-            <li>충전 금액 최대 1회: 1일:</li>
-            <li>회원에게 송금 최대 1회: 1일:</li>
-            <li>은행으로 출금 최대 1회: 1일:</li>
-            <li>은행으로 출금 시 수수료: 원</li>
-          </ul>
+        <div class="tab_cont">
+          <div class="box">
+            <p>[기준]</p>
+            <ul class="list-style">
+              <li>송금금액 : <span>2이상</span></li>
+              <li>충전금액 : <span>이상</span></li>
+            </ul>
+          </div>
+          <div class="box">
+            <p>[혜택]</p>
+            <ul class="list-style">
+              <li><span>충전 금액 최대</span><span>1회:</span><span>1일:</span></li>
+              <li><span>회원에게 송금 최대</span><span>1회:</span><span>1일:</span></li>
+              <li><span>은행으로 출금 최대</span><span>1회:</span><span>1일:</span></li>
+              <li><span>은행으로 출금 시 수수료:</span><span>원</span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="tab_cont">
+          <div class="box">
+            <p>[기준]</p>
+            <ul class="list-style">
+              <li>송금금액 : <span>3이상</span></li>
+              <li>충전금액 : <span>이상</span></li>
+            </ul>
+          </div>
+          <div class="box">
+            <p>[혜택]</p>
+            <ul class="list-style">
+              <li><span>충전 금액 최대</span><span>1회:</span><span>1일:</span></li>
+              <li><span>회원에게 송금 최대</span><span>1회:</span><span>1일:</span></li>
+              <li><span>은행으로 출금 최대</span><span>1회:</span><span>1일:</span></li>
+              <li><span>은행으로 출금 시 수수료:</span><span>원</span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="tab_cont">
+          <div class="box">
+            <p>[기준]</p>
+            <ul class="list-style">
+              <li>송금금액 : <span>4이상</span></li>
+              <li>충전금액 : <span>이상</span></li>
+            </ul>
+          </div>
+          <div class="box">
+            <p>[혜택]</p>
+            <ul class="list-style">
+              <li><span>충전 금액 최대</span><span>1회:</span><span>1일:</span></li>
+              <li><span>회원에게 송금 최대</span><span>1회:</span><span>1일:</span></li>
+              <li><span>은행으로 출금 최대</span><span>1회:</span><span>1일:</span></li>
+              <li><span>은행으로 출금 시 수수료:</span><span>원</span></li>
+            </ul>
+          </div>
         </div>
       </div>
       <div class="container">
         <h3>등급 산정 기감 및 등급별 혜택 기간</h3>
-        <div class="">
-          <table>
-            <thead>
-              <tr>
-                <th>기준월</th>
-                <th>1 ~ 3월</th>
-                <th>4 ~ 6월</th>
-                <th>7 ~ 9월</th>
-                <th>10 ~ 12월</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>등급 적용일</td>
-                <td>4월 1일</td>
-                <td>7월 1일</td>
-                <td>10월 1일</td>
-                <td>1월 1일</td>
-              </tr>
-              <tr>
-                <td>등급 혜택기간</td>
-                <td>4월 1일 ~ 6월 말일</td>
-                <td>7월 1일 ~ 9월 말일</td>
-                <td>10월 1일 ~ 12월 말일</td>
-                <td>1월 1일 ~ 3월 말일</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+        <table>
+          <colgroup>
+            <col style="width:16%">
+            <col>
+            <col>
+            <col>
+            <col>
+          </colgroup>
+          <thead>
+            <tr>
+              <th>기준월</th>
+              <th>1 ~ 3월</th>
+              <th>4 ~ 6월</th>
+              <th>7 ~ 9월</th>
+              <th>10 ~ 12월</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>등급<br>적용일</td>
+              <td>4월 1일</td>
+              <td>7월 1일</td>
+              <td>10월 1일</td>
+              <td>1월 1일</td>
+            </tr>
+            <tr>
+              <td>등급<br>혜택<br>기간</td>
+              <td>4월 1일 <br>~<br>6월 말일</td>
+              <td>7월 1일 <br>~<br>9월 말일</td>
+              <td>10월 1일 <br>~<br>12월 말일</td>
+              <td>1월 1일 <br>~<br>3월 말일</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </main>
   </div><!-- //#wrapper -->

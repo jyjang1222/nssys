@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PAYDA</title>
+  <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+  <link rel="stylesheet" href="css/master.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="js/main.js"></script>
+</head>
+<body>
+  <div id="wrapper">
+    <header class="header">
+      <div class="container">
+        <div class="header_inner">
+          <a href="CouponMenuDrink.html" class="btn_back"><span class="ir">뒤로가기</span></a>
+          <h2 class="psa ps-xy-c">커피/음료</h2>
+        </div>
+      </div>
+      <div class="tab-style">
+        <ul class="flx">
+          <li class="on w50"><a href="#">구매&선물</a></li>
+          <li class="w50"><a href="#">내역</a></li>
+        </ul>
+      </div>
+      <div class="coupon_snb container flx jce">
+        <ul class="flx">
+          <li><a href="CouponMenuDrink.html">커피/음료</a></li>
+          <li>스타벅스</li>
+        </ul>
+      </div>
+    </header>
+    <main class="product_detail_wrap">
+      <div class="product_detail">
+        <div class="order">
+          <div class="product flx col">
+            <img src="img/starbucks_ice_americano.jpg" alt="아이스아메리카노">
+            <strong>아이스 아메리카노</strong>
+            <b>4,500원</b>
+          </div>
+          <div class="order_info">
+            <table class="border_style">
+              <tr>
+                <th>배송 정보</th>
+                <td>[자체 배송]</td>
+              </tr>
+              <tr>
+                <th>배송비</th>
+                <td>무료배송</td>
+              </tr>
+              <tr>
+                <th>소비자가</th>
+                <td>5,000원</td>
+              </tr>
+              <tr>
+                <th>판매가</th>
+                <td>4,500원</td>
+              </tr>
+              <tr>
+                <th>필수옵션</th>
+                <td >
+                  <div class="select_box">
+                    <select id=""><option>옵션 선택</option></select>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th>수량</th>
+                <td class="quantity">
+                  <div class="flx jce"><a href="#a" class="up">&minus;</a><input type="number" min="1" max="9" value="1" readonly><a href="#a"class="down">&plus;</a></div>
+                </td>
+              </tr>
+            </table>
+            <p class="flx jc-sb"><b>총 합계금액</b><strong class="txt_primary total">4,500원</strong></p>
+            <div class="btns flx jc-sb">
+              <a href="#a" class="btn_secondary">선물 하기</a>
+              <a href="#a" class="btn_primary">구매 하기</a>
+            </div>
+          </div><!-- //order_info -->
+        </div><!-- //order -->
+        <div class="tab-style2">
+          <ul class="flx">
+            <li class="on w50"><a href="#">상품 정보</a></li>
+            <li class="w50"><a href="#">배송/교환/반품안내</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="tab_cont product_info">1</div>
+          <div class="tab_cont delivery">2</div>
+        </div>
+      </div><!-- //product_detail -->
+    </main><!-- //product_detail_wrap -->
+  </div><!-- //#wrapper -->
+</body>
+</html>

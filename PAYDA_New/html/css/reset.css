@@ -125,6 +125,9 @@ template { display: none; }
 /** Add the correct display in IE 10. */
 [hidden] { display: none; }
 
+/* input number reset*/
+input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-out-spin-button { -webkit-appearance: none; -moz-appearance: none; appearance: none; }
+
 * { box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; }
 
 /* Flex */
@@ -137,6 +140,10 @@ template { display: none; }
 .aic { -webkit-box-align: center !important; -ms-flex-align: center !important; align-items: center !important; }
 
 .jcc { -webkit-box-pack: center !important; -ms-flex-pack: center !important; justify-content: center !important; }
+
+.jcs { -webkit-box-pack: start !important; -ms-flex-pack: start !important; justify-content: flex-start !important; }
+
+.jce { -webkit-box-pack: end !important; -ms-flex-pack: end !important; justify-content: flex-end !important; }
 
 .jc-sb { -webkit-box-pack: justify !important; -ms-flex-pack: justify !important; justify-content: space-between !important; }
 

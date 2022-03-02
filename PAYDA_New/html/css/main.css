@@ -194,18 +194,6 @@
 
 /* Charge End*/
 /* SendMoney */
-.send_tab_menu { margin-top: 1rem; border-bottom: 1px solid #d0d0d0; }
-
-.send_tab_menu ul { display: -webkit-box; display: -ms-flexbox; display: flex; padding: 0 2rem; }
-
-.send_tab_menu li { width: 33.33333333%; }
-
-.send_tab_menu li a { position: relative; line-height: 4rem; text-align: center; font-weight: 700; }
-
-.send_tab_menu li.on a { color: #2C6CDD; }
-
-.send_tab_menu li.on a span { position: absolute; left: 0; right: 0; bottom: -1px; height: 2px; background-color: #2C6CDD; }
-
 .send_money_wrap { min-height: 100vh; padding-top: 14rem; padding-bottom: 10rem; }
 
 .send_money_wrap .tab_content { width: 100%; }
@@ -264,7 +252,7 @@
 
 .history_wrap .date_select { position: absolute; bottom: 1.6rem; left: 50%; -webkit-transform: translateX(-50%); transform: translateX(-50%); width: 100%; }
 
-.history_wrap .date_select::before { content: ''; display: inline-block; width: 2rem; height: 2rem; margin-right: .6rem; background: url("../img/ico_calander.svg") center/100% auto no-repeat; }
+.history_wrap .date_select::before { content: ''; display: inline-block; width: 2rem; height: 2rem; margin-right: .6rem; background: url("../img/ico_calender.svg") center/100% auto no-repeat; }
 
 .history_wrap .date_select label { margin-right: 1rem; line-height: 2rem; font-weight: 700; }
 
@@ -436,10 +424,98 @@
 
 /* PwChangeDone, JoinDone End */
 /* UserGrade */
+.grade_tab { margin: 2rem 0 1rem; }
+
+.grade_wrap .tab_cont { border-bottom: 2px solid #d0d0d0; }
+
+.grade_wrap .box { margin-bottom: 1rem; }
+
+.grade_wrap .box:nth-child(2) span:first-child { width: 50%; }
+
+.grade_wrap .box:last-child { margin-bottom: 2rem; }
+
+.grade_wrap .box ul { padding: 0 1rem; }
+
+.grade_wrap .box li { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+
+.grade_wrap .box p { padding-left: 1.2rem; line-height: 3rem; font-weight: 700; font-size: 1.5rem; }
+
+.grade_wrap table { width: 100%; }
+
+.grade_wrap h3 { margin: 2rem 0 1rem; font-weight: 700; font-size: 1.5rem; }
+
+.grade_wrap th, .grade_wrap td { padding: .6rem 0; line-height: 2rem; text-align: center; vertical-align: middle; }
+
+.grade_wrap th { border-right: 1px solid #FFF; background-color: #2C6CDD; color: #FFF; }
+
+.grade_wrap tr:first-child td { border-top: none; }
+
+.grade_wrap td { border: 1px solid #d0d0d0; }
+
+.grade_wrap td:first-child { background: #EEE; }
+
 /* UserGrade End */
+/* CouponShop */
+/* CouponShop End */
+/* CouponMenu */
+.coupon_wrap { min-height: 100vh; padding-top: 14rem; padding-bottom: 0; }
+
+.coupon_wrap .coupon_menu ul { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; gap: 2rem 0; }
+
+.coupon_wrap .coupon_menu li { width: 50%; }
+
+.coupon_wrap .coupon_menu img { width: 3rem; margin-right: .6rem; }
+
+.coupon_wrap .coupon_menu a { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+
+/* CouponMenu End */
+/* CouponProductList */
+.product_list { padding: 2rem; }
+
+.product_list ul { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; gap: 2rem 0; }
+
+.product_list li { width: calc(50% - 1rem); }
+
+.product_list a { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; gap: 1rem; }
+
+.product_list b { color: #2C6CDD; }
+
+/* CouponProductList End */
+/* CouponProductDetail */
+.product_detail { padding: 2rem; }
+
+.product_detail .order { padding-bottom: 3rem; margin-bottom: 4rem; border-bottom: 2px solid #888; }
+
+.product_detail table { margin-bottom: 1rem; width: 100%; }
+
+.product_detail table + p { margin-bottom: 4rem; padding: 0 .6rem; line-height: 2rem; font-size: 1.5rem; }
+
+.product_detail th, .product_detail td { padding: 1rem .6rem; }
+
+.product_detail th { text-align: left; font-weight: 700; }
+
+.product_detail td { text-align: right; }
+
+.product_detail .btns a { width: 48%; line-height: 3.4rem; }
+
+.product_detail .total { font-size: 1.8rem; }
+
+.product_detail .quantity input { border-top: 1px solid #d0d0d0; border-bottom: 1px solid #d0d0d0; border-radius: 0; line-height: 2.4rem; text-align: center; }
+
+.product_detail .quantity a { width: 2.4rem; line-height: 2.4rem; text-align: center; background-color: #2C6CDD; color: #FFF; }
+
+.product { gap: 1rem; margin-bottom: 1rem; }
+
+.product b { color: #2C6CDD; }
+
+/* CouponProductDetail End */
 /* Responsive */
 @media (min-width: 768px) { html { font-size: 14px; }
-  .coin_trade_log table { width: 100%; } }
+  ul.list-style li::before { width: 4px; height: 4px; }
+  .coin_trade_log table { width: 100%; }
+  .category_wrap .category li { width: 33.33333333%; }
+  .order { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; gap: 1rem; }
+  .order > div { width: calc(50% - 1rem); } }
 
 @media (min-width: 1024px) { body { background-color: #333; }
   #wrapper { max-width: 768px; margin: 0 auto; background-color: #fff; }

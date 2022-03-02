@@ -41,16 +41,16 @@ input[type=checkbox]:hover { border: 1px solid #AAA; }
 input[type=checkbox]:checked { border: 1px solid #2C6CDD; background: url("../img/input_checkbox.svg") center/1.2rem auto #2C6CDD no-repeat; }
 
 /* Select */
-select { padding: 0 2rem 0 .4rem; }
-
 .select_box { display: inline-block; border-bottom: 2px solid #2C6CDD; background: url("../img/chevron_select.svg") right 0.4rem center/1rem auto no-repeat; }
+
+.select_box select { padding: 0 2rem .2rem .4rem; }
 
 .select_area label { margin-right: 1rem; }
 
 /* Button */
 .btn_primary { line-height: 4.4rem; text-align: center; border-radius: 4px; background-color: #2C6CDD; color: #fff; }
 
-.btn_secondary { border: 1px solid #d0d0d0; border-radius: 4px; line-height: 4.4rem; text-align: center; }
+.btn_secondary { border: 1px solid #d0d0d0; border-radius: 4px; line-height: 4.4rem; text-align: center; font-weight: 700; }
 
 .btn_cancel { line-height: 4.4rem; text-align: center; border-radius: 4px; background-color: #AAA; color: #fff; }
 
@@ -288,6 +288,51 @@ select { padding: 0 2rem 0 .4rem; }
 .simple_pay_log .log_btm { font-size: 1.6rem; font-weight: 700; }
 
 .simple_pay_log .trade_state { color: #2C6CDD; }
+
+/* 탭메뉴 */
+.tab-style { margin-top: 1rem; border-bottom: 1px solid #d0d0d0; }
+
+.tab-style ul { display: -webkit-box; display: -ms-flexbox; display: flex; padding: 0 2rem; }
+
+.tab-style li { width: 33.33333333%; }
+
+.tab-style li a { position: relative; line-height: 4rem; text-align: center; font-weight: 700; }
+
+.tab-style li.on a { position: relative; color: #2C6CDD; }
+
+.tab-style li.on a::after { content: ''; position: absolute; left: 0; right: 0; bottom: -1px; height: 2px; background-color: #2C6CDD; }
+
+.tab-style2 ul { display: -webkit-box; display: -ms-flexbox; display: flex; }
+
+.tab-style2 li { position: relative; -webkit-box-sizing: border-box; box-sizing: border-box; width: 25%; line-height: 3rem; text-align: center; border: 1px solid #d0d0d0; border-right: none; }
+
+.tab-style2 li:last-child { border-right: 1px solid #d0d0d0; }
+
+.tab-style2 li.on { border: 1px solid #2C6CDD; background-color: #2C6CDD; color: #fff; }
+
+.tab-style2 li.on + li { border-left: none; }
+
+.tab_cont:first-child ~ .tab_cont { display: none; }
+
+/* 리스트스타일 */
+ul.list-style li { position: relative; margin-bottom: .4rem; }
+
+ul.list-style li:last-child { margin-bottom: 0; }
+
+ul.list-style li::before { content: ''; display: block; position: absolute; left: -.6rem; top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); width: 2px; height: 2px; border-radius: 50%; background-color: #2C6CDD; }
+
+/* 쿠폰샵 카테고리 */
+.coupon_snb li { margin-right: 1rem; line-height: 4rem; font-size: 1.3rem; position: relative; }
+
+.coupon_snb li::after { content: ''; display: block; position: absolute; top: 50%; right: -.8rem; -webkit-transform: translateY(-50%); transform: translateY(-50%); width: 1rem; height: 1rem; background: url("../img/chevron_right.svg") center right/contain no-repeat; }
+
+.coupon_snb li:last-child { margin-right: 0; }
+
+.coupon_snb li:last-child::after { display: none; }
+
+main[class*="product_"] { min-height: 100vh; padding-top: 14rem; padding-bottom: 0; }
+
+main[class*="product_"] > div[class*="product_"] { overflow: auto; position: absolute; left: 0; right: 0; bottom: 0; top: 14rem; -webkit-box-shadow: 0 6px 6px 0px inset rgba(0, 0, 0, 0.1); box-shadow: 0 6px 6px 0px inset rgba(0, 0, 0, 0.1); }
 
 .xdsoft_datetimepicker { left: 50% !important; -webkit-transform: translateX(-50%) !important; transform: translateX(-50%) !important; }
 /*# sourceMappingURL=common.css.map */

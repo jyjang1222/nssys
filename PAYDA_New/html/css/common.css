@@ -218,11 +218,13 @@ input[type=checkbox]:checked { border: 1px solid #2C6CDD; background: url("../im
 
 #modalBottom.on { display: block; }
 
-#modalBottom .modal { position: relative; bottom: -100%; border-radius: 2rem 2rem 0 0; background: #FFF; }
+#modalBottom .modal { display: none; position: relative; bottom: -100%; border-radius: 2rem 2rem 0 0; background: #FFF; }
 
 #modalBottom .modal.charge { -webkit-transform: translateY(-100%); transform: translateY(-100%); }
 
 #modalBottom .inner { padding: 2rem 2rem 2rem; }
+
+#modalBottom .charge.modal { display: block; }
 
 #modalBottom .charge .inner p:first-child { font-size: 1.8rem; }
 
@@ -353,9 +355,11 @@ main[class*="product_"] > div[class*="product_"] { overflow: auto; position: abs
 
 .thumb b { font-size: 1.5rem; color: #2C6CDD; }
 
-.thumb p:first-of-type { margin-bottom: 1rem; font-weight: 500; }
+.thumb p { padding-left: .2rem; }
 
-.thumb_img { margin-bottom: 1rem; position: relative; padding-top: 100%; overflow: hidden; }
+.thumb p:first-of-type { margin: 1rem 0; font-weight: 500; }
+
+.thumb_img { position: relative; padding-top: 100%; overflow: hidden; }
 
 .thumb_img img { width: 100%; vertical-align: top; position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
 

@@ -488,15 +488,7 @@
 /* CouponProductDetail */
 .product_detail { padding: 2rem; }
 
-.product_detail .thumb { gap: 1rem; margin-bottom: 3rem; }
-
-.product_detail .thumb small { font-size: 1.2rem; }
-
-.product_detail .thumb b { font-size: 1.5rem; color: #2C6CDD; }
-
-.product_detail .thumb_img img { width: 100%; }
-
-.product_detail .order { padding-bottom: 3rem; margin-bottom: 4rem; border-bottom: 2px solid #888; }
+.product_detail .order { padding-bottom: 3rem; margin-bottom: 4rem; border-bottom: 1px solid #AAA; }
 
 .product_detail table { margin-bottom: 1rem; width: 100%; }
 
@@ -522,6 +514,24 @@
 
 .product_detail .quantity a:last-of-type::after { content: ''; position: absolute; left: 50%; top: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); height: 1rem; width: 1px; background-color: #000; }
 
+.order_info .info { padding-top: .6rem; }
+
+.order_info p { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; margin-bottom: 1rem; }
+
+.order_info p b { font-size: 1.5rem; }
+
+.order_info p small { font-size: 1.3rem; }
+
+.order_info .btns a { width: 45%; }
+
+.order_info .modal_body { margin-bottom: 3rem; }
+
+.order_info .input_area { margin: 1rem 0; }
+
+.order_info label { display: inline-block; margin-bottom: .4rem; font-size: 1.5rem; }
+
+.order_info input { width: 100%; border-bottom: 1px solid #2C6CDD; border-radius: 0; padding: .4rem; }
+
 /* CouponProductDetail End */
 /* Responsive */
 @media (min-width: 768px) { html { font-size: 14px; }
@@ -531,6 +541,8 @@
   /* CouponProductDetail */
   .order { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; gap: 1rem; }
   .order > div { width: calc(50% - 1rem); }
+  .order_info .modal_body { margin-bottom: 4rem; }
+  .order_info p { margin-bottom: 2rem !important; }
   /* 수량버튼 */
   .quantity a::before { height: 2px !important; }
   .quantity a::after { width: 2px !important; } }

@@ -1,10 +1,9 @@
 @charset "UTF-8";
 /* Font */
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
-@import url("https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Open+Sans:wght@300;400;500;600;700&display=swap");
 html { font-size: 10px; }
 
-body { overflow-y: auto; font-family: 'Open Sans', 'nanumsquare', sans-serif; font-size: 1.4rem; }
+body { overflow-y: auto; font-family: 'Open Sans', 'Noto Sans KR', sans-serif; font-size: 1.4rem; }
 
 input, button { border-radius: .4rem; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
@@ -16,6 +15,9 @@ input::-ms-input-placeholder { color: #d0d0d0; }
 
 input::placeholder { color: #d0d0d0; }
 
+/* Txt */
+b, strong { font-weight: 500; }
+
 /* Color */
 .txt_primary { color: #2C6CDD !important; }
 
@@ -24,6 +26,8 @@ input::placeholder { color: #d0d0d0; }
 .txt_blue { color: #4642FF !important; }
 
 .txt_link { color: #2C6CDD !important; text-decoration: underline; }
+
+.txt_grey { color: #d0d0d0; }
 
 /* Input */
 .input_box { line-height: 4.4rem; padding-left: 1rem; border: 1px solid #d0d0d0; }
@@ -40,6 +44,8 @@ input[type=checkbox]:hover { border: 1px solid #AAA; }
 
 input[type=checkbox]:checked { border: 1px solid #2C6CDD; background: url("../img/input_checkbox.svg") center/1.2rem auto #2C6CDD no-repeat; }
 
+.input_area label { font-weight: 500; }
+
 /* Select */
 .select_box { display: inline-block; border-bottom: 2px solid #2C6CDD; background: url("../img/chevron_select.svg") right 0.4rem center/1rem auto no-repeat; }
 
@@ -50,7 +56,7 @@ input[type=checkbox]:checked { border: 1px solid #2C6CDD; background: url("../im
 /* Button */
 .btn_primary { line-height: 4.4rem; text-align: center; border-radius: 4px; background-color: #2C6CDD; color: #fff; }
 
-.btn_secondary { border: 1px solid #d0d0d0; border-radius: 4px; line-height: 4.4rem; text-align: center; font-weight: 700; }
+.btn_secondary { border: 1px solid #d0d0d0; border-radius: 4px; line-height: 4.4rem; text-align: center; font-weight: 500; }
 
 .btn_cancel { line-height: 4.4rem; text-align: center; border-radius: 4px; background-color: #AAA; color: #fff; }
 
@@ -96,7 +102,7 @@ input[type=checkbox]:checked { border: 1px solid #2C6CDD; background: url("../im
 /* 서브페이지 헤더 */
 .header { position: fixed; left: 0; right: 0; top: 0; background-color: #fff; z-index: 99; }
 
-.header h2 { font-size: 1.8rem; font-weight: 700; }
+.header h2 { font-size: 1.8rem; font-weight: 500; }
 
 .header .header_inner { display: -webkit-box; display: -ms-flexbox; display: flex; position: relative; -webkit-box-align: center; -ms-flex-align: center; align-items: center; height: 5rem; }
 
@@ -110,7 +116,7 @@ input[type=checkbox]:checked { border: 1px solid #2C6CDD; background: url("../im
 
 #fnb ul { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-pack: distribute; justify-content: space-around; }
 
-#fnb li { width: 33.33333333%; color: #AAA; }
+#fnb li { width: 33.33333333%; font-weight: 300; font-size: 1.3rem; color: #AAA; }
 
 #fnb li a { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; height: 6rem; }
 
@@ -122,7 +128,7 @@ input[type=checkbox]:checked { border: 1px solid #2C6CDD; background: url("../im
 
 #fnb li:nth-child(3) a::before { background-image: url("../img/ico_coupon.svg"); }
 
-#fnb li.on { color: #000; }
+#fnb li.on { font-weight: 400; color: #000; }
 
 #fnb li.on:nth-child(1) a::before { background-image: url("../img/ico_simple_pay_on.svg"); }
 
@@ -142,6 +148,8 @@ input[type=checkbox]:checked { border: 1px solid #2C6CDD; background: url("../im
 
 #modalPop .modal_body { padding: 1.2rem 1rem; }
 
+#modalPop .modal_body p { font-size: 1.3rem; }
+
 #modalPop .modal_content { overflow: auto; max-height: 70vh; }
 
 #modalPop .modal_content ol { counter-reset: num 0; }
@@ -151,6 +159,8 @@ input[type=checkbox]:checked { border: 1px solid #2C6CDD; background: url("../im
 #modalPop .use .policy_depth1 > li { margin-bottom: 1rem; }
 
 #modalPop .use .policy_depth1 > li::before { content: counter(num) ". "; }
+
+#modalPop .policy .modal_content > p { font-size: 1.5rem; }
 
 #modalPop .policy .policy_depth1 p { line-height: 1.4rem; font-size: 1.2rem; }
 
@@ -196,7 +206,7 @@ input[type=checkbox]:checked { border: 1px solid #2C6CDD; background: url("../im
 
 #modalPop .bank_info .policy_depth1 span { display: inline-block; }
 
-#modalPop .auto_send .modal_content p { margin-bottom: 1rem; }
+#modalPop .auto_send .modal_content p { margin-bottom: 1rem; line-height: 1.6rem; }
 
 #modalPop .auto_send ul { overflow: auto; height: 26rem; border: 1px solid #2C6CDD; border-radius: 4px; }
 
@@ -232,7 +242,7 @@ input[type=checkbox]:checked { border: 1px solid #2C6CDD; background: url("../im
 
 #modalBottom .simple_pay { display: none; }
 
-#modalBottom .simple_pay p { margin-bottom: 4rem; font-size: 1.8rem; font-weight: 700; }
+#modalBottom .simple_pay p { margin-bottom: 4rem; font-size: 1.8rem; font-weight: 500; }
 
 #modalBottom .simple_pay ul:nth-of-type(1) { border-bottom: 2px solid #d0d0d0; }
 
@@ -244,7 +254,7 @@ input[type=checkbox]:checked { border: 1px solid #2C6CDD; background: url("../im
 
 #modalBottom .simple_pay li { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
 
-#modalBottom .simple_pay li span:first-child { font-weight: 700; }
+#modalBottom .simple_pay li span:first-child { font-weight: 500; }
 
 #modalBottom .simple_pay .modal_close { position: absolute; right: 1.4rem; top: 1.4rem; width: 2.6rem; height: 2.6rem; background: url("../img/btn_modal_close_blk.svg") right 0.6rem top 0.6rem/1.4rem auto no-repeat; }
 
@@ -285,9 +295,11 @@ input[type=checkbox]:checked { border: 1px solid #2C6CDD; background: url("../im
 
 .simple_pay_log .log_top, .simple_pay_log .log_btm { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
 
-.simple_pay_log .log_btm { font-size: 1.6rem; font-weight: 700; }
+.simple_pay_log .log_btm { font-size: 1.6rem; font-weight: 500; }
 
 .simple_pay_log .trade_state { color: #2C6CDD; }
+
+.simple_pay_log .trade_money { font-weight: 700; }
 
 /* 탭메뉴 */
 .tab-style { margin-top: 1rem; border-bottom: 1px solid #d0d0d0; }
@@ -296,7 +308,7 @@ input[type=checkbox]:checked { border: 1px solid #2C6CDD; background: url("../im
 
 .tab-style li { width: 33.33333333%; }
 
-.tab-style li a { position: relative; line-height: 4rem; text-align: center; font-weight: 700; }
+.tab-style li a { position: relative; line-height: 4rem; text-align: center; font-weight: 500; }
 
 .tab-style li.on a { position: relative; color: #2C6CDD; }
 

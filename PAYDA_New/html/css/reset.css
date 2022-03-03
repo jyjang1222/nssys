@@ -209,7 +209,7 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-out-s
 
 .scroll { overflow: auto !important; }
 
-.ir { display: block; overflow: hidden; width: 0; height: 0; font-size: 0; line-height: 0; text-indent: -9999px; }
+.ir { display: inline-block; overflow: hidden; width: 0; height: 0; font-size: 0; line-height: 0; text-indent: -9999px; }
 
 .hide { display: none !important; }
 

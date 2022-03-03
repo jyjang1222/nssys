@@ -56,6 +56,8 @@
 
 .home_wrap .current_pay { position: absolute; right: 1.7rem; bottom: 1.3rem; font-size: 1.8rem; }
 
+.home_wrap .current_pay b, .home_wrap .current_pay strong { font-weight: 700; }
+
 .home_wrap .current_pay strong { font-size: 3.6rem; }
 
 .home_wrap .notice { line-height: 3.6rem; font-size: 1.6rem; }
@@ -524,12 +526,14 @@
 /* Responsive */
 @media (min-width: 768px) { html { font-size: 14px; }
   ul.list-style li::before { width: 4px; height: 4px; }
+  .select_box { border-bottom-width: 2px; }
   .coin_trade_log table { width: 100%; }
-  .category_wrap .category li { width: 33.33333333%; }
+  /* CouponProductDetail */
   .order { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; gap: 1rem; }
   .order > div { width: calc(50% - 1rem); }
-  .product_detail_wrap .product_detail .quantity a::before { height: 2px; }
-  .product_detail_wrap .product_detail .quantity a::after { width: 2px; } }
+  /* 수량버튼 */
+  .quantity a::before { height: 2px !important; }
+  .quantity a::after { width: 2px !important; } }
 
 @media (min-width: 1024px) { body { background-color: #333; }
   #wrapper { max-width: 768px; margin: 0 auto; background-color: #fff; }

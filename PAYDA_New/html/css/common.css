@@ -47,7 +47,7 @@ input[type=checkbox]:checked { border: 1px solid #2C6CDD; background: url("../im
 .input_area label { font-weight: 500; }
 
 /* Select */
-.select_box { display: inline-block; border-bottom: 2px solid #2C6CDD; background: url("../img/chevron_select.svg") right 0.4rem center/1rem auto no-repeat; }
+.select_box { display: inline-block; border-bottom: 1px solid #2C6CDD; background: url("../img/chevron_select.svg") right 0.4rem center/1rem auto no-repeat; }
 
 .select_box select { padding: 0 2rem .2rem .4rem; }
 
@@ -355,7 +355,7 @@ main[class*="product_"] > div[class*="product_"] { overflow: auto; position: abs
 
 .thumb p:first-of-type { margin-bottom: 1rem; font-weight: 500; }
 
-.thumb_img { margin-bottom: 1rem; position: relative; padding-top: 100%; }
+.thumb_img { margin-bottom: 1rem; position: relative; padding-top: 100%; overflow: hidden; }
 
 .thumb_img img { width: 100%; vertical-align: top; position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
 

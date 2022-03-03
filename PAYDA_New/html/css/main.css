@@ -312,7 +312,7 @@
 
 .chk_wrap .inner p:first-of-type, .done_wrap .inner p:first-of-type { margin-bottom: 3rem; font-size: 2.8rem; }
 
-.chk_wrap .inner p:first-of-type small, .done_wrap .inner p:first-of-type small { margin-left: .2rem; font-size: 2rem; vertical-align: .2rem; }
+.chk_wrap .inner p:first-of-type small, .done_wrap .inner p:first-of-type small { margin-left: .2rem; font-size: 2rem; }
 
 .chk_wrap .inner p:nth-of-type(2), .done_wrap .inner p:nth-of-type(2) { line-height: 2.6rem; font-size: 1.8rem; }
 
@@ -328,7 +328,7 @@
 
 .chk_wrap .info p, .done_wrap .info p { line-height: 2rem; }
 
-.chk_wrap span:first-child, .done_wrap span:first-child { font-weight: 700; }
+.chk_wrap span:first-child, .done_wrap span:first-child { font-weight: 500; }
 
 .chk_wrap a[class*=btn], .done_wrap a[class*=btn] { margin-top: 4rem; }
 

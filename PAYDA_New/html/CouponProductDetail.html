@@ -36,9 +36,8 @@
       <div class="product_detail">
         <div class="order">
           <div class="product flx col">
-            <img src="img/starbucks_ice_americano.jpg" alt="아이스아메리카노">
-            <strong>아이스 아메리카노</strong>
-            <b>4,500원</b>
+            <img src="img/ice_americano.jpg" alt="아이스아메리카노">
+            <em>아이스 아메리카노</em><span><b class="fw700">4,500</b><small>원</small></span>
           </div>
           <div class="order_info">
             <table class="border_style">
@@ -68,12 +67,14 @@
               </tr>
               <tr>
                 <th>수량</th>
-                <td class="quantity">
-                  <div class="flx jce"><a href="#a" class="up">&minus;</a><input type="number" min="1" max="9" value="1" readonly><a href="#a"class="down">&plus;</a></div>
+                <td>
+                  <div class="flx jce quantity">
+                    <a href="#a" class="up"><span class="ir">-1</span></a><input type="number" min="1" max="9" value="1" readonly><a href="#a"class="down"><span class="ir">+1</span></a>
+                  </div>
                 </td>
               </tr>
             </table>
-            <p class="flx jc-sb"><b>총 합계금액</b><strong class="txt_primary total">4,500원</strong></p>
+            <p class="flx jc-sb total"><strong>총 합계금액</strong><span><b class="txt_primary fw700">4,500</b>원</span></p>
             <div class="btns flx jc-sb">
               <a href="#a" class="btn_secondary">선물 하기</a>
               <a href="#a" class="btn_primary">구매 하기</a>

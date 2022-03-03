@@ -58,5 +58,19 @@ $(function() {
   $('.coin_list li').click(function() {
     $('#modalPop').show();
     $('#modalPop .modal_wrap').show();
-  });
+  }); //코인 생성중 모달창
+
+  $('.product_detail .btns a').click(function() {
+    var idx = $(this).index() + 1;
+
+    $('#modalBottom').show();
+    $('#modalBottom .modal:nth-child(' + idx + ')').show();
+    $('#modalBottom .modal').stop().animate({transform:'translateY(-100%)'}, 300);
+  }); //선물&구매하기 모달창
+
+  $('#modalBottom .modal_close').click(function() {
+    $('#modalBottom').hide();
+    $('#modalBottom .modal').css({'transform':'translateY(100%)'});
+    $('#modalBottom .modal').hide();
+  }); //화면아래위치한 모달 닫기
 }); //ready

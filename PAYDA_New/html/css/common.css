@@ -15,8 +15,6 @@ input::-ms-input-placeholder { color: #d0d0d0; }
 
 input::placeholder { color: #d0d0d0; }
 
-img { width: 100%; -o-object-fit: contain; object-fit: contain; }
-
 /* Txt */
 b, strong { font-weight: 500; }
 
@@ -347,6 +345,19 @@ ul.list-style li::before { content: ''; display: block; position: absolute; left
 main[class*="product_"] { min-height: 100vh; padding-top: 14rem; padding-bottom: 0; }
 
 main[class*="product_"] > div[class*="product_"] { overflow: auto; position: absolute; left: 0; right: 0; bottom: 0; top: 14rem; -webkit-box-shadow: 0 6px 6px 0px inset rgba(0, 0, 0, 0.1); box-shadow: 0 6px 6px 0px inset rgba(0, 0, 0, 0.1); }
+
+/* 쿠폰샵 이미지 */
+.thumb { margin-bottom: 3rem; }
+
+.thumb small { font-size: 1.2rem; }
+
+.thumb b { font-size: 1.5rem; color: #2C6CDD; }
+
+.thumb p:first-of-type { margin-bottom: 1rem; font-weight: 500; }
+
+.thumb_img { margin-bottom: 1rem; position: relative; padding-top: 100%; }
+
+.thumb_img img { width: 100%; vertical-align: top; position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
 
 .xdsoft_datetimepicker { left: 50% !important; -webkit-transform: translateX(-50%) !important; transform: translateX(-50%) !important; }
 /*# sourceMappingURL=common.css.map */

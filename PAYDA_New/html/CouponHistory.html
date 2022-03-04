@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PAYDA</title>
+  <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+  <link rel="stylesheet" href="css/master.css">
+  <link rel="stylesheet" href="css/jquery.datetimepicker.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="js/jquery.datetimepicker.full.min.js"></script>
+  <script src="js/DateTimePicker.js"></script>
+  <script src="js/main.js"></script>
+</head>
+<body>
+  <div id="wrapper">
+    <header class="header">
+      <div class="container">
+        <div class="header_inner">
+          <a href="SimplePay.html" class="btn_back"><span class="ir">뒤로가기</span></a>
+          <h2 class="psa ps-xy-c">쿠폰샵 내역</h2>
+        </div>
+      </div>
+      <div class="tab-style">
+        <ul class="flx">
+          <li class="w50"><a href="CouponShop.html">구매&선물</a></li>
+          <li class="on w50"><a href="#">내역</a></li>
+        </ul>
+      </div>
+      <div class="container flx jc-sb aic">
+        <div class="date_select flx jcc aic">
+          <label for="datetimepicker1"></label>
+          <input type="text" id="datetimepicker1" placeholder="조회날짜" readonly>
+          <span>~</span>
+          <input type="text" id="datetimepicker2" placeholder="조회날짜" readonly>
+        </div>
+        <div>
+          <div class="select_box">
+            <select>
+              <option>미사용</option>
+              <option>사용완료</option>
+              <option>기간만료</option>
+              <option>취소/환불</option>
+            </select>
+          </div>
+          <div class="select_box">
+            <select>
+              <option>구매/선물</option>
+              <option>전체</option>
+              <option>본인구매</option>
+              <option>선물하기</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="coupon_history_wrap">
+      <div class="coupon_log">
+        <ul>
+          <li class="log1">
+            <div>
+              <p class="flx jc-sb">
+                <span><b class="txt_primary">본인구매</b><em>2022.02.14 16:32</em></span><a href="#a">상세보기</a>
+              </p>
+            </div>
+            <div>
+              <p>커피/음료>스타벅스</p>
+              <p>아이스 아메리카노</p>
+              <p class="flx jc-sb">
+                <span>수량 1개<b>4,500pay</b></span><span>[미사용]</span>
+            </div>
+            </p>
+          </li>
+        </ul>
+      </div>
+    </main>
+  </div><!-- //#wrapper-->
+</body>
+</html>

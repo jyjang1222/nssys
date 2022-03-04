@@ -24,30 +24,28 @@
           <h2 class="psa ps-xy-c">내역</h2>
         </div>
       </div>
-    </header>
-    <div class="history_wrap">
-      <div class="container">
-        <div class="head">
-          <div class="history_type">
-            <ul>
-              <li><a href="#">계좌송금</a></li>
-              <li><a href="#">PAYDA 입금</a></li>
-              <li><a href="#">PAYDA 송금</a></li>
-              <li><a href="#">PAYDA 충전</a></li>
-            </ul>
-          </div>
-          <div class="date_select flx jcc aic">
-            <label for="datetimepicker1">날짜선택</label>
-            <input type="text" id="datetimepicker1" placeholder="조회날짜" readonly>
-            <span>~</span>
-            <input type="text" id="datetimepicker2" placeholder="조회날짜" readonly>
-          </div>
+      <div class="select_wrap container flx jc-sb aic">
+        <div class="date_select flx jcc aic">
+          <label for="datetimepicker1"></label>
+          <input type="text" id="datetimepicker1" placeholder="조회날짜" readonly>
+          <span>~</span>
+          <input type="text" id="datetimepicker2" placeholder="조회날짜" readonly>
+        </div>
+        <div class="select_box">
+          <select>
+            <option>계좌송금</option>
+            <option>PAYDA 입금</option>
+            <option>PAYDA 송금</option>
+            <option>PAYDA 충전</option>
+          </select>
         </div>
       </div>
+    </header>
+    <main class="pay_history_wrap">
       <!-- 거래내역 -->
       <div data-include="SimplePayLog.html"></div>
       <!-- //거래내역 -->
-    </div><!-- //history_wrap -->
+    </main><!-- //history_wrap -->
     <!-- FNB -->
     <div data-include="fnb.html"></div>
     <!-- FNB End -->

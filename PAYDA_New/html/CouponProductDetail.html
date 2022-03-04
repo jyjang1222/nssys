@@ -35,7 +35,7 @@
     </header>
     <main class="product_detail_wrap">
       <div class="product_detail">
-        <div class="order">
+        <section class="order">
           <div class="thumb">
             <div class="thumb_img">
               <img src="img/ice_americano_ori.jpg" alt="아이스아메리카노">
@@ -84,17 +84,22 @@
               <a href="#a" class="btn_primary">구매 하기</a>
             </div>
           </div><!-- //order_info -->
-        </div><!-- //order -->
-        <div class="tab-style2">
-          <ul class="flx">
-            <li class="on w50"><a href="#">상품 정보</a></li>
-            <li class="w50"><a href="#">배송/교환/반품안내</a></li>
-          </ul>
-        </div>
-        <div>
-          <div class="tab_cont product_info">1</div>
-          <div class="tab_cont delivery">2</div>
-        </div>
+        </section><!-- //order -->
+        <section>
+          <div class="tab-style2 container">
+            <ul class="flx">
+              <li class="on w50"><a href="#">상품 정보</a></li>
+              <li class="w50"><a href="#">배송/교환/반품안내</a></li>
+            </ul>
+          </div>
+          <div class="container">
+            <div class="tab_cont product_info">
+              <br>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </div>
+            <div class="tab_cont delivery">2</div>
+          </div>
+        </section>
       </div><!-- //product_detail -->
     </main><!-- //product_detail_wrap -->
     <!-- 모달창 -->
@@ -115,11 +120,11 @@
               <div>
                 <div class="input_area">
                   <label for="name">받는 분 이름</label>
-                  <input type="text" id="name">
+                  <input type="text" id="name" autocomplete="off">
                 </div>
                 <div class="input_area">
                   <label for="phone">받는 분 휴대폰</label>
-                  <input type="text" id="phone">
+                  <input type="text" id="phone" autocomplete="off">
                 </div>
               </div>
             </div>

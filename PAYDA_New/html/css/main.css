@@ -240,37 +240,11 @@
 
 /* ReceiveQrcode End */
 /* History */
-.history_wrap { min-height: 100vh; padding-top: 6rem; padding-bottom: 6rem; }
+.pay_history_wrap { min-height: 100vh; padding-top: 10rem; padding-bottom: 6rem; }
 
-.history_wrap + #modalBottom { display: none; }
+.pay_history_wrap + #modalBottom { display: none; }
 
-.history_wrap .head { position: relative; height: 12rem; }
-
-.history_wrap .history_type ul { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; gap: 1rem; }
-
-.history_wrap .history_type li a { width: auto; padding: 0 1rem; border-radius: 4px; background-color: #d0d0d0; line-height: 2.7rem; color: #fff; }
-
-.history_wrap .history_type li.on a { background-color: #2C6CDD; }
-
-.history_wrap .date_select { position: absolute; bottom: 1.6rem; left: 50%; -webkit-transform: translateX(-50%); transform: translateX(-50%); width: 100%; }
-
-.history_wrap .date_select::before { content: ''; display: inline-block; width: 2rem; height: 2rem; margin-right: .6rem; background: url("../img/ico_calender.svg") center/100% auto no-repeat; }
-
-.history_wrap .date_select label { margin-right: 1rem; line-height: 2rem; font-weight: 500; }
-
-.history_wrap .date_select input { width: 7.2rem; line-height: 2rem; }
-
-.history_wrap .date_select input::-webkit-input-placeholder { text-align: center; }
-
-.history_wrap .date_select input:-ms-input-placeholder { text-align: center; }
-
-.history_wrap .date_select input::-ms-input-placeholder { text-align: center; }
-
-.history_wrap .date_select input::placeholder { text-align: center; }
-
-.history_wrap .date_select span { margin: 0 .4rem; }
-
-.history_wrap .simple_pay_log { left: 0; right: 0; top: 18rem; bottom: 6rem; }
+.pay_history_wrap .simple_pay_log { left: 0; right: 0; top: 10rem; bottom: 6rem; }
 
 /* History End */
 /* AddBank */
@@ -531,6 +505,20 @@
 .order_info input { width: 100%; border-bottom: 1px solid #2C6CDD; border-radius: 0; padding: .4rem; }
 
 /* CouponProductDetail End */
+/* CouponHistory */
+.coupon_history_wrap { min-height: 100vh; padding-top: 14rem; padding-bottom: 0; }
+
+.coupon_history_wrap .coupon_log { left: 0; right: 0; top: 14rem; bottom: 0; overflow: auto; position: absolute; -webkit-box-shadow: 0 6px 6px 0px inset rgba(0, 0, 0, 0.1); box-shadow: 0 6px 6px 0px inset rgba(0, 0, 0, 0.1); }
+
+.coupon_history_wrap .coupon_log li { margin: 1rem 0; padding: 0 1rem; border: 1px solid #000; }
+
+.coupon_history_wrap .coupon_log li div:first-of-type { border-bottom: 1px solid #d0d0d0; }
+
+.coupon_history_wrap .coupon_log li p { line-height: 3rem; }
+
+.coupon_history_wrap .coupon_log li div { padding: 1rem 0; }
+
+/* CouponHistory End */
 /* Responsive */
 @media (min-width: 768px) { html { font-size: 14px; }
   ul.list-style li::before { width: 4px; height: 4px; }

@@ -3,7 +3,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Open+Sans:wght@300;400;500;600;700&display=swap");
 html { font-size: 10px; }
 
-body { overflow-y: auto; font-family: 'Open Sans', 'Noto Sans KR', sans-serif; font-size: 1.4rem; }
+body { overflow-y: auto; -ms-overflow-style: none; font-family: 'Open Sans', 'Noto Sans KR', sans-serif; font-size: 1.4rem; }
+
+::-webkit-scrollbar { display: none; }
 
 input, button { border-radius: .4rem; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
@@ -49,7 +51,7 @@ input[type=checkbox]:checked { border: 1px solid #2C6CDD; background: url("../im
 /* Select */
 .select_box { display: inline-block; border-bottom: 1px solid #2C6CDD; background: url("../img/chevron_select.svg") right 0.4rem center/1rem auto no-repeat; }
 
-.select_box select { padding: 0 2rem .2rem .4rem; }
+.select_box select { padding: 0 2rem .1rem .4rem; }
 
 .select_area label { margin-right: 1rem; }
 
@@ -363,5 +365,22 @@ main[class*="product_"] > div[class*="product_"] { overflow: auto; position: abs
 
 .thumb_img img { width: 100%; vertical-align: top; position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
 
-.xdsoft_datetimepicker { left: 50% !important; -webkit-transform: translateX(-50%) !important; transform: translateX(-50%) !important; }
+/* 내역 datepicker */
+.select_wrap { margin-top: 1rem; }
+
+.date_select { height: 4rem; }
+
+.date_select label { margin-right: .6rem; line-height: 2rem; font-weight: 500; width: 2rem; height: 2rem; background: url("../img/ico_calender.svg") center/100% auto no-repeat; }
+
+.date_select input { letter-spacing: -0.1rem; width: 6.2rem; line-height: 2rem; }
+
+.date_select input::-webkit-input-placeholder { text-align: center; }
+
+.date_select input:-ms-input-placeholder { text-align: center; }
+
+.date_select input::-ms-input-placeholder { text-align: center; }
+
+.date_select input::placeholder { text-align: center; }
+
+.date_select span { margin: 0 .4rem; }
 /*# sourceMappingURL=common.css.map */

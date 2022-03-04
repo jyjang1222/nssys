@@ -66,11 +66,13 @@ $(function() {
     $('#modalBottom').show();
     $('#modalBottom .modal:nth-child(' + idx + ')').show();
     $('#modalBottom .modal').stop().animate({transform:'translateY(-100%)'}, 300);
+    $('body').css('overflow-y: ', 'hidden');
   }); //선물&구매하기 모달창
 
   $('#modalBottom .modal_close').click(function() {
     $('#modalBottom').hide();
     $('#modalBottom .modal').css({'transform':'translateY(100%)'});
     $('#modalBottom .modal').hide();
+    $('body').css('overflow-y: ', 'auto');
   }); //화면아래위치한 모달 닫기
 }); //ready

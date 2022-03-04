@@ -486,9 +486,7 @@
 
 /* CouponProductList End */
 /* CouponProductDetail */
-.product_detail { padding: 2rem; }
-
-.product_detail .order { padding-bottom: 3rem; margin-bottom: 4rem; border-bottom: 1px solid #AAA; }
+.product_detail .order { padding: 2rem; padding-bottom: 3rem; margin-bottom: 4rem; border-bottom: 1rem solid #D3D3E0; }
 
 .product_detail table { margin-bottom: 1rem; width: 100%; }
 

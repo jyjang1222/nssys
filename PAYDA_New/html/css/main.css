@@ -300,7 +300,7 @@
 
 .chk_wrap .send_chk p, .done_wrap .send_chk p { line-height: 2rem; }
 
-.chk_wrap .info, .done_wrap .info { border-top: 2px solid #2C6CDD; }
+.chk_wrap .info, .done_wrap .info { border-top: 1px solid #2C6CDD; }
 
 .chk_wrap .info p, .done_wrap .info p { line-height: 2rem; }
 
@@ -553,6 +553,8 @@
   .order > div { width: calc(50% - 1rem); }
   .order_info .modal_body { margin-bottom: 4rem; }
   .order_info p { margin-bottom: 2rem !important; }
+  /* 충전확인&완료, 송금확인&완료 */
+  .chk_wrap .info, .done_wrap .info { border-top: 2px solid #2C6CDD; }
   /* CouponHistory */
   .date_select_wrap { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
   .date_select_wrap .select_box { margin-right: 1rem; }

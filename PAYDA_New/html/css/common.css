@@ -20,6 +20,21 @@ input::placeholder { color: #d0d0d0; }
 /* Txt */
 b, strong { font-weight: 500; }
 
+/* FontSize */
+.fz10r { font-size: 1rem !important; }
+
+.fz11r { font-size: 1.1rem !important; }
+
+.fz12r { font-size: 1.2rem !important; }
+
+.fz13r { font-size: 1.3rem !important; }
+
+.fz14r { font-size: 1.4rem !important; }
+
+.fz15r { font-size: 1.5rem !important; }
+
+.fz16r { font-size: 1.6rem !important; }
+
 /* Color */
 .txt_primary { color: #2C6CDD !important; }
 
@@ -30,6 +45,9 @@ b, strong { font-weight: 500; }
 .txt_link { color: #2C6CDD !important; text-decoration: underline; }
 
 .txt_grey { color: #d0d0d0; }
+
+/* Shadow */
+.shadow_btm { -webkit-box-shadow: 0 4px 8px 0px rgba(0, 0, 0, 0.1); box-shadow: 0 4px 8px 0px rgba(0, 0, 0, 0.1); }
 
 /* Input */
 .input_box { line-height: 4.4rem; padding-left: 1rem; border: 1px solid #d0d0d0; }
@@ -49,11 +67,32 @@ input[type=checkbox]:checked { border: 1px solid #2C6CDD; background: url("../im
 .input_area label { font-weight: 500; }
 
 /* Select */
-.select_box { display: inline-block; border-bottom: 1px solid #2C6CDD; background: url("../img/chevron_select.svg") right 0.4rem center/1rem auto no-repeat; }
+.select_box { display: inline-block; margin-right: 4rem; border-bottom: 1px solid #2C6CDD; background: url("../img/chevron_select.svg") right 0.4rem center/1rem auto no-repeat; }
 
 .select_box select { padding: 0 2rem .1rem .4rem; }
 
+.select_box:last-child { margin-right: 0; }
+
 .select_area label { margin-right: 1rem; }
+
+/* 내역 datepicker */
+.select_wrap { margin-top: 2rem; padding: 0 2rem 1rem; }
+
+.date_select_wrap { padding: 1rem 0; }
+
+.date_select label { margin-right: .6rem; line-height: 2rem; font-weight: 500; width: 2rem; height: 2rem; background: url("../img/ico_calender.svg") center/100% auto no-repeat; }
+
+.date_select input { letter-spacing: -0.1rem; width: 6.2rem; line-height: 2rem; }
+
+.date_select input::-webkit-input-placeholder { text-align: center; }
+
+.date_select input:-ms-input-placeholder { text-align: center; }
+
+.date_select input::-ms-input-placeholder { text-align: center; }
+
+.date_select input::placeholder { text-align: center; }
+
+.date_select span { margin: 0 .4rem; }
 
 /* Button */
 .btn_primary { line-height: 4.4rem; text-align: center; border-radius: 4px; background-color: #2C6CDD; color: #fff; }
@@ -114,7 +153,7 @@ input[type=checkbox]:checked { border: 1px solid #2C6CDD; background: url("../im
 
 /* 서브페이지 헤더 끝 */
 /* 푸터퀵메뉴 */
-#fnb { position: fixed; left: 0; right: 0; bottom: 0; -webkit-box-shadow: 0 -6px 6px 0px rgba(0, 0, 0, 0.1); box-shadow: 0 -6px 6px 0px rgba(0, 0, 0, 0.1); background-color: #fff; }
+#fnb { position: fixed; left: 0; right: 0; bottom: 0; -webkit-box-shadow: 0 -4px 8px 0px rgba(0, 0, 0, 0.1); box-shadow: 0 -4px 8px 0px rgba(0, 0, 0, 0.1); background-color: #fff; }
 
 #fnb ul { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-pack: distribute; justify-content: space-around; }
 
@@ -244,23 +283,29 @@ input[type=checkbox]:checked { border: 1px solid #2C6CDD; background: url("../im
 
 #modalBottom .charge .btns a { width: 45%; }
 
-#modalBottom .simple_pay { display: none; }
+#modalBottom .simple_pay, #modalBottom .coupon_shop { display: none; }
 
-#modalBottom .simple_pay p { margin-bottom: 4rem; font-size: 1.8rem; font-weight: 500; }
+#modalBottom .simple_pay p, #modalBottom .coupon_shop p { margin-bottom: 3rem; font-size: 1.8rem; font-weight: 500; }
 
-#modalBottom .simple_pay ul:nth-of-type(1) { border-bottom: 2px solid #d0d0d0; }
+#modalBottom .simple_pay ul:nth-of-type(1) li, #modalBottom .coupon_shop ul:nth-of-type(1) li { margin-bottom: 1rem; }
+
+#modalBottom .simple_pay ul:nth-of-type(2) li, #modalBottom .coupon_shop ul:nth-of-type(2) li { margin-top: 1rem; }
+
+#modalBottom .simple_pay ul:last-of-type, #modalBottom .coupon_shop ul:last-of-type { margin-bottom: 1rem; }
+
+#modalBottom .simple_pay li, #modalBottom .coupon_shop li { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+
+#modalBottom .simple_pay li span:first-child, #modalBottom .coupon_shop li span:first-child { font-weight: 500; }
+
+#modalBottom .simple_pay .modal_close, #modalBottom .coupon_shop .modal_close { position: absolute; right: 1.4rem; top: 1.4rem; width: 2.6rem; height: 2.6rem; background: url("../img/btn_modal_close_blk.svg") right 0.6rem top 0.6rem/1.4rem auto no-repeat; }
+
+#modalBottom .simple_pay ul:nth-of-type(1) { border-bottom: 1px solid #d0d0d0; }
 
 #modalBottom .simple_pay ul:nth-of-type(1) li { margin-bottom: 1rem; }
 
-#modalBottom .simple_pay ul:nth-of-type(2) li { margin-top: 1rem; }
+#modalBottom .coupon_shop .btns { margin-top: 2rem; }
 
-#modalBottom .simple_pay ul:last-of-type { margin-bottom: 1rem; }
-
-#modalBottom .simple_pay li { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
-
-#modalBottom .simple_pay li span:first-child { font-weight: 500; }
-
-#modalBottom .simple_pay .modal_close { position: absolute; right: 1.4rem; top: 1.4rem; width: 2.6rem; height: 2.6rem; background: url("../img/btn_modal_close_blk.svg") right 0.6rem top 0.6rem/1.4rem auto no-repeat; }
+#modalBottom .coupon_shop .btns a { width: 45%; }
 
 /* 화면아래위치한 모달 끝 */
 /* 인풋이 하나만 있는 페이지스타일(charge, addbank, findpw) */
@@ -291,7 +336,7 @@ input[type=checkbox]:checked { border: 1px solid #2C6CDD; background: url("../im
 .one_input_page .input_area select { font-size: 1.6rem; }
 
 /* 내역리스트 스타일 */
-.simple_pay_log { overflow: auto; position: absolute; -webkit-box-shadow: 0 6px 6px 0px inset rgba(0, 0, 0, 0.1); box-shadow: 0 6px 6px 0px inset rgba(0, 0, 0, 0.1); }
+.simple_pay_log { overflow: auto; position: absolute; }
 
 .simple_pay_log li a { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; height: 6.6rem; padding: 1rem 2rem; border-bottom: 1px solid #d0d0d0; }
 
@@ -337,8 +382,16 @@ ul.list-style li:last-child { margin-bottom: 0; }
 
 ul.list-style li::before { content: ''; display: block; position: absolute; left: -.6rem; top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); width: 2px; height: 2px; border-radius: 50%; background-color: #2C6CDD; }
 
+.type span { margin-right: 1rem; position: relative; }
+
+.type span::after { content: ''; display: block; position: absolute; top: 50%; right: -.8rem; -webkit-transform: translateY(-50%); transform: translateY(-50%); width: 1rem; height: 1rem; background: url("../img/chevron_right.svg") center right/contain no-repeat; }
+
+.type span:last-child { margin-right: 0; }
+
+.type span:last-child::after { display: none; }
+
 /* 쿠폰샵 카테고리 */
-.coupon_snb li { margin-right: 1rem; line-height: 4rem; font-size: 1.3rem; position: relative; }
+.coupon_snb li { margin-right: 1rem; position: relative; line-height: 4rem; font-size: 1.3rem; }
 
 .coupon_snb li::after { content: ''; display: block; position: absolute; top: 50%; right: -.8rem; -webkit-transform: translateY(-50%); transform: translateY(-50%); width: 1rem; height: 1rem; background: url("../img/chevron_right.svg") center right/contain no-repeat; }
 
@@ -348,7 +401,7 @@ ul.list-style li::before { content: ''; display: block; position: absolute; left
 
 main[class*="product_"] { min-height: 100vh; padding-top: 14rem; padding-bottom: 0; }
 
-main[class*="product_"] > div[class*="product_"] { overflow: auto; position: absolute; left: 0; right: 0; bottom: 0; top: 14rem; -webkit-box-shadow: 0 6px 6px 0px inset rgba(0, 0, 0, 0.1); box-shadow: 0 6px 6px 0px inset rgba(0, 0, 0, 0.1); }
+main[class*="product_"] > div[class*="product_"] { overflow: auto; position: absolute; left: 0; right: 0; bottom: 0; top: 14rem; }
 
 /* 쿠폰샵 이미지 */
 .thumb { margin-bottom: 3rem; }
@@ -364,23 +417,4 @@ main[class*="product_"] > div[class*="product_"] { overflow: auto; position: abs
 .thumb_img { position: relative; padding-top: 100%; overflow: hidden; }
 
 .thumb_img img { width: 100%; vertical-align: top; position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
-
-/* 내역 datepicker */
-.select_wrap { margin-top: 1rem; }
-
-.date_select { height: 4rem; }
-
-.date_select label { margin-right: .6rem; line-height: 2rem; font-weight: 500; width: 2rem; height: 2rem; background: url("../img/ico_calender.svg") center/100% auto no-repeat; }
-
-.date_select input { letter-spacing: -0.1rem; width: 6.2rem; line-height: 2rem; }
-
-.date_select input::-webkit-input-placeholder { text-align: center; }
-
-.date_select input:-ms-input-placeholder { text-align: center; }
-
-.date_select input::-ms-input-placeholder { text-align: center; }
-
-.date_select input::placeholder { text-align: center; }
-
-.date_select span { margin: 0 .4rem; }
 /*# sourceMappingURL=common.css.map */

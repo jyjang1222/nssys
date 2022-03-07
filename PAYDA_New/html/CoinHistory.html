@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1, user-scalable=no">
   <title>PAYDA</title>
   <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
   <link rel="stylesheet" href="css/master.css">
@@ -19,28 +19,28 @@
       <div class="container">
         <div class="header_inner">
           <a href="CoinWallet.html" class="btn_back"><span class="ir">뒤로가기</span></a>
-          <h2 class="psa ps-xy-c">거래내역</h2>
+          <h2 class="psa ps-xy-c">코인 거래내역</h2>
+        </div>
+      </div>
+      <div class="select_wrap container flx jc-sb aic">
+        <div class="date_select flx jcc aic">
+          <label for="datetimepicker1"></label>
+          <input type="text" id="datetimepicker1" placeholder="조회날짜" readonly>
+          <span>~</span>
+          <input type="text" id="datetimepicker2" placeholder="조회날짜" readonly>
+        </div>
+        <div class="select_box">
+          <select>
+            <option>계좌송금</option>
+            <option>PAYDA 입금</option>
+            <option>PAYDA 송금</option>
+            <option>PAYDA 충전</option>
+          </select>
         </div>
       </div>
     </header>
-    <main class="history_wrap">
+    <main class="coin_history_wrap">
       <div class="container">
-        <div class="head">
-          <div class="history_type">
-            <ul>
-              <li><a href="#">계좌송금</a></li>
-              <li><a href="#">PAYDA 입금</a></li>
-              <li><a href="#">PAYDA 송금</a></li>
-              <li><a href="#">PAYDA 충전</a></li>
-            </ul>
-          </div>
-          <div class="date_select flx jcc aic">
-            <label for="datetimepicker1">날짜선택</label>
-            <input type="text" id="datetimepicker1" placeholder="조회날짜" readonly>
-            <span>~</span>
-            <input type="text" id="datetimepicker2" placeholder="조회날짜" readonly>
-          </div>
-        </div>
       </div>
       <!-- 거래내역 -->
       <div class="coin_trade_log">

@@ -3,19 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1, user-scalable=no">
   <title>PAYDA</title>
   <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
   <link rel="stylesheet" href="css/master.css">
   <link rel="stylesheet" href="css/jquery.datetimepicker.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/egjs-jquery-transform/2.0.0/transform.min.js" integrity="sha512-vOc3jz0QulHRiyMXfp676lHxeSuzUhfuw//VUX12odAmlUbnKiXH4GQxBRqwKhF3Mkswqr5ILY9MtEM4ZwcS2A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="js/jquery.datetimepicker.full.min.js"></script>
   <script src="js/DateTimePicker.js"></script>
   <script src="js/main.js"></script>
 </head>
 <body>
   <div id="wrapper">
-    <header class="header">
+    <header class="header shadow_btm">
       <div class="container">
         <div class="header_inner">
           <a href="SimplePay.html" class="btn_back"><span class="ir">뒤로가기</span></a>
@@ -28,29 +29,31 @@
           <li class="on w50"><a href="#">내역</a></li>
         </ul>
       </div>
-      <div class="container flx jc-sb aic">
-        <div class="date_select flx jcc aic">
-          <label for="datetimepicker1"></label>
-          <input type="text" id="datetimepicker1" placeholder="조회날짜" readonly>
-          <span>~</span>
-          <input type="text" id="datetimepicker2" placeholder="조회날짜" readonly>
-        </div>
-        <div>
-          <div class="select_box">
-            <select>
-              <option>미사용</option>
-              <option>사용완료</option>
-              <option>기간만료</option>
-              <option>취소/환불</option>
-            </select>
+      <div class="container">
+        <div class="date_select_wrap">
+          <div class="date_select flx jcc aic">
+            <label for="datetimepicker1"></label>
+            <input type="text" id="datetimepicker1" placeholder="조회날짜" readonly>
+            <span>~</span>
+            <input type="text" id="datetimepicker2" placeholder="조회날짜" readonly>
           </div>
-          <div class="select_box">
-            <select>
-              <option>구매/선물</option>
-              <option>전체</option>
-              <option>본인구매</option>
-              <option>선물하기</option>
-            </select>
+          <div class="flx jcc">
+            <div class="select_box">
+              <select>
+                <option>미사용</option>
+                <option>사용완료</option>
+                <option>기간만료</option>
+                <option>취소/환불</option>
+              </select>
+            </div>
+            <div class="select_box">
+              <select>
+                <option>구매/선물</option>
+                <option>전체</option>
+                <option>본인구매</option>
+                <option>선물하기</option>
+              </select>
+            </div>
           </div>
         </div>
       </div>
@@ -60,21 +63,136 @@
         <ul>
           <li class="log1">
             <div>
-              <p class="flx jc-sb">
-                <span><b class="txt_primary">본인구매</b><em>2022.02.14 16:32</em></span><a href="#a">상세보기</a>
+              <p class="flx jc-sb aic">
+                <span><b class="txt_primary">본인구매</b><em class="trade_time">2022.02.14 16:32</em></span><a href="#a" class="btn_detail">상세보기</a>
               </p>
             </div>
             <div>
-              <p>커피/음료>스타벅스</p>
+              <p class="type"><span>커피/음료</span><span>스타벅스</span></p>
               <p>아이스 아메리카노</p>
               <p class="flx jc-sb">
-                <span>수량 1개<b>4,500pay</b></span><span>[미사용]</span>
+                <span>
+                  <em class="quantity">수량 <strong class="txt_primary">1</strong>개</em><b><strong class="txt_primary">4,500</strong>pay</b>
+                </span>
+                <b class="txt_primary fz14r">미사용</b>
+              </p>
             </div>
-            </p>
+          </li>
+          <li class="log2">
+            <div>
+              <p class="flx jc-sb aic">
+                <span><b class="txt_primary">선물구매</b><em class="trade_time">2022.02.14 16:32</em></span><a href="#a" class="btn_detail">상세보기</a>
+              </p>
+            </div>
+            <div>
+              <p class="type"><span>커피/음료</span><span>스타벅스</span></p>
+              <p>아이스 아메리카노</p>
+              <p class="flx jc-sb">
+                <span>
+                  <em class="quantity">수량 <strong class="txt_primary">1</strong>개</em><b><strong class="txt_primary">4,500</strong>pay</b>
+                </span>
+                <b class="txt_primary fz14r">미사용</b>
+              </p>
+            </div>
+          </li>
+          <li class="log1">
+            <div>
+              <p class="flx jc-sb aic">
+                <span><b class="txt_primary">본인구매</b><em class="trade_time">2022.02.14 16:32</em></span><a href="#a" class="btn_detail">상세보기</a>
+              </p>
+            </div>
+            <div>
+              <p class="type"><span>커피/음료</span><span>스타벅스</span></p>
+              <p>아이스 아메리카노</p>
+              <p class="flx jc-sb">
+                <span>
+                  <em class="quantity">수량 <strong class="txt_primary">1</strong>개</em><b><strong class="txt_primary">4,500</strong>pay</b>
+                </span>
+                <b class="txt_primary fz14r">사용완료</b>
+              </p>
+            </div>
+          </li>
+          <li class="log1">
+            <div>
+              <p class="flx jc-sb aic">
+                <span><b class="txt_primary">본인구매</b><em class="trade_time">2022.02.14 16:32</em></span><a href="#a" class="btn_detail">상세보기</a>
+              </p>
+            </div>
+            <div>
+              <p class="type"><span>커피/음료</span><span>스타벅스</span></p>
+              <p>아이스 아메리카노</p>
+              <p class="flx jc-sb">
+                <span>
+                  <em class="quantity">수량 <strong class="txt_primary">1</strong>개</em><b><strong class="txt_primary">4,500</strong>pay</b>
+                </span>
+                <b class="txt_red fz14r">기간만료</b>
+              </p>
+            </div>
+          </li>
+          <li class="log1">
+            <div>
+              <p class="flx jc-sb aic">
+                <span><b class="txt_primary">본인구매</b><em class="trade_time">2022.02.14 16:32</em></span><a href="#a" class="btn_detail">상세보기</a>
+              </p>
+            </div>
+            <div>
+              <p class="type"><span>커피/음료</span><span>스타벅스</span></p>
+              <p>아이스 아메리카노</p>
+              <p class="flx jc-sb">
+                <span>
+                  <em class="quantity">수량 <strong class="txt_primary">1</strong>개</em><b><strong class="txt_primary">4,500</strong>pay</b>
+                </span>
+                <b class="txt_primary fz14r">취소/환불</b>
+              </p>
+            </div>
           </li>
         </ul>
       </div>
     </main>
+    <!-- 상세내역 모달 -->
+    <div id="modalBottom">
+      <!-- 본인구매 -->
+      <div class="modal coupon_shop log1">
+        <div class="inner">
+          <p>본인구매</p>
+          <ul>
+            <li><span>거래시간</span><span>2022-01-11 09:59</span></li>
+            <li><span>주문번호</span><span>Assasd654611</span></li>
+            <li><span>상품명</span><span>아이스 아메리카노</span></li>
+            <li><span>수량</span><span>1개</span></li>
+            <li><span>결제금액</span><span><b class="txt_primary">4,500</b>pay</span></li>
+            <li><span>쿠폰상태</span><b class="txt_primary">미사용</b></li>
+          </ul>
+          <div class="btns flx jc-sb">
+            <a href="#a" class="btn_cancel">환불</a>
+            <a href="#a" class="btn_primary">재전송</a>
+          </div>
+          <a href="#a" class="modal_close"><span class="ir">모달창닫기</span></a>
+        </div>
+      </div>
+      <!-- 선물구매 -->
+      <div class="modal coupon_shop log2">
+        <div class="inner">
+          <p>선물구매</p>
+          <ul>
+            <li><span>거래시간</span><span>2022-01-11 09:59</span></li>
+            <li><span>주문번호</span><span>Assasd654611</span></li>
+            <li><span>받는사람</span><span>홍길동</span></li>
+            <li><span>받는사람 휴대폰 번호</span><span>01000000000</span></li>
+            <li><span>상품명</span><span>아이스 아메리카노</span></li>
+            <li><span>수량</span><span>1개</span></li>
+            <li><span>결제금액</span><span><b class="txt_primary">4,500</b>pay</span></li>
+            <li><span>쿠폰상태</span><b class="txt_primary">미사용</b></li>
+          </ul>
+          <div class="btns flx jc-sb">
+            <a href="#a" class="btn_cancel">환불</a>
+            <a href="#a" class="btn_primary">재전송</a>
+          </div>
+          <a href="#a" class="modal_close"><span class="ir">모달창닫기</span></a>
+        </div>
+      </div>
+    </div>
+    <!-- //상세내역 모달 -->
   </div><!-- //#wrapper-->
 </body>
 </html>

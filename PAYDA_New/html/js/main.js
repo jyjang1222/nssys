@@ -7,6 +7,16 @@ $(function() {
 
     $('.tab_cont').hide();
     $('.tab_cont:nth-child(' + idx + ')').show();
+
+    var chk = $(this).attr('class').includes('chk');
+    // console.log(chk);
+    if(chk) {
+      $('.header').addClass('shadow_btm');
+      $('.tab-style').css('border-bottom', 'none');
+    } else {
+      $('.header').removeClass('shadow_btm');
+      $('.tab-style').css('border-bottom', '1px solid #d0d0d0');
+    }
   }); //탭메뉴
 
   $('.history_wrap .history_type li').click(function() {
@@ -78,8 +88,8 @@ $(function() {
 
   $('.coupon_history_wrap .btn_detail').click(function() {
     var log = $(this).parents('li').attr('class');
-    var LogNum = log.slice(3,);
-    console.log(log);
+    var LogNum = log.slice(-1,);
+    // console.log(LogNum);
     
     /* 
       LogType1 : 본인구매

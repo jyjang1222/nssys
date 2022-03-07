@@ -6,7 +6,8 @@ $('#modalBottom .modal_close').click(function() {
 
 $('.simple_pay_log li').click(function() {
   var log = $(this).attr('class');
-  var LogNum = log.slice(3,);
+  var LogNum = log.slice(-1,);
+  // console.log(log);
   // console.log(LogNum);
   
   /* 

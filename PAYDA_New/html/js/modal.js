@@ -20,10 +20,10 @@ $('.simple_pay_log li').click(function() {
     LogType8 : 구매 실패
   */
   
-  LogType(LogNum);
+  PayLogType(LogNum);
 }); //상세내역 유형별로 모달 오픈
 
-function LogType(n) {
+function PayLogType(n) {
   $('#modalBottom').show();
   $('#modalBottom .simple_pay.log' + n).show();
   $('#modalBottom .simple_pay').stop().animate({transform:'translateY(-100%)'}, 300);

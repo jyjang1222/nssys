@@ -75,4 +75,23 @@ $(function() {
     $('#modalBottom .modal').hide();
     $('body').css('overflow-y: ', 'auto');
   }); //화면아래위치한 모달 닫기
+
+  $('.coupon_history_wrap .btn_detail').click(function() {
+    var log = $(this).parents('li').attr('class');
+    var LogNum = log.slice(3,);
+    console.log(log);
+    
+    /* 
+      LogType1 : 본인구매
+      LogType2 : 선물구매
+    */
+    
+    CouponLogType(LogNum);
+  }); //쿠폰내역 상세보기
+
+  function CouponLogType(n) {
+    $('#modalBottom').show();
+    $('#modalBottom .coupon_shop.log' + n).show();
+    $('#modalBottom .coupon_shop').stop().animate({transform:'translateY(-100%)'}, 300);
+  }
 }); //ready

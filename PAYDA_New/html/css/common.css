@@ -299,6 +299,8 @@ input[type=checkbox]:checked { border: 1px solid #2C6CDD; background: url("../im
 
 #modalBottom .refund.modal { display: block; }
 
+#modalBottom .refund .inner > p { font-size: 1.3rem; }
+
 #modalBottom .refund ul.list { margin: 1rem 0 2rem; }
 
 #modalBottom .refund ul.list > li { margin-bottom: 1rem; }

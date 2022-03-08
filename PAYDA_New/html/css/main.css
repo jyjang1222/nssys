@@ -112,11 +112,11 @@
 
 .home_wrap .shop_menu li:last-child { border-bottom: none; }
 
-.home_wrap .shop_menu li a { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; position: relative; height: 5rem; padding-left: 2rem; padding-right: 2rem; }
+.home_wrap .shop_menu li a { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; position: relative; height: 5rem; padding-left: 5rem; padding-right: 2rem; }
 
-.home_wrap .shop_menu li a::before { content: ''; display: block; width: 2.8rem; height: 2.8rem; background: url("../img/ico_coupon_drink.svg") left center/contain no-repeat; }
+.home_wrap .shop_menu li a::before { content: ''; display: block; position: absolute; left: 2rem; top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); width: 2.8rem; height: 2.8rem; background: url("../img/ico_coupon_drink.svg") center/contain no-repeat; }
 
-.home_wrap .shop_menu li a::after { content: ''; display: block; position: absolute; right: 2rem; top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); width: 1.4rem; height: 1.4rem; background: url("../img/chevron_right.svg") center right/contain no-repeat; }
+.home_wrap .shop_menu li a::after { content: ''; display: block; position: absolute; right: 2rem; top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); width: 1.4rem; height: 1.4rem; background: url("../img/chevron_right.svg") right center/contain no-repeat; }
 
 /* Home End */
 /* JoinForm */
@@ -136,21 +136,23 @@
 
 .menu_wrap li a { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: left; -ms-flex-align: left; align-items: left; position: relative; padding: 0 2rem 0 5.5rem; height: 5.6rem; border-bottom: 1px solid #d0d0d0; font-size: 1.6rem; }
 
-.menu_wrap li a::before { content: ''; display: block; position: absolute; top: 50%; left: 2rem; -webkit-transform: translateY(-50%); transform: translateY(-50%); width: 2.5rem; height: 3rem; background: center no-repeat; }
+.menu_wrap li a::before { content: ''; display: block; position: absolute; top: 50%; left: 2rem; -webkit-transform: translateY(-50%); transform: translateY(-50%); width: 2.5rem; height: 3rem; background: center/contain no-repeat; }
 
 .menu_wrap li a::after { content: ''; display: block; position: absolute; top: 50%; right: 2rem; -webkit-transform: translateY(-50%); transform: translateY(-50%); width: 3rem; height: 3rem; background: url("../img/chevron_right.svg") center right/0.8rem auto no-repeat; }
 
 .menu_wrap li a span { margin-top: .8rem; font-size: 1.2rem; }
 
-.menu_wrap li:nth-child(1) a::before { background-image: url("../img/ico_menu_notice.svg"); background-size: 2.5rem auto; }
+.menu_wrap li:nth-child(1) a::before { background-image: url("../img/ico_menu_notice.svg"); }
 
-.menu_wrap li:nth-child(2) a::before { background-image: url("../img/ico_menu_version.svg"); background-size: 2.5rem auto; }
+.menu_wrap li:nth-child(2) a::before { background-image: url("../img/ico_menu_version.svg"); }
 
 .menu_wrap li:nth-child(3) a::before { background-image: url("../img/ico_menu_pw.svg"); background-size: 2rem auto; }
 
 .menu_wrap li:nth-child(4) a::before { background-image: url("../img/ico_menu_call.svg"); background-size: 2rem auto; }
 
 .menu_wrap li:nth-child(5) a::before { background-image: url("../img/ico_menu_bank.svg"); background-size: 2rem auto; }
+
+.menu_wrap li:nth-child(6) a::before { background-image: url("../img/ico_menu_grade.svg"); }
 
 .menu_wrap li:last-child a { border-bottom: none; }
 

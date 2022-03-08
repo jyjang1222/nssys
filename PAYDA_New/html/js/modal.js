@@ -1,5 +1,5 @@
 $('#modalBottom .modal_close').click(function() {
-  $('#modalBottom').hide();
+  $('#modalBottom').removeClass('on');
   $('#modalBottom .simple_pay').css({'transform':'translateY(100%)'});
   $('#modalBottom .simple_pay').hide();
 }); //화면아래위치한 모달 닫기
@@ -25,7 +25,7 @@ $('.simple_pay_log li').click(function() {
 }); //상세내역 유형별로 모달 오픈
 
 function PayLogType(n) {
-  $('#modalBottom').show();
+  $('#modalBottom').addClass('on');
   $('#modalBottom .simple_pay.log' + n).show();
   $('#modalBottom .simple_pay').stop().animate({transform:'translateY(-100%)'}, 300);
 }

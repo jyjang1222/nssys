@@ -8,9 +8,12 @@ $(function() {
     $('.tab_cont').hide();
     $('.tab_cont:nth-child(' + idx + ')').show();
 
+    //송금 페이지 최근송금탭 스타일 적용
+    var url = $(location).attr('href');
     var chk = $(this).attr('class').includes('chk');
-    // console.log(chk);
-    if(chk) {
+    var chk2 = url.includes('SendMoney');
+
+    if(chk && chk2) {
       $('.header').addClass('shadow_btm');
       $('.tab-style').css('border-bottom', 'none');
     } else {
@@ -73,18 +76,22 @@ $(function() {
   $('.product_detail .btns a').click(function() {
     var idx = $(this).index() + 1;
 
-    $('#modalBottom').show();
+    $('#modalBottom').addClass('on');
     $('#modalBottom .modal:nth-child(' + idx + ')').show();
     $('#modalBottom .modal').stop().animate({transform:'translateY(-100%)'}, 300);
     $('body').css('overflow-y: ', 'hidden');
   }); //선물&구매하기 모달창
 
   $('#modalBottom .modal_close').click(function() {
-    $('#modalBottom').hide();
+    $('#modalBottom').removeClass('on');
     $('#modalBottom .modal').css({'transform':'translateY(100%)'});
     $('#modalBottom .modal').hide();
     $('body').css('overflow-y: ', 'auto');
   }); //화면아래위치한 모달 닫기
+
+  $(window).on('resize', function() {
+    $('.modal').css('transform', 'translateY(-100%)');
+  }); //모달창 아래 고정
 
   $('.coupon_history_wrap .btn_detail').click(function() {
     var log = $(this).parents('li').attr('class');
@@ -100,7 +107,7 @@ $(function() {
   }); //쿠폰내역 상세보기
 
   function CouponLogType(n) {
-    $('#modalBottom').show();
+    $('#modalBottom').addClass('on');
     $('#modalBottom .coupon_shop.log' + n).show();
     $('#modalBottom .coupon_shop').stop().animate({transform:'translateY(-100%)'}, 300);
   }

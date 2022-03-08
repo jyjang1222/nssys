@@ -12,11 +12,12 @@ $(function() {
     var url = $(location).attr('href');
     var chk = $(this).attr('class').includes('chk');
     var chk2 = url.includes('SendMoney');
+    // console.log(chk);
 
     if(chk && chk2) {
       $('.header').addClass('shadow_btm');
       $('.tab-style').css('border-bottom', 'none');
-    } else {
+    } else if(chk2) {
       $('.header').removeClass('shadow_btm');
       $('.tab-style').css('border-bottom', '1px solid #d0d0d0');
     }

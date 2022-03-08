@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1, user-scalable=no">
+  <title>PAYDA</title>
+  <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+  <link rel="stylesheet" href="css/master.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="js/main.js"></script>
+</head>
+<body>
+  <div id="wrapper">
+    <header class="header">
+      <div class="container">
+        <div class="header_inner">
+          <a href="CouponHistory.html" class="btn_back"><span class="ir">뒤로가기</span></a>
+          <h2 class="psa ps-xy-c">취소/환불</h2>
+        </div>
+      </div>
+    </header>
+    <main class="chk_wrap container-y flx aic">
+      <div class="container">
+        <div class="inner">
+          <img src="img/ico_cancel.svg" alt="취소아이콘">
+          <p><b class="fw700">4,500</b><small class="fz20r">pay</small></p>
+          <p><strong><span class="txt_primary">취소/환불</span><span class="fw400 fz17r">&nbsp;처리 하시겠습니까?</span></strong></p>
+        </div>
+        <div class="info">
+          <p class="flx jc-sb"><span>상점명</span><span>스타벅스</span></p>
+          <p class="flx jc-sb"><span>상품</span><span>아이스 아메리카노</span></p>
+          <p class="flx jc-sb"><span>수량</span><span>1개</span></p>
+        </div>
+        <div class="btns flx jc-sb">
+          <a href="CouponHistory.html" class="btn_cancel">취소</a>
+          <a href="#a" class="btn_primary">환불하기</a>
+        </div>
+      </div>
+    </main>
+    <!-- 모달창 -->
+    <div id="modalBottom" class="on">
+      <div class="modal refund">
+        <div class="inner">
+          <h3 class="fz18r"><b>취소/환불 안내</b></h3>
+          <p class="txt_red">&#8251;구매하신 상품의 취소/환불을 원하실 경우, 다음 내용을 참고해 주세요</p>
+          <p class="txt_red">&#8251;교환권을 사용하기 이전에 청약철회가 가능합니다</p>
+          <h4>[청약 철회]</h4>
+          <ul class="list">
+            <li>
+              <p>청약 철회를 할 수 없는 경우</p>
+              <ul>
+                <li>-이미 사용된 교환권에 대해서는 취소/환불 불가</li>
+              </ul>
+            </li>
+            <li>
+              <p>청약 철회 대상자</p>
+              <ul>
+                <li>-구매자</li>
+              </ul>
+            </li>
+            <li>
+              <p>청약 철회 비용부담 안내</p>
+              <ul>
+                <li>-최초 유효기간 이내에는 결제 금액의 100%에 대하여 취소</li>
+                <li>-최초 유표기간 만료 이후에는 취소 안됨</li>
+              </ul>
+            </li>
+          </ul>
+          <a href="#a" class="btn_primary modal_close">확인</a>
+          <!-- <a href="#a" class="modal_close"><span class="ir">모달창닫기</span></a> -->
+        </div>
+      </div>
+    </div><!-- //#modal_wrap -->
+    <!-- //모달창끝 -->
+  </div><!-- //#wrapper -->
+</body>
+</html>

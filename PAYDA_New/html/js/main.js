@@ -91,7 +91,11 @@ $(function() {
   }); //화면아래위치한 모달 닫기
 
   $(window).on('resize', function() {
-    $('.modal').css('transform', 'translateY(-100%)');
+    var chk = $('#modalBottom').attr('class') == 'on';
+
+    if(chk) {
+      $('.modal').css('transform', 'translateY(-100%)');
+    }
   }); //모달창 아래 고정
 
   $('.coupon_history_wrap .btn_detail').click(function() {

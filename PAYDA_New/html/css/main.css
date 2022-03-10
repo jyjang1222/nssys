@@ -308,13 +308,13 @@
 
 /* MyBankList End*/
 /* SimpleAddr */
-.simple_addr_wrap label { font-weight: 700; }
-
 .simple_addr_wrap .input_area { margin-bottom: 1rem; }
 
 .simple_addr_wrap .simple_addr_info { margin: 2rem 0 4rem; }
 
-.simple_addr_wrap .simple_addr_info p { margin-bottom: .6rem; line-height: 1.6rem; }
+.simple_addr_wrap .simple_addr_info strong { font-size: 1.5rem; }
+
+.simple_addr_wrap .simple_addr_info p { margin-bottom: .6rem; line-height: 1.6rem; font-size: 1.3rem; }
 
 /* SimpleAddr End */
 /* 충전확인&완료, 송금확인&완료 */

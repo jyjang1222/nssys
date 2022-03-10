@@ -14,7 +14,7 @@
 
 .login_wrap ul { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
 
-.login_wrap ul li { margin-right: 1rem; font-size: 1.6rem; }
+.login_wrap ul li { margin-right: 1rem; }
 
 .login_wrap ul li:last-child { margin-right: 0; }
 
@@ -27,6 +27,40 @@
 .login_wrap .login_tit img { display: block; width: 8.6rem; margin: 0 auto 1.2rem; }
 
 /* Login End */
+/* FindId */
+.find_id_wrap p { margin-bottom: 10rem; font-size: 1.8rem; }
+
+.find_id_wrap p span { display: block; }
+
+.find_id_wrap p span:nth-of-type(1) { margin-bottom: 2rem; }
+
+.find_id_wrap p span:nth-of-type(2) { margin-bottom: 2.6rem; font-size: 3rem; font-weight: 500; }
+
+/* FindId End*/
+/* FindPw */
+.find_pw_wrap .input_area { margin-bottom: 6rem; }
+
+/* FindPw End */
+/* PwChangeDone, JoinDone */
+.pw_change_done img, .join_done img { width: 8rem; margin-bottom: 3rem; }
+
+.pw_change_done p:nth-of-type(1), .join_done p:nth-of-type(1) { margin-bottom: 1.4rem; font-weight: 700; font-size: 1.6rem; }
+
+.pw_change_done p:nth-of-type(2), .join_done p:nth-of-type(2) { color: #AAA; }
+
+/* PwChangeDone, JoinDone End */
+/* JoinForm */
+.join_wrap .join_form label { display: block; margin-bottom: .6rem; font-size: 1.6rem; font-weight: 500; }
+
+.join_wrap .join_form div[class*=area] { margin-bottom: 1.6rem; }
+
+.join_wrap .agree_list { margin-bottom: 5rem; }
+
+.join_wrap .agree_list li { margin-bottom: .8rem; }
+
+.join_wrap .agree_list input[type=checkbox] { margin-right: .6rem; }
+
+/* Joinform End */
 /* Home */
 .home_wrap .account_wrap { margin-bottom: 1rem; }
 
@@ -119,18 +153,6 @@
 .home_wrap .shop_menu li a::after { content: ''; display: block; position: absolute; right: 2rem; top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); width: 1.4rem; height: 1.4rem; background: url("../img/chevron_right.svg") right center/contain no-repeat; }
 
 /* Home End */
-/* JoinForm */
-.join_wrap .join_form label { display: block; margin-bottom: .6rem; font-size: 1.6rem; font-weight: 500; }
-
-.join_wrap .join_form div[class*=area] { margin-bottom: 1.6rem; }
-
-.join_wrap .agree_list { margin-bottom: 5rem; }
-
-.join_wrap .agree_list li { margin-bottom: .8rem; }
-
-.join_wrap .agree_list input[type=checkbox] { margin-right: .6rem; }
-
-/* Joinform End */
 /* Menu */
 .menu_wrap nav { padding-top: 10rem; min-height: 100vh; }
 
@@ -226,7 +248,7 @@
 
 .send_money_wrap .account p { margin-bottom: 1rem; }
 
-.send_money_wrap .account a { position: absolute; top: 0; right: 0; font-size: 1.3rem; }
+.send_money_wrap .account > a { position: absolute; top: 0; right: 0; font-size: 1.3rem; }
 
 .send_money_wrap .account table { width: 100%; }
 
@@ -354,7 +376,7 @@
 
 .coin_send_wrap .table_wrap td { width: auto; padding: 1rem 0; text-align: left; border-bottom: 1px solid #d0d0d0; }
 
-.coin_send_wrap .table_wrap p:first-child { margin-bottom: .4rem; }
+.coin_send_wrap .table_wrap p:first-child { margin-bottom: .6rem; }
 
 /* CoinSend End */
 /* CoinAdd */
@@ -403,18 +425,6 @@
 .coin_trade_log thead tr { position: -webkit-sticky; position: sticky; top: 0; }
 
 /* CoinHistory End*/
-/* FindPw */
-.find_pw_wrap .input_area { margin-bottom: 6rem; }
-
-/* FindPw End */
-/* PwChangeDone, JoinDone */
-.pw_change_done img, .join_done img { width: 8rem; margin-bottom: 3rem; }
-
-.pw_change_done p:nth-of-type(1), .join_done p:nth-of-type(1) { margin-bottom: 1.4rem; font-weight: 700; font-size: 1.6rem; }
-
-.pw_change_done p:nth-of-type(2), .join_done p:nth-of-type(2) { color: #AAA; }
-
-/* PwChangeDone, JoinDone End */
 /* UserGrade */
 .grade_tab { margin: 2rem 0 1rem; }
 

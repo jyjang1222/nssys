@@ -20,29 +20,6 @@ input::placeholder { color: #d0d0d0; }
 /* Txt */
 b, strong { font-weight: 500; }
 
-/* FontSize */
-.fz10r { font-size: 1rem !important; }
-
-.fz11r { font-size: 1.1rem !important; }
-
-.fz12r { font-size: 1.2rem !important; }
-
-.fz13r { font-size: 1.3rem !important; }
-
-.fz14r { font-size: 1.4rem !important; }
-
-.fz15r { font-size: 1.5rem !important; }
-
-.fz16r { font-size: 1.6rem !important; }
-
-.fz17r { font-size: 1.7rem !important; }
-
-.fz18r { font-size: 1.8rem !important; }
-
-.fz19r { font-size: 1.9rem !important; }
-
-.fz20r { font-size: 2rem !important; }
-
 /* Color */
 .txt_primary { color: #2C6CDD !important; }
 

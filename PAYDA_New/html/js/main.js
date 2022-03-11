@@ -31,6 +31,7 @@ $(function() {
   $('.btn_modal_close').click(function() {
     $('#modalPop').removeClass('on');
     $('#modalPop .modal_wrap').hide();
+    $(this).parents('.modal_pop').removeClass('on');
   }); //계좌생성 약관동의 모달창 닫기
 
   $('.agree_list a').click(function() {

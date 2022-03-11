@@ -594,7 +594,7 @@
   .header { width: 768px; left: auto; right: auto; }
   #modalBottom { position: absolute; }
   #fnb { left: 50%; -webkit-transform: translateX(-50%); transform: translateX(-50%); width: 768px; }
-  #modalPop { position: absolute; }
+  #modalPop, .modal_pop { position: absolute; }
   .home_wrap #fnb, .home_wrap .btn_add_coin { position: absolute; }
   .coin_trade_log table { width: 100%; } }
 

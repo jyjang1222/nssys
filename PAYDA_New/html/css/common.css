@@ -164,103 +164,101 @@ input[type=checkbox]:checked { border: 1px solid #2C6CDD; background: url("../im
 
 /* 푸터퀵메뉴 끝 */
 /* 팝업형태 모달 */
-#modalPop { display: none; position: fixed; left: 0; right: 0; top: 0; bottom: 0; background: rgba(0, 0, 0, 0.4); z-index: 99; }
+#modalPop, .modal_pop { display: none; position: fixed; left: 0; right: 0; top: 0; bottom: 0; background: rgba(0, 0, 0, 0.4); z-index: 99; }
 
-#modalPop.on { display: block; }
+#modalPop.on, .modal_pop.on { display: block; }
 
-#modalPop .modal_wrap { display: none; position: relative; left: 50%; top: 50%; border-radius: .4rem; background: #FFF; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); width: 90%; }
+#modalPop .modal_wrap, .modal_pop .modal_wrap { display: none; position: relative; left: 50%; top: 50%; border-radius: .4rem; background: #FFF; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); width: 90%; }
 
-#modalPop .modal_wrap.notice_pop { display: block; }
+#modalPop .modal_wrap.notice_pop, .modal_pop .modal_wrap.notice_pop { display: block; position: absolute; }
 
-#modalPop .modal_wrap.notice_pop .modal_head p span { display: block; width: 5.4rem; height: 1.9rem; margin-right: .8rem; background: url("../img/header_logo2.svg") left top/contain no-repeat; }
+#modalPop .modal_wrap.notice_pop .modal_head p span, .modal_pop .modal_wrap.notice_pop .modal_head p span { display: block; width: 5.4rem; height: 1.9rem; margin-right: .8rem; background: url("../img/header_logo2.svg") left top/contain no-repeat; }
 
-#modalPop .modal_wrap.notice_pop .modal_body { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; padding: 4rem 1rem; }
+#modalPop .modal_wrap.notice_pop .modal_body, .modal_pop .modal_wrap.notice_pop .modal_body { overflow: auto; max-height: 70vh; padding: 4rem 1rem; }
 
-#modalPop .modal_wrap.notice_pop .modal_body p { line-height: 1.6rem; }
+#modalPop .modal_wrap.notice_pop .modal_body p, .modal_pop .modal_wrap.notice_pop .modal_body p { line-height: 1.6rem; }
 
-#modalPop .modal_wrap.notice_pop .notice_tit { margin-bottom: 2rem; }
+#modalPop .modal_wrap.notice_pop .modal_body th, #modalPop .modal_wrap.notice_pop .modal_body td, .modal_pop .modal_wrap.notice_pop .modal_body th, .modal_pop .modal_wrap.notice_pop .modal_body td { font-size: 1.2rem; text-align: center; }
 
-#modalPop .modal_wrap.notice_pop .alert_msg { margin-bottom: 1rem; }
+#modalPop .modal_wrap.notice_pop .notice_tit, .modal_pop .modal_wrap.notice_pop .notice_tit { margin-bottom: 2rem; }
 
-#modalPop .modal_wrap.notice_pop .alert_msg p:nth-of-type(1) { margin-bottom: .6rem; }
+#modalPop .modal_wrap.notice_pop .alert_msg, .modal_pop .modal_wrap.notice_pop .alert_msg { padding: .4rem; border: 1px solid #FF4444; margin-bottom: 1rem; }
 
-#modalPop .modal_wrap.notice_pop .alert_msg p:nth-of-type(2) { padding: .4rem; border: 1px solid #FF4444; }
+#modalPop .modal_head, .modal_pop .modal_head { position: relative; padding: 0 1rem; line-height: 3.4rem; border-radius: .4rem .4rem 0 0; background-color: #2C6CDD; color: #FFF; }
 
-#modalPop .modal_head { position: relative; padding: 0 1rem; line-height: 3.4rem; border-radius: .4rem .4rem 0 0; background-color: #2C6CDD; color: #FFF; }
+#modalPop .modal_head .btn_modal_close, .modal_pop .modal_head .btn_modal_close { position: absolute; width: 2.4rem; height: 2.4rem; top: 50%; right: 1rem; -webkit-transform: translateY(-50%); transform: translateY(-50%); background: url("../img/btn_modal_close.svg") center right/1.2rem auto no-repeat; }
 
-#modalPop .modal_head .btn_modal_close { position: absolute; width: 2.4rem; height: 2.4rem; top: 50%; right: 1rem; -webkit-transform: translateY(-50%); transform: translateY(-50%); background: url("../img/btn_modal_close.svg") center right/1.2rem auto no-repeat; }
+#modalPop .modal_body, .modal_pop .modal_body { padding: 1.2rem 1rem; }
 
-#modalPop .modal_body { padding: 1.2rem 1rem; }
+#modalPop .modal_body p, .modal_pop .modal_body p { font-size: 1.3rem; }
 
-#modalPop .modal_body p { font-size: 1.3rem; }
+#modalPop .modal_foot, .modal_pop .modal_foot { padding: 0 1rem; border-radius: 0 0 .4rem .4rem; background: #f8f8f8; height: 3.4rem; }
 
-#modalPop .modal_foot { padding: 0 1rem; border-radius: 0 0 .4rem .4rem; background: #f8f8f8; height: 3.4rem; }
+#modalPop .modal_foot input[type=checkbox], .modal_pop .modal_foot input[type=checkbox] { width: 1.6rem; height: 1.6rem; margin-right: .4rem; background-color: #FFF; }
 
-#modalPop .modal_foot input[type=checkbox] { width: 1.6rem; height: 1.6rem; margin-right: .4rem; background-color: #FFF; }
+#modalPop .modal_foot input[type=checkbox]:checked, .modal_pop .modal_foot input[type=checkbox]:checked { background-color: #2C6CDD; background-size: 1rem auto; }
 
-#modalPop .modal_foot input[type=checkbox]:checked { background-color: #2C6CDD; background-size: 1rem auto; }
+#modalPop .modal_content, .modal_pop .modal_content { overflow: auto; max-height: 70vh; }
 
-#modalPop .modal_content { overflow: auto; max-height: 70vh; }
+#modalPop .modal_content ol, .modal_pop .modal_content ol { counter-reset: num 0; }
 
-#modalPop .modal_content ol { counter-reset: num 0; }
+#modalPop .modal_content ol > li::before, .modal_pop .modal_content ol > li::before { counter-increment: num 1; }
 
-#modalPop .modal_content ol > li::before { counter-increment: num 1; }
+#modalPop .use .policy_depth1 > li, .modal_pop .use .policy_depth1 > li { margin-bottom: 1rem; }
 
-#modalPop .use .policy_depth1 > li { margin-bottom: 1rem; }
+#modalPop .use .policy_depth1 > li::before, .modal_pop .use .policy_depth1 > li::before { content: counter(num) ". "; }
 
-#modalPop .use .policy_depth1 > li::before { content: counter(num) ". "; }
+#modalPop .policy .modal_content > p, .modal_pop .policy .modal_content > p { font-size: 1.5rem; }
 
-#modalPop .policy .modal_content > p { font-size: 1.5rem; }
+#modalPop .policy .policy_depth1 p, .modal_pop .policy .policy_depth1 p { line-height: 1.4rem; font-size: 1.2rem; }
 
-#modalPop .policy .policy_depth1 p { line-height: 1.4rem; font-size: 1.2rem; }
+#modalPop .policy .policy_depth1 > li, .modal_pop .policy .policy_depth1 > li { margin: 1rem 0; }
 
-#modalPop .policy .policy_depth1 > li { margin: 1rem 0; }
+#modalPop .policy .policy_depth1 > li::before, .modal_pop .policy .policy_depth1 > li::before { content: "제 " counter(num) "조 "; line-height: 2rem; font-weight: 700; }
 
-#modalPop .policy .policy_depth1 > li::before { content: "제 " counter(num) "조 "; line-height: 2rem; font-weight: 700; }
+#modalPop .policy .policy_depth2 > li, .modal_pop .policy .policy_depth2 > li { margin: .2rem 0; font-size: 1.2rem; }
 
-#modalPop .policy .policy_depth2 > li { margin: .2rem 0; font-size: 1.2rem; }
+#modalPop .policy .policy_depth2 > li::before, .modal_pop .policy .policy_depth2 > li::before { content: counter(num) ". "; }
 
-#modalPop .policy .policy_depth2 > li::before { content: counter(num) ". "; }
+#modalPop .policy .policy_depth3, .modal_pop .policy .policy_depth3 { padding-left: 1rem; line-height: 1.4rem; font-size: 1rem; }
 
-#modalPop .policy .policy_depth3 { padding-left: 1rem; line-height: 1.4rem; font-size: 1rem; }
+#modalPop .policy .policy_depth3 > li, .modal_pop .policy .policy_depth3 > li { font-size: 1.2rem; }
 
-#modalPop .policy .policy_depth3 > li { font-size: 1.2rem; }
+#modalPop .policy .policy_depth3 > li::before, .modal_pop .policy .policy_depth3 > li::before { content: counter(num) ") "; }
 
-#modalPop .policy .policy_depth3 > li::before { content: counter(num) ") "; }
+#modalPop .policy .policy_depth4, .modal_pop .policy .policy_depth4 { padding-left: 1rem; line-height: 1.4rem; font-size: 1rem; }
 
-#modalPop .policy .policy_depth4 { padding-left: 1rem; line-height: 1.4rem; font-size: 1rem; }
+#modalPop .policy .policy_depth4 > li, .modal_pop .policy .policy_depth4 > li { font-size: 1.2rem; }
 
-#modalPop .policy .policy_depth4 > li { font-size: 1.2rem; }
+#modalPop .policy .policy_depth4 > li::before, .modal_pop .policy .policy_depth4 > li::before { content: counter(num, lower-alpha) ". "; }
 
-#modalPop .policy .policy_depth4 > li::before { content: counter(num, lower-alpha) ". "; }
+#modalPop .privacy .modal_content p, .modal_pop .privacy .modal_content p { margin: 1rem 0; line-height: 1.4rem; font-size: 1.2rem; }
 
-#modalPop .privacy .modal_content p { margin: 1rem 0; line-height: 1.4rem; font-size: 1.2rem; }
+#modalPop .privacy .modal_content p:first-child, .modal_pop .privacy .modal_content p:first-child { margin-top: 0; }
 
-#modalPop .privacy .modal_content p:first-child { margin-top: 0; }
+#modalPop .privacy .modal_content em, .modal_pop .privacy .modal_content em { font-size: 1.4rem; font-weight: 700; }
 
-#modalPop .privacy .modal_content em { font-size: 1.4rem; font-weight: 700; }
+#modalPop .privacy .modal_content > ul li::before, .modal_pop .privacy .modal_content > ul li::before { content: '- '; }
 
-#modalPop .privacy .modal_content > ul li::before { content: '- '; }
+#modalPop .privacy .policy_depth1, .modal_pop .privacy .policy_depth1 { line-height: 1.4rem; }
 
-#modalPop .privacy .policy_depth1 { line-height: 1.4rem; }
+#modalPop .privacy .policy_depth1 > li::before, .modal_pop .privacy .policy_depth1 > li::before { content: counter(num) ". "; }
 
-#modalPop .privacy .policy_depth1 > li::before { content: counter(num) ". "; }
+#modalPop .privacy li, .modal_pop .privacy li { font-size: 1.2rem; }
 
-#modalPop .privacy li { font-size: 1.2rem; }
+#modalPop .bank_info .policy_depth1 > li, .modal_pop .bank_info .policy_depth1 > li { margin-bottom: 1rem; }
 
-#modalPop .bank_info .policy_depth1 > li { margin-bottom: 1rem; }
+#modalPop .bank_info .policy_depth1 > li::before, .modal_pop .bank_info .policy_depth1 > li::before { content: counter(num) ". "; line-height: 2rem; }
 
-#modalPop .bank_info .policy_depth1 > li::before { content: counter(num) ". "; line-height: 2rem; }
+#modalPop .bank_info .policy_depth1 p, .modal_pop .bank_info .policy_depth1 p { line-height: 1.6rem; }
 
-#modalPop .bank_info .policy_depth1 p { line-height: 1.6rem; }
+#modalPop .bank_info .policy_depth1 span, .modal_pop .bank_info .policy_depth1 span { display: inline-block; }
 
-#modalPop .bank_info .policy_depth1 span { display: inline-block; }
+#modalPop .auto_send .modal_content p, .modal_pop .auto_send .modal_content p { margin-bottom: 1rem; line-height: 1.6rem; }
 
-#modalPop .auto_send .modal_content p { margin-bottom: 1rem; line-height: 1.6rem; }
+#modalPop .auto_send ul, .modal_pop .auto_send ul { overflow: auto; height: 26rem; border: 1px solid #2C6CDD; border-radius: 4px; }
 
-#modalPop .auto_send ul { overflow: auto; height: 26rem; border: 1px solid #2C6CDD; border-radius: 4px; }
-
-#modalPop .auto_send li { padding-left: 1rem; line-height: 4rem; color: #2C6CDD; text-decoration: underline; }
+#modalPop .auto_send li, .modal_pop .auto_send li { padding-left: 1rem; line-height: 4rem; color: #2C6CDD; text-decoration: underline; }
 
 /* 팝업형태 모달 끝 */
 /* 화면아래위치한 모달 */

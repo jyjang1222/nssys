@@ -65,6 +65,8 @@
 
 .vam { vertical-align: middle; }
 
+.txt-over { overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+
 /* FontSize */
 .fz10r { font-size: 1rem !important; }
 
@@ -108,7 +110,30 @@
 
 .fz30r { font-size: 3rem !important; }
 
-.txt-over { overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+/* Margin & Padding */
+.mb5r { margin-bottom: 0.5rem !important; }
+
+.mb10r { margin-bottom: 1rem !important; }
+
+.mb15r { margin-bottom: 1.5rem !important; }
+
+.mb20r { margin-bottom: 2rem !important; }
+
+.mb25r { margin-bottom: 2.5rem !important; }
+
+.mb3r { margin-bottom: 3rem !important; }
+
+.mt5r { margin-top: 0.5rem !important; }
+
+.mt10r { margin-top: 1rem !important; }
+
+.mt15r { margin-top: 1.5rem !important; }
+
+.mt20r { margin-top: 2rem !important; }
+
+.mt25r { margin-top: 2.5rem !important; }
+
+.mt3r { margin-top: 3rem !important; }
 
 /* box */
 .border-box { -webkit-box-sizing: border-box !important; box-sizing: border-box !important; }

@@ -29,14 +29,14 @@ $(function() {
   }); //내역 거래유형탭 선택
 
   $('.btn_modal_close').click(function() {
-    $('#modalPop').hide();
+    $('#modalPop').removeClass('on');
     $('#modalPop .modal_wrap').hide();
   }); //계좌생성 약관동의 모달창 닫기
 
   $('.agree_list a').click(function() {
     var idx = $(this).parents('li').index() + 1;
     // console.log(idx);
-    $('#modalPop').show();
+    $('#modalPop').addClass('on');
     $('#modalPop .modal_wrap:nth-child(' + idx + ')').show();
   }) //약관 모달
 
@@ -70,7 +70,7 @@ $(function() {
   }); //코인보내기 탭메뉴
 
   $('.coin_list li').click(function() {
-    $('#modalPop').show();
+    $('#modalPop').addClass('on');
     $('#modalPop .modal_wrap').show();
   }); //코인 생성중 모달창
 

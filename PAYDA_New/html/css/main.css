@@ -346,6 +346,9 @@
 
 .chk_wrap .btns a, .done_wrap .btns a { width: 45%; }
 
+/* 768~ */
+@media all and (min-width: 768px) { .chk_wrap .info, .done_wrap .info { border-top: 2px solid #2C6CDD; } }
+
 /* 충전확인&완료, 송금확인&완료 끝 */
 /* CoinSend */
 .coin_send_wrap label { font-weight: 700; }
@@ -536,6 +539,14 @@
 
 .order_info input { width: 100%; border-bottom: 1px solid #2C6CDD; border-radius: 0; padding: .4rem; }
 
+/* 768~ */
+@media all and (min-width: 768px) { .order { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; gap: 1rem; }
+  .order > div { width: calc(50% - 1rem); }
+  .order_info .modal_body { margin-bottom: 4rem; }
+  .order_info p { margin-bottom: 2rem !important; }
+  .quantity a::before { height: 2px !important; }
+  .quantity a::after { width: 2px !important; } }
+
 /* CouponProductDetail End */
 /* CouponHistory */
 .date_select_wrap .date_select { margin-bottom: 1rem; }
@@ -566,30 +577,23 @@
 
 .coupon_history_wrap .coupon_log strong { font-size: 1.6rem; }
 
-/* CouponHistory End */
-/* Responsive */
-@media (min-width: 768px) { html { font-size: 14px; }
-  ul.list-style li::before { width: 4px; height: 4px; }
-  .select_box { border-bottom-width: 2px; }
-  .coin_trade_log table { width: 100%; }
-  /* CouponProductDetail */
-  .order { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; gap: 1rem; }
-  .order > div { width: calc(50% - 1rem); }
-  .order_info .modal_body { margin-bottom: 4rem; }
-  .order_info p { margin-bottom: 2rem !important; }
-  /* 충전확인&완료, 송금확인&완료 */
-  .chk_wrap .info, .done_wrap .info { border-top: 2px solid #2C6CDD; }
-  /* CouponHistory */
-  .date_select_wrap { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+/* 768~ */
+@media all and (min-width: 768px) { .date_select_wrap { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
   .date_select_wrap .select_box { margin-right: 1rem; }
   .date_select_wrap .date_select { margin-bottom: 0; }
   .coupon_history_wrap { min-height: 100vh; padding-top: 14rem; padding-bottom: 0; }
-  .coupon_history_wrap .coupon_log { left: 0; right: 0; top: 14rem; bottom: 0; }
-  /* 수량버튼 */
-  .quantity a::before { height: 2px !important; }
-  .quantity a::after { width: 2px !important; } }
+  .coupon_history_wrap .coupon_log { left: 0; right: 0; top: 14rem; bottom: 0; } }
 
-@media (min-width: 1024px) { body { background-color: #333; }
+/* CouponHistory End */
+/* Responsive */
+/* 768~ */
+@media all and (min-width: 768px) { html { font-size: 14px; }
+  ul.list-style li::before { width: 4px; height: 4px; }
+  .select_box { border-bottom-width: 2px; }
+  .coin_trade_log table { width: 100%; } }
+
+/* 1024~ */
+@media all and (min-width: 1024px) { body { background-color: #333; }
   #wrapper { max-width: 768px; margin: 0 auto; background-color: #fff; }
   .header { width: 768px; left: auto; right: auto; }
   #modalBottom { position: absolute; }

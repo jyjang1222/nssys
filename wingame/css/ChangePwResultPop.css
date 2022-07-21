@@ -1,7 +1,0 @@
-body {overflow: hidden;}
-.wrapper {width: 600px;padding: 40px 0;}
-.change_result {width: 520px;margin: 0 auto;}
-.result_txt {margin-bottom: 30px;padding: 40px 0;border: 2px solid #dfdfdf;text-align: center;}
-.result_txt strong {display: block;margin-bottom: 20px;font-size: 20px;}
-.result_txt p {color: #888;}
-.change_result a {display: block;background-color: #ffc600;line-height: 50px;text-align: center;font-size: 18px;}
